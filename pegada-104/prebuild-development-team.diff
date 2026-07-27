@@ -1,0 +1,67 @@
+expo prebuild -p ios, apps/mobile/ios/Pegada.xcodeproj/project.pbxproj
+left  = main @ b251dfa (no ios.appleTeamId)
+right = this branch with EXPO_APPLE_TEAM_ID=ABCDE12345
+
+@@ -363,12 +363,12 @@
+ 					XX016EBAAAD615E87A9BBDXX = {
+ 						CreatedOnToolsVersion = 14.3;
+ 						ProvisioningStyle = Automatic;
+-						DevelopmentTeam = undefined;
++						DevelopmentTeam = ABCDE12345;
+ 					};
+ 					XXF17B63A0D83E32D34D0CXX = {
+ 						CreatedOnToolsVersion = 14.3;
+ 						ProvisioningStyle = Automatic;
+-						DevelopmentTeam = undefined;
++						DevelopmentTeam = ABCDE12345;
+ 					};
+ 				};
+ 			};
+@@ -569,6 +569,7 @@
+ 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+ 				SWIFT_VERSION = 5.0;
+ 				VERSIONING_SYSTEM = "apple-generic";
++				DEVELOPMENT_TEAM = ABCDE12345;
+ 				TARGETED_DEVICE_FAMILY = 1;
+ 				CODE_SIGN_ENTITLEMENTS = Pegada/Pegada.entitlements;
+ 			};
+@@ -597,6 +598,7 @@
+ 				SWIFT_OBJC_BRIDGING_HEADER = "Pegada/Pegada-Bridging-Header.h";
+ 				SWIFT_VERSION = 5.0;
+ 				VERSIONING_SYSTEM = "apple-generic";
++				DEVELOPMENT_TEAM = ABCDE12345;
+ 				TARGETED_DEVICE_FAMILY = 1;
+ 				CODE_SIGN_ENTITLEMENTS = Pegada/Pegada.entitlements;
+ 			};
+@@ -753,6 +755,7 @@
+ 				TARGETED_DEVICE_FAMILY = "1,2";
+ 				CODE_SIGN_ENTITLEMENTS = "../targets/pegada-widgets/generated.entitlements";
+ 				REGISTER_APP_GROUPS = YES;
++				DEVELOPMENT_TEAM = ABCDE12345;
+ 			};
+ 		};
+ 		XX588E59764C774681B0DAXX /* Release */ = {
+@@ -792,6 +795,7 @@
+ 				SWIFT_VERSION = 5.0;
+ 				TARGETED_DEVICE_FAMILY = "1,2";
+ 				CODE_SIGN_ENTITLEMENTS = "../targets/notification-service/generated.entitlements";
++				DEVELOPMENT_TEAM = ABCDE12345;
+ 			};
+ 		};
+ 		XXB99AE83E40FD61CFFCCEXX /* Debug */ = {
+@@ -833,6 +837,7 @@
+ 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+ 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+ 				CODE_SIGN_ENTITLEMENTS = "../targets/notification-service/generated.entitlements";
++				DEVELOPMENT_TEAM = ABCDE12345;
+ 			};
+ 		};
+ 		XXE61D7254D214879CB039XX /* Release */ = {
+@@ -875,6 +880,7 @@
+ 				TARGETED_DEVICE_FAMILY = "1,2";
+ 				CODE_SIGN_ENTITLEMENTS = "../targets/pegada-widgets/generated.entitlements";
+ 				REGISTER_APP_GROUPS = YES;
++				DEVELOPMENT_TEAM = ABCDE12345;
+ 			};
+ 		};
+ /* End XCBuildConfiguration section */
