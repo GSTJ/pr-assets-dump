@@ -1,0 +1,18 @@
+$ git log -1 --oneline
+ff4ffbc chore(deps): delete the unconfigured dependabot file (#151)
+
+$ pnpm lint
+[WARN] The "pnpm" field in package.json is no longer read by pnpm. The following keys were ignored: "pnpm.overrides", "pnpm.onlyBuiltDependencies". See https://pnpm.io/settings for the new home of each setting.
+
+> personal-curriculum@1.0.3 lint /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/portfolio
+> oxlint --report-unused-disable-directives
+
+$? = 0
+
+$ pnpm typecheck
+[WARN] The "pnpm" field in package.json is no longer read by pnpm. The following keys were ignored: "pnpm.overrides", "pnpm.onlyBuiltDependencies". See https://pnpm.io/settings for the new home of each setting.
+
+> personal-curriculum@1.0.3 typecheck /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/portfolio
+> tsc --noEmit
+
+$? = 0

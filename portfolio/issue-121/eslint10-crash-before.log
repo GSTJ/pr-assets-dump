@@ -1,0 +1,123 @@
+### HEAD ###
+f322979 chore(main): release 1.0.3 (#144)
+### package.json lint bits ###
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+    "@eslint/compat": "^2.1.0",
+    "eslint": "^10.3.0",
+    "magic-eslint-config": "^0.1.9",
+### install ###
+[WARN] The "pnpm" field in package.json is no longer read by pnpm. The following keys were ignored: "pnpm.overrides". See https://pnpm.io/settings for the new home of each setting.
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +734
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+   ╭───────────────────────────────────────────────────────────────────╮
+   │                                                                   │
+   │                Update available! 8.15.9 → 11.17.0.                │
+   │   Changelog: https://github.com/pnpm/pnpm/releases/tag/v11.17.0   │
+   │                 Run "pnpm add -g pnpm" to update.                 │
+   │                                                                   │
+   │      Follow @pnpmjs for updates: https://twitter.com/pnpmjs       │
+   │                                                                   │
+   ╰───────────────────────────────────────────────────────────────────╯
+
+Progress: resolved 734, reused 732, downloaded 0, added 478
+Progress: resolved 734, reused 732, downloaded 0, added 733
+Progress: resolved 734, reused 732, downloaded 0, added 734, done
+
+dependencies:
++ @next/third-parties 16.2.12
++ @vercel/analytics 2.0.1
++ next 16.2.12
++ next-intl 4.13.4
++ postcss 8.5.23
++ react 19.2.8
++ react-dom 19.2.8
++ react-wrap-balancer 1.1.1
++ tailwindcss 4.3.3
++ typescript 7.0.2
+
+devDependencies:
++ @eslint/compat 2.1.0
++ @tailwindcss/postcss 4.3.3
++ @total-typescript/ts-reset 0.6.1
++ @types/node 26.1.1
++ @types/react 19.2.17
++ @types/react-dom 19.2.3
++ babel-plugin-react-compiler 1.0.0
++ critters 0.0.25
++ eslint 10.8.0
++ jest 30.4.2
++ jiti 2.7.0
++ magic-eslint-config 0.1.9
++ puppeteer 25.3.0
++ wrangler 4.114.0
+
+Done in 4.6s
+INSTALL_EXIT=0
+### pnpm lint ###
+[WARN] The "pnpm" field in package.json is no longer read by pnpm. The following keys were ignored: "pnpm.overrides". See https://pnpm.io/settings for the new home of each setting.
+
+> personal-curriculum@1.0.3 lint /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before
+> eslint
+
+
+Oops! Something went wrong! :(
+
+ESLint: 10.8.0
+
+TypeError: Cannot read properties of undefined (reading 'Cjs')
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/@typescript-eslint+typescript-estree@8.34.0_typescript@7.0.2/node_modules/@typescript-eslint/typescript-estree/dist/create-program/shared.js:59:14
+    at eval_evalModule (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:184467)
+    at jitiRequire (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:179335)
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:187397
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/@typescript-eslint+typescript-estree@8.34.0_typescript@7.0.2/node_modules/@typescript-eslint/typescript-estree/dist/create-program/getWatchProgramsForProjects.js:45:18
+    at eval_evalModule (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:184467)
+    at jitiRequire (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:179335)
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:187397
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/@typescript-eslint+typescript-estree@8.34.0_typescript@7.0.2/node_modules/@typescript-eslint/typescript-estree/dist/clear-caches.js:5:39
+    at eval_evalModule (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:184467)
+    at jitiRequire (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:179335)
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:187397
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/@typescript-eslint+typescript-estree@8.34.0_typescript@7.0.2/node_modules/@typescript-eslint/typescript-estree/dist/index.js:18:14
+    at eval_evalModule (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:184467)
+    at jitiRequire (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:179335)
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:187397
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/@typescript-eslint+parser@8.34.0_eslint@10.8.0_typescript@7.0.2/node_modules/@typescript-eslint/parser/dist/parser.js:9:29
+    at eval_evalModule (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:184467)
+    at jitiRequire (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:179335)
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:187397
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/@typescript-eslint+parser@8.34.0_eslint@10.8.0_typescript@7.0.2/node_modules/@typescript-eslint/parser/dist/index.js:4:16
+    at eval_evalModule (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:184467)
+    at jitiRequire (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:179335)
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:187397
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/@typescript-eslint+eslint-plugin@8.34.0_@typescript-eslint+parser@8.34.0_eslint@9.39.5_typescript@7.0.2/node_modules/@typescript-eslint/eslint-plugin/dist/raw-plugin.js:38:33
+    at eval_evalModule (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:184467)
+    at jitiRequire (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:179335)
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:187397
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/@typescript-eslint+eslint-plugin@8.34.0_@typescript-eslint+parser@8.34.0_eslint@9.39.5_typescript@7.0.2/node_modules/@typescript-eslint/eslint-plugin/dist/index.js:5:38
+    at eval_evalModule (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:184467)
+    at jitiRequire (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:179335)
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:187397
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/typescript-eslint@8.34.0_eslint@9.39.5_typescript@7.0.2/node_modules/typescript-eslint/dist/index.js:7:41
+    at eval_evalModule (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:184467)
+    at jitiRequire (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:179335)
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:187397
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/@shopify+eslint-plugin@48.0.2_@typescript-eslint+eslint-plugin@8.34.0_@typescript-eslint+pars_lnrximscljektk7w6nqo23hbfy/node_modules/@shopify/eslint-plugin/lib/config/typescript.js:1:129
+    at eval_evalModule (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:184467)
+    at jitiRequire (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:179335)
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:187397
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/@shopify+eslint-plugin@48.0.2_@typescript-eslint+eslint-plugin@8.34.0_@typescript-eslint+pars_lnrximscljektk7w6nqo23hbfy/node_modules/@shopify/eslint-plugin/index.js:10:17
+    at eval_evalModule (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:184467)
+    at /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:182582
+    at async import (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:187718)
+    at async /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/magic-eslint-config@0.1.9_@babel+eslint-parser@7.29.7_jest@30.4.2_jiti@2.7.0_prettier@3.9.6_t_mzyvl4lmsej7vnegoitec6bhdq/node_modules/magic-eslint-config/react.js:2:44
+    at async import (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:187718)
+    at async /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/magic-eslint-config@0.1.9_@babel+eslint-parser@7.29.7_jest@30.4.2_jiti@2.7.0_prettier@3.9.6_t_mzyvl4lmsej7vnegoitec6bhdq/node_modules/magic-eslint-config/next.js:3:37
+    at async import (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:187718)
+    at async /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/eslint.config.ts:5:36
+    at async Function.import (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/before/node_modules/.pnpm/jiti@2.7.0/node_modules/jiti/dist/jiti.cjs:1:187718)
+ ELIFECYCLE  Command failed with exit code 2.
+LINT_EXIT=2
