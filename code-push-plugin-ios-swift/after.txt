@@ -1,0 +1,35 @@
+$ npm ls react-native-code-push-plugin
+sdk57app@1.0.0
+└── react-native-code-push-plugin@1.0.12   (local build of fix/ios-swift-app-delegate)
+
+$ npx expo prebuild --platform ios --clean
+✔ Updated package.json | no changes
+- Running prebuild
+✔ Finished prebuild
+
+$ grep -rl CodePush ios/
+ios/sdk57app/sdk57app-Bridging-Header.h
+ios/sdk57app/Info.plist
+ios/sdk57app/AppDelegate.swift
+
+$ sed -n '/override func bundleURL/,/^  }/p' ios/sdk57app/AppDelegate.swift
+  override func bundleURL() -> URL? {
+#if DEBUG
+    return RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: ".expo/.virtual-metro-entry")
+#else
+    return CodePush.bundleURL()
+#endif
+  }
+
+$ cat ios/sdk57app/sdk57app-Bridging-Header.h
+//
+// Use this file to import your target's public headers that you would like to expose to Swift.
+//
+
+#import <CodePush/CodePush.h>
+
+# prebuild again, no --clean
+$ grep -c 'CodePush.bundleURL()' ios/sdk57app/AppDelegate.swift
+1
+$ grep -c 'CodePush/CodePush.h' ios/sdk57app/sdk57app-Bridging-Header.h
+1

@@ -1,0 +1,17 @@
+$ pnpm run lint
+  PASS
+$ pnpm run format
+  PASS
+$ pnpm run typecheck
+  PASS
+$ pnpm run test
+
+Test Suites: 6 passed, 6 total
+Tests:       66 passed, 66 total
+Snapshots:   0 total
+Time:        0.51 s, estimated 1 s
+Ran all test suites.
+$ pnpm run build
+  PASS
+$ npm pack --dry-run
+  PASS

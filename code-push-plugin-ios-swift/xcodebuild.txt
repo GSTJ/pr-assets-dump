@@ -1,0 +1,16 @@
+$ xcodebuild -workspace sdk57app.xcworkspace -scheme sdk57app \
+    -configuration Release -sdk iphonesimulator \
+    CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build
+
+** BUILD SUCCEEDED **
+exit=0
+
+# CodePush symbols linked into the app binary
+$ nm sdk57app.app/sdk57app | grep -c CodePush
+271
+
+# Negative control: same tree, bridging-header import removed
+$ xcodebuild ... build
+ios/sdk57app/AppDelegate.swift:66:12: error: cannot find 'CodePush' in scope
+** BUILD FAILED **
+exit=65

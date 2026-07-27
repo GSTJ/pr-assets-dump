@@ -1,0 +1,26 @@
+$ node -p "require('expo/package.json').version + ' / rn ' + require('react-native/package.json').version"
+50.0.21 / rn 0.73.6
+
+$ npx expo prebuild --platform ios --clean   # same local build of the fix
+✔ Updated package.json | no changes
+- Running prebuild
+✔ Finished prebuild
+
+$ head -3 ios/sdk50app/AppDelegate.mm
+#import "AppDelegate.h"
+#import <CodePush/CodePush.h>
+
+$ sed -n '/- (NSURL \*)getBundleURL/,/^}/p' ios/sdk50app/AppDelegate.mm
+- (NSURL *)getBundleURL
+{
+#if DEBUG
+  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@".expo/.virtual-metro-entry"];
+#else
+  return [CodePush bundleURL];
+#endif
+}
+
+# Objective-C imports CodePush itself, so the bridging header stays empty
+$ grep -c CodePush ios/sdk50app/sdk50app-Bridging-Header.h
+0
+0
