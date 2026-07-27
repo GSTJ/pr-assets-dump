@@ -1,0 +1,88 @@
+### install ###
+[WARN] The "pnpm" field in package.json is no longer read by pnpm. The following keys were ignored: "pnpm.overrides", "pnpm.onlyBuiltDependencies". See https://pnpm.io/settings for the new home of each setting.
+Progress: resolved 0, reused 1, downloaded 0, added 0
+Packages: +6 -4
+++++++----
+Progress: resolved 409, reused 252, downloaded 0, added 6, done
+
+dependencies:
++ critters <- beasties 0.4.3
+
+devDependencies:
+- critters 0.0.25
+
+Done in 1.8s using pnpm v10.34.5
+EXIT=0
+### resolves to ###
+/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/portfolio/node_modules/.pnpm/beasties@0.4.3/node_modules/beasties/dist/index.cjs
+ctor name: Beasties
+### lint ###
+[WARN] The "pnpm" field in package.json is no longer read by pnpm. The following keys were ignored: "pnpm.overrides", "pnpm.onlyBuiltDependencies". See https://pnpm.io/settings for the new home of each setting.
+
+> personal-curriculum@1.0.4 lint /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/portfolio
+> oxlint --report-unused-disable-directives
+
+EXIT=0
+### format ###
+[WARN] The "pnpm" field in package.json is no longer read by pnpm. The following keys were ignored: "pnpm.overrides", "pnpm.onlyBuiltDependencies". See https://pnpm.io/settings for the new home of each setting.
+
+> personal-curriculum@1.0.4 format /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/portfolio
+> oxfmt --check .
+
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 141ms on 61 files using 10 threads.
+EXIT=0
+### typecheck ###
+[WARN] The "pnpm" field in package.json is no longer read by pnpm. The following keys were ignored: "pnpm.overrides", "pnpm.onlyBuiltDependencies". See https://pnpm.io/settings for the new home of each setting.
+
+> personal-curriculum@1.0.4 typecheck /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/portfolio
+> tsc --noEmit
+
+EXIT=0
+### build ###
+[WARN] The "pnpm" field in package.json is no longer read by pnpm. The following keys were ignored: "pnpm.overrides", "pnpm.onlyBuiltDependencies". See https://pnpm.io/settings for the new home of each setting.
+
+> personal-curriculum@1.0.4 build /private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/portfolio
+> next build --webpack
+
+▲ Next.js 16.2.12 (webpack)
+- Experiments (use with caution):
+  ✓ optimizeCss
+  ✓ useTypeScriptCli
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.6s
+  Skipping validation of types
+  Finished TypeScript config validation in 2ms ...
+  Collecting page data using 9 workers ...
+  Generating static pages using 9 workers (0/10) ...
+  Generating static pages using 9 workers (2/10) 
+  Generating static pages using 9 workers (4/10) 
+  Generating static pages using 9 workers (7/10) 
+✓ Generating static pages using 9 workers (10/10) in 242ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /_not-found
+├ ƒ /[locale]
+├ ƒ /[locale]/links
+├ ƒ /api/coin
+├ ○ /robots.txt
+└ ○ /sitemap.xml
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+EXIT=0
+### critical css ###
+-- .next/server/app/_not-found.html
+   <style> blocks: 1 | inlined css bytes: 221 | rel=preload: 1
+-- .next/server/app/_global-error.html
+   <style> blocks: 1 | inlined css bytes: 888 | rel=preload: 1

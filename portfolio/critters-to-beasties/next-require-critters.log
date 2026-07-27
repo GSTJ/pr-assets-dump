@@ -1,0 +1,31 @@
+NEXTDIR=node_modules/.pnpm/next@16.2.12_@types+node@26.1.2_babel-plugin-react-compiler@1.0.0_react-dom@19.2.8_react@19.2.8__react@19.2.8/node_modules/next
+### post-process.js critters context ###
+12-async function postProcessHTML(content, renderOpts) {
+13-    const postProcessors = [
+14-        process.env.NEXT_RUNTIME !== 'edge' && renderOpts.optimizeCss ? async (html)=>{
+15-            // eslint-disable-next-line import/no-extraneous-dependencies
+16:            const Critters = require('critters');
+17-            // @ts-expect-error -- interopRequireDefault
+18-            const cssOptimizer = new Critters({
+19-                ssrMode: true,
+20-                reduceInlineStyles: false,
+21-                path: renderOpts.distDir,
+22-                publicPath: `${renderOpts.assetPrefix}/_next/`,
+23-                preload: 'media',
+24-                fonts: false,
+25-                logLevel: process.env.CRITTERS_LOG_LEVEL || (process.env.NODE_ENV === 'production' ? 'warn' : 'info'),
+26-                ...renderOpts.optimizeCss
+27-            });
+28-            return await cssOptimizer.process(html);
+### config-shared optimizeCss ###
+211-        workerThreads: false,
+212-        proxyTimeout: undefined,
+213:        optimizeCss: false,
+214-        nextScriptWorkers: false,
+215-        scrollRestoration: false,
+--
+299-        fetchCacheKeyPrefix: ex.fetchCacheKeyPrefix,
+300-        isrFlushToDisk: ex.isrFlushToDisk,
+301:        optimizeCss: ex.optimizeCss,
+302-        nextScriptWorkers: ex.nextScriptWorkers,
+303-        disableOptimizedLoading: ex.disableOptimizedLoading,
