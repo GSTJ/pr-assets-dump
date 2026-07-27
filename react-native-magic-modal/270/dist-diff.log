@@ -1,0 +1,43 @@
+npm react-native-magic-modal@9.0.0  vs  main  vs  chore/magic-tooling
+
+== sha256 of the emitted declarations, all six identical
+c4c6abd1669374bc7f9ceab03248044b2812c0971a0e4e2f430ee764143e7239  dist-cmp/npm900/dist/index.d.ts
+c4c6abd1669374bc7f9ceab03248044b2812c0971a0e4e2f430ee764143e7239  dist-cmp/main/dist/index.d.ts
+c4c6abd1669374bc7f9ceab03248044b2812c0971a0e4e2f430ee764143e7239  dist-cmp/branch/dist/index.d.ts
+c4c6abd1669374bc7f9ceab03248044b2812c0971a0e4e2f430ee764143e7239  dist-cmp/npm900/dist/index.d.cts
+c4c6abd1669374bc7f9ceab03248044b2812c0971a0e4e2f430ee764143e7239  dist-cmp/main/dist/index.d.cts
+c4c6abd1669374bc7f9ceab03248044b2812c0971a0e4e2f430ee764143e7239  dist-cmp/branch/dist/index.d.cts
+
+== dist/index.js, main (<) vs chore/magic-tooling (>), executable lines that differ
+<             enabled: !!config.swipeDirection,
+>             enabled: Boolean(config.swipeDirection),
+<         entering: !isSwipeComplete ? config.entering ?? defaultAnimationInMap[config.swipeDirection ?? defaultDirection].duration(config.animationInTiming) : undefined,
+<         exiting: !isSwipeComplete ? config.exiting ?? defaultAnimationOutMap[config.swipeDirection ?? defaultDirection].duration(config.animationOutTiming) : undefined
+>         entering: isSwipeComplete ? undefined : config.entering ?? defaultAnimationInMap[config.swipeDirection ?? defaultDirection].duration(config.animationInTiming),
+>         exiting: isSwipeComplete ? undefined : config.exiting ?? defaultAnimationOutMap[config.swipeDirection ?? defaultDirection].duration(config.animationOutTiming)
+< const generatePseudoRandomID = ()=>Math.random().toString(36).substring(7).toUpperCase() + Date.now().toString();
+> const generatePseudoRandomID = ()=>Math.random().toString(36).slice(7).toUpperCase() + Date.now().toString();
+<             const safeModal = currentModal ?? prevModals[prevModals.length - 1];
+>             const safeModal = currentModal ?? prevModals.at(-1);
+<             const lastModal = modals[modals.length - 1];
+>             const lastModal = modals.at(-1);
+<             prevModals.forEach((modal)=>{
+>             for (const modal of prevModals){
+
+== dist/index.cjs, same check
+<             enabled: !!config.swipeDirection,
+>             enabled: Boolean(config.swipeDirection),
+<         entering: !isSwipeComplete ? config.entering ?? defaultAnimationInMap[config.swipeDirection ?? defaultDirection].duration(config.animationInTiming) : undefined,
+<         exiting: !isSwipeComplete ? config.exiting ?? defaultAnimationOutMap[config.swipeDirection ?? defaultDirection].duration(config.animationOutTiming) : undefined
+>         entering: isSwipeComplete ? undefined : config.entering ?? defaultAnimationInMap[config.swipeDirection ?? defaultDirection].duration(config.animationInTiming),
+>         exiting: isSwipeComplete ? undefined : config.exiting ?? defaultAnimationOutMap[config.swipeDirection ?? defaultDirection].duration(config.animationOutTiming)
+< const generatePseudoRandomID = ()=>Math.random().toString(36).substring(7).toUpperCase() + Date.now().toString();
+> const generatePseudoRandomID = ()=>Math.random().toString(36).slice(7).toUpperCase() + Date.now().toString();
+<             const safeModal = currentModal ?? prevModals[prevModals.length - 1];
+>             const safeModal = currentModal ?? prevModals.at(-1);
+<             const lastModal = modals[modals.length - 1];
+>             const lastModal = modals.at(-1);
+<             prevModals.forEach((modal)=>{
+>             for (const modal of prevModals){
+
+== everything else that differs is a comment or the order of two independent top-level consts
