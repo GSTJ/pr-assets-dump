@@ -1,0 +1,31 @@
+$ npm ls react-native-code-push-plugin
+sdk57app@1.0.0
+└── react-native-code-push-plugin@1.0.11 (local build of fix/expo-sdk-57-prebuild)
+
+$ npx expo prebuild --platform android --clean
+✔ Created native directory
+- Updating package.json
+✔ Updated package.json | no changes
+- Running prebuild
+» android: userInterfaceStyle: Install expo-system-ui in your project to enable this feature.
+- Running prebuild
+✔ Finished prebuild
+
+$ tail -3 android/app/build.gradle
+}
+
+apply from: new File(new File(["node", "--print", "require.resolve('react-native-code-push/package.json')"].execute(null, rootDir).text.trim()).parentFile, "android/codepush.gradle")
+
+$ sed -n '20,31p' android/app/src/main/java/com/anonymous/sdk57app/MainApplication.kt
+  override val reactHost: ReactHost by lazy {
+    ExpoReactHostFactory.getDefaultReactHost(
+      context = applicationContext,
+      packageList =
+        PackageList(this).packages.apply {
+          // Packages that cannot be autolinked yet can be added manually here, for example:
+          // add(MyReactNativePackage())
+        },
+      jsBundleFilePath = CodePush.getJSBundleFile()
+    )
+  }
+

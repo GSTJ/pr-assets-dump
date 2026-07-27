@@ -1,0 +1,19 @@
+$ node -p "require('expo/package.json').version + ' / rn ' + require('react-native/package.json').version"
+57.0.8 / rn 0.86.0
+
+$ node -p "require('react-native-code-push-plugin/package.json').version"
+1.0.11
+
+$ npx expo prebuild --platform android --clean
+- Updating package.json
+✔ Updated package.json | no changes
+- Running prebuild
+✖ Prebuild failed
+Error: [android.appBuildGradle]: withAndroidAppBuildGradleBaseMod: Cannot find a suitable place to insert the CodePush buildscript dependency.
+Error: [android.appBuildGradle]: withAndroidAppBuildGradleBaseMod: Cannot find a suitable place to insert the CodePush buildscript dependency.
+    at applyImplementation (<app>/node_modules/react-native-code-push-plugin/build/android/buildscriptDependency.js:35:11)
+    at <app>/node_modules/react-native-code-push-plugin/build/android/buildscriptDependency.js:44:48
+    at action (<app>/node_modules/@expo/config-plugins/build/plugins/withMod.js:197:29)
+    at interceptingMod (<app>/node_modules/@expo/config-plugins/build/plugins/withMod.js:102:27)
+    at action (<app>/node_modules/@expo/config-plugins/build/plugins/withMod.js:202:14)
+    at async interceptingMod (<app>/node_modules/@expo/config-plugins/build/plugins/withMod.js:102:21)

@@ -1,0 +1,17 @@
+$ node -p "require('expo/package.json').version + ' / rn ' + require('react-native/package.json').version"
+50.0.21 / rn 0.73.6
+
+$ npx expo prebuild --platform android --clean   # same local build of the fix
+- Running prebuild
+» android: userInterfaceStyle: Install expo-system-ui in your project to enable this feature.
+- Running prebuild
+✔ Finished prebuild
+
+$ tail -3 android/app/build.gradle
+applyNativeModulesAppBuildGradle(project)
+
+apply from: new File(new File(["node", "--print", "require.resolve('react-native-code-push/package.json')"].execute(null, rootDir).text.trim()).parentFile, "android/codepush.gradle")
+
+$ grep -n 'CodePush' android/app/src/main/java/com/anonymous/sdk50app/MainApplication.kt
+21:import com.microsoft.codepush.react.CodePush
+29:          override fun getJSBundleFile(): String? = CodePush.getJSBundleFile()
