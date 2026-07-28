@@ -1,0 +1,211 @@
+• turbo 2.10.7
+
+   • Packages in scope: @magic/kitchen-sink, react-native-magic-modal
+   • Running lint, format, typecheck, test, build, docs, doctor in 2 packages
+   • Remote caching disabled
+
+react-native-magic-modal:build: cache bypass, force executing a4da83b5a6feffb0
+@magic/kitchen-sink:doctor: cache bypass, force executing 1286cd781e644065
+react-native-magic-modal:docs: cache bypass, force executing 0782bbf5301c8e2f
+react-native-magic-modal:format: cache bypass, force executing 8716a5c9a080f799
+@magic/kitchen-sink:format: cache bypass, force executing 56d5bb1cade1f8e5
+react-native-magic-modal:typecheck: cache bypass, force executing e44b02eb7b407237
+react-native-magic-modal:test: cache bypass, force executing 8b755ff76300a1f7
+react-native-magic-modal:lint: cache bypass, force executing 6f03a9e203c1493b
+react-native-magic-modal:copy:readme: cache bypass, force executing 6f98f780d3d02af6
+@magic/kitchen-sink:doctor: Scope: all 3 workspace projects
+react-native-magic-modal:copy:readme: Scope: all 3 workspace projects
+react-native-magic-modal:lint: Scope: all 3 workspace projects
+react-native-magic-modal:docs: Scope: all 3 workspace projects
+react-native-magic-modal:typecheck: Scope: all 3 workspace projects
+@magic/kitchen-sink:format: Scope: all 3 workspace projects
+react-native-magic-modal:format: Scope: all 3 workspace projects
+@magic/kitchen-sink:doctor: ✓ Lockfile passes supply-chain policies (verified 18m ago)
+react-native-magic-modal:build: Scope: all 3 workspace projects
+react-native-magic-modal:copy:readme: ✓ Lockfile passes supply-chain policies (verified 18m ago)
+react-native-magic-modal:docs: ✓ Lockfile passes supply-chain policies (verified 18m ago)
+@magic/kitchen-sink:format: ✓ Lockfile passes supply-chain policies (verified 18m ago)
+react-native-magic-modal:test: Scope: all 3 workspace projects
+react-native-magic-modal:lint: ✓ Lockfile passes supply-chain policies (verified 18m ago)
+react-native-magic-modal:format: ✓ Lockfile passes supply-chain policies (verified 18m ago)
+react-native-magic-modal:typecheck: ✓ Lockfile passes supply-chain policies (verified 18m ago)
+react-native-magic-modal:build: ✓ Lockfile passes supply-chain policies (verified 18m ago)
+@magic/kitchen-sink:doctor: ../..                                    | Progress: resolved 0, reused 1, downloaded 0, added 0
+react-native-magic-modal:test: ✓ Lockfile passes supply-chain policies (verified 18m ago)
+react-native-magic-modal:copy:readme: ../..                                    | Progress: resolved 0, reused 1, downloaded 0, added 0
+react-native-magic-modal:docs: ../..                                    | Progress: resolved 0, reused 1, downloaded 0, added 0
+react-native-magic-modal:lint: ../..                                    | Progress: resolved 0, reused 1, downloaded 0, added 0
+@magic/kitchen-sink:format: ../..                                    | Progress: resolved 0, reused 1, downloaded 0, added 0
+react-native-magic-modal:format: ../..                                    | Progress: resolved 0, reused 1, downloaded 0, added 0
+react-native-magic-modal:typecheck: ../..                                    | Progress: resolved 0, reused 1, downloaded 0, added 0
+react-native-magic-modal:build: ../..                                    | Progress: resolved 0, reused 1, downloaded 0, added 0
+react-native-magic-modal:test: ../..                                    | Progress: resolved 0, reused 1, downloaded 0, added 0
+@magic/kitchen-sink:doctor: ../..                                    | Progress: resolved 0, reused 102, downloaded 0, added 0
+react-native-magic-modal:copy:readme: ../..                                    | Progress: resolved 0, reused 104, downloaded 0, added 0
+react-native-magic-modal:docs: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 0
+react-native-magic-modal:lint: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 0
+react-native-magic-modal:copy:readme: ../..                                    |   +3 -108 +-----------
+@magic/kitchen-sink:doctor: ../..                                    |   +3 -108 +-----------
+react-native-magic-modal:docs: ../..                                    |   +3 -108 +-----------
+react-native-magic-modal:lint: ../..                                    |   +3 -108 +-----------
+@magic/kitchen-sink:format: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 0
+react-native-magic-modal:build: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 0
+react-native-magic-modal:typecheck: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 0
+@magic/kitchen-sink:doctor: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 1
+react-native-magic-modal:format: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 0
+@magic/kitchen-sink:format: ../..                                    |   +3 -108 +-----------
+react-native-magic-modal:typecheck: ../..                                    |   +3 -108 +-----------
+react-native-magic-modal:build: ../..                                    |   +3 -108 +-----------
+react-native-magic-modal:copy:readme: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 1
+react-native-magic-modal:test: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 0
+react-native-magic-modal:format: ../..                                    |   +3 -108 +-----------
+react-native-magic-modal:test: ../..                                    |   +3 -108 +-----------
+react-native-magic-modal:docs: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 1
+react-native-magic-modal:lint: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 1
+@magic/kitchen-sink:format: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 1
+react-native-magic-modal:build: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 1
+react-native-magic-modal:typecheck: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 1
+@magic/kitchen-sink:doctor: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 2
+react-native-magic-modal:format: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 1
+react-native-magic-modal:copy:readme: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 3
+react-native-magic-modal:test: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 1
+react-native-magic-modal:copy:readme: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 3, done
+@magic/kitchen-sink:doctor: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 3, done
+react-native-magic-modal:lint: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 3, done
+react-native-magic-modal:docs: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 2
+@magic/kitchen-sink:format: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 3
+@magic/kitchen-sink:format: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 3, done
+react-native-magic-modal:build: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 3
+react-native-magic-modal:typecheck: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 3, done
+react-native-magic-modal:copy:readme: 
+react-native-magic-modal:build: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 3, done
+react-native-magic-modal:format: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 3, done
+react-native-magic-modal:docs: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 3, done
+@magic/kitchen-sink:doctor: 
+react-native-magic-modal:test: ../..                                    | Progress: resolved 0, reused 105, downloaded 0, added 3, done
+react-native-magic-modal:lint: 
+react-native-magic-modal:copy:readme: Done in 4.9s using pnpm v11.17.0
+react-native-magic-modal:copy:readme: $ shx cp ../../README.md ./README.md
+@magic/kitchen-sink:doctor: Done in 5.1s using pnpm v11.17.0
+@magic/kitchen-sink:doctor: $ pnpm expo-doctor
+@magic/kitchen-sink:format: 
+react-native-magic-modal:typecheck: 
+react-native-magic-modal:lint: Done in 5.1s using pnpm v11.17.0
+react-native-magic-modal:lint: $ oxlint --report-unused-disable-directives
+react-native-magic-modal:format: 
+react-native-magic-modal:build: 
+@magic/kitchen-sink:format: Done in 5.2s using pnpm v11.17.0
+@magic/kitchen-sink:format: $ oxfmt --check .
+react-native-magic-modal:test: 
+react-native-magic-modal:typecheck: Done in 5.2s using pnpm v11.17.0
+react-native-magic-modal:typecheck: $ tsc --noEmit --emitDeclarationOnly false
+react-native-magic-modal:format: Done in 5.3s using pnpm v11.17.0
+react-native-magic-modal:format: $ oxfmt --check .
+react-native-magic-modal:docs: 
+react-native-magic-modal:build: Done in 5.3s using pnpm v11.17.0
+react-native-magic-modal:build: $ bunchee
+@magic/kitchen-sink:format: Checking formatting...
+@magic/kitchen-sink:format: 
+react-native-magic-modal:format: Checking formatting...
+react-native-magic-modal:format: 
+react-native-magic-modal:format: All matched files use the correct format.
+react-native-magic-modal:format: Finished in 111ms on 26 files using 10 threads.
+@magic/kitchen-sink:format: All matched files use the correct format.
+@magic/kitchen-sink:format: Finished in 229ms on 28 files using 10 threads.
+react-native-magic-modal:lint: Found 0 warnings and 0 errors.
+react-native-magic-modal:lint: Finished in 375ms on 24 files with 432 rules using 10 threads.
+react-native-magic-modal:test: Done in 5.5s using pnpm v11.17.0
+react-native-magic-modal:test: $ jest
+react-native-magic-modal:docs: Done in 5.7s using pnpm v11.17.0
+react-native-magic-modal:docs: $ typedoc --excludeInternal --out docs ./src/index.ts
+@magic/kitchen-sink:doctor: Running 19 checks on your project...
+react-native-magic-modal:test: PASS src/components/panGesture/pan-gesture-surface.test.ts
+react-native-magic-modal:docs: [96m./src/components/MagicModalPortal/magic-modal-portal.tsx[0m:[93m38[0m:[93m3[0m - [93m[warning][0m Encountered an unknown block tag @description
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [47m[30m38[0m     * @description A magic portal that should stay on the top of the app component hierarchy for the modal to be displayed.
+react-native-magic-modal:docs: 
+react-native-magic-modal:test: PASS src/components/MagicModalPortal/magic-modal-portal.test.tsx
+react-native-magic-modal:docs: [96m./src/utils/magic-modal-handler.ts[0m:[93m77[0m:[93m5[0m - [93m[warning][0m Encountered an unknown block tag @description
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [47m[30m77[0m       * @description Pushes a modal to the Stack, it will be displayed on top of the others.
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [96m./src/utils/magic-modal-handler.ts[0m:[93m92[0m:[93m5[0m - [93m[warning][0m Encountered an unknown block tag @description
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [47m[30m92[0m       * @description Hides the given modal. Prefer using `hide` from `useMagicModal`, as it already infers the modalID.
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [96m./src/utils/magic-modal-handler.ts[0m:[93m98[0m:[93m5[0m - [93m[warning][0m Encountered an unknown block tag @description
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [47m[30m98[0m       * @description Hides all modals in the stack. This function should be used sparingly, as it's generally preferable to hide modals individually from within the modal itself.
+react-native-magic-modal:docs: 
+react-native-magic-modal:test:   ● Console
+react-native-magic-modal:test: 
+react-native-magic-modal:test:     console.log
+react-native-magic-modal:test:       [UPDATE EVENT IGNORED] No modal found with id: Z5J9T1785157867833. It might have already been hidden.
+react-native-magic-modal:test: 
+react-native-magic-modal:test:       at log (src/components/MagicModalPortal/magic-modal-portal.tsx:106:19)
+react-native-magic-modal:test: 
+react-native-magic-modal:docs: [96m./src/utils/magic-modal-handler.ts[0m:[93m103[0m:[93m5[0m - [93m[warning][0m Encountered an unknown block tag @description
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [47m[30m103[0m       * @description Enables the full window overlay globally. This is useful for modals that need to be displayed on top of native iOS modal screens. The function is no-op on non-iOS platforms.
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [96m./src/utils/magic-modal-handler.ts[0m:[93m110[0m:[93m5[0m - [93m[warning][0m Encountered an unknown block tag @platform
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [47m[30m110[0m       * @platform ios
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [96m./src/utils/magic-modal-handler.ts[0m:[93m114[0m:[93m5[0m - [93m[warning][0m Encountered an unknown block tag @description
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [47m[30m114[0m       * @description Disables the full window overlay globally. This is useful for modals that do not need to be displayed on top of native iOS modal screens. The function is no-op on non-iOS platforms.
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [96m./src/utils/magic-modal-handler.ts[0m:[93m121[0m:[93m5[0m - [93m[warning][0m Encountered an unknown block tag @platform
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [47m[30m121[0m       * @platform ios
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [96m./README.md[0m:[93m247[0m:[93m36[0m - [93m[warning][0m The relative path examples/kitchen-sink is not a file and will not be copied to the output directory
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [47m[30m247[0m    Refer to the [kitchen-sink example](examples/kitchen-sink) for detailed usage scenarios.
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [96m./README.md[0m:[93m281[0m:[93m29[0m - [93m[warning][0m The relative path CONTRIBUTING.md is not a file and will not be copied to the output directory
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [47m[30m281[0m    See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository.
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [96m./README.md[0m:[93m285[0m:[93m61[0m - [93m[warning][0m The relative path LICENSE is not a file and will not be copied to the output directory
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [47m[30m285[0m    React Native Magic Modal is licensed under the [MIT License](LICENSE).
+react-native-magic-modal:docs: 
+react-native-magic-modal:docs: [93m[warning][0m DisableFullWindowOverlayFunction, defined in react-native-magic-modal/src/constants/types.ts, is referenced by magicModal.__type.disableFullWindowOverlay but not included in the documentation
+react-native-magic-modal:docs: [93m[warning][0m EnableFullWindowOverlayFunction, defined in react-native-magic-modal/src/constants/types.ts, is referenced by magicModal.__type.enableFullWindowOverlay but not included in the documentation
+react-native-magic-modal:docs: [93m[warning][0m GlobalHideFunction, defined in react-native-magic-modal/src/constants/types.ts, is referenced by magicModal.__type.hide but not included in the documentation
+react-native-magic-modal:docs: [93m[warning][0m GlobalHideAllFunction, defined in react-native-magic-modal/src/constants/types.ts, is referenced by magicModal.__type.hideAll but not included in the documentation
+react-native-magic-modal:docs: [93m[warning][0m GlobalShowFunction, defined in react-native-magic-modal/src/constants/types.ts, is referenced by magicModal.__type.show but not included in the documentation
+react-native-magic-modal:docs: [93m[warning][0m HookHideFunction, defined in react-native-magic-modal/src/constants/types.ts, is referenced by ModalProps.__type.onBackButtonPress.__type.{ hide }.__type.hide but not included in the documentation
+react-native-magic-modal:build: Exports  File              Size
+react-native-magic-modal:build: .        dist/index.js     27.6 kB
+react-native-magic-modal:build:          dist/index.cjs    29.1 kB
+react-native-magic-modal:build:          dist/index.d.cts  7.71 kB
+react-native-magic-modal:build:          dist/index.d.ts   7.71 kB
+@magic/kitchen-sink:lint: cache bypass, force executing ac20a34a20809727
+@magic/kitchen-sink:typecheck: cache bypass, force executing 15f751c25059c5ac
+react-native-magic-modal:docs: [96m[info][0m html generated at ./docs
+react-native-magic-modal:docs: [93m[warning][0m Found 0 errors and 17 warnings
+@magic/kitchen-sink:doctor: 19/19 checks passed. No issues detected!
+@magic/kitchen-sink:lint: $ oxlint --report-unused-disable-directives
+@magic/kitchen-sink:typecheck: $ tsc --noEmit --emitDeclarationOnly false
+@magic/kitchen-sink:lint: Found 0 warnings and 0 errors.
+@magic/kitchen-sink:lint: Finished in 119ms on 15 files with 432 rules using 10 threads.
+react-native-magic-modal:test: PASS src/components/magic-modal.swipe.v3.test.tsx (9.967 s)
+react-native-magic-modal:test: PASS src/components/magic-modal.swipe.v2.test.tsx (10.126 s)
+react-native-magic-modal:test: 
+react-native-magic-modal:test: Test Suites: 4 passed, 4 total
+react-native-magic-modal:test: Tests:       36 passed, 36 total
+react-native-magic-modal:test: Snapshots:   0 total
+react-native-magic-modal:test: Time:        10.451 s, estimated 11 s
+react-native-magic-modal:test: Ran all test suites.
+
+ Tasks:    11 successful, 11 total
+Cached:    0 cached, 11 total
+  Time:    17.622s 
+
+ WARNING  no output files found for task @magic/kitchen-sink#format. Please check your `outputs` key in `turbo.json`
+ WARNING  no output files found for task @magic/kitchen-sink#lint. Please check your `outputs` key in `turbo.json`
+ WARNING  no output files found for task react-native-magic-modal#format. Please check your `outputs` key in `turbo.json`
+ WARNING  no output files found for task react-native-magic-modal#lint. Please check your `outputs` key in `turbo.json`
