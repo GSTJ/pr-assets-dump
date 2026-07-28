@@ -22,3 +22,9 @@ C. human, real breaking footer                 | skip=false                   | 
 D. human, ! subject marker                     | skip=false                   | skip=false
 E. bot, ! subject marker                       | skip=false                   | skip=false
 G. unknown author, real footer (fail-open)     | skip=false                   | skip=false
+
+
+$ release-it --release-version --ci      # real binary, packages/modal, over case B
+
+  before config (as on main) : 10.0.0
+  after config  (this PR)    : 9.0.1
