@@ -1,0 +1,24 @@
+$ bash harness/matrix.sh          # recommended bump, magic-modal-9.0.0..HEAD + 1 synthetic commit
+
+CASE                                           | BEFORE (current config)      | AFTER (guarded config)
+-----------------------------------------------+------------------------------+------------------------------
+0. baseline, no extra commit                   | 9.0.0 -> 9.0.1  [patch]      | 9.0.0 -> 9.0.1  [patch]
+A. bot, renovate changelog heading             | 9.0.0 -> 9.0.1  [patch]      | 9.0.0 -> 9.0.1  [patch]
+B. bot, quoted column-0 footer  <== residual   | 9.0.0 -> 10.0.0  [major]     | 9.0.0 -> 9.0.1  [patch]
+C. human, real breaking footer                 | 9.0.0 -> 10.0.0  [major]     | 9.0.0 -> 10.0.0  [major]
+D. human, ! subject marker                     | 9.0.0 -> 10.0.0  [major]     | 9.0.0 -> 10.0.0  [major]
+E. bot, ! subject marker                       | 9.0.0 -> 10.0.0  [major]     | 9.0.0 -> 10.0.0  [major]
+F. bot, quoted bullet footer                   | 9.0.0 -> 10.0.0  [major]     | 9.0.0 -> 9.0.1  [patch]
+G. unknown author, real footer (fail-open)     | 9.0.0 -> 10.0.0  [major]     | 9.0.0 -> 10.0.0  [major]
+
+
+$ bash harness/matrix-gate.sh     # release.yml 'Determine next version' probe, same commits
+
+CASE                                           | BEFORE (gate)                | AFTER (gate)
+-----------------------------------------------+------------------------------+------------------------------
+0. baseline, no extra commit                   | skip=true                    | skip=true
+B. bot, quoted column-0 footer  <== residual   | skip=false                   | skip=true
+C. human, real breaking footer                 | skip=false                   | skip=false
+D. human, ! subject marker                     | skip=false                   | skip=false
+E. bot, ! subject marker                       | skip=false                   | skip=false
+G. unknown author, real footer (fail-open)     | skip=false                   | skip=false
