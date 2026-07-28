@@ -1,0 +1,28 @@
+# npm is the authority on which publishConfig keys it knows, so ask it.
+# The warning only fires on publish, not on pack.
+
+$ npm publish --dry-run --ignore-scripts 2>&1 | grep -i 'Unknown publishConfig'
+
+  BEFORE  safe-jsx @ f14ddd3
+    npm warn Unknown publishConfig config "ignore". This will stop working in the
+    next major version of npm. See `npm help npmrc` for supported config options.
+
+  AFTER   this branch
+    (no output)
+
+========================= the whole fleet, same probe =========================
+
+  eslint-plugin-safe-jsx (before)    >>> WARNS
+  eslint-plugin-safe-jsx (after)     clean
+  react-native-magic-toast           clean
+  react-native-code-push-plugin      clean
+  react-native-magic-modal           clean
+  magic-codemods                     clean
+  magic-observability                clean
+  magic-oxfmt-config                 clean
+  magic-oxlint-config                clean
+  magic-oxlint-plugin                clean
+  magic-tsconfig                     clean
+
+  Every other published package already uses a `files` array. safe-jsx was the
+  only one left on publishConfig.ignore.
