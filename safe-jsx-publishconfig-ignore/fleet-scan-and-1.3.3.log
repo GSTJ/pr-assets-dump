@@ -1,0 +1,59 @@
+# npm is the authority on which publishConfig keys it knows, so ask it.
+# The warning only fires on 'npm publish --dry-run', never on 'npm pack',
+# which is how it stayed out of sight.
+
+$ npm publish --dry-run --ignore-scripts 2>&1 | grep -i 'Unknown publishConfig'
+
+  eslint-plugin-safe-jsx @ f14ddd3   >>> npm warn Unknown publishConfig config "ignore"
+  eslint-plugin-safe-jsx @ 77f0543   clean
+
+  the other nine published packages:
+    react-native-magic-toast         clean
+    react-native-code-push-plugin    clean
+    react-native-magic-modal         clean
+    magic-codemods                   clean
+    magic-observability              clean
+    magic-oxfmt-config               clean
+    magic-oxlint-config              clean
+    magic-oxlint-plugin              clean
+    magic-tsconfig                   clean
+
+  All nine already publish with a 'files' array. The registry manifests agree:
+  'npm view <pkg> publishConfig' returns only registry and access for every one.
+  magic and react-native-magic-modal were re-checked at their current HEADs,
+  since both moved while this was running.
+
+  The react-native-magic-modal repo root is a workspace root at 0.0.0 and is
+  never published, so it is not counted above.
+
+==================== published 1.3.3, verified ====================
+
+  registry shasum : 890036abd78d7e1f81a754759da14ccd83b59922
+  CI publish log  : 890036abd78d7e1f81a754759da14ccd83b59922
+  npm pack from main @ 77f0543 -> byte-identical to the registry tarball
+  publishConfig in the published manifest: gone
+
+  tarball went from 12 files to 5:
+    lib/index.js
+    lib/rules/jsx-explicit-boolean.js
+    LICENSE
+    package.json
+    README.md
+
+  bare install of 1.3.3:
+    packages : 1
+    eslint   : NOT INSTALLED
+    audit    : No known vulnerabilities found
+
+  and with eslint added back, all ten cases report and fix as before:
+    version 1.3.3 | configs: recommended, strict, flat/recommended, flat/strict
+    unsafe number              | safe-jsx/jsx-explicit-boolean@L2     | const A = () => Boolean(a) && <div />;
+    unsafe string + fragment   | safe-jsx/jsx-explicit-boolean@L2     | const B = () => Boolean(b) && <>hi</>;
+    safe Boolean()             | no report                            | const C = () => Boolean(a) && <div />;
+    safe !!                    | no report                            | const D = () => !!a && <div />;
+    safe comparison            | no report                            | const E = () => a > 0 && <div />;
+    sequence expr              | safe-jsx/jsx-explicit-boolean@L2     | const F = () => (Boolean((a, b))) && <div />;
+    self-referential           | safe-jsx/jsx-explicit-boolean@L2     | const G = () => Boolean(a) && <div />;
+    reassigned                 | safe-jsx/jsx-explicit-boolean@L2     | const H = () => Boolean(a) && <div />;
+    no init                    | safe-jsx/jsx-explicit-boolean@L2     | const I = () => Boolean(a) && <div />;
+    non-jsx rhs                | no report                            | const J = () => a && 'str';
