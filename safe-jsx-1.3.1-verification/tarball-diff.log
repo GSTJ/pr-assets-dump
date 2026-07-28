@@ -1,0 +1,63 @@
+# What npm latest actually served before and after.
+
+$ npm pack eslint-plugin-safe-jsx@1.3.0    -> 15 files
+$ npm pack eslint-plugin-safe-jsx@1.3.1    -> 12 files
+
+--- full file list, diffed ---
+ .github/FUNDING.yml
+ .github/ISSUE_TEMPLATE/bug_report.md
+ .github/ISSUE_TEMPLATE/feature_request.md
+-.prettierrc
+ CHANGELOG.md
+ CODE_OF_CONDUCT.md
+-eslint.config.mjs
+ lib/index.js
+ lib/rules/jsx-explicit-boolean.js
+ LICENSE
+ package.json
+ README.md
+ renovate.json
+ SECURITY.md
+-tsconfig.json
+
+--- lib/index.js, 1.3.0 -> 1.3.1 ---
+@@ -1,4 +1,7 @@
+ "use strict";
++Object.defineProperty(exports, "__esModule", { value: true });
++// Read at runtime rather than imported, so `lib/index.js` keeps resolving the
++// published package.json and `rootDir` stays `src/`.
+ const { name, version } = require("../package.json");
+ // eslintrc-style config, for ESLint 8 and below.
+ const legacyConfig = {
+@@ -12,15 +15,18 @@
+         "safe-jsx/jsx-explicit-boolean": "error",
+     },
+ };
++// Held separately from `plugin` so the flat configs, which can only be built
++// once `plugin` exists, have somewhere to land without a cast.
++const configs = {
++    recommended: legacyConfig,
++    strict: legacyConfig,
++};
+ const plugin = {
+     meta: { name, version },
+     rules: {
+         "jsx-explicit-boolean": require("./rules/jsx-explicit-boolean"),
+     },
+-    configs: {
+-        recommended: legacyConfig,
+-        strict: legacyConfig,
+-    },
++    configs,
+ };
+ // Flat config, for ESLint 9 and above. It has to reference the plugin object
+ // itself, so it gets attached once `plugin` exists.
+@@ -37,6 +43,6 @@
+         "safe-jsx/jsx-explicit-boolean": "error",
+     },
+ };
+-plugin.configs["flat/recommended"] = flatConfig;
+-plugin.configs["flat/strict"] = flatConfig;
++configs["flat/recommended"] = flatConfig;
++configs["flat/strict"] = flatConfig;
+ module.exports = plugin;

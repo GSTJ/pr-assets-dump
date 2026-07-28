@@ -1,0 +1,32 @@
+# The changelog path was broken until 0abd1fe, and #41 swapped the generator.
+# So: does main's CHANGELOG match its own generator, and does the NEXT release work?
+
+$ cd main && npm run changelog && git status --porcelain CHANGELOG.md
+  CHANGELOG.md rebuilt
+  (no output) -> main's CHANGELOG is exactly what the generator produces. No drift.
+
+$ git commit -m 'fix(jsx-explicit-boolean): treat optional chaining as unsafe'
+$ git commit -m 'chore(deps): bump oxlint'
+$ npm version patch
+  ## [1.3.2](https://github.com/GSTJ/safe-jsx/compare/v1.3.1...v1.3.2) (2026-07-28)
+  
+  ### Bug Fixes
+  
+  * **jsx-explicit-boolean:** treat optional chaining as unsafe ([85c7f8b](https://github.com/GSTJ/safe-jsx/commit/85c7f8b4f8a962e84b61de720255d15110d0fe33))
+  -> compare link, header and history all intact; chore hidden; tree clean after.
+
+$ git commit -m 'feat!: drop the eslintrc-style recommended and strict configs'
+$   -m 'BREAKING CHANGE: use flat/recommended or flat/strict; ...'
+$ git commit -m 'refactor(rules): tidy the scope walk'
+$ git commit -m 'build: stop shipping renovate.json'
+$ npm version minor
+  ## [1.4.0](https://github.com/GSTJ/safe-jsx/compare/v1.3.2...v1.4.0) (2026-07-28)
+  
+  ### ⚠ BREAKING CHANGES
+  
+  * use flat/recommended or flat/strict; the eslintrc entries are gone.
+  
+  ### Features
+  
+  * drop the eslintrc-style recommended and strict configs ([a7bbe87](https://github.com/GSTJ/safe-jsx/commit/a7bbe87d84147ac87383677fd8a3388997d7dc8a))
+  -> breaking change surfaces under its own heading; refactor and build stay hidden.

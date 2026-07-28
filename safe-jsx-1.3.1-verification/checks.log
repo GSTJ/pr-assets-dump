@@ -1,0 +1,29 @@
+$ git log --oneline -3 && git rev-parse v1.3.1^{commit}
+c0bf91c v1.3.1
+48c30bb Merge pull request #41 from GSTJ/chore/release-path
+0f15905 chore(changelog): rebuild in the generator's own bullet style
+tag v1.3.1 -> c0bf91c2e9e9f19446f763b2be6e17699c3dc4ce
+tag is an ancestor of origin/main: yes
+
+$ ./node_modules/.bin/oxlint --report-unused-disable-directives   # invoked directly, no wrapper
+exit: 0
+   ...oxlint is silent when clean, so prove it is live:
+   src/__probe.ts:2:7: error eslint(eqeqeq): Expected === and instead saw == help: Prefer === operator
+   src/__probe.ts:2:17: error eslint(no-debugger): `debugger` statement is not allowed help: Remove the debugger statement
+   exit: 1
+
+$ ./node_modules/.bin/tsc --noEmit
+exit: 0
+$ ./node_modules/.bin/oxfmt --check .
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 301ms on 24 files using 10 threads.
+exit: 0
+$ ./node_modules/.bin/jest --coverage
+
+Test Suites: 2 passed, 2 total
+Tests:       46 passed, 46 total
+Snapshots:   0 total
+Time:        1.572 s
+Ran all test suites.

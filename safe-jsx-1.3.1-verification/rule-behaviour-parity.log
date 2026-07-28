@@ -1,0 +1,31 @@
+# Same 10 inputs through ESLint 10 + flat/recommended, from the npm registry.
+# Column 2 = what the rule reported. Column 3 = the autofixed line.
+
+$ npm i eslint@10 eslint-plugin-safe-jsx@1.3.0 && node run.cjs
+  version 1.3.0 | configs: recommended, strict, flat/recommended, flat/strict
+  unsafe number              | safe-jsx/jsx-explicit-boolean@L2     | const A = () => Boolean(a) && <div />;
+  unsafe string + fragment   | safe-jsx/jsx-explicit-boolean@L2     | const B = () => Boolean(b) && <>hi</>;
+  safe Boolean()             | no report                            | const C = () => Boolean(a) && <div />;
+  safe !!                    | no report                            | const D = () => !!a && <div />;
+  safe comparison            | no report                            | const E = () => a > 0 && <div />;
+  sequence expr              | safe-jsx/jsx-explicit-boolean@L2     | const F = () => (Boolean((a, b))) && <div />;
+  self-referential           | safe-jsx/jsx-explicit-boolean@L2     | const G = () => Boolean(a) && <div />;
+  reassigned                 | safe-jsx/jsx-explicit-boolean@L2     | const H = () => Boolean(a) && <div />;
+  no init                    | safe-jsx/jsx-explicit-boolean@L2     | const I = () => Boolean(a) && <div />;
+  non-jsx rhs                | no report                            | const J = () => a && 'str';
+
+$ npm i eslint@10 eslint-plugin-safe-jsx@1.3.1 && node run.cjs
+  version 1.3.1 | configs: recommended, strict, flat/recommended, flat/strict
+  unsafe number              | safe-jsx/jsx-explicit-boolean@L2     | const A = () => Boolean(a) && <div />;
+  unsafe string + fragment   | safe-jsx/jsx-explicit-boolean@L2     | const B = () => Boolean(b) && <>hi</>;
+  safe Boolean()             | no report                            | const C = () => Boolean(a) && <div />;
+  safe !!                    | no report                            | const D = () => !!a && <div />;
+  safe comparison            | no report                            | const E = () => a > 0 && <div />;
+  sequence expr              | safe-jsx/jsx-explicit-boolean@L2     | const F = () => (Boolean((a, b))) && <div />;
+  self-referential           | safe-jsx/jsx-explicit-boolean@L2     | const G = () => Boolean(a) && <div />;
+  reassigned                 | safe-jsx/jsx-explicit-boolean@L2     | const H = () => Boolean(a) && <div />;
+  no init                    | safe-jsx/jsx-explicit-boolean@L2     | const I = () => Boolean(a) && <div />;
+  non-jsx rhs                | no report                            | const J = () => a && 'str';
+
+$ diff <(tail -n +2 out-130.txt) <(tail -n +2 out-131.txt)
+  (no output) -> every report and every fix is identical. 1.3.1 is a packaging release.
