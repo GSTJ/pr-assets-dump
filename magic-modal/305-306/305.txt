@@ -1,0 +1,45 @@
+==================================================================
+ #305  chore(deps): update react monorepo to v19.2.8
+ renovate/react-monorepo @ f382cf7   (clean clone, pnpm 11.17.0)
+==================================================================
+
+The PR only edits apps/docs/package.json. The workspace is hoisted, so
+the bump still decides which react packages/modal tests against.
+
+$ pnpm install --frozen-lockfile
+$ node -e "...resolve what landed..."
+
+  root  node_modules/react                 19.2.8    <- docs won the root
+  root  node_modules/react-dom             19.2.8
+  root  node_modules/react-test-renderer   19.2.0    <- SDK's, unchanged
+  examples/kitchen-sink/.../react          19.2.0    <- nested, doctor stays quiet
+  expo 55.0.28 bundledNativeModules.react  19.2.0
+
+$ cd packages/modal && pnpm exec jest
+
+FAIL src/components/magic-modal.swipe.v2.test.tsx
+  * Test suite failed to run
+
+    Incorrect version of "react-test-renderer" detected.
+    Expected "19.2.8", but found "19.2.0".
+
+    Fix it by running:
+    npm install -D react-test-renderer@19.2.8
+
+      3 | import React from "react";
+      4 |
+    > 5 | import { act } from "@testing-library/react-native";
+        | ^
+
+    at Object.ensurePeerDeps
+       (node_modules/@testing-library/react-native/src/helpers/ensure-peer-deps.ts:36:3)
+
+Test Suites: 3 failed, 1 passed, 4 total
+Tests:       2 passed, 2 total
+Ran all test suites.
+
+Matches CI run 30381928481 exactly.
+
+react-test-renderer cannot follow: the shared preset GSTJ/magic disables it
+outright, because it must equal the installed react and react's version is
+the Expo SDK's to pick.

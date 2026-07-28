@@ -1,0 +1,44 @@
+==================================================================
+ #306  chore(deps): update react-native-reanimated to v4.5.3
+ renovate/react-native-reanimated-4.x @ e30a034   (clean clone)
+==================================================================
+
+The PR only edits packages/modal/package.json, so the example app keeps
+4.2.3 and the bump installs a second copy of reanimated.
+
+$ pnpm install --frozen-lockfile
+
+  root  node_modules/react-native-reanimated            4.2.3   <- example app
+  packages/modal/node_modules/react-native-reanimated   4.5.3   <- second copy
+  root  node_modules/react-native-worklets              0.7.4
+
+  expo 55.0.28 bundledNativeModules:
+    react-native-reanimated -> 4.2.1
+    react-native-worklets   -> 0.7.4
+
+  reanimated 4.5.3 peerDependencies:
+    {"react":"*","react-native":"0.83 - 0.86",
+     "react-native-worklets":"0.10.x - 0.11.x"}
+
+$ cd packages/modal && pnpm exec jest
+
+FAIL src/components/magic-modal.swipe.v3.test.tsx
+  * Test suite failed to run
+
+    [Reanimated] Your installed version of Worklets (0.7.4) is not
+    compatible with installed version of Reanimated (4.5.3). Please
+    install Worklets 0.10.x or newer.
+
+      13 | import { Pressable, StyleSheet, useWindowDimensions, View } ...
+      14 |
+    > 15 | import Animated, {
+         | ^
+
+    at assertWorkletsVersion
+       (node_modules/react-native-reanimated/src/platform-specific/workletsVersion.ts:12:11)
+
+Test Suites: 3 failed, 1 passed, 4 total
+Tests:       2 passed, 2 total
+Ran all test suites.
+
+Matches CI run 30381647356 exactly.

@@ -1,0 +1,35 @@
+==================================================================
+ chore(renovate): hold react and the reanimated pair to the SDK
+ clean node_modules, rebased on main d9604a0
+==================================================================
+
+oxlint canary, invoked direct from node_modules/.bin (not via rtk)
+  planted unused var  -> exit 1, no-unused-vars reported
+  canary removed      -> exit 0
+
+  oxlint packages/modal -> exit 0
+  oxlint apps/docs -> exit 0
+  oxlint examples/kitchen-sink -> exit 0
+
+$ npx renovate-config-validator renovate.json
+   INFO: Config validated successfully against 1 file(s)
+$ pnpm run format    -> exit 0
+$ pnpm run typecheck -> exit 0
+$ pnpm run build     -> exit 0
+$ pnpm run doctor    -> exit 0
+$ pnpm run changelog:check -> exit 0
+$ pnpm run test      -> exit 0
+
+--- expo-doctor ---
+@magic/kitchen-sink:doctor: 19/19 checks passed. No issues detected!
+
+--- changelog:check ---
+react-native-magic-modal:changelog:check: changelog preset check passed (12 synthetic commits, 3 breaking; bumps: feat!=major, feat=minor, fix=patch, changelog-only=null, hidden-only=null)
+react-native-magic-modal:changelog:check: negative control passed (hiding the visible types breaks 6 assertions: feat renders, fix renders, build renders, refactor renders, chore renders, docs renders)
+
+--- jest ---
+react-native-magic-modal:test: Test Suites: 4 passed, 4 total
+react-native-magic-modal:test: Tests:       36 passed, 36 total
+
+--- docs build ---
+@magic-modal/docs:build: ✓ Docs artifact: 22 required files, 33 HTML files, 508 internal links
