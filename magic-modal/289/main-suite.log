@@ -1,0 +1,145 @@
+### node v26.5.0  pnpm 11.17.0  tsc Version 5.9.3
+### HEAD 9256a73 on main
+
+==================== pnpm lint ====================
+$ turbo run lint
+• turbo 2.10.7
+
+   • Packages in scope: @magic/kitchen-sink, react-native-magic-modal
+   • Running lint in 2 packages
+   • Remote caching disabled
+
+react-native-magic-modal:build: cache miss, executing 9c207902ceef63d9
+react-native-magic-modal:lint: cache miss, executing 504810c1bfc25764
+react-native-magic-modal:build: $ bunchee
+react-native-magic-modal:lint: $ oxlint --report-unused-disable-directives
+react-native-magic-modal:lint: Found 0 warnings and 0 errors.
+react-native-magic-modal:lint: Finished in 193ms on 24 files with 432 rules using 10 threads.
+react-native-magic-modal:build: Exports  File              Size
+react-native-magic-modal:build: .        dist/index.cjs    29.1 kB
+react-native-magic-modal:build:          dist/index.js     27.6 kB
+react-native-magic-modal:build:          dist/index.d.ts   7.71 kB
+react-native-magic-modal:build:          dist/index.d.cts  7.71 kB
+@magic/kitchen-sink:lint: cache miss, executing ef88d94998de2abb
+@magic/kitchen-sink:lint: $ oxlint --report-unused-disable-directives
+@magic/kitchen-sink:lint: Found 0 warnings and 0 errors.
+@magic/kitchen-sink:lint: Finished in 120ms on 15 files with 432 rules using 10 threads.
+
+ Tasks:    3 successful, 3 total
+Cached:    0 cached, 3 total
+  Time:    2.262s 
+
+ WARNING  no output files found for task @magic/kitchen-sink#lint. Please check your `outputs` key in `turbo.json`
+ WARNING  no output files found for task react-native-magic-modal#lint. Please check your `outputs` key in `turbo.json`
+---- pnpm lint exited 0 ----
+
+==================== pnpm format ====================
+$ turbo run format
+• turbo 2.10.7
+
+   • Packages in scope: @magic/kitchen-sink, react-native-magic-modal
+   • Running format in 2 packages
+   • Remote caching disabled
+
+react-native-magic-modal:format: cache miss, executing 1c181a2b92087f48
+@magic/kitchen-sink:format: cache hit, replaying logs 56d5bb1cade1f8e5
+@magic/kitchen-sink:format: $ oxfmt --check .
+@magic/kitchen-sink:format: Checking formatting...
+@magic/kitchen-sink:format: 
+@magic/kitchen-sink:format: All matched files use the correct format.
+@magic/kitchen-sink:format: Finished in 321ms on 28 files using 10 threads.
+react-native-magic-modal:format: $ oxfmt --check .
+react-native-magic-modal:format: Checking formatting...
+react-native-magic-modal:format: 
+react-native-magic-modal:format: All matched files use the correct format.
+react-native-magic-modal:format: Finished in 69ms on 26 files using 10 threads.
+
+ Tasks:    2 successful, 2 total
+Cached:    1 cached, 2 total
+  Time:    345ms 
+
+ WARNING  no output files found for task react-native-magic-modal#format. Please check your `outputs` key in `turbo.json`
+---- pnpm format exited 0 ----
+
+==================== pnpm typecheck ====================
+$ turbo run typecheck
+• turbo 2.10.7
+
+   • Packages in scope: @magic/kitchen-sink, react-native-magic-modal
+   • Running typecheck in 2 packages
+   • Remote caching disabled
+
+react-native-magic-modal:typecheck: cache miss, executing 83dd15800d2dcef8
+react-native-magic-modal:build: cache hit, replaying logs 9c207902ceef63d9
+react-native-magic-modal:build: $ bunchee
+react-native-magic-modal:build: Exports  File              Size
+react-native-magic-modal:build: .        dist/index.cjs    29.1 kB
+react-native-magic-modal:build:          dist/index.js     27.6 kB
+react-native-magic-modal:build:          dist/index.d.ts   7.71 kB
+react-native-magic-modal:build:          dist/index.d.cts  7.71 kB
+@magic/kitchen-sink:typecheck: cache miss, executing 2c05df018f8e125e
+react-native-magic-modal:typecheck: $ tsc --noEmit --emitDeclarationOnly false
+@magic/kitchen-sink:typecheck: $ tsc --noEmit --emitDeclarationOnly false
+
+ Tasks:    3 successful, 3 total
+Cached:    1 cached, 3 total
+  Time:    2.11s 
+
+---- pnpm typecheck exited 0 ----
+
+==================== pnpm test ====================
+$ turbo run test
+• turbo 2.10.7
+
+   • Packages in scope: @magic/kitchen-sink, react-native-magic-modal
+   • Running test in 2 packages
+   • Remote caching disabled
+
+react-native-magic-modal:test: cache bypass, force executing a8facfa6cc154d62
+react-native-magic-modal:test: $ jest
+react-native-magic-modal:test: PASS src/components/panGesture/pan-gesture-surface.test.ts
+react-native-magic-modal:test: PASS src/components/MagicModalPortal/magic-modal-portal.test.tsx
+react-native-magic-modal:test:   ● Console
+react-native-magic-modal:test: 
+react-native-magic-modal:test:     console.log
+react-native-magic-modal:test:       [UPDATE EVENT IGNORED] No modal found with id: 8A8581785204701586. It might have already been hidden.
+react-native-magic-modal:test: 
+react-native-magic-modal:test:       at log (src/components/MagicModalPortal/magic-modal-portal.tsx:106:19)
+react-native-magic-modal:test: 
+react-native-magic-modal:test: PASS src/components/magic-modal.swipe.v3.test.tsx (9.504 s)
+react-native-magic-modal:test: PASS src/components/magic-modal.swipe.v2.test.tsx (9.548 s)
+react-native-magic-modal:test: 
+react-native-magic-modal:test: Test Suites: 4 passed, 4 total
+react-native-magic-modal:test: Tests:       36 passed, 36 total
+react-native-magic-modal:test: Snapshots:   0 total
+react-native-magic-modal:test: Time:        9.851 s, estimated 33 s
+react-native-magic-modal:test: Ran all test suites.
+
+ Tasks:    1 successful, 1 total
+Cached:    0 cached, 1 total
+  Time:    10.543s 
+
+---- pnpm test exited 0 ----
+
+==================== pnpm build ====================
+$ turbo run build
+• turbo 2.10.7
+
+   • Packages in scope: @magic/kitchen-sink, react-native-magic-modal
+   • Running build in 2 packages
+   • Remote caching disabled
+
+react-native-magic-modal:build: cache hit, replaying logs 9c207902ceef63d9
+react-native-magic-modal:build: $ bunchee
+react-native-magic-modal:build: Exports  File              Size
+react-native-magic-modal:build: .        dist/index.cjs    29.1 kB
+react-native-magic-modal:build:          dist/index.js     27.6 kB
+react-native-magic-modal:build:          dist/index.d.ts   7.71 kB
+react-native-magic-modal:build:          dist/index.d.cts  7.71 kB
+
+ Tasks:    1 successful, 1 total
+Cached:    1 cached, 1 total
+  Time:    7ms >>> FULL TURBO
+
+---- pnpm build exited 0 ----
+

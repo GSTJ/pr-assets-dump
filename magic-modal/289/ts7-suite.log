@@ -1,0 +1,172 @@
+### node v26.5.0  pnpm 11.17.0  tsc Version 7.0.2
+### HEAD 5606762 on ts7
+
+==================== pnpm lint ====================
+$ turbo run lint
+• turbo 2.10.7
+
+   • Packages in scope: @magic/kitchen-sink, react-native-magic-modal
+   • Running lint in 2 packages
+   • Remote caching disabled
+
+react-native-magic-modal:build: cache miss, executing 58fa587087356ccd
+react-native-magic-modal:lint: cache miss, executing 064457d0c286d7f6
+react-native-magic-modal:build: $ bunchee
+react-native-magic-modal:lint: $ oxlint --report-unused-disable-directives
+react-native-magic-modal:build: ⨯ Detected TypeScript 7.0.2, which no longer ships the JavaScript compiler API required for generating type declarations. Install `@typescript/typescript6` as dev dependency to keep building types
+react-native-magic-modal:build: ⨯ Error: Detected TypeScript 7.0.2, which no longer ships the JavaScript compiler API required for generating type declarations. Install `@typescript/typescript6` as dev dependency to keep building types
+react-native-magic-modal:build:     at exit (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/index.js:325:37)
+react-native-magic-modal:build:     at resolveTypescript (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/index.js:1378:17)
+react-native-magic-modal:build:     at resolveTsConfigHandler (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/index.js:1400:20)
+react-native-magic-modal:build:     at resolveTsConfig (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/index.js:1418:20)
+react-native-magic-modal:build:     at Object.bundle (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/index.js:2547:20)
+react-native-magic-modal:build:     at async run (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/bin/cli.js:1595:9)
+react-native-magic-modal:build:     at async main (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/bin/cli.js:1636:5)
+react-native-magic-modal:build: [ELIFECYCLE] Command failed with exit code 1.
+react-native-magic-modal:build: [WARN]  Local package.json exists, but node_modules missing, did you mean to install?
+react-native-magic-modal:lint: [ELIFECYCLE] Command failed.
+react-native-magic-modal:lint: [WARN]  Local package.json exists, but node_modules missing, did you mean to install?
+react-native-magic-modal#build:  ERROR  command (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/packages/modal) /Users/jarvis/Library/pnpm/store/v11/links/@/pnpm/11.17.0/d2bc8feb93e5fc49a2923739e1aeed5234af1f1cc3d673bbe54317367850fafa/bin/pnpm run build exited (1)
+
+ Tasks:    0 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    1.965s 
+Failed:    react-native-magic-modal#build
+
+ ERROR  run failed: command  exited (1)
+[ELIFECYCLE] Command failed with exit code 1.
+---- pnpm lint exited 1 ----
+
+==================== pnpm format ====================
+$ turbo run format
+• turbo 2.10.7
+
+   • Packages in scope: @magic/kitchen-sink, react-native-magic-modal
+   • Running format in 2 packages
+   • Remote caching disabled
+
+@magic/kitchen-sink:format: cache miss, executing 56d5bb1cade1f8e5
+react-native-magic-modal:format: cache miss, executing 584bbe11f56b8374
+react-native-magic-modal:format: $ oxfmt --check .
+@magic/kitchen-sink:format: $ oxfmt --check .
+react-native-magic-modal:format: Checking formatting...
+react-native-magic-modal:format: 
+@magic/kitchen-sink:format: Checking formatting...
+@magic/kitchen-sink:format: 
+react-native-magic-modal:format: All matched files use the correct format.
+react-native-magic-modal:format: Finished in 180ms on 26 files using 10 threads.
+@magic/kitchen-sink:format: All matched files use the correct format.
+@magic/kitchen-sink:format: Finished in 321ms on 28 files using 10 threads.
+
+ Tasks:    2 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    1.713s 
+
+ WARNING  no output files found for task @magic/kitchen-sink#format. Please check your `outputs` key in `turbo.json`
+ WARNING  no output files found for task react-native-magic-modal#format. Please check your `outputs` key in `turbo.json`
+---- pnpm format exited 0 ----
+
+==================== pnpm typecheck ====================
+$ turbo run typecheck
+• turbo 2.10.7
+
+   • Packages in scope: @magic/kitchen-sink, react-native-magic-modal
+   • Running typecheck in 2 packages
+   • Remote caching disabled
+
+react-native-magic-modal:typecheck: cache miss, executing 71b2b43ba9654dac
+react-native-magic-modal:build: cache miss, executing 58fa587087356ccd
+react-native-magic-modal:build: $ bunchee
+react-native-magic-modal:typecheck: $ tsc --noEmit --emitDeclarationOnly false
+react-native-magic-modal:typecheck: tsconfig.json(8,5): error TS5102: Option 'baseUrl' has been removed. Please remove it from your configuration.
+react-native-magic-modal:typecheck:   Use '"paths": {"*": ["./*"]}' instead.
+react-native-magic-modal:typecheck: [ELIFECYCLE] Command failed with exit code 1.
+react-native-magic-modal:typecheck: [WARN]  Local package.json exists, but node_modules missing, did you mean to install?
+react-native-magic-modal:build: ⨯ Detected TypeScript 7.0.2, which no longer ships the JavaScript compiler API required for generating type declarations. Install `@typescript/typescript6` as dev dependency to keep building types
+react-native-magic-modal:build: ⨯ Error: Detected TypeScript 7.0.2, which no longer ships the JavaScript compiler API required for generating type declarations. Install `@typescript/typescript6` as dev dependency to keep building types
+react-native-magic-modal:build:     at exit (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/index.js:325:37)
+react-native-magic-modal:build:     at resolveTypescript (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/index.js:1378:17)
+react-native-magic-modal:build:     at resolveTsConfigHandler (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/index.js:1400:20)
+react-native-magic-modal:build:     at resolveTsConfig (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/index.js:1418:20)
+react-native-magic-modal:build:     at Object.bundle (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/index.js:2547:20)
+react-native-magic-modal:build:     at async run (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/bin/cli.js:1595:9)
+react-native-magic-modal:build:     at async main (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/bin/cli.js:1636:5)
+react-native-magic-modal:build: [ELIFECYCLE] Command failed with exit code 1.
+react-native-magic-modal:build: [WARN]  Local package.json exists, but node_modules missing, did you mean to install?
+react-native-magic-modal#typecheck:  ERROR  command (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/packages/modal) /Users/jarvis/Library/pnpm/store/v11/links/@/pnpm/11.17.0/d2bc8feb93e5fc49a2923739e1aeed5234af1f1cc3d673bbe54317367850fafa/bin/pnpm run typecheck exited (1)
+
+ Tasks:    0 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    1.12s 
+Failed:    react-native-magic-modal#typecheck
+
+ ERROR  run failed: command  exited (1)
+[ELIFECYCLE] Command failed with exit code 1.
+---- pnpm typecheck exited 1 ----
+
+==================== pnpm test ====================
+$ turbo run test
+• turbo 2.10.7
+
+   • Packages in scope: @magic/kitchen-sink, react-native-magic-modal
+   • Running test in 2 packages
+   • Remote caching disabled
+
+react-native-magic-modal:test: cache bypass, force executing 085ab25e84bca971
+react-native-magic-modal:test: $ jest
+react-native-magic-modal:test: PASS src/components/panGesture/pan-gesture-surface.test.ts (24.296 s)
+react-native-magic-modal:test: PASS src/components/MagicModalPortal/magic-modal-portal.test.tsx (25.919 s)
+react-native-magic-modal:test:   ● Console
+react-native-magic-modal:test: 
+react-native-magic-modal:test:     console.log
+react-native-magic-modal:test:       [UPDATE EVENT IGNORED] No modal found with id: GN3491785204638171. It might have already been hidden.
+react-native-magic-modal:test: 
+react-native-magic-modal:test:       at log (src/components/MagicModalPortal/magic-modal-portal.tsx:106:19)
+react-native-magic-modal:test: 
+react-native-magic-modal:test: PASS src/components/magic-modal.swipe.v2.test.tsx (32.666 s)
+react-native-magic-modal:test: PASS src/components/magic-modal.swipe.v3.test.tsx (32.847 s)
+react-native-magic-modal:test: 
+react-native-magic-modal:test: Test Suites: 4 passed, 4 total
+react-native-magic-modal:test: Tests:       36 passed, 36 total
+react-native-magic-modal:test: Snapshots:   0 total
+react-native-magic-modal:test: Time:        34.135 s
+react-native-magic-modal:test: Ran all test suites.
+
+ Tasks:    1 successful, 1 total
+Cached:    0 cached, 1 total
+  Time:    35.757s 
+
+---- pnpm test exited 0 ----
+
+==================== pnpm build ====================
+$ turbo run build
+• turbo 2.10.7
+
+   • Packages in scope: @magic/kitchen-sink, react-native-magic-modal
+   • Running build in 2 packages
+   • Remote caching disabled
+
+react-native-magic-modal:build: cache miss, executing 58fa587087356ccd
+react-native-magic-modal:build: $ bunchee
+react-native-magic-modal:build: ⨯ Detected TypeScript 7.0.2, which no longer ships the JavaScript compiler API required for generating type declarations. Install `@typescript/typescript6` as dev dependency to keep building types
+react-native-magic-modal:build: ⨯ Error: Detected TypeScript 7.0.2, which no longer ships the JavaScript compiler API required for generating type declarations. Install `@typescript/typescript6` as dev dependency to keep building types
+react-native-magic-modal:build:     at exit (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/index.js:325:37)
+react-native-magic-modal:build:     at resolveTypescript (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/index.js:1378:17)
+react-native-magic-modal:build:     at resolveTsConfigHandler (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/index.js:1400:20)
+react-native-magic-modal:build:     at resolveTsConfig (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/index.js:1418:20)
+react-native-magic-modal:build:     at Object.bundle (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/index.js:2547:20)
+react-native-magic-modal:build:     at async run (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/bin/cli.js:1595:9)
+react-native-magic-modal:build:     at async main (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/node_modules/bunchee/dist/bin/cli.js:1636:5)
+react-native-magic-modal:build: [ELIFECYCLE] Command failed with exit code 1.
+react-native-magic-modal:build: [WARN]  Local package.json exists, but node_modules missing, did you mean to install?
+react-native-magic-modal#build:  ERROR  command (/private/tmp/claude-501/-Users-jarvis-jarvis-lab/864599a2-0399-42ad-8de4-c3d5fa569cc8/scratchpad/magic-modal-finish/packages/modal) /Users/jarvis/Library/pnpm/store/v11/links/@/pnpm/11.17.0/d2bc8feb93e5fc49a2923739e1aeed5234af1f1cc3d673bbe54317367850fafa/bin/pnpm run build exited (1)
+
+ Tasks:    0 successful, 1 total
+Cached:    0 cached, 1 total
+  Time:    753ms 
+Failed:    react-native-magic-modal#build
+
+ ERROR  run failed: command  exited (1)
+[ELIFECYCLE] Command failed with exit code 1.
+---- pnpm build exited 1 ----
+
