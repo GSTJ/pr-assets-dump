@@ -1,0 +1,17 @@
+$ diff <(1.2.0 consumer) <(2.0.0 consumer)    # every diagnostic, every rule
+
+  1.2.0 : 119 diagnostics
+  2.0.0 : 118 diagnostics
+
+  the only difference, present in 1.2.0 and absent in 2.0.0:
+  < error | Error running JS plugin.
+  <   File path: src/51-bare-style-attr.tsx
+  <   TypeError: Cannot read properties of null (reading 'expression')
+  <     at JSXAttribute (eslint-plugin-react-native/lib/rules/
+  <                      no-single-element-style-arrays.js:40:25)
+  … 8 more stack frames elided
+
+$ diff  # the react-native/* diagnostics on their own
+
+  (no output — 55 diagnostics, identical on filename, line, column,
+   byte offset, span length, code, severity and message text)

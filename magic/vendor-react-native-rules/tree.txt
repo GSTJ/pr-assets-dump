@@ -1,0 +1,5 @@
+scenario         pkgs     size eslintdirs eslint                     brace-expansion
+1-before           90      14M       16 eslint@9.39.5              brace-expansion@1.1.16
+2-before-ext        4     464K        3 absent                     absent
+3-after            72      13M       12 eslint@10.8.0              brace-expansion@5.0.8
+4-after-ext         3     756K        1 absent                     absent

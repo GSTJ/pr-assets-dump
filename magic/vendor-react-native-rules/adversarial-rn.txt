@@ -1,0 +1,17 @@
+[react-native] variant + README restricted-imports snippet
+  PASS  three restricted imports fire
+  PASS  TouchableOpacity gets the PressableArea message
+  PASS  TouchableHighlight gets the PressableArea message
+  PASS  Image gets its OWN message (per-entry messages work)
+  PASS  View is not flagged
+  PASS  the react-native jsPlugin loads and fires
+  PASS  all four vendored rules fire in one file — no-inline-styles=1 no-color-literals=1 no-unused-styles=1 no-single-element-style-arrays=1
+  PASS  no-inline-styles keeps upstream's util.inspect message, unary minus included — Inline style: { marginTop: -4, borderColor: '#eeeeee' }
+  PASS  no-color-literals reports only the colour-named property — Color literal: { borderColor: '#eeeeee' }
+  PASS  no-unused-styles names sheet and key — Unused style detected: styles.orphan
+  PASS  no-unused-styles reports the orphan, not the two styles that are used
+  PASS  no-unused-styles stays silent in a file with no component — the detector gate — none
+  PASS  vendored rules still report under the react-native namespace, not magic
+  PASS  no-single-element-style-arrays --fix unwraps the array in place
+  PASS  …and touches nothing else
+

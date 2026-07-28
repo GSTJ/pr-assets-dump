@@ -1,0 +1,32 @@
+$ cd 1-before && pnpm why brace-expansion
+brace-expansion@1.1.16
+└─┬ minimatch@3.1.5
+  ├─┬ @eslint/config-array@0.21.2
+  │ └─┬ eslint@9.39.5
+  │   ├─┬ @eslint-community/eslint-utils@4.10.1
+  │   │ └── eslint@9.39.5 [circular]
+  │   ├─┬ eslint-plugin-react-native@5.0.0
+  │   │ └─┬ magic-oxlint-config@1.2.0
+  │   │   └── m-1-before@0.0.0 (devDependencies)
+  │   └─┬ eslint-plugin-safe-jsx@1.3.0
+  │     └── magic-oxlint-config@1.2.0 [deduped]
+  ├─┬ @eslint/eslintrc@3.3.6
+  │ └── eslint@9.39.5 [deduped]
+  └── eslint@9.39.5 [deduped]
+
+Found 1 version of brace-expansion
+
+$ cd 3-after && pnpm why brace-expansion
+brace-expansion@5.0.8
+└─┬ minimatch@10.2.5
+  ├─┬ @eslint/config-array@0.23.5
+  │ └─┬ eslint@10.8.0
+  │   ├─┬ @eslint-community/eslint-utils@4.10.1
+  │   │ └── eslint@10.8.0 [circular]
+  │   └─┬ eslint-plugin-safe-jsx@1.3.0
+  │     └─┬ magic-oxlint-config@2.0.0
+  │       └── m-3-after@0.0.0 (devDependencies)
+  └── eslint@10.8.0 [deduped]
+
+Found 1 version of brace-expansion
+
