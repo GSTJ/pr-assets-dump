@@ -1,0 +1,150 @@
+{
+  "what": "DOM state sampled while driving apps/docs (statically exported, served locally) with Playwright. Every entry is a real read of .mm-result-lab after a real interaction, not a transcription.",
+  "how": "pnpm run build -> apps/docs/out served under /react-native-magic-modal -> Chromium at 1280x800",
+  "package_behaviour_being_modelled": {
+    "hide_paths": "MagicModalPortal._hide calls safeModal.hideCallback(props) synchronously, so INTENTIONAL_HIDE / BACKDROP_PRESS / BACK_BUTTON_PRESS / GLOBAL_HIDE_ALL resolve the show() promise before the exit animation runs",
+    "swipe_path": "magic-modal.tsx hands hide to withSpring's completion callback through scheduleOnRN, so SWIPE_COMPLETE resolves only after the swipe animation finishes"
+  },
+  "samples": [
+    {
+      "tag": "initial",
+      "phase": "pending",
+      "reason": "pending",
+      "visual": "open",
+      "receipt": "promise pending",
+      "pre": "const result = await handle.promise; // waiting for a close"
+    },
+    {
+      "tag": "INTENTIONAL_HIDE, 60ms after the click",
+      "phase": "resolved",
+      "reason": "INTENTIONAL_HIDE",
+      "visual": "closing",
+      "receipt": "with data",
+      "pre": "{ reason: MagicModalHideReason.INTENTIONAL_HIDE, data: { answer: 42 } }",
+      "sheet_transform": "matrix(0.997321, 0, 0, 0.997321, 0, 2.94741)",
+      "note": "resolved while the sheet is still animating out"
+    },
+    {
+      "tag": "INTENTIONAL_HIDE, after the animation",
+      "phase": "resolved",
+      "reason": "INTENTIONAL_HIDE",
+      "visual": "closed",
+      "controls": ["answer:true", "backdrop:true", "swipe:true", "Android back:true", "hideAll:true", "Try another close action:false"]
+    },
+    {
+      "tag": "BACKDROP_PRESS, 80ms after tapping the live backdrop",
+      "phase": "resolved",
+      "reason": "BACKDROP_PRESS",
+      "visual": "closing",
+      "pre": "{ reason: MagicModalHideReason.BACKDROP_PRESS }"
+    },
+    {
+      "tag": "BACK_BUTTON_PRESS, 80ms after the click",
+      "phase": "resolved",
+      "reason": "BACK_BUTTON_PRESS",
+      "visual": "closing",
+      "pre": "{ reason: MagicModalHideReason.BACK_BUTTON_PRESS }"
+    },
+    {
+      "tag": "GLOBAL_HIDE_ALL, 80ms after the click",
+      "phase": "resolved",
+      "reason": "GLOBAL_HIDE_ALL",
+      "visual": "closing",
+      "pre": "{ reason: MagicModalHideReason.GLOBAL_HIDE_ALL }"
+    },
+    {
+      "tag": "drag 40px, held",
+      "phase": "pending",
+      "visual": "open",
+      "dragging": "true",
+      "drag_var": "40px",
+      "sheet_transform": "matrix(1, 0, 0, 1, 0, 40)"
+    },
+    {
+      "tag": "drag 40px, released (below the 72px threshold)",
+      "phase": "pending",
+      "visual": "open",
+      "dragging": null,
+      "drag_var": "0px",
+      "sheet_transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "tag": "drag 100px, held",
+      "phase": "pending",
+      "visual": "open",
+      "dragging": "true",
+      "drag_var": "100px",
+      "sheet_transform": "matrix(1, 0, 0, 1, 0, 100)"
+    },
+    {
+      "tag": "SWIPE_COMPLETE, 60ms after release",
+      "phase": "pending",
+      "reason": "SWIPE_COMPLETE",
+      "visual": "closing",
+      "receipt": "promise pending",
+      "pre": "const result = await handle.promise; // waiting for the close animation",
+      "small": "The promise resolves when the close animation finishes.",
+      "note": "the only path that stays pending through the animation"
+    },
+    {
+      "tag": "SWIPE_COMPLETE, after the animation",
+      "phase": "resolved",
+      "reason": "SWIPE_COMPLETE",
+      "visual": "closed",
+      "receipt": "reason only",
+      "pre": "{ reason: MagicModalHideReason.SWIPE_COMPLETE }"
+    },
+    {
+      "tag": "keyboard-activated drag handle (Enter, click detail === 0)",
+      "phase": "pending",
+      "reason": "SWIPE_COMPLETE",
+      "visual": "closing",
+      "pre": "const result = await handle.promise; // waiting for the close animation"
+    },
+    {
+      "tag": "prefers-reduced-motion: reduce, GLOBAL_HIDE_ALL at 50ms",
+      "phase": "resolved",
+      "visual": "closed",
+      "note": "no 500ms wait, closes straight through"
+    },
+    {
+      "tag": "prefers-reduced-motion: reduce, SWIPE_COMPLETE at 50ms",
+      "phase": "resolved",
+      "visual": "closed"
+    }
+  ],
+  "real_package_upload_flow": {
+    "component": "apps/docs/components/practical-examples.tsx",
+    "update_checkpoints_observed_in_the_live_modal_stack": ["0", "25", "50", "75", "100"],
+    "at_100_percent": { "title": "Upload complete", "result": "Promise pending", "live_stack_entries": ["100"] },
+    "after_closing_the_entry": { "title": "Flow complete", "result": "Promise resolved", "live_stack_entries": [] },
+    "note": "live_stack_entries reads [data-magic-modal-upload-progress] rendered by the component MagicModalPortal mounted for the show() call, so it is the package's own stack, not demo state"
+  },
+  "real_package_stack_demo": {
+    "component": "apps/docs/components/live-package-demo.tsx",
+    "after_stack_a_notification": {
+      "open_entries": "2",
+      "stack": ["2 Payment notification 3T1VVH1 VISIBLE", "1 Rating prompt QXBK6S1 WAITING"],
+      "timeline": ["Payment notification PENDING", "Rating prompt PENDING"]
+    },
+    "after_closing_only_the_top_entry": {
+      "open_entries": "1",
+      "timeline": ["Payment notification RETURNED REVIEWED", "Rating prompt PENDING"]
+    },
+    "after_answering_the_rating": {
+      "timeline": ["Store prompt PENDING", "Payment notification RETURNED REVIEWED", "Rating prompt RETURNED 4"]
+    }
+  },
+  "responsive_geometry": {
+    "390x844": { "horizontal_overflow": false, "empty_space_below_footer_px": 0, "backdrop_width_px": 336, "sheet_width_px": 242, "receipt_right_px": 353, "viewport_px": 390, "phone_frame_aspect_ratio": "9 / 16", "phone_fits_viewport": true },
+    "768x900": { "horizontal_overflow": false, "empty_space_below_footer_px": 0, "example_panel_columns": "624.719px (single column)", "close_section_columns": "660.5px (single column)", "phone_frame_aspect_ratio": "9 / 16" },
+    "1280x800": { "horizontal_overflow": false, "empty_space_below_footer_px": 0, "example_panel_columns": "431.578px 312.531px", "close_section_columns": "342.141px 694.672px", "phone_frame_aspect_ratio": "9 / 16" },
+    "release_history_section_present": false
+  },
+  "known_gap_not_from_this_pr": {
+    "what": ".mm-footer-meta is clipped past the viewport between 701px and about 820px",
+    "measured": { "701": "right=790 vs clientWidth=701", "768": "right=804", "800": "right=810", "840": "clean" },
+    "cause": ".mm-footer's base grid needs 260+120+120+150 plus gaps and padding, and the 2-column override only starts at max-width 700px",
+    "status": "pre-existing on main, footer columns are untouched by this diff, fixed separately"
+  }
+}
