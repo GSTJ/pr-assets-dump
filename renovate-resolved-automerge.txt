@@ -1,0 +1,46 @@
+$ node resolve.mjs default.json@main
+
+BEFORE   default.json on main (v1.11.0)
+=======================================
+
+case                                      update  want   got  
+----------------------------------------------------------------
+magic-oxlint-config 1.2.0 -> 2.0.0        major   false  true   WRONG
+magic-oxlint-config 1.2.0 -> 1.3.0        minor   true   true   ok
+chalk 4.1.2 -> 5.0.0 (plain dev dep)      major   false  true   WRONG
+chalk 4.1.2 -> 4.1.3 (plain dev dep)      patch   true   true   ok
+posthog-js 1.x -> 2.0.0                   major   false  true   WRONG
+actions/checkout v4 -> v7                 major   false  true   WRONG
+actions/checkout v4 -> v4.3.0             minor   true   true   ok
+GSTJ/magic workflow v1.10.1 -> v1.11.0    minor   true   true   ok
+typescript 7 -> 8 (already denied)        major   false  false  ok
+oxlint 1.75.0 -> 1.76.0 (already denied)  minor   false  false  ok
+
+majors that automerge with no human: 4 of 5
+  - magic-oxlint-config 1.2.0 -> 2.0.0
+  - chalk 4.1.2 -> 5.0.0 (plain dev dep)
+  - posthog-js 1.x -> 2.0.0
+  - actions/checkout v4 -> v7
+wrong against intent: 4 of 10
+
+
+$ node resolve.mjs default.json@fix/renovate-major-automerge
+
+AFTER    fix/renovate-major-automerge
+=====================================
+
+case                                      update  want   got  
+----------------------------------------------------------------
+magic-oxlint-config 1.2.0 -> 2.0.0        major   false  false  ok
+magic-oxlint-config 1.2.0 -> 1.3.0        minor   true   true   ok
+chalk 4.1.2 -> 5.0.0 (plain dev dep)      major   false  false  ok
+chalk 4.1.2 -> 4.1.3 (plain dev dep)      patch   true   true   ok
+posthog-js 1.x -> 2.0.0                   major   false  false  ok
+actions/checkout v4 -> v7                 major   false  false  ok
+actions/checkout v4 -> v4.3.0             minor   true   true   ok
+GSTJ/magic workflow v1.10.1 -> v1.11.0    minor   true   true   ok
+typescript 7 -> 8 (already denied)        major   false  false  ok
+oxlint 1.75.0 -> 1.76.0 (already denied)  minor   false  false  ok
+
+majors that automerge with no human: 0 of 5
+wrong against intent: 0 of 10
