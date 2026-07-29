@@ -1,4 +1,4 @@
-$ node resolve.mjs default.json@main
+$ node resolve.mjs default.json@v1.11.0
 
 BEFORE   default.json on main (v1.11.0)
 =======================================
@@ -23,7 +23,6 @@ majors that automerge with no human: 4 of 5
   - actions/checkout v4 -> v7
 wrong against intent: 4 of 10
 
-
 $ node resolve.mjs default.json@fix/renovate-major-automerge
 
 AFTER    fix/renovate-major-automerge
@@ -44,3 +43,23 @@ oxlint 1.75.0 -> 1.76.0 (already denied)  minor   false  false  ok
 
 majors that automerge with no human: 0 of 5
 wrong against intent: 0 of 10
+
+$ node sweep.mjs   # nothing but majors may move
+
+Every update type, dev-scope, before vs after
+=============================================
+
+updateType            before   after
+----------------------------------------------
+lockFileMaintenance   true     true   
+rollback              true     true   
+replacement           true     true   
+pinDigest             true     true   
+bump                  true     true   
+digest                true     true   
+pin                   true     true   
+minor                 true     true   
+patch                 true     true   
+major                 true     false  <= changed
+
+update types whose behaviour changed: 1 of 10
