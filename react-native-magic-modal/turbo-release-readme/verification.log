@@ -1,0 +1,95 @@
+verification for the turbo release/readme fix, 2f95cd4 + working tree
+node v26.5.0  pnpm 11.17.0
+
+== release task graph, main ==
+react-native-magic-modal#release
+  Command                        = release-it --ci
+  Dependencies                   = 
+
+== release task graph, this branch ==
+react-native-magic-modal#copy:readme
+  Command                        = shx cp ../../README.md ./README.md
+  Dependencies                   = 
+react-native-magic-modal#release
+  Command                        = release-it --ci
+  Dependencies                   = react-native-magic-modal#copy:readme
+
+== npm pack with no README, which is what main publishes ==
+npm notice Tarball Contents
+npm notice 191B dist/dev-runtime.cjs
+npm notice 191B dist/dev-runtime.js
+npm notice 80B dist/index.cjs
+npm notice 9.1kB dist/index.d.cts
+npm notice 9.1kB dist/index.d.ts
+npm notice 64B dist/index.js
+npm notice 30.3kB dist/index.runtime.cjs
+npm notice 28.7kB dist/index.runtime.js
+npm notice 3.0kB package.json
+npm notice total files: 9
+
+== turbo run copy:readme ==
+
+ Tasks:    1 successful, 1 total
+Cached:    0 cached, 1 total
+  Time:    443ms 
+
+
+== npm pack after copy:readme ==
+npm notice Tarball Contents
+npm notice 9.2kB README.md
+npm notice 191B dist/dev-runtime.cjs
+npm notice 191B dist/dev-runtime.js
+npm notice 80B dist/index.cjs
+npm notice 9.1kB dist/index.d.cts
+npm notice 9.1kB dist/index.d.ts
+npm notice 64B dist/index.js
+npm notice 30.3kB dist/index.runtime.cjs
+npm notice 28.7kB dist/index.runtime.js
+npm notice 3.0kB package.json
+npm notice total files: 10
+
+== turbo output warnings, main vs this branch ==
+main:        6
+this branch: 0
+
+== format:fix twice, this branch ==
+ Tasks:    3 successful, 3 total
+Cached:    0 cached, 3 total
+ Tasks:    3 successful, 3 total
+Cached:    0 cached, 3 total
+
+== full CI equivalent, uncached ==
+ Tasks:    2 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    15.872s 
+
+ Tasks:    4 successful, 4 total
+Cached:    0 cached, 4 total
+  Time:    6.14s 
+
+ Tasks:    3 successful, 3 total
+Cached:    0 cached, 3 total
+  Time:    924ms 
+
+react-native-magic-modal:test: Snapshots:   0 total
+react-native-magic-modal:test: Time:        10.277 s
+react-native-magic-modal:test: Ran all test suites.
+
+ Tasks:    2 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    11.088s 
+
+ Tasks:    1 successful, 1 total
+Cached:    0 cached, 1 total
+  Time:    3.466s 
+
+
+ Tasks:    1 successful, 1 total
+Cached:    0 cached, 1 total
+  Time:    2.747s 
+
+
+== oxlint direct, per workspace ==
+apps/docs exit=0
+packages/modal exit=0
+examples/kitchen-sink exit=0
