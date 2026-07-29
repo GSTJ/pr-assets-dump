@@ -1,0 +1,43 @@
+verification for the footer tablet clipping fix
+branch gstj/footer-tablet-clipping off 2f95cd4
+node v26.5.0  pnpm 11.17.0
+
+== build ==
+ Tasks:    2 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    16.04s 
+
+== typecheck ==
+ Tasks:    4 successful, 4 total
+Cached:    0 cached, 4 total
+  Time:    5.14s 
+
+== format ==
+
+ WARNING  no output files found for task @magic-modal/docs#format. Please check your `outputs` key in `turbo.json`
+ WARNING  no output files found for task @magic/kitchen-sink#format. Please check your `outputs` key in `turbo.json`
+ WARNING  no output files found for task react-native-magic-modal#format. Please check your `outputs` key in `turbo.json`
+== test ==
+react-native-magic-modal:test: Snapshots:   0 total
+react-native-magic-modal:test: Time:        10.268 s
+react-native-magic-modal:test: Ran all test suites.
+
+ Tasks:    2 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    11.263s 
+
+== doctor ==
+ Tasks:    1 successful, 1 total
+Cached:    0 cached, 1 total
+  Time:    4.612s 
+
+== changelog:check ==
+
+ Tasks:    1 successful, 1 total
+Cached:    0 cached, 1 total
+  Time:    2.733s 
+
+== oxlint direct, per workspace ==
+apps/docs exit=0
+packages/modal exit=0
+examples/kitchen-sink exit=0
