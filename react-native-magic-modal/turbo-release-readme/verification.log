@@ -1,10 +1,39 @@
-verification for the turbo release/readme fix, 2f95cd4 + working tree
+verification for the turbo release/readme fix
+branch gstj/turbo-release-readme at f905ba0, off 2f95cd4
 node v26.5.0  pnpm 11.17.0
 
 == release task graph, main ==
 react-native-magic-modal#release
   Command                        = release-it --ci
   Dependencies                   = 
+
+== format:fix twice, main config ==
+react-native-magic-modal:format:fix: cache hit, replaying logs 0fefbcbfacd7edf0
+@magic-modal/docs:format:fix: cache hit, replaying logs 5b4a162ba9aed0b3
+react-native-magic-modal:format:fix: $ oxfmt .
+react-native-magic-modal:format:fix: Finished in 88ms on 31 files using 10 threads.
+@magic-modal/docs:format:fix: $ oxfmt .
+@magic-modal/docs:format:fix: Finished in 617ms on 67 files using 10 threads.
+@magic/kitchen-sink:format:fix: cache hit, replaying logs 1df73d134a5ec585
+@magic/kitchen-sink:format:fix: $ oxfmt .
+@magic/kitchen-sink:format:fix: Finished in 447ms on 28 files using 10 threads.
+ Tasks:    3 successful, 3 total
+Cached:    3 cached, 3 total
+  Time:    13ms >>> FULL TURBO
+@magic/kitchen-sink:format:fix: cache hit, replaying logs 1df73d134a5ec585
+@magic/kitchen-sink:format:fix: $ oxfmt .
+@magic/kitchen-sink:format:fix: Finished in 447ms on 28 files using 10 threads.
+react-native-magic-modal:format:fix: cache hit, replaying logs 0fefbcbfacd7edf0
+react-native-magic-modal:format:fix: $ oxfmt .
+react-native-magic-modal:format:fix: Finished in 88ms on 31 files using 10 threads.
+@magic-modal/docs:format:fix: cache hit, replaying logs 5b4a162ba9aed0b3
+@magic-modal/docs:format:fix: $ oxfmt .
+@magic-modal/docs:format:fix: Finished in 617ms on 67 files using 10 threads.
+ Tasks:    3 successful, 3 total
+Cached:    3 cached, 3 total
+  Time:    38ms >>> FULL TURBO
+
+== turbo output warnings, main: 6
 
 == release task graph, this branch ==
 react-native-magic-modal#copy:readme
@@ -14,7 +43,35 @@ react-native-magic-modal#release
   Command                        = release-it --ci
   Dependencies                   = react-native-magic-modal#copy:readme
 
-== npm pack with no README, which is what main publishes ==
+== format:fix twice, this branch ==
+@magic/kitchen-sink:format:fix: cache bypass, force executing e3fdf45f3cd55313
+@magic-modal/docs:format:fix: cache bypass, force executing 55c56a6703f8e185
+react-native-magic-modal:format:fix: cache bypass, force executing a4b25cc4ea190172
+@magic-modal/docs:format:fix: $ oxfmt .
+react-native-magic-modal:format:fix: $ oxfmt .
+@magic/kitchen-sink:format:fix: $ oxfmt .
+react-native-magic-modal:format:fix: Finished in 185ms on 31 files using 10 threads.
+@magic/kitchen-sink:format:fix: Finished in 627ms on 28 files using 10 threads.
+@magic-modal/docs:format:fix: Finished in 717ms on 67 files using 10 threads.
+ Tasks:    3 successful, 3 total
+Cached:    0 cached, 3 total
+  Time:    1.39s 
+react-native-magic-modal:format:fix: cache bypass, force executing a4b25cc4ea190172
+@magic-modal/docs:format:fix: cache bypass, force executing 55c56a6703f8e185
+@magic/kitchen-sink:format:fix: cache bypass, force executing e3fdf45f3cd55313
+@magic-modal/docs:format:fix: $ oxfmt .
+@magic/kitchen-sink:format:fix: $ oxfmt .
+react-native-magic-modal:format:fix: $ oxfmt .
+react-native-magic-modal:format:fix: Finished in 154ms on 31 files using 10 threads.
+@magic/kitchen-sink:format:fix: Finished in 467ms on 28 files using 10 threads.
+@magic-modal/docs:format:fix: Finished in 699ms on 67 files using 10 threads.
+ Tasks:    3 successful, 3 total
+Cached:    0 cached, 3 total
+  Time:    1.505s 
+
+== turbo output warnings, this branch: 0
+
+== npm pack with no README, what main publishes ==
 npm notice Tarball Contents
 npm notice 191B dist/dev-runtime.cjs
 npm notice 191B dist/dev-runtime.js
@@ -28,11 +85,11 @@ npm notice 3.0kB package.json
 npm notice total files: 9
 
 == turbo run copy:readme ==
-
+react-native-magic-modal:copy:readme: cache bypass, force executing a61effa2c845e0c4
+react-native-magic-modal:copy:readme: $ shx cp ../../README.md ./README.md
  Tasks:    1 successful, 1 total
 Cached:    0 cached, 1 total
-  Time:    443ms 
-
+  Time:    539ms 
 
 == npm pack after copy:readme ==
 npm notice Tarball Contents
@@ -48,46 +105,30 @@ npm notice 28.7kB dist/index.runtime.js
 npm notice 3.0kB package.json
 npm notice total files: 10
 
-== turbo output warnings, main vs this branch ==
-main:        6
-this branch: 0
-
-== format:fix twice, this branch ==
- Tasks:    3 successful, 3 total
-Cached:    0 cached, 3 total
- Tasks:    3 successful, 3 total
-Cached:    0 cached, 3 total
-
-== full CI equivalent, uncached ==
+== CI equivalent, uncached ==
  Tasks:    2 successful, 2 total
 Cached:    0 cached, 2 total
-  Time:    15.872s 
+  Time:    18.872s 
 
  Tasks:    4 successful, 4 total
 Cached:    0 cached, 4 total
-  Time:    6.14s 
+  Time:    6.408s 
 
  Tasks:    3 successful, 3 total
 Cached:    0 cached, 3 total
-  Time:    924ms 
+  Time:    1.845s 
 
-react-native-magic-modal:test: Snapshots:   0 total
-react-native-magic-modal:test: Time:        10.277 s
-react-native-magic-modal:test: Ran all test suites.
-
+@magic-modal/docs:test: ℹ pass 9
+@magic-modal/docs:test: ℹ fail 0
+react-native-magic-modal:test: Test Suites: 5 passed, 5 total
+react-native-magic-modal:test: Tests:       39 passed, 39 total
  Tasks:    2 successful, 2 total
-Cached:    0 cached, 2 total
-  Time:    11.088s 
-
+@magic/kitchen-sink:doctor: Running 19 checks on your project...
+@magic/kitchen-sink:doctor: 19/19 checks passed. No issues detected!
  Tasks:    1 successful, 1 total
-Cached:    0 cached, 1 total
-  Time:    3.466s 
-
-
+react-native-magic-modal:changelog:check: changelog preset check passed (12 synthetic commits, 3 breaking; bumps: feat!=major, feat=minor, fix=patch, changelog-only=null, hidden-only=null)
+react-native-magic-modal:changelog:check: negative control passed (hiding the visible types breaks 6 assertions: feat renders, fix renders, build renders, refactor renders, chore renders, docs renders)
  Tasks:    1 successful, 1 total
-Cached:    0 cached, 1 total
-  Time:    2.747s 
-
 
 == oxlint direct, per workspace ==
 apps/docs exit=0
