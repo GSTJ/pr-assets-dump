@@ -1,0 +1,37 @@
+react-native-code-push-plugin @ 3306d581077c9fe338327c877c7d9c306647da26
+
+PACKED TARBALL -> EXPO SDK 57 PREBUILD
+
+$ pnpm exec expo prebuild --platform android --no-install --clean
+✔ Created native directory
+✔ Finished prebuild
+strings.xml: CodePushServerURL = https://updates.example.com
+strings.xml: CodePushDeploymentKey = android-smoke-key
+build.gradle: codepush.gradle applied
+MainApplication.kt: jsBundleFilePath = CodePush.getJSBundleFile()
+
+$ pnpm exec expo prebuild --platform ios --no-install --clean
+✔ Created native directory
+✔ Finished prebuild
+Info.plist: CodePushServerURL = https://updates.example.com
+Info.plist: CodePushDeploymentKey = ios-smoke-key
+AppDelegate.swift: return CodePush.bundleURL()
+Bridging header: #import <CodePush/CodePush.h>
+
+MISSING SERVER URL
+
+$ pnpm exec expo prebuild --platform android --no-install --clean
+exit 1: You need to provide the CodePushServerURL Android property.
+App Center is retired, so the default server no longer works.
+
+$ pnpm exec expo prebuild --platform ios --no-install --clean
+exit 1: You need to provide the CodePushServerURL iOS property.
+App Center is retired, so the default server no longer works.
+
+LOCAL GATE
+
+8 test suites passed, 72 tests passed
+lint, format, typecheck, build, npm pack: passed
+changelog policy and breaking-change negative control: passed
+pnpm audit (production and full tree): 0 vulnerabilities
+release-it recommended version: 2.0.0
