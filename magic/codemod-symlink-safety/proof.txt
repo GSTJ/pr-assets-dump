@@ -1,5 +1,6 @@
 magic-kebab external-write regression
 local macOS run, 2026-08-17
+commit 38514da986d6fe564667661ea8282954a7a2de1f
 
 $ magic-kebab --write --detect builtin
 magic-kebab: Refusing to inspect 1 unsafe tracked source path:
@@ -15,7 +16,7 @@ external sentinel
 $ pnpm run check
   PASS, exit status 0
   magic-codemods  60 tests passed
-  repository      32 script tests passed
+  repository      33 script tests passed
   adversarial     95/95 expectations hold
 
 O_NOFOLLOW probe
