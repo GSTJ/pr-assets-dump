@@ -1,0 +1,23 @@
+magic-kebab external-write regression
+local macOS run, 2026-08-17
+
+$ magic-kebab --write --detect builtin
+magic-kebab: Refusing to inspect 1 unsafe tracked source path:
+  src/consumer.ts (symbolic link at src/consumer.ts)
+
+external sentinel
+  before sha256  9fe1a6901a31ec5e98afce8e6e86ce4bb551eec93314bad6ee0b0c36ab7d4d41
+  after sha256   9fe1a6901a31ec5e98afce8e6e86ce4bb551eec93314bad6ee0b0c36ab7d4d41
+  content        import { button } from "./Button";
+  worktree       clean
+  exit status    1 (safe refusal)
+
+$ pnpm run check
+  PASS, exit status 0
+  magic-codemods  60 tests passed
+  repository      32 script tests passed
+  adversarial     95/95 expectations hold
+
+O_NOFOLLOW probe
+  platform darwin, constant 256
+  regular file opened, symlink refused with ELOOP
