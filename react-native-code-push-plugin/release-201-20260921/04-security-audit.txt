@@ -1,0 +1,4 @@
+$ node tools/dependency-security-check.mjs && pnpm audit --audit-level high
+Dependency security checks passed for @xmldom/xmldom, js-yaml, nanoid and image-size.
+2 vulnerabilities found
+Severity: 2 high (2 ignored)

@@ -1,0 +1,32 @@
+Scratch app: expo-template-blank (Expo SDK 57.0.24), react-native-code-push-plugin 2.0.0 tarball installed from npm pack, npx expo prebuild --platform all
+
+=== android/app/build.gradle (apply from: codepush.gradle, fix for #26) ===
+184:apply from: new File(new File(["node", "--print", "require.resolve('react-native-code-push/package.json')"].execute(null, rootDir).text.trim()).parentFile, "android/codepush.gradle")
+
+=== android/settings.gradle ===
+41:include ':react-native-code-push'
+42:project(':react-native-code-push').projectDir = new File(new File(["node", "--print", "require.resolve('react-native-code-push/package.json')"].execute(null, rootDir).text.trim()).parentFile, "android/app")
+
+=== android strings.xml ===
+/private/tmp/claude-501/-Users-gabrieltaveira-orca-workspaces-pegada-auto-oss-maintain-run-2-20260921T1200/e8cbb11d-acbc-498d-b3bc-da7a26267bc3/scratchpad/scratch-app/android/app/src/main/res/values/strings.xml:3:  <string name="CodePushServerURL" moduleConfig="true">https://codepush.example.com/</string>
+/private/tmp/claude-501/-Users-gabrieltaveira-orca-workspaces-pegada-auto-oss-maintain-run-2-20260921T1200/e8cbb11d-acbc-498d-b3bc-da7a26267bc3/scratchpad/scratch-app/android/app/src/main/res/values/strings.xml:4:  <string name="CodePushDeploymentKey" moduleConfig="true">ANDROID_DEPLOYMENT_KEY</string>
+
+=== android MainApplication.kt ===
+/private/tmp/claude-501/-Users-gabrieltaveira-orca-workspaces-pegada-auto-oss-maintain-run-2-20260921T1200/e8cbb11d-acbc-498d-b3bc-da7a26267bc3/scratchpad/scratch-app/android/app/src/main/java/dev/gabrieltaveira/scratchapp/MainApplication.kt:16:import com.microsoft.codepush.react.CodePush
+/private/tmp/claude-501/-Users-gabrieltaveira-orca-workspaces-pegada-auto-oss-maintain-run-2-20260921T1200/e8cbb11d-acbc-498d-b3bc-da7a26267bc3/scratchpad/scratch-app/android/app/src/main/java/dev/gabrieltaveira/scratchapp/MainApplication.kt:28:      jsBundleFilePath = CodePush.getJSBundleFile()
+
+=== ios Info.plist ===
+36:    <key>CodePushDeploymentKey</key>
+37-    <string>IOS_DEPLOYMENT_KEY</string>
+38:    <key>CodePushServerURL</key>
+39-    <string>https://codepush.example.com/</string>
+
+=== ios AppDelegate.swift bundleURL() (fix for #30, SDK 53+ Swift AppDelegate) ===
+66:    return CodePush.bundleURL()
+
+=== ios bridging header ===
+//
+// Use this file to import your target's public headers that you would like to expose to Swift.
+//
+
+#import <CodePush/CodePush.h>

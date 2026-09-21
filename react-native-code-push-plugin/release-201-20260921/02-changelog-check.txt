@@ -1,0 +1,49 @@
+changelog preset check passed (13 synthetic commits, 3 breaking; bumps: feat!=major, feat=minor, fix=patch, build(deps)=patch, changelog-only=null, hidden-only=null)
+negative control passed (hiding the visible types breaks 7 assertions: feat renders, fix renders, build renders, build:deps renders, refactor renders, chore renders, docs renders)
+
+--- rendered through the real preset ---
+
+
+## [1.0.0](compare/37fb7c3907239a9591346000dce45c36f61efa5d...v1.0.0) (2026-09-21)
+
+### ⚠ BREAKING CHANGES
+
+* node 22 is no longer supported
+* the legacy loader is gone
+* the slow path is gone
+
+### Features
+
+* add a thing 13741bb
+
+### Bug Fixes
+
+* correct a thing 21b0df6
+
+### Performance
+
+* drop the slow path 4ee37f0
+
+### Build System
+
+* **deps:** patch a vulnerable package bbbe6d8
+* shrink the tarball 67245c1
+
+### Code Refactoring
+
+* rewrite the internals b4f4c88
+
+### Chores
+
+* **deps:** bump something 9cf9185
+* initial 37fb7c3
+* retire the legacy loader bb87f92
+
+### Documentation
+
+* update the readme 87b1e64
+
+### Continuous Integration
+
+* require node 24 f2ee8e6
+

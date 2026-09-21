@@ -1,0 +1,48 @@
+$ release-it --ci --dry-run --npm.skipChecks --no-git.requireBranch
+$ git diff --quiet HEAD
+$ git rev-parse --abbrev-ref HEAD
+$ git config --get branch.fix/release-build-deps-patch.remote
+$ git remote get-url origin
+! git fetch
+$ git rev-parse --abbrev-ref HEAD  [cached]
+$ git describe --tags --match=v* --abbrev=0
+$ git rev-parse --abbrev-ref HEAD  [cached]
+$ git config --get branch.fix/release-build-deps-patch.remote
+$ git remote get-url origin  [cached]
+! git fetch
+$ git rev-parse --abbrev-ref HEAD  [cached]
+$ git describe --tags --match=v* --abbrev=0  [cached]
+WARNING Environment variable "GITHUB_TOKEN" is required for automated GitHub Releases.
+WARNING Falling back to web-based GitHub Release.
+🚀 Let's release react-native-code-push-plugin (2.0.0...2.0.1)
+Changelog:
+## [2.0.1](https://github.com/GSTJ/react-native-code-push-plugin/compare/v2.0.0...v2.0.1) (2026-09-21)
+### Bug Fixes
+* **release:** bump a patch for build(deps) commits ([1db6229](https://github.com/GSTJ/react-native-code-push-plugin/commit/1db6229a857e3702d2d2c7d082033896139f4c54)), references [#37](https://github.com/GSTJ/react-native-code-push-plugin/issues/37) [#38](https://github.com/GSTJ/react-native-code-push-plugin/issues/38) [#43](https://github.com/GSTJ/react-native-code-push-plugin/issues/43) [#44](https://github.com/GSTJ/react-native-code-push-plugin/issues/44) [#45](https://github.com/GSTJ/react-native-code-push-plugin/issues/45)
+### Build System
+* **deps:** patch development dependency DoS ([#43](https://github.com/GSTJ/react-native-code-push-plugin/issues/43)) ([1fe1252](https://github.com/GSTJ/react-native-code-push-plugin/commit/1fe1252296cbbe462a7fec5fea8c8a83dc57fb44))
+* **deps:** patch js-yaml CPU exhaustion ([#45](https://github.com/GSTJ/react-native-code-push-plugin/issues/45)) ([833108e](https://github.com/GSTJ/react-native-code-push-plugin/commit/833108ea6f90339022c396e81b332fe27ede79fa))
+* **deps:** patch xmldom fragment injection ([#44](https://github.com/GSTJ/react-native-code-push-plugin/issues/44)) ([364129b](https://github.com/GSTJ/react-native-code-push-plugin/commit/364129b7afc820f7fa9f5c4ad679025a10caae42))
+! npm version 2.0.1 --no-git-tag-version --workspaces=false
+$ Writing changelog to CHANGELOG.md
+$ git status --short --untracked-files=no
+Empty changeset
+! git add . --update
+$ npm publish . --tag latest --dry-run --registry https://registry.npmjs.org/
+! git commit --message chore(release): v2.0.1
+! git tag --annotate --message v2.0.1
+
+## [2.0.1](https://github.com/GSTJ/react-native-code-push-plugin/compare/v2.0.0...v2.0.1) (2026-09-21)
+
+### Bug Fixes
+
+* **release:** bump a patch for build(deps) commits ([1db6229](https://github.com/GSTJ/react-native-code-push-plugin/commit/1db6229a857e3702d2d2c7d082033896139f4c54)), references [#37](https://github.com/GSTJ/react-native-code-push-plugin/issues/37) [#38](https://github.com/GSTJ/react-native-code-push-plugin/issues/38) [#43](https://github.com/GSTJ/react-native-code-push-plugin/issues/43) [#44](https://github.com/GSTJ/react-native-code-push-plugin/issues/44) [#45](https://github.com/GSTJ/react-native-code-push-plugin/issues/45)
+
+### Build System
+
+* **deps:** patch development dependency DoS ([#43](https://github.com/GSTJ/react-native-code-push-plugin/issues/43)) ([1fe1252](https://github.com/GSTJ/react-native-code-push-plugin/commit/1fe1252296cbbe462a7fec5fea8c8a83dc57fb44))
+* **deps:** patch js-yaml CPU exhaustion ([#45](https://github.com/GSTJ/react-native-code-push-plugin/issues/45)) ([833108e](https://github.com/GSTJ/react-native-code-push-plugin/commit/833108ea6f90339022c396e81b332fe27ede79fa))
+* **deps:** patch xmldom fragment injection ([#44](https://github.com/GSTJ/react-native-code-push-plugin/issues/44)) ([364129b](https://github.com/GSTJ/react-native-code-push-plugin/commit/364129b7afc820f7fa9f5c4ad679025a10caae42)) --cleanup=verbatim v2.0.1
+! git push origin refs/tags/v2.0.1
+🔗 https://github.com/GSTJ/react-native-code-push-plugin/releases/new?tag=v2.0.1&title=v2.0.1&body=%23%23+%5B2.0.1%5D%28https%3A%2F%2Fgithub.com%2FGSTJ%2Freact-native-code-push-plugin%2Fcompare%2Fv2.0.0...v2.0.1%29+%282026-09-21%29%0A%0A%23%23%23+Bug+Fixes%0A%0A*+**release%3A**+bump+a+patch+for+build%28deps%29+commits+%28%5B1db6229%5D%28https%3A%2F%2Fgithub.com%2FGSTJ%2Freact-native-code-push-plugin%2Fcommit%2F1db6229a857e3702d2d2c7d082033896139f4c54%29%29%2C+references+%5B%2337%5D%28https%3A%2F%2Fgithub.com%2FGSTJ%2Freact-native-code-push-plugin%2Fissues%2F37%29+%5B%2338%5D%28https%3A%2F%2Fgithub.com%2FGSTJ%2Freact-native-code-push-plugin%2Fissues%2F38%29+%5B%2343%5D%28https%3A%2F%2Fgithub.com%2FGSTJ%2Freact-native-code-push-plugin%2Fissues%2F43%29+%5B%2344%5D%28https%3A%2F%2Fgithub.com%2FGSTJ%2Freact-native-code-push-plugin%2Fissues%2F44%29+%5B%2345%5D%28https%3A%2F%2Fgithub.com%2FGSTJ%2Freact-native-code-push-plugin%2Fissues%2F45%29%0A%0A%23%23%23+Build+System%0A%0A*+**deps%3A**+patch+development+dependency+DoS+%28%5B%2343%5D%28https%3A%2F%2Fgithub.com%2FGSTJ%2Freact-native-code-push-plugin%2Fissues%2F43%29%29+%28%5B1fe1252%5D%28https%3A%2F%2Fgithub.com%2FGSTJ%2Freact-native-code-push-plugin%2Fcommit%2F1fe1252296cbbe462a7fec5fea8c8a83dc57fb44%29%29%0A*+**deps%3A**+patch+js-yaml+CPU+exhaustion+%28%5B%2345%5D%28https%3A%2F%2Fgithub.com%2FGSTJ%2Freact-native-code-push-plugin%2Fissues%2F45%29%29+%28%5B833108e%5D%28https%3A%2F%2Fgithub.com%2FGSTJ%2Freact-native-code-push-plugin%2Fcommit%2F833108ea6f90339022c396e81b332fe27ede79fa%29%29%0A*+**deps%3A**+patch+xmldom+fragment+injection+%28%5B%2344%5D%28https%3A%2F%2Fgithub.com%2FGSTJ%2Freact-native-code-push-plugin%2Fissues%2F44%29%29+%28%5B364129b%5D%28https%3A%2F%2Fgithub.com%2FGSTJ%2Freact-native-code-push-plugin%2Fcommit%2F364129b7afc820f7fa9f5c4ad679025a10caae42%29%29&prerelease=false
+🏁 Done (in 2s.)
