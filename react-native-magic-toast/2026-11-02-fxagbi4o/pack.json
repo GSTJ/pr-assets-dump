@@ -1,0 +1,321 @@
+{
+  "react-native-magic-toast": {
+    "id": "react-native-magic-toast@1.2.4",
+    "name": "react-native-magic-toast",
+    "version": "1.2.4",
+    "size": 12460,
+    "unpackedSize": 51317,
+    "shasum": "34d62e6850359f897966053cc778b7a1687622f6",
+    "integrity": "sha512-MfT1GdaqzLFQPGjqwMMA4QTLDzuQCa4OV9dmAGXc9sRyTSvKWNw+O4YL0wOlgYlp24lcj3eERBBD8GtVG97+/w==",
+    "filename": "react-native-magic-toast-1.2.4.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1072,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 8002,
+        "mode": 420
+      },
+      {
+        "path": "lib/commonjs/@types/icon-props.js",
+        "size": 13,
+        "mode": 420
+      },
+      {
+        "path": "lib/commonjs/@types/magic-toast-props.js",
+        "size": 13,
+        "mode": 420
+      },
+      {
+        "path": "lib/commonjs/@types/react-native-safe-area-context.d.js",
+        "size": 13,
+        "mode": 420
+      },
+      {
+        "path": "lib/commonjs/assets/alert-icon.js",
+        "size": 1454,
+        "mode": 420
+      },
+      {
+        "path": "lib/commonjs/assets/success-icon.js",
+        "size": 1600,
+        "mode": 420
+      },
+      {
+        "path": "lib/commonjs/colors.js",
+        "size": 605,
+        "mode": 420
+      },
+      {
+        "path": "lib/commonjs/components/alert-toast.js",
+        "size": 910,
+        "mode": 420
+      },
+      {
+        "path": "lib/commonjs/components/success-toast.js",
+        "size": 1132,
+        "mode": 420
+      },
+      {
+        "path": "lib/commonjs/components/Toast/index.js",
+        "size": 2487,
+        "mode": 420
+      },
+      {
+        "path": "lib/commonjs/components/Toast/styles.js",
+        "size": 486,
+        "mode": 420
+      },
+      {
+        "path": "lib/commonjs/index.js",
+        "size": 1306,
+        "mode": 420
+      },
+      {
+        "path": "lib/commonjs/package.json",
+        "size": 20,
+        "mode": 420
+      },
+      {
+        "path": "lib/commonjs/utils/alert.js",
+        "size": 938,
+        "mode": 420
+      },
+      {
+        "path": "lib/commonjs/utils/show.js",
+        "size": 1541,
+        "mode": 420
+      },
+      {
+        "path": "lib/commonjs/utils/success.js",
+        "size": 956,
+        "mode": 420
+      },
+      {
+        "path": "lib/module/@types/icon-props.js",
+        "size": 13,
+        "mode": 420
+      },
+      {
+        "path": "lib/module/@types/magic-toast-props.js",
+        "size": 13,
+        "mode": 420
+      },
+      {
+        "path": "lib/module/@types/react-native-safe-area-context.d.js",
+        "size": 13,
+        "mode": 420
+      },
+      {
+        "path": "lib/module/assets/alert-icon.js",
+        "size": 1137,
+        "mode": 420
+      },
+      {
+        "path": "lib/module/assets/success-icon.js",
+        "size": 1291,
+        "mode": 420
+      },
+      {
+        "path": "lib/module/colors.js",
+        "size": 505,
+        "mode": 420
+      },
+      {
+        "path": "lib/module/components/alert-toast.js",
+        "size": 588,
+        "mode": 420
+      },
+      {
+        "path": "lib/module/components/success-toast.js",
+        "size": 793,
+        "mode": 420
+      },
+      {
+        "path": "lib/module/components/Toast/index.js",
+        "size": 1577,
+        "mode": 420
+      },
+      {
+        "path": "lib/module/components/Toast/styles.js",
+        "size": 356,
+        "mode": 420
+      },
+      {
+        "path": "lib/module/index.js",
+        "size": 920,
+        "mode": 420
+      },
+      {
+        "path": "lib/module/package.json",
+        "size": 18,
+        "mode": 420
+      },
+      {
+        "path": "lib/module/utils/alert.js",
+        "size": 682,
+        "mode": 420
+      },
+      {
+        "path": "lib/module/utils/show.js",
+        "size": 1428,
+        "mode": 420
+      },
+      {
+        "path": "lib/module/utils/success.js",
+        "size": 692,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/commonjs/package.json",
+        "size": 20,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/commonjs/src/@types/icon-props.d.ts",
+        "size": 260,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/commonjs/src/@types/magic-toast-props.d.ts",
+        "size": 126,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/commonjs/src/assets/alert-icon.d.ts",
+        "size": 421,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/commonjs/src/assets/success-icon.d.ts",
+        "size": 487,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/commonjs/src/colors.d.ts",
+        "size": 574,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/commonjs/src/components/alert-toast.d.ts",
+        "size": 196,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/commonjs/src/components/success-toast.d.ts",
+        "size": 200,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/commonjs/src/components/Toast/index.d.ts",
+        "size": 625,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/commonjs/src/components/Toast/styles.d.ts",
+        "size": 231,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/commonjs/src/index.d.ts",
+        "size": 1223,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/commonjs/src/utils/alert.d.ts",
+        "size": 535,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/commonjs/src/utils/show.d.ts",
+        "size": 1384,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/commonjs/src/utils/success.d.ts",
+        "size": 541,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/module/package.json",
+        "size": 18,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/module/src/@types/icon-props.d.ts",
+        "size": 260,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/module/src/@types/magic-toast-props.d.ts",
+        "size": 126,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/module/src/assets/alert-icon.d.ts",
+        "size": 424,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/module/src/assets/success-icon.d.ts",
+        "size": 490,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/module/src/colors.d.ts",
+        "size": 574,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/module/src/components/alert-toast.d.ts",
+        "size": 199,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/module/src/components/success-toast.d.ts",
+        "size": 203,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/module/src/components/Toast/index.d.ts",
+        "size": 625,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/module/src/components/Toast/styles.d.ts",
+        "size": 231,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/module/src/index.d.ts",
+        "size": 1244,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/module/src/utils/alert.d.ts",
+        "size": 535,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/module/src/utils/show.d.ts",
+        "size": 1384,
+        "mode": 420
+      },
+      {
+        "path": "lib/typescript/module/src/utils/success.d.ts",
+        "size": 541,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 5066,
+        "mode": 420
+      }
+    ],
+    "entryCount": 61,
+    "bundled": []
+  }
+}

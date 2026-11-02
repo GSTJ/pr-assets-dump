@@ -1,0 +1,16 @@
+{
+  "repository": "GSTJ/react-native-magic-toast",
+  "base": "0e998eb4ceb2b1b42945e4a97e99d273c54bcb4f",
+  "head": "b9fa97c3f9434a178a20708ea8679ebc995a3f58",
+  "branch": "chore/security-tooling-complete-fxagbi4o",
+  "sha256": {
+    "pnpm-workspace.yaml": "f986f72623cc40e1ee70f87b04eafdbfcd00d2754894873499f5234b92bf8d3e",
+    "pnpm-lock.yaml": "f08314008d2d07148ced1a8dfaa29a8a4a21ef412b9ccaf646e4cd63273a0c1e",
+    "package.json": "de2dba48283da4ec5bf2dbed44f3cc6c13910a251a5218e9465f34d088f37665",
+    "patches/deepmerge@4.3.1.patch": "c21a9bf8c2484fbeac67de5d2dab17636e3d4a290ec37832db08d53bb9ff523a",
+    "tools/dependency-security-check.cjs": "8686e46b480647f750d7f0806ef8a27d267696c426dbaf85cb241c58d77af6ea",
+    "tools/SECURITY.md": "5386124dee6000ae525e7c4802cd2dacdfcb4fb52867dabf1da20e568a9191c6",
+    ".github/workflows/release.yml": "87c0f73d59d8b94325682fdcf7d347b533b156460718df855a4a0f296f754acf",
+    ".github/workflows/branch-validation.yml": "73118df312ab090e73644eea80914944bce827a982c5a5412cd1f66376b163c9"
+  }
+}

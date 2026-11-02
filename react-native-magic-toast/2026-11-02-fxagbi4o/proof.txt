@@ -1,0 +1,75 @@
+GSTJ/react-native-magic-toast
+Local terminal output capture (no device/runtime claim)
+Tested and archive-verified head: b9fa97c3f9434a178a20708ea8679ebc995a3f58
+Node 24.18.1 / pnpm 11.17.0
+
+$ install (exit 0)
+Scope: all 2 workspace projects
+Already up to date
+Done in 21ms using pnpm v11.17.0
+
+$ test (exit 0)
+$ jest && node tools/image-size-security-check.cjs && node tools/dependency-security-check.cjs
+PASS src/index.test.tsx
+PASS src/public-api.test.tsx
+
+Test Suites: 2 passed, 2 total
+Tests:       8 passed, 8 total
+Snapshots:   2 passed, 2 total
+Time:        0.997 s, estimated 1 s
+Ran all test suites.
+PASS ICNS zero-length entry
+PASS JXL zero-length box
+PASS HEIF zero-length box
+PASS deepmerge target/source/nested prototype poisoning and ordinary merges
+PASS Zod collection bounds, async checks and real Expo plugin/MCP schemas
+PASS modern minimatch expansion limit; legacy v3 has no vulnerable optimization phase
+PASS glob async/sync and basic-ftp Client/listing compatibility
+
+$ security (exit 0)
+$ node tools/image-size-security-check.cjs && node tools/dependency-security-check.cjs --audit
+PASS ICNS zero-length entry
+PASS JXL zero-length box
+PASS HEIF zero-length box
+PASS deepmerge target/source/nested prototype poisoning and ordinary merges
+PASS Zod collection bounds, async checks and real Expo plugin/MCP schemas
+PASS modern minimatch expansion limit; legacy v3 has no vulnerable optimization phase
+PASS glob async/sync and basic-ftp Client/listing compatibility
+PASS audit: only exact tested patch/nonaffected legacy findings remain
+
+$ typecheck (exit 0)
+$ tsc --noEmit
+
+$ lint (exit 0)
+$ oxlint --report-unused-disable-directives
+
+$ format (exit 0)
+$ oxfmt --check .
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 123ms on 44 files using 18 threads.
+
+$ build (exit 0)
+$ bob build
+ℹ [module] Cleaning up previous build at lib/module
+ℹ [typescript] Cleaning up previous build at lib/typescript
+ℹ [commonjs] Cleaning up previous build at lib/commonjs
+ℹ [typescript] Generating type definitions with tsc
+ℹ [commonjs] Compiling 14 files in src with babel
+ℹ [module] Compiling 14 files in src with babel
+✔ [module] Wrote files to lib/module
+✔ [commonjs] Wrote files to lib/commonjs
+✔ [typescript] Wrote definition files to lib/typescript
+
+$ changelog (exit 0)
+$ node tools/changelog-check.mjs
+changelog preset check passed (13 synthetic commits, 3 breaking; bumps: feat!=major, feat=minor, fix=patch, changelog-only=null, hidden-only=null, chore(security)=patch)
+negative control passed (hiding the visible types breaks 8 assertions: feat renders, fix renders, build renders, refactor renders, chore renders, docs renders, chore(security) renders, chore(security) renders under "Security")
+
+PASS negative control: published deepmerge 4.3.1 reproduces prototype poisoning
+PASS downloaded GitHub head archive matches all tested file SHA256 hashes
+Raw audit: 2 version findings, both covered by exact regression controls.
+PR #37 merged: 0e998eb4ceb2b1b42945e4a97e99d273c54bcb4f
+Release run 41443177607: success, release=false, publish skipped.
+npm remains 1.2.4. Development-only fixes do not require a library publish.
