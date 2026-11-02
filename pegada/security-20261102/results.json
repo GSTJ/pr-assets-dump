@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-11-02T12:07:27.263Z",
+  "base": "25aa1b9",
+  "dompurify": {
+    "version": "3.4.17",
+    "before": "${alert(document.domain)}",
+    "after": " "
+  },
+  "fastUri": [
+    {
+      "input": "%6Aavascript:alert(1)",
+      "output": "%6Aavascript:alert(1)",
+      "error": "URI scheme is malformed."
+    },
+    {
+      "input": "%u006Aavascript:alert(1)",
+      "output": "%u006Aavascript:alert(1)",
+      "error": "URI scheme is malformed."
+    }
+  ],
+  "undiciVersion": "7.30.1"
+}
