@@ -1,0 +1,101 @@
+{
+  "dogFrame": {
+    "rotatedWidth": 444.44099168104816,
+    "rotatedHeight": 499.3260192347227,
+    "left": 64.77950415947592,
+    "top": 65.33699038263865,
+    "visibleWhiteFrameBounds": {
+      "left": 67,
+      "top": 69,
+      "right": 506,
+      "bottom": 563
+    }
+  },
+  "storyFrames": [
+    {
+      "x": 606,
+      "y": 100,
+      "width": 234,
+      "height": 416,
+      "radius": 24
+    },
+    {
+      "x": 866,
+      "y": 100,
+      "width": 234,
+      "height": 416,
+      "radius": 24
+    }
+  ],
+  "imageSizes": {
+    "dog-pt-375.png": [
+      750,
+      1688
+    ],
+    "story-pt.jpg": [
+      1200,
+      630
+    ],
+    "route-2.png": [
+      1219,
+      422
+    ],
+    "route-3.png": [
+      1219,
+      422
+    ],
+    "route-1.png": [
+      1219,
+      422
+    ],
+    "route-0.png": [
+      1219,
+      422
+    ],
+    "dog-en-1920.png": [
+      1280,
+      563
+    ],
+    "dog-pt-2560.png": [
+      1219,
+      422
+    ],
+    "dog-pt-1280.png": [
+      1280,
+      844
+    ],
+    "dog-pt.png": [
+      1200,
+      630
+    ],
+    "dog-en.png": [
+      1200,
+      630
+    ],
+    "dog-en-2560.png": [
+      1219,
+      422
+    ],
+    "dog-en-1280.png": [
+      1280,
+      844
+    ],
+    "dog-en-375.png": [
+      750,
+      1688
+    ],
+    "dog-pt-1920.png": [
+      1280,
+      563
+    ],
+    "story-en.jpg": [
+      1200,
+      630
+    ],
+    "dog-pt-768.png": [
+      1280,
+      1407
+    ]
+  },
+  "limits": "Local seeded database. Dev indicator removed for captures. Finite CSS entrances awaited. No conversion-rate, native or store acceptance claim."
+}

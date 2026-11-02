@@ -1,0 +1,166 @@
+[
+  {
+    "measurement": {
+      "bar": [
+        {
+          "height": 20,
+          "scroll": 208,
+          "text": "She wants to make friends.",
+          "width": 208.0625
+        },
+        {
+          "height": 44,
+          "scroll": 119,
+          "text": "Get Pegada",
+          "width": 118.9375
+        }
+      ],
+      "card": [
+        {
+          "height": 428.75,
+          "width": 343
+        }
+      ],
+      "heading": [
+        {
+          "font": "36px",
+          "line": "45px"
+        }
+      ],
+      "overflow": false,
+      "width": 375
+    }
+  },
+  {
+    "measurement": {
+      "bar": [
+        {
+          "height": 0,
+          "scroll": 0,
+          "text": "She wants to make friends.",
+          "width": 0
+        },
+        {
+          "height": 0,
+          "scroll": 0,
+          "text": "Get Pegada",
+          "width": 0
+        }
+      ],
+      "card": [
+        {
+          "height": 500,
+          "width": 400
+        }
+      ],
+      "heading": [
+        {
+          "font": "36px",
+          "line": "45px"
+        }
+      ],
+      "overflow": false,
+      "width": 768
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz922sk-53ff7ecd.png"
+  },
+  {
+    "measurement": {
+      "bar": [
+        {
+          "height": 0,
+          "scroll": 0,
+          "text": "She wants to make friends.",
+          "width": 0
+        },
+        {
+          "height": 0,
+          "scroll": 0,
+          "text": "Get Pegada",
+          "width": 0
+        }
+      ],
+      "card": [
+        {
+          "height": 500,
+          "width": 400
+        }
+      ],
+      "heading": [
+        {
+          "font": "48px",
+          "line": "60px"
+        }
+      ],
+      "overflow": false,
+      "width": 1280
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz924m7-2b482506.png"
+  },
+  {
+    "measurement": {
+      "bar": [
+        {
+          "height": 0,
+          "scroll": 0,
+          "text": "She wants to make friends.",
+          "width": 0
+        },
+        {
+          "height": 0,
+          "scroll": 0,
+          "text": "Get Pegada",
+          "width": 0
+        }
+      ],
+      "card": [
+        {
+          "height": 500,
+          "width": 400
+        }
+      ],
+      "heading": [
+        {
+          "font": "48px",
+          "line": "60px"
+        }
+      ],
+      "overflow": false,
+      "width": 1920
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz924vs-93601922.png"
+  },
+  {
+    "measurement": {
+      "bar": [
+        {
+          "height": 0,
+          "scroll": 0,
+          "text": "She wants to make friends.",
+          "width": 0
+        },
+        {
+          "height": 0,
+          "scroll": 0,
+          "text": "Get Pegada",
+          "width": 0
+        }
+      ],
+      "card": [
+        {
+          "height": 500,
+          "width": 400
+        }
+      ],
+      "heading": [
+        {
+          "font": "48px",
+          "line": "60px"
+        }
+      ],
+      "overflow": false,
+      "width": 2560
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz9255k-fdee3c8e.png"
+  }
+]

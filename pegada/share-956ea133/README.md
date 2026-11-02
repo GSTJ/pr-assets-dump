@@ -1,0 +1,9 @@
+Local route proof for share issues #245, #246 and #247. Seeded dogs and photos were served from the assigned checkout against an isolated PostGIS database. These captures establish rendered behavior, not production conversion rates or native/store acceptance.
+
+The dog page is measured in both locales at 375, 768, 1280, 1920 and 2560 CSS pixels. The 375px card is 343 by 428.75; larger layouts use 400 by 500. Display leading is 60px on 48px type, tracking is -0.02em, and the shell radius is 24px. The mobile sentence has room beside a short localized CTA. The duplicate breed pill is removed. The registered Gilroy Light font remains available. Both share pages now use the paw plus Pegada lockup.
+
+The actual dog OG route outputs are included. The visible white frame bounds in the English PNG are x67..506, y69..563, inside the intended 64px margin. Existing rotation, tracking and optical alignment repairs remain in place. Normalizing WebP/AVIF to bounded PNG fixes an empty-photo defect discovered in the render. Long names remain inside the card.
+
+The story images have two equal 234 by 416 frames, y100..516, with 24px radii. Both share the same Pegada mark and wordmark. The English image has English display copy and dog names only. The real English route selects og-en.jpg and has English title/description. Both images are 1200 by 630; regeneration produced identical SHA256 bytes. Published-asset hashes bind these proofs to the tested JPEGs.
+
+Screenshots wait for finite entrance animations. The Next dev indicator was removed from the capture DOM so it cannot cover the sticky sentence. Screenshot files may be scaled by the preview host; geometry.json records the actual CSS viewport. The English 768px final snapshot was not returned by the host; its measured geometry and the Portuguese screenshot at the same breakpoint are included.

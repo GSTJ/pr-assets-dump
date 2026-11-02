@@ -1,0 +1,46 @@
+[
+  {
+    "path": "/story",
+    "result": {
+      "description": "Pegada builds a story out of your dog's photos. Pick the photos, it comes out on your phone, you post it.",
+      "heading": "Make your dog's story",
+      "og": "https://www.pegada.app/story/og-en.jpg",
+      "overflow": false,
+      "title": "Pegada | Your dog's story"
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz965ho-2d729a7a.png"
+  },
+  {
+    "path": "/pt-br/story",
+    "result": {
+      "description": "O Pegada monta um story com as fotos do seu cachorro. Você escolhe as fotos, ele fica pronto no celular e você posta.",
+      "heading": "Faz o story do seu dog",
+      "og": "https://www.pegada.app/story/og.jpg",
+      "overflow": false,
+      "title": "Pegada | O story do seu dog"
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz965wv-d3f3d169.png"
+  },
+  {
+    "path": "/dog/share-short-956",
+    "result": {
+      "description": "Shih-tzu • 3 years and 10 months — Ready for a walk with new friends. Meet Nina and other dogs near you on Pegada.",
+      "heading": "Nina",
+      "og": "https://www.pegada.app/dog/share-short-956/opengraph-image",
+      "overflow": false,
+      "title": "Nina | Pegada"
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz966sr-e7c42a0a.png"
+  },
+  {
+    "path": "/dog/missing-956",
+    "result": {
+      "description": "Make your dog's profile, swipe through dogs near you, and when you both like each other, the chat opens. Free on iPhone and Android.",
+      "heading": "404",
+      "og": "http://localhost:3017/en-us/dog/missing-956/opengraph-image?fe6aa4dc076767d7",
+      "overflow": false,
+      "title": "Pegada: a new friend for your dog, nearby"
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz9678k-c2d9c6f5.png"
+  }
+]
