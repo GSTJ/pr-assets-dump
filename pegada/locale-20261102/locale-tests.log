@@ -1,0 +1,15 @@
+PASS src/shared/zod-migration.test.ts
+  ✓ keeps en-US profile errors in schema and resolver (4 ms)
+  ✓ keeps pt-BR profile errors in schema and resolver
+  ✓ preserves successful transforms, nulls and optional fields (1 ms)
+  ✓ translates generic errors in en-US without v3 runtime APIs (3 ms)
+  ✓ translates generic errors in pt-BR without v3 runtime APIs (1 ms)
+  ✓ rejects oversized collections before validating their elements
+  ✓ identifies failed numeric coercion in en-US (1 ms)
+  ✓ identifies failed numeric coercion in pt-BR
+
+Test Suites: 1 passed, 1 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+Time:        0.199 s, estimated 1 s
+Ran all test suites within paths "/private/tmp/pegada-zod-locale-root/packages/api/src/shared/zod-migration.test.ts".

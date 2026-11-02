@@ -1,0 +1,49 @@
+FAIL src/shared/zod-migration.test.ts
+  ✕ translates generic errors in en-US without v3 runtime APIs (2 ms)
+  ✕ translates generic errors in pt-BR without v3 runtime APIs (1 ms)
+  ○ skipped keeps en-US profile errors in schema and resolver
+  ○ skipped keeps pt-BR profile errors in schema and resolver
+  ○ skipped preserves successful transforms, nulls and optional fields
+  ○ skipped rejects oversized collections before validating their elements
+  ○ skipped identifies failed numeric coercion in en-US
+  ○ skipped identifies failed numeric coercion in pt-BR
+
+  ● translates generic errors in en-US without v3 runtime APIs
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Expected string, received number"
+    Received: "Invalid input: expected string, received number"
+
+      103 |       const result = schema.safeParse(input);
+      104 |       expect(result.success).toBe(false);
+    > 105 |       expect(result.error?.issues[0]?.message).toBe(messages[index]);
+          |                                                ^
+      106 |     }
+      107 |   },
+      108 | );
+
+      at src/shared/zod-migration.test.ts:105:48
+
+  ● translates generic errors in pt-BR without v3 runtime APIs
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "O dado deve ser do tipo string, porém foi enviado number"
+    Received: "Invalid input: expected string, received number"
+
+      103 |       const result = schema.safeParse(input);
+      104 |       expect(result.success).toBe(false);
+    > 105 |       expect(result.error?.issues[0]?.message).toBe(messages[index]);
+          |                                                ^
+      106 |     }
+      107 |   },
+      108 | );
+
+      at src/shared/zod-migration.test.ts:105:48
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 6 skipped, 8 total
+Snapshots:   0 total
+Time:        0.334 s, estimated 1 s
+Ran all test suites within paths "/private/tmp/pegada-zod-locale-root/packages/api/src/shared/zod-migration.test.ts".
