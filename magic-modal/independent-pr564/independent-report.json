@@ -1,0 +1,92 @@
+{
+  "original_pr": "https://github.com/GSTJ/magic-modal/pull/564",
+  "head": "d3a1466fa41e0d423677a870b76e950b9c315715",
+  "merge": "a2ba3e1ea54aae373ba87c90decaffddf0685f52",
+  "parity": {
+    "files": 255,
+    "merge_vs_head_mismatches": [],
+    "prior_tested_vs_head_mismatches": []
+  },
+  "independent_finding": {
+    "priority": "P1",
+    "file": "tools/vendor/minimatch/index.cjs:5",
+    "cause": "Callable adapter left minimatch 11 Matcher segments incompatible with glob 7 _glob and String.match contracts. React Native iOS codegen failed before build or smoke execution.",
+    "repro": "node node_modules/react-native/scripts/generate-codegen-artifacts.js -p examples/kitchen-sink -o /tmp/codegen -t ios"
+  },
+  "repair_pr": "https://github.com/GSTJ/magic-modal/pull/565",
+  "repair_head": "e425720582b515c744821777eff06e3e6a655173",
+  "repair_parity": {
+    "head": "e425720582b515c744821777eff06e3e6a655173",
+    "tracked_files_compared": 255,
+    "mismatches": []
+  },
+  "local": {
+    "install": "fresh frozen-lockfile",
+    "tests": "130 library + 9 docs + 7 security/compat regressions",
+    "build": "4 tasks successful, forced uncached",
+    "lint": "pass",
+    "format": "pass",
+    "typecheck": "pass",
+    "doctor": "19/19",
+    "changelog": "pass including breaking controls",
+    "release_checks": "all four commands independently passed; initial combined invocation invalid because archive lacks git metadata",
+    "codegen": "original failed, repair passed",
+    "ios_export": "pass, Hermes bundle generated",
+    "registry": "pass",
+    "remotion": "fresh PNG rendered"
+  },
+  "audit": {
+    "unignored_findings": 0,
+    "retained_exception": "GHSA-vfj7-8cjw-p6xm (braces)",
+    "withdrawn_at": "2026-10-23T12:53:02Z",
+    "raw_feed_note": "Current registry result contains no advisories even without the exception; do not interpret that as removal of the retained exception or historical absence of vulnerabilities. GitHub confirms the braces advisory was withdrawn as not practically exploitable.",
+    "deepmerge": "Reviewed private hardened copy; all three destination writes use Object.defineProperty; installed dependency regression passes"
+  },
+  "alerts": {
+    "paginated_records": 56,
+    "open": 6,
+    "open_packages": "Next.js, affected through 16.4.0",
+    "merged_lock_and_sbom": "Next.js 16.4.1 in both apps",
+    "classification": "Open backend alerts do not describe merged vulnerable versions"
+  },
+  "docs": {
+    "run": 41444222992,
+    "conclusion": "success",
+    "deployment": 7492046676,
+    "sha": "a2ba3e1ea54aae373ba87c90decaffddf0685f52",
+    "artifact": 13141536025,
+    "artifact_digest": "sha256:1f76576fa7dbb58047886288b6cdc42adb7a27fc15a97738aa3587cf3e799a16",
+    "live_byte_matches": 56,
+    "extensionless_routes": 36,
+    "canonical_targets_200": 30,
+    "pending_approval": false,
+    "runtime_limit": "HTTP fetch proves route/resource bytes and no server error response. Browser JavaScript runtime errors were not evaluated because browser use was excluded."
+  },
+  "release": {
+    "npm_latest_both": "10.2.1",
+    "tag_object": "0d8abd2736571d9bad5fba4331eddefe334eeed0",
+    "tag_commit": "0c6c126df2b7e9ce30cf59a6b1be36cc492b1414",
+    "commits_evaluated": 112,
+    "qualifying": 0,
+    "publish_run": 41444222959,
+    "conclusion": "success, explicit skip, all publication jobs skipped",
+    "release_notes_changelog": "exact match",
+    "npm_dist_comparison": "shim 8/8 exact; core 11/15 exact, four runtime files differ only in lint comments",
+    "owed_release": false
+  },
+  "superseded_closures": "560 node types, 559 Actions pins, 558 changelog preset, 556 Remotion all present in merged manifests/lock; 552 refresh replaced by merged lockfile. All closed unmerged, reasonable.",
+  "original_actions": {
+    "41444223801": "success",
+    "41444222992": "success",
+    "41444222959": "success (no release due)",
+    "41444222945": "failure at pod install/codegen; build/install/Maestro all skipped",
+    "41444222886": "success",
+    "41444221475": "success"
+  },
+  "limitations": [
+    "Repair PR has not merged; hosted checks and simulator smoke pending.",
+    "No physical device acceptance.",
+    "No browser runtime verification via HTTP fetch.",
+    "T3 watch_pull_request tool was attempted and is unavailable."
+  ]
+}

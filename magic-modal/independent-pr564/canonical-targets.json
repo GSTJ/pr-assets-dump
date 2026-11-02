@@ -1,0 +1,152 @@
+[
+  {
+    "canonical": "/docs/reference/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/",
+    "status": 200
+  },
+  {
+    "canonical": "/docs/reference/hide-results/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/hide-results/",
+    "status": 200
+  },
+  {
+    "canonical": "/docs/reference/magic-modal-portal/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/magic-modal-portal/",
+    "status": 200
+  },
+  {
+    "canonical": "/docs/reference/magic-modal/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/magic-modal/",
+    "status": 200
+  },
+  {
+    "canonical": "/docs/reference/modal-props/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/modal-props/",
+    "status": 200
+  },
+  {
+    "canonical": "/docs/reference/modal-props/#direction",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/modal-props/#direction",
+    "status": 200
+  },
+  {
+    "canonical": "/docs/reference/use-magic-modal/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/use-magic-modal/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/",
+    "url": "https://magic-modal.gabrieltaveira.dev/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/faq/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/faq/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/getting-started/first-modal/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/getting-started/first-modal/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/getting-started/installation/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/getting-started/installation/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/getting-started/setup/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/getting-started/setup/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/guides/accessibility/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/guides/accessibility/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/guides/gestures-and-scroll/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/guides/gestures-and-scroll/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/guides/modal-flows/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/guides/modal-flows/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/guides/native-overlays/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/guides/native-overlays/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/guides/recipes/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/guides/recipes/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/guides/testing/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/guides/testing/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/guides/updating-content/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/guides/updating-content/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/platforms/expo/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/platforms/expo/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/platforms/ios-android/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/platforms/ios-android/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/platforms/nextjs/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/platforms/nextjs/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/reference/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/reference/hide-results/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/hide-results/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/reference/magic-modal-portal/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/magic-modal-portal/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/reference/magic-modal/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/magic-modal/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/reference/modal-props/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/modal-props/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/reference/use-magic-modal/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/use-magic-modal/",
+    "status": 200
+  },
+  {
+    "canonical": "https://magic-modal.gabrieltaveira.dev/docs/resources/",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/resources/",
+    "status": 200
+  }
+]

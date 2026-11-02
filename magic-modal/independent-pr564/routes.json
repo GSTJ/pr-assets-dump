@@ -1,0 +1,290 @@
+[
+  {
+    "route": "/",
+    "url": "https://magic-modal.gabrieltaveira.dev/",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/"
+    ]
+  },
+  {
+    "route": "/modules",
+    "url": "https://magic-modal.gabrieltaveira.dev/modules",
+    "parity": true,
+    "canonical": [
+      "/docs/reference/"
+    ]
+  },
+  {
+    "route": "/hierarchy",
+    "url": "https://magic-modal.gabrieltaveira.dev/hierarchy",
+    "parity": true,
+    "canonical": [
+      "/docs/reference/"
+    ]
+  },
+  {
+    "route": "/types/HideReturn",
+    "url": "https://magic-modal.gabrieltaveira.dev/types/HideReturn",
+    "parity": true,
+    "canonical": [
+      "/docs/reference/hide-results/"
+    ]
+  },
+  {
+    "route": "/types/NewConfigProps",
+    "url": "https://magic-modal.gabrieltaveira.dev/types/NewConfigProps",
+    "parity": true,
+    "canonical": [
+      "/docs/reference/modal-props/"
+    ]
+  },
+  {
+    "route": "/types/ModalProps",
+    "url": "https://magic-modal.gabrieltaveira.dev/types/ModalProps",
+    "parity": true,
+    "canonical": [
+      "/docs/reference/modal-props/"
+    ]
+  },
+  {
+    "route": "/types/ModalChildren",
+    "url": "https://magic-modal.gabrieltaveira.dev/types/ModalChildren",
+    "parity": true,
+    "canonical": [
+      "/docs/reference/magic-modal/"
+    ]
+  },
+  {
+    "route": "/types/Direction",
+    "url": "https://magic-modal.gabrieltaveira.dev/types/Direction",
+    "parity": true,
+    "canonical": [
+      "/docs/reference/modal-props/#direction"
+    ]
+  },
+  {
+    "route": "/enums/MagicModalHideReason",
+    "url": "https://magic-modal.gabrieltaveira.dev/enums/MagicModalHideReason",
+    "parity": true,
+    "canonical": [
+      "/docs/reference/hide-results/"
+    ]
+  },
+  {
+    "route": "/docs/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/"
+    ]
+  },
+  {
+    "route": "/variables/MagicModalPortal",
+    "url": "https://magic-modal.gabrieltaveira.dev/variables/MagicModalPortal",
+    "parity": true,
+    "canonical": [
+      "/docs/reference/magic-modal-portal/"
+    ]
+  },
+  {
+    "route": "/variables/magicModal",
+    "url": "https://magic-modal.gabrieltaveira.dev/variables/magicModal",
+    "parity": true,
+    "canonical": [
+      "/docs/reference/magic-modal/"
+    ]
+  },
+  {
+    "route": "/functions/useMagicModal",
+    "url": "https://magic-modal.gabrieltaveira.dev/functions/useMagicModal",
+    "parity": true,
+    "canonical": [
+      "/docs/reference/use-magic-modal/"
+    ]
+  },
+  {
+    "route": "/_not-found/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/_not-found/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/"
+    ]
+  },
+  {
+    "route": "/404/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/404/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/"
+    ]
+  },
+  {
+    "route": "/docs/faq/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/faq/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/faq/"
+    ]
+  },
+  {
+    "route": "/docs/resources/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/resources/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/resources/"
+    ]
+  },
+  {
+    "route": "/docs/reference/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/reference/"
+    ]
+  },
+  {
+    "route": "/docs/reference/magic-modal-portal/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/magic-modal-portal/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/reference/magic-modal-portal/"
+    ]
+  },
+  {
+    "route": "/docs/reference/modal-props/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/modal-props/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/reference/modal-props/"
+    ]
+  },
+  {
+    "route": "/docs/reference/magic-modal/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/magic-modal/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/reference/magic-modal/"
+    ]
+  },
+  {
+    "route": "/docs/reference/use-magic-modal/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/use-magic-modal/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/reference/use-magic-modal/"
+    ]
+  },
+  {
+    "route": "/docs/reference/hide-results/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/reference/hide-results/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/reference/hide-results/"
+    ]
+  },
+  {
+    "route": "/docs/guides/gestures-and-scroll/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/guides/gestures-and-scroll/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/guides/gestures-and-scroll/"
+    ]
+  },
+  {
+    "route": "/docs/guides/testing/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/guides/testing/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/guides/testing/"
+    ]
+  },
+  {
+    "route": "/docs/guides/recipes/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/guides/recipes/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/guides/recipes/"
+    ]
+  },
+  {
+    "route": "/docs/guides/accessibility/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/guides/accessibility/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/guides/accessibility/"
+    ]
+  },
+  {
+    "route": "/docs/guides/modal-flows/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/guides/modal-flows/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/guides/modal-flows/"
+    ]
+  },
+  {
+    "route": "/docs/guides/updating-content/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/guides/updating-content/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/guides/updating-content/"
+    ]
+  },
+  {
+    "route": "/docs/guides/native-overlays/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/guides/native-overlays/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/guides/native-overlays/"
+    ]
+  },
+  {
+    "route": "/docs/getting-started/setup/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/getting-started/setup/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/getting-started/setup/"
+    ]
+  },
+  {
+    "route": "/docs/getting-started/installation/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/getting-started/installation/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/getting-started/installation/"
+    ]
+  },
+  {
+    "route": "/docs/getting-started/first-modal/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/getting-started/first-modal/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/getting-started/first-modal/"
+    ]
+  },
+  {
+    "route": "/docs/platforms/ios-android/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/platforms/ios-android/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/platforms/ios-android/"
+    ]
+  },
+  {
+    "route": "/docs/platforms/expo/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/platforms/expo/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/platforms/expo/"
+    ]
+  },
+  {
+    "route": "/docs/platforms/nextjs/index",
+    "url": "https://magic-modal.gabrieltaveira.dev/docs/platforms/nextjs/index",
+    "parity": true,
+    "canonical": [
+      "https://magic-modal.gabrieltaveira.dev/docs/platforms/nextjs/"
+    ]
+  }
+]

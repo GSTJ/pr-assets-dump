@@ -1,0 +1,52 @@
+-------------
+Version mismatch:
+Extra packages with wrong versions:
+  - zod: installed 4.6.7, required 4.5.4
+    See: https://www.remotion.dev/docs/zod-types/
+
+You may experience breakages such as:
+- React context and hooks not working
+- Type errors and feature incompatibilities
+- Failed renders and unclear errors
+
+To resolve:
+- Make sure your package.json has all Remotion packages pointing to the same version.
+- Remove the `^` character in front of a version to pin a package.
+- For zod, install exact version 4.5.4 (run: npx remotion add zod).
+- Run `npx remotion versions --log=verbose` to see the path of the modules resolved.
+-------------
+
+Downloading Chrome Headless Shell https://www.remotion.dev/chrome-headless-shell
+Downloading from: https://storage.googleapis.com/chrome-for-testing-public/149.0.7790.0/mac-arm64/chrome-headless-shell-mac-arm64.zip
+Getting Headless Shell - 9.5 Mb/93.5 Mb
+Getting Headless Shell - 19.1 Mb/93.5 Mb
+Getting Headless Shell - 28.6 Mb/93.5 Mb
+Getting Headless Shell - 38.2 Mb/93.5 Mb
+Getting Headless Shell - 47.7 Mb/93.5 Mb
+Getting Headless Shell - 57.3 Mb/93.5 Mb
+Getting Headless Shell - 66.8 Mb/93.5 Mb
+Getting Headless Shell - 76.4 Mb/93.5 Mb
+Getting Headless Shell - 85.9 Mb/93.5 Mb
+Got Headless Shell
+Bundling 6%
+Bundling 21%
+Bundling 32%
+Bundling 43%
+Bundling 54%
+Bundling 65%
+Bundling 71%
+Bundling 76%
+Bundling 81%
+Bundling 87%
+Bundling 92%
+Bundling 98%
+Bundling 100%
+Getting composition
+⚡️ Cached bundle. Subsequent renders will be faster.
+Composition          MagicModalSocial
+Format               png
+Output               /tmp/magic-modal-final-c5y54nn6/remotion-fixed.png
+Rendered 0/1
+Rendered 0/1
+Rendered 1/1
++                    /tmp/magic-modal-final-c5y54nn6/remotion-fixed.png

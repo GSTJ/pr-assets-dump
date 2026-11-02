@@ -1,0 +1,121 @@
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	﻿2026-11-02T12:25:43.0302960Z ##[group]Run # The runner image already ships Ruby and CocoaPods, so there is no
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.0303640Z ^[[36;1m# The runner image already ships Ruby and CocoaPods, so there is no^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.0304230Z ^[[36;1m# ruby/setup-ruby + `gem install` round trip to get wrong.^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.0304730Z ^[[36;1mpnpm expo prebuild --platform ios --no-install^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.0305190Z ^[[36;1mcd ios^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.0305460Z ^[[36;1mpod --version^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.0305770Z ^[[36;1mpod install^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.0306170Z ^[[36;1m# Prebuild pins NODE_BINARY to whatever node it found. The hosted^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.0306750Z ^[[36;1m# toolcache path moves when the runner image bumps Node, and this file^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.0307420Z ^[[36;1m# rides along in the cache, so drop it and let .xcode.env resolve node^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.0307940Z ^[[36;1m# from PATH at build time instead.^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.0308260Z ^[[36;1mrm -f .xcode.env.local^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.4188090Z shell: /bin/bash -e {0}
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.4189830Z env:
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.4191300Z   EXAMPLE_DIR: examples/kitchen-sink
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.4192290Z   APP_ID: com.gstj.reactnativemagicmodalexample
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.4192830Z   CACHE_EPOCH: v2
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.4193740Z   MAESTRO_VERSION: 2.7.0
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.4195670Z   MAESTRO_CLI_NO_ANALYTICS: 1
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.4196450Z   PNPM_HOME: /Users/runner/setup-pnpm/node_modules/.bin
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:43.4197890Z ##[endgroup]
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:44.7224180Z - Creating native directory (./ios)
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:44.8747120Z ✔ Created native directory
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:44.8752430Z - Updating package.json
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:44.9074230Z ✔ Updated package.json | no changes
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:44.9075490Z - Running prebuild
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:46.2656100Z ✔ Finished prebuild
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:53.6253430Z 1.17.0
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9221270Z Using Expo modules
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9223730Z [Expo] Enabling modular headers for pod ExpoModulesCore
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9225370Z [Expo] Enabling modular headers for pod React-RCTAppDelegate
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9227830Z [Expo] Enabling modular headers for pod React-RCTFabric
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9229450Z [Expo] Enabling modular headers for pod ReactAppDependencyProvider
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9230990Z [Expo] Enabling modular headers for pod React-Core
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9232390Z [Expo] Enabling modular headers for pod ReactCodegen
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9233740Z [Expo] Enabling modular headers for pod RCTRequired
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9237580Z [Expo] Enabling modular headers for pod RCTTypeSafety
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9239060Z [Expo] Enabling modular headers for pod ReactCommon
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9240560Z [Expo] Enabling modular headers for pod React-NativeModulesApple
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9269950Z [Expo] Enabling modular headers for pod Yoga
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9272290Z [Expo] Enabling modular headers for pod React-Fabric
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9273790Z [Expo] Enabling modular headers for pod React-graphics
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9276580Z [Expo] Enabling modular headers for pod React-utils
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9278580Z [Expo] Enabling modular headers for pod React-featureflags
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9281410Z [Expo] Enabling modular headers for pod React-debug
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9283290Z [Expo] Enabling modular headers for pod React-ImageManager
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9284970Z [Expo] Enabling modular headers for pod React-rendererdebug
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9289540Z [Expo] Enabling modular headers for pod React-jsi
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9391870Z [Expo] Enabling modular headers for pod React-renderercss
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9401540Z [Expo] Enabling modular headers for pod hermes-engine
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9403660Z [Expo] Enabling modular headers for pod glog
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9405410Z [Expo] Enabling modular headers for pod boost
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9407090Z [Expo] Enabling modular headers for pod DoubleConversion
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9408590Z [Expo] Enabling modular headers for pod fast_float
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9409290Z [Expo] Enabling modular headers for pod fmt
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9437550Z [Expo] Enabling modular headers for pod RCT-Folly
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9439940Z [Expo] Enabling modular headers for pod SocketRocket
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9441110Z [Expo] Enabling modular headers for pod SDWebImage
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9441800Z [Expo] Enabling modular headers for pod SDWebImageAVIFCoder
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9442480Z [Expo] Enabling modular headers for pod SDWebImageSVGCoder
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9443240Z [Expo] Enabling modular headers for pod SDWebImageWebPCoder
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9445160Z [Expo] Enabling modular headers for pod libavif
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:55.9446720Z [Expo] Enabling modular headers for pod RNScreens
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:58.4694220Z [RNScreens] Gamma project enabled. Including source files.
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:58.6970140Z Found 6 modules for target `magicmodalexample`
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:58.6996970Z link_native_modules! {ios_packages: [{configurations: [], name: "expo", root: "/Users/runner/work/magic-modal/magic-modal/node_modules/expo", path: "../../../node_modules/expo", podspec_path: "/Users/runner/work/magic-modal/magic-modal/node_modules/expo/Expo.podspec", script_phases: []}, {configurations: [], name: "react-native-gesture-handler", root: "/Users/runner/work/magic-modal/magic-modal/node_modules/react-native-gesture-handler", path: "../../../node_modules/react-native-gesture-handler", podspec_path: "/Users/runner/work/magic-modal/magic-modal/node_modules/react-native-gesture-handler/RNGestureHandler.podspec", script_phases: []}, {configurations: [], name: "react-native-reanimated", root: "/Users/runner/work/magic-modal/magic-modal/node_modules/react-native-reanimated", path: "../../../node_modules/react-native-reanimated", podspec_path: "/Users/runner/work/magic-modal/magic-modal/node_modules/react-native-reanimated/RNReanimated.podspec", script_phases: []}, {configurations: [], name: "react-native-safe-area-context", root: "/Users/runner/work/magic-modal/magic-modal/node_modules/react-native-safe-area-context", path: "../../../node_modules/react-native-safe-area-context", podspec_path: "/Users/runner/work/magic-modal/magic-modal/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec", script_phases: []}, {configurations: [], name: "react-native-screens", root: "/Users/runner/work/magic-modal/magic-modal/node_modules/react-native-screens", path: "../../../node_modules/react-native-screens", podspec_path: "/Users/runner/work/magic-modal/magic-modal/node_modules/react-native-screens/RNScreens.podspec", script_phases: []}, {configurations: [], name: "react-native-worklets", root: "/Users/runner/work/magic-modal/magic-modal/node_modules/react-native-worklets", path: "../../../node_modules/react-native-worklets", podspec_path: "/Users/runner/work/magic-modal/magic-modal/node_modules/react-native-worklets/RNWorklets.podspec", script_phases: []}], ios_project_root_path: "/Users/runner/work/magic-modal/magic-modal/examples/kitchen-sink/ios", react_native_path: "../../../node_modules/react-native"}
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:59.2747500Z [RNScreens] Gamma project enabled. Including source files.
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:59.4216800Z Auto-linking React Native modules for target `magicmodalexample`: RNGestureHandler, RNReanimated, RNScreens, RNWorklets, and react-native-safe-area-context
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:59.9335430Z Framework build type is static library
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:25:59.9851990Z [ReactNativeDependencies] Setting up ReactNativeDependencies...
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.1426600Z [ReactNativeDependencies] Building from source: false
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.1480230Z [ReactNativeDependencies] Using tarball from URL: https://repo1.maven.org/maven2/com/facebook/react/react-native-artifacts/0.83.10/react-native-artifacts-0.83.10-reactnative-dependencies-debug.tar.gz
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.1645260Z [ReactNativeDependencies] Cache miss: downloading reactnative-dependencies-0.83.10-debug.tar.gz from https://repo1.maven.org/maven2/com/facebook/react/react-native-artifacts/0.83.10/react-native-artifacts-0.83.10-reactnative-dependencies-debug.tar.gz
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.1991720Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.1998120Z                                  Dload  Upload   Total   Spent    Left  Speed
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.1999060Z 
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.2219970Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.2222350Z 100   167    0   167    0     0   6926      0 --:--:-- --:--:-- --:--:--  7260
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.4246680Z 
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.5263400Z  57 18.3M   57 10.6M    0     0  47.1M      0 --:--:-- --:--:-- --:--:-- 47.1M
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.5272910Z 100 18.3M  100 18.3M    0     0  55.9M      0 --:--:-- --:--:-- --:--:-- 75.1M
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.5778470Z [ReactNativeDependencies] Saved reactnative-dependencies-0.83.10-debug.tar.gz to shared cache (/Users/runner/Library/Caches/ReactNative)
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.5916800Z [ReactNativeDependencies] Cache miss: downloading reactnative-dependencies-0.83.10-release.tar.gz from https://repo1.maven.org/maven2/com/facebook/react/react-native-artifacts/0.83.10/react-native-artifacts-0.83.10-reactnative-dependencies-release.tar.gz
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.6191670Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.6195980Z                                  Dload  Upload   Total   Spent    Left  Speed
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.6197430Z 
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.6494840Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.6498010Z 100   167    0   167    0     0   5487      0 --:--:-- --:--:-- --:--:--  5566
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.7963400Z 
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.7965130Z 100  9.9M  100  9.9M    0     0  56.1M      0 --:--:-- --:--:-- --:--:-- 56.1M
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.8375270Z [ReactNativeDependencies] Saved reactnative-dependencies-0.83.10-release.tar.gz to shared cache (/Users/runner/Library/Caches/ReactNative)
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.8396580Z [ReactNativeDependencies] Source: {http: "file:///Users/runner/work/magic-modal/magic-modal/examples/kitchen-sink/ios/Pods/ReactNativeDependencies-artifacts/reactnative-dependencies-0.83.10-debug.tar.gz"}
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.8417730Z [ReactNativeCore] Setting up ReactNativeCore...
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.9380140Z [ReactNativeCore] Building from source: false
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.9381430Z Configuring the target with the New Architecture
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:00.9383000Z [ReactNativeCore] Using React Native Core and React Native Dependencies prebuilt versions.
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1653890Z 
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1655790Z [!] Invalid `Podfile` file: [!] /Users/runner/hostedtoolcache/node/24.21.0/arm64/bin/node ./../../../node_modules/react-native/scripts/generate-codegen-artifacts.js -p /Users/runner/work/magic-modal/magic-modal/examples/kitchen-sink/ios/.. -o /Users/runner/work/magic-modal/magic-modal/examples/kitchen-sink/ios -t ios
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1657970Z 
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1660430Z ^[[36m^[[1m[Codegen]^[[0m Analyzing /Users/runner/work/magic-modal/magic-modal/examples/kitchen-sink/package.json^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1661500Z ^[[36m^[[1m[Codegen]^[[0m ^[[33mSearching for codegen-enabled libraries in the app.^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1662520Z ^[[36m^[[1m[Codegen]^[[0m ^[[33mThe "codegenConfig" field is not defined in package.json. Assuming there is nothing to generate at the app level.^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1663800Z ^[[36m^[[1m[Codegen]^[[0m ^[[33mSearching for codegen-enabled libraries in react-native.config.js^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1664560Z ^[[36m^[[1m[Codegen]^[[0m Found react-native-gesture-handler^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1665020Z ^[[36m^[[1m[Codegen]^[[0m Found react-native-reanimated^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1665470Z ^[[36m^[[1m[Codegen]^[[0m Found react-native-safe-area-context^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1666180Z ^[[36m^[[1m[Codegen]^[[0m Found react-native-screens^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1666780Z ^[[36m^[[1m[Codegen]^[[0m Found react-native-worklets^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1667440Z ^[[36m^[[1m[Codegen]^[[0m Processing rngesturehandler_codegen^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1668050Z ^[[36m^[[1m[Codegen]^[[0m ^[[33mSearching for podspec in the project dependencies.^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1668930Z ^[[36m^[[1m[Codegen]^[[0m TypeError: Cannot read properties of undefined (reading 'charAt')^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1670610Z ^[[36m^[[1m[Codegen]^[[0m ^[[33mDone.^[[0m
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1671160Z .
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1671240Z 
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1671650Z  #  from /Users/runner/work/magic-modal/magic-modal/examples/kitchen-sink/ios/Podfile:49
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1672770Z  #  -------------------------------------------
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1673290Z  #  
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1673620Z  >    use_react_native!(
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1674000Z  #      :path => config[:reactNativePath],
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1676130Z  #  -------------------------------------------
+🧪 Maestro smoke tests (iOS sim)	🛠 Expo prebuild (iOS) + install pods	2026-11-02T12:26:01.1778160Z ##[error]Process completed with exit code 1.

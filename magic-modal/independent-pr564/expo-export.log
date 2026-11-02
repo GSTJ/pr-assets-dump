@@ -1,0 +1,51 @@
+Using src/app as the root directory for Expo Router.
+Expo Autolinking module resolution enabled
+Starting Metro Bundler
+
+iOS examples/kitchen-sink/index.js ░░░░░░░░░░░░░░░░  0.0% (0/1)
+| (node:94803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:94803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:94803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:94803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:94803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:94803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:94803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:94803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:94803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:94803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:94803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+iOS examples/kitchen-sink/index.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░ 99.9% (1533/1533)
+iOS Bundled 3877ms examples/kitchen-sink/index.js (1533 modules)
+
+› Assets (23):
+../../node_modules/@react-navigation/elements/lib/module/assets/back-icon-mask.png (653B)
+../../node_modules/@react-navigation/elements/lib/module/assets/back-icon.png (4 variations | 566B)
+../../node_modules/@react-navigation/elements/lib/module/assets/clear-icon.png (4 variations | 425B)
+../../node_modules/@react-navigation/elements/lib/module/assets/close-icon.png (4 variations | 235B)
+../../node_modules/@react-navigation/elements/lib/module/assets/search-icon.png (3 variations | 582B)
+../../node_modules/expo-router/assets/arrow_down.png (9.5KB)
+../../node_modules/expo-router/assets/error.png (469B)
+../../node_modules/expo-router/assets/file.png (138B)
+../../node_modules/expo-router/assets/forward.png (188B)
+../../node_modules/expo-router/assets/pkg.png (364B)
+../../node_modules/expo-router/assets/sitemap.png (465B)
+../../node_modules/expo-router/assets/unmatched.png (4.8KB)
+
+› ios bundles (1):
+_expo/static/js/ios/index-ba0667086a85370bf9111bb3f6df237d.hbc (4.1MB)
+
+› Files (1):
+metadata.json (1.6KB)
+
+Exported: /tmp/magic-modal-final-c5y54nn6/ios-export

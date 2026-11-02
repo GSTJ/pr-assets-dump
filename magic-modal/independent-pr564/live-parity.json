@@ -1,0 +1,394 @@
+[
+  {
+    "path": "index.html",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/",
+    "parity": true,
+    "sha256": "a3df3c3e87e9a7ecf9f797f2b10d4ecc08a720d8e0a113c2ce9e06fb1879cce3"
+  },
+  {
+    "path": "modules.html",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/modules.html",
+    "parity": true,
+    "sha256": "e2de2d88b9cc350a1051ca4faa84b40bf6e9c0de9bb02f9d838a4baebab6f794"
+  },
+  {
+    "path": "hierarchy.html",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/hierarchy.html",
+    "parity": true,
+    "sha256": "e2de2d88b9cc350a1051ca4faa84b40bf6e9c0de9bb02f9d838a4baebab6f794"
+  },
+  {
+    "path": "404.html",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/404.html",
+    "parity": true,
+    "sha256": "89e4ea23d1b82a9ce5ee86ff971e0bc52d0a249fdef7bfed3e87ad6b78feca08"
+  },
+  {
+    "path": "types/HideReturn.html",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/types/HideReturn.html",
+    "parity": true,
+    "sha256": "b51542e700760b972a3c1a7da02f95490d921b5eaacea54e5dbd165e61a390c1"
+  },
+  {
+    "path": "types/NewConfigProps.html",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/types/NewConfigProps.html",
+    "parity": true,
+    "sha256": "e068b5c58b9884c5d1aca22d50c7b031d2011c0c5369ae9f35993439b9e2a570"
+  },
+  {
+    "path": "types/ModalProps.html",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/types/ModalProps.html",
+    "parity": true,
+    "sha256": "e068b5c58b9884c5d1aca22d50c7b031d2011c0c5369ae9f35993439b9e2a570"
+  },
+  {
+    "path": "types/ModalChildren.html",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/types/ModalChildren.html",
+    "parity": true,
+    "sha256": "78633b9a04524aa1eabf6751e823efcedb7f24bff4aac9b8b22c62f5664ac201"
+  },
+  {
+    "path": "types/Direction.html",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/types/Direction.html",
+    "parity": true,
+    "sha256": "8703a37ab19b2b4c6b6802e137390b6734e2e7fd24e03936ffe308a5f9748da7"
+  },
+  {
+    "path": "enums/MagicModalHideReason.html",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/enums/MagicModalHideReason.html",
+    "parity": true,
+    "sha256": "b7565e2380e871fc9b779bb3f5e905b03e60760237bb18f55acd305925798ec8"
+  },
+  {
+    "path": "variables/MagicModalPortal.html",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/variables/MagicModalPortal.html",
+    "parity": true,
+    "sha256": "516399a86a0d694cc7652964ad9ef3d846eaacbdb955bf551451c1f3f5a7dea4"
+  },
+  {
+    "path": "variables/magicModal.html",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/variables/magicModal.html",
+    "parity": true,
+    "sha256": "5112caf1e194c057e5514cef28ba8d1f7dabd5e1790627377c711f3effc34eb5"
+  },
+  {
+    "path": "functions/useMagicModal.html",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/functions/useMagicModal.html",
+    "parity": true,
+    "sha256": "6ac3d489e769a2f172e4707943a0920cac8e8443a50ec26a5c67a8ba25cee78e"
+  },
+  {
+    "path": "_next/static/BxYb1iAh6ULGMWOtj6oRv/_ssgManifest.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/BxYb1iAh6ULGMWOtj6oRv/_ssgManifest.js",
+    "parity": true,
+    "sha256": "b20d12b3bb57a90772f0dc2c63b197716721e5a03902478d2bc714b696b4ca51"
+  },
+  {
+    "path": "_next/static/BxYb1iAh6ULGMWOtj6oRv/_clientMiddlewareManifest.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/BxYb1iAh6ULGMWOtj6oRv/_clientMiddlewareManifest.js",
+    "parity": true,
+    "sha256": "5483e3295dc35dfe29ea932efc85341c916f10ff78ff5b0e965e003710893a4a"
+  },
+  {
+    "path": "_next/static/BxYb1iAh6ULGMWOtj6oRv/_buildManifest.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/BxYb1iAh6ULGMWOtj6oRv/_buildManifest.js",
+    "parity": true,
+    "sha256": "9476e0afd3f9da68a64e6ec58631191fd3eaca62c9f5a377e7517fe9a89e59ea"
+  },
+  {
+    "path": "_next/static/chunks/3at5lht91yx4y.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/3at5lht91yx4y.js",
+    "parity": true,
+    "sha256": "c065f5a725c33e57834a9ba9d7035ce01f0d2be6d2acbea100d5b193dbf63ac1"
+  },
+  {
+    "path": "_next/static/chunks/3gfh-12s_2ldi.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/3gfh-12s_2ldi.js",
+    "parity": true,
+    "sha256": "18c8680195d8ed1b8408ce743c539bef62d1ba2699bdc2eaca0211d3997ecb50"
+  },
+  {
+    "path": "_next/static/chunks/1p-kq0phglejo.css",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/1p-kq0phglejo.css",
+    "parity": true,
+    "sha256": "a1c29d8637746e823d8ba88781c858c3e3166e57c9c14ed4dd4035cadfd8cec3"
+  },
+  {
+    "path": "_next/static/chunks/20i6p737amar2.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/20i6p737amar2.js",
+    "parity": true,
+    "sha256": "639e8ac21fa2c5e79519ab5ce193267e5b37170146712ce24c67cff8589f3388"
+  },
+  {
+    "path": "_next/static/chunks/0lgy1c_t8i0o0.css",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/0lgy1c_t8i0o0.css",
+    "parity": true,
+    "sha256": "5c0a2dca634b3a3a2ea2a3f17e445ceffd7c089ba7525f10ed838baf2ae14f72"
+  },
+  {
+    "path": "_next/static/chunks/turbopack-2c3mg3r-05n1w.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/turbopack-2c3mg3r-05n1w.js",
+    "parity": true,
+    "sha256": "b5f9b5199b99ab6c141f4540f0b7d0fe803c4ecf6956849ecb6e59d3d439272e"
+  },
+  {
+    "path": "_next/static/chunks/2t5kmepwi1p_6.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/2t5kmepwi1p_6.js",
+    "parity": true,
+    "sha256": "e083012c0a5dc34cee6feb343f3e785e1ab0cc0dd081fafd922e0d14bd19adb7"
+  },
+  {
+    "path": "_next/static/chunks/2civxzqnnaq_y.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/2civxzqnnaq_y.js",
+    "parity": true,
+    "sha256": "03280e594dd078e407ee183319e61bb4941cba24a9389169e3e2c6891e0ee173"
+  },
+  {
+    "path": "_next/static/chunks/198nbab2kfhp1.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/198nbab2kfhp1.js",
+    "parity": true,
+    "sha256": "b7ad9b52dd66cbb02771f2a72c11aa4de93d9a7c88d912e3a551e2816447d808"
+  },
+  {
+    "path": "_next/static/chunks/1sytk3nv2u1at.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/1sytk3nv2u1at.js",
+    "parity": true,
+    "sha256": "e9c70fd88af9796808326f7cc99e2cc731c738f48b8d3e65064bf9446d219c13"
+  },
+  {
+    "path": "_next/static/chunks/0lg0ty_7gw5a0.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/0lg0ty_7gw5a0.js",
+    "parity": true,
+    "sha256": "4b459a6ee79628ad2b624d029fa61809c3f85fbb1631fc96cba60ffd8fef5ef3"
+  },
+  {
+    "path": "_next/static/chunks/2z_db3j7weh4x.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/2z_db3j7weh4x.js",
+    "parity": true,
+    "sha256": "b89048924a7622a61a3409aa117859360fe3fdb29e664207aaa9ddbe1be8e802"
+  },
+  {
+    "path": "_next/static/chunks/36sj7ix-nci4v.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/36sj7ix-nci4v.js",
+    "parity": true,
+    "sha256": "2efa176fecef9ac2a9f118aed68b388e36973c81ab1f947857192a2b5f99ffcd"
+  },
+  {
+    "path": "_next/static/chunks/33pdmu5flmvs_.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/33pdmu5flmvs_.js",
+    "parity": true,
+    "sha256": "1ae7357e4258530ab68e44b4e7fab0c137707bfcadb65a9f009bb04ba96d2ff5"
+  },
+  {
+    "path": "_next/static/chunks/36lnu0kmikv5k.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/36lnu0kmikv5k.js",
+    "parity": true,
+    "sha256": "1e57c9eb17f5cdba417be1b56724413ae79f98e95f8bbbd2a9472f8e2fdff523"
+  },
+  {
+    "path": "_next/static/chunks/0wsfou0e1s-p6.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/0wsfou0e1s-p6.js",
+    "parity": true,
+    "sha256": "a8af7a42e1b1c154eef44749f93ec67426adc41c03b8674a0d1d0683ae39dfc7"
+  },
+  {
+    "path": "_next/static/chunks/3wbsbgiwvpyu2.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/3wbsbgiwvpyu2.js",
+    "parity": true,
+    "sha256": "16d9be5f3675e6395c23cf9abe7cba179cf148bea8ad8aa0b420ea10c4f684f6"
+  },
+  {
+    "path": "_next/static/chunks/0tmyuitv5693j.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/0tmyuitv5693j.js",
+    "parity": true,
+    "sha256": "29749ce97dd8b640175fe177056ec654319969781a703591d0392ab6f0212f3b"
+  },
+  {
+    "path": "_next/static/chunks/3zyf78w3cstm0.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/3zyf78w3cstm0.js",
+    "parity": true,
+    "sha256": "c2134bed351494b74cd5f23361da383c3565f3d2760d1af1a2817713bfeae06a"
+  },
+  {
+    "path": "_next/static/chunks/0cbhbo9u2a83v.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/0cbhbo9u2a83v.js",
+    "parity": true,
+    "sha256": "9874b817ce9d336879b03f3581f128027631648a266320457163073c127fdc08"
+  },
+  {
+    "path": "_next/static/chunks/0cz1d0mv5g_q7.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/0cz1d0mv5g_q7.js",
+    "parity": true,
+    "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683"
+  },
+  {
+    "path": "_next/static/chunks/1uvs3hd1d9l7p.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/1uvs3hd1d9l7p.js",
+    "parity": true,
+    "sha256": "df26bace8780eb7a59eeeb6340ce85c50cbd57dd90c8ab91d4d40d6f4ca11424"
+  },
+  {
+    "path": "_next/static/chunks/3b1vk559kbqvp.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/3b1vk559kbqvp.js",
+    "parity": true,
+    "sha256": "973a20b77d7ee2fe1bd9685eabdb28b399e89ff496b2f88214853b3279989076"
+  },
+  {
+    "path": "_next/static/chunks/2yi6lq56xoijl.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/2yi6lq56xoijl.js",
+    "parity": true,
+    "sha256": "5a781de0ad0722beb6c7cc247fad7f0ca2c003e70d5d4c6add472a05212a341c"
+  },
+  {
+    "path": "_next/static/chunks/2cjhnu1j1-ais.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/2cjhnu1j1-ais.js",
+    "parity": true,
+    "sha256": "c8a1661430600cfab9b06b9da75d106658cf0a089cf96137173321b350fc1c60"
+  },
+  {
+    "path": "_next/static/chunks/0zmsmzurrasnx.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/0zmsmzurrasnx.js",
+    "parity": true,
+    "sha256": "b2b7c979297e55d455bb6ed3d140a693b1017ccb78a209275799d173256e3538"
+  },
+  {
+    "path": "_next/static/chunks/1n4kxra_dh5oc.js",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/chunks/1n4kxra_dh5oc.js",
+    "parity": true,
+    "sha256": "d3e5fb5b86cd599a0cc57f04b53eb9011538fea760ce08f6c232db5b11066930"
+  },
+  {
+    "path": "_next/static/media/jetbrains-mono-cyrillic-wght-normal.0x7cg5h5x34js.woff2",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/media/jetbrains-mono-cyrillic-wght-normal.0x7cg5h5x34js.woff2",
+    "parity": true,
+    "sha256": "d274604c40757f98f07df623a8b8fb5194508a6fa4f5413a7a107f09e3b7452a"
+  },
+  {
+    "path": "_next/static/media/instrument-serif-latin-ext-400-italic.30flr4oxtjagu.woff2",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/media/instrument-serif-latin-ext-400-italic.30flr4oxtjagu.woff2",
+    "parity": true,
+    "sha256": "d0014821252a8a770bf7551641572f239a8ede83d75652d84fef0c3627751baf"
+  },
+  {
+    "path": "_next/static/media/jetbrains-mono-greek-wght-normal.1k07jbkicvzf3.woff2",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/media/jetbrains-mono-greek-wght-normal.1k07jbkicvzf3.woff2",
+    "parity": true,
+    "sha256": "ee863198077f3093ffa81c072581cc4bd608a04e60a8a9c0b846396ce4f14109"
+  },
+  {
+    "path": "_next/static/media/instrument-serif-latin-400-italic.3_-8f-v73506e.woff",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/media/instrument-serif-latin-400-italic.3_-8f-v73506e.woff",
+    "parity": true,
+    "sha256": "9bc25f743ba6bf9091d37de465dedb2d2cb0c0614738bec1c551922fb2794d1d"
+  },
+  {
+    "path": "_next/static/media/icon.0ic1315j3unux.svg",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/media/icon.0ic1315j3unux.svg",
+    "parity": true,
+    "sha256": "b6e979bced4a4b468c9925219faf43223065d88a2729732919efdf56ad7b8fc9"
+  },
+  {
+    "path": "_next/static/media/jetbrains-mono-cyrillic-ext-wght-normal.1ladf10s224e1.woff2",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/media/jetbrains-mono-cyrillic-ext-wght-normal.1ladf10s224e1.woff2",
+    "parity": true,
+    "sha256": "593ccd6fe36e299e151aeae4521be9bfe83ac487d96d7cdb44f50be4a04041c7"
+  },
+  {
+    "path": "_next/static/media/instrument-sans-latin-wght-normal.3h2wr6o8p949u.woff2",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/media/instrument-sans-latin-wght-normal.3h2wr6o8p949u.woff2",
+    "parity": true,
+    "sha256": "2ee17598a98d8a59e4df8152d015bec9ab8e4d5672cc0ab42bef806b568e3971"
+  },
+  {
+    "path": "_next/static/media/jetbrains-mono-latin-ext-wght-normal.3rxtet6g9i1k3.woff2",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/media/jetbrains-mono-latin-ext-wght-normal.3rxtet6g9i1k3.woff2",
+    "parity": true,
+    "sha256": "79bfdab9ba467e26eea4122e6f2567e188dd8a09a8c730d501fc487c4ab99c6e"
+  },
+  {
+    "path": "_next/static/media/instrument-serif-latin-ext-400-italic.2vfzl0i35o8_c.woff",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/media/instrument-serif-latin-ext-400-italic.2vfzl0i35o8_c.woff",
+    "parity": true,
+    "sha256": "f393f76db28120fbfee2844ba6ca2be0fa3e28ecd27f72dcc1c00045e32e377b"
+  },
+  {
+    "path": "_next/static/media/instrument-sans-latin-ext-wght-normal.2jfp7v6ns64yg.woff2",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/media/instrument-sans-latin-ext-wght-normal.2jfp7v6ns64yg.woff2",
+    "parity": true,
+    "sha256": "c4fcfea41f2c1cfeea9211fa43679845454a1d0e0d7e95e069c7e73c4ae302d2"
+  },
+  {
+    "path": "_next/static/media/jetbrains-mono-latin-wght-normal.2rmhnsrc80fag.woff2",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/media/jetbrains-mono-latin-wght-normal.2rmhnsrc80fag.woff2",
+    "parity": true,
+    "sha256": "18be452724bfdc236c074ca94a249a7f41a86752c7d04ab258ce9ed5651f6a7e"
+  },
+  {
+    "path": "_next/static/media/jetbrains-mono-vietnamese-wght-normal.0a13tgqsi9z78.woff2",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/media/jetbrains-mono-vietnamese-wght-normal.0a13tgqsi9z78.woff2",
+    "parity": true,
+    "sha256": "2288795da89dd97e648954b96e22b4501bd85dfc453264460b252f888b582ca2"
+  },
+  {
+    "path": "_next/static/media/instrument-serif-latin-400-italic.1bk2-9tco4m7m.woff2",
+    "status": 200,
+    "url": "https://magic-modal.gabrieltaveira.dev/_next/static/media/instrument-serif-latin-400-italic.1bk2-9tco4m7m.woff2",
+    "parity": true,
+    "sha256": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7"
+  }
+]

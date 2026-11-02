@@ -1,0 +1,18 @@
+[36m[1m[Codegen][0m Analyzing examples/kitchen-sink/package.json[0m
+[36m[1m[Codegen][0m Could not find generated autolinking output at: /tmp/magic-modal-final-c5y54nn6/codegen/build/generated/autolinking/autolinking.json[0m
+[36m[1m[Codegen][0m Could not find React Native config at: /private/tmp/magic-modal-final-c5y54nn6/source/examples/kitchen-sink/react-native.config.js[0m
+[36m[1m[Codegen][0m [33mSearching for codegen-enabled libraries in the app.[0m
+[36m[1m[Codegen][0m [33mThe "codegenConfig" field is not defined in package.json. Assuming there is nothing to generate at the app level.[0m
+[36m[1m[Codegen][0m Could not find generated autolinking output at: /tmp/magic-modal-final-c5y54nn6/codegen/build/generated/autolinking/autolinking.json[0m
+[36m[1m[Codegen][0m [33mSearching for codegen-enabled libraries in the project dependencies.[0m
+[36m[1m[Codegen][0m Found react-native[0m
+[36m[1m[Codegen][0m Found react-native-gesture-handler[0m
+[36m[1m[Codegen][0m Found react-native-reanimated[0m
+[36m[1m[Codegen][0m Found react-native-safe-area-context[0m
+[36m[1m[Codegen][0m Found react-native-screens[0m
+[36m[1m[Codegen][0m Found react-native-worklets[0m
+[36m[1m[Codegen][0m [33mSearching for codegen-enabled libraries in react-native.config.js[0m
+[36m[1m[Codegen][0m Processing FBReactNativeSpec[0m
+[36m[1m[Codegen][0m [33mSearching for podspec in the project dependencies.[0m
+[36m[1m[Codegen][0m TypeError: Cannot read properties of undefined (reading 'charAt')[0m
+[36m[1m[Codegen][0m [33mDone.[0m

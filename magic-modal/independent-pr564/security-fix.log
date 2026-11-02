@@ -1,0 +1,15 @@
+✔ preserves the result prototype with a malicious target (0.362334ms)
+✔ preserves the result prototype with a malicious source (0.046791ms)
+✔ nested poison remains data without changing prototypes (0.055125ms)
+✔ retains arrays, symbols, custom merge, and merge.all (0.369291ms)
+✔ the installed dependency uses the hardened merge (0.447416ms)
+✔ legacy minimatch consumers use the patched matcher (7.107833ms)
+✔ legacy glob traverses patched minimatch segments in sync and callback APIs (12.713708ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 54.016375
