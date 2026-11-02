@@ -1,0 +1,18 @@
+{
+  "restored_from": "381b89d^",
+  "exact_original_bytes": true,
+  "tests": {
+    "command": "node --test tests/*.test.mjs",
+    "cwd": "apps/nextjs",
+    "passed": 81,
+    "failed": 0
+  },
+  "format": "passed",
+  "diff_check": "passed",
+  "independent_visual_review": "passed",
+  "sha256": {
+    "restored-en.jpg": "3f386dc07a23579ddaf234e343bd6bc6d433b539209aaab786d7ffe3622fe24a",
+    "restored-pt.jpg": "0bd4f3fca53838385a53af318b4ebd488d67c9d088bf3cc7fda7c3132bb3057f",
+    "rejected-pt.jpg": "018545d44ba8e29ec6c01b9e0a5d8918ea047f29ea0779df6d51cb9e5293b81d"
+  }
+}
