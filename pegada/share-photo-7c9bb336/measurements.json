@@ -1,0 +1,2162 @@
+[
+  {
+    "locale": "en",
+    "width": 375,
+    "data": {
+      "toolIcon": {
+        "_tag": "website",
+        "pageUrl": "http://localhost:3017/dog/share-long-333"
+      },
+      "value": {
+        "bar": 1,
+        "card": {
+          "font": "16px",
+          "height": 428.75,
+          "line": "24px",
+          "radius": "24px",
+          "scroll": 343,
+          "text": "Maximiliano Ferreira Bartholomeu\n\nShih-tzu\n\nReady for a walk with new friends.",
+          "tracking": "normal",
+          "weight": "400",
+          "width": 343,
+          "x": 16,
+          "y": 69
+        },
+        "complete": true,
+        "description": "Shih-tzu — Ready for a walk with new friends. Meet Maximiliano Ferreira Bartholomeu and other dogs near you on Pegada.",
+        "fonts": [
+          {
+            "family": "Gilroy",
+            "status": "unloaded",
+            "weight": "700"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "300"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "500"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "600"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "800"
+          },
+          {
+            "family": "Gilroy Fallback",
+            "status": "unloaded",
+            "weight": "normal"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "loaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          }
+        ],
+        "headline": {
+          "font": "36px",
+          "height": 0,
+          "line": "45px",
+          "radius": "0px",
+          "scroll": 0,
+          "text": "Maximiliano Ferreira Bartholomeu wants to make friends",
+          "tracking": "-0.72px",
+          "weight": "800",
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "height": 844,
+        "name": {
+          "font": "24px",
+          "height": 60,
+          "line": "30px",
+          "radius": "0px",
+          "scroll": 303,
+          "text": "Maximiliano Ferreira Bartholomeu",
+          "tracking": "-0.48px",
+          "weight": "800",
+          "width": 303,
+          "x": 36,
+          "y": 369.75
+        },
+        "naturalHeight": 1028,
+        "naturalWidth": 720,
+        "og": "https://www.pegada.app/dog/share-long-333/opengraph-image",
+        "overflow": false,
+        "paragraphs": [
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 303,
+            "text": "Shih-tzu",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 303,
+            "x": 36,
+            "y": 433.75
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 303,
+            "text": "Ready for a walk with new friends.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 303,
+            "x": 36,
+            "y": 457.75
+          },
+          {
+            "font": "18px",
+            "height": 0,
+            "line": "28px",
+            "radius": "0px",
+            "scroll": 0,
+            "text": "Like Maximiliano Ferreira Bartholomeu and chat with the person who looks after her.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 0,
+            "text": "You'll need the app. It's free and takes a minute.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 208,
+            "text": "She wants to make friends.",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 208.0625,
+            "x": 16,
+            "y": 796
+          }
+        ],
+        "src": "https://www.pegada.app/landing/nina.avif",
+        "sticky": [
+          {
+            "font": "16px",
+            "height": 0,
+            "line": "24px",
+            "radius": "9999px",
+            "scroll": 0,
+            "text": "Like Maximiliano Ferreira Bartholomeu",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "font": "14px",
+            "height": 44,
+            "line": "20px",
+            "radius": "9999px",
+            "scroll": 119,
+            "text": "Get Pegada",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 118.9375,
+            "x": 240.0625,
+            "y": 784
+          }
+        ],
+        "title": "Maximiliano Ferreira Bartholomeu | Pegada",
+        "url": "http://localhost:3017/dog/share-long-333",
+        "width": 375
+      }
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz9t969-055c5830.png"
+  },
+  {
+    "locale": "en",
+    "width": 768,
+    "data": {
+      "toolIcon": {
+        "_tag": "website",
+        "pageUrl": "http://localhost:3017/dog/share-long-333"
+      },
+      "value": {
+        "bar": 1,
+        "card": {
+          "font": "16px",
+          "height": 500,
+          "line": "24px",
+          "radius": "24px",
+          "scroll": 400,
+          "text": "Maximiliano Ferreira Bartholomeu\n\nShih-tzu\n\nReady for a walk with new friends.",
+          "tracking": "normal",
+          "weight": "400",
+          "width": 400,
+          "x": 32,
+          "y": 152.5
+        },
+        "complete": true,
+        "description": "Shih-tzu — Ready for a walk with new friends. Meet Maximiliano Ferreira Bartholomeu and other dogs near you on Pegada.",
+        "fonts": [
+          {
+            "family": "Gilroy",
+            "status": "unloaded",
+            "weight": "700"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "300"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "500"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "600"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "800"
+          },
+          {
+            "family": "Gilroy Fallback",
+            "status": "unloaded",
+            "weight": "normal"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          }
+        ],
+        "headline": {
+          "font": "36px",
+          "height": 225,
+          "line": "45px",
+          "radius": "0px",
+          "scroll": 240,
+          "text": "Maximiliano Ferreira Bartholomeu wants to make friends",
+          "tracking": "-0.72px",
+          "weight": "800",
+          "width": 240,
+          "x": 496,
+          "y": 144
+        },
+        "height": 800,
+        "name": {
+          "font": "30px",
+          "height": 75,
+          "line": "37.5px",
+          "radius": "0px",
+          "scroll": 360,
+          "text": "Maximiliano Ferreira Bartholomeu",
+          "tracking": "-0.6px",
+          "weight": "800",
+          "width": 360,
+          "x": 52,
+          "y": 509.5
+        },
+        "naturalHeight": 1028,
+        "naturalWidth": 720,
+        "og": "https://www.pegada.app/dog/share-long-333/opengraph-image",
+        "overflow": false,
+        "paragraphs": [
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 360,
+            "text": "Shih-tzu",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 360,
+            "x": 52,
+            "y": 588.5
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 360,
+            "text": "Ready for a walk with new friends.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 360,
+            "x": 52,
+            "y": 612.5
+          },
+          {
+            "font": "18px",
+            "height": 112,
+            "line": "28px",
+            "radius": "0px",
+            "scroll": 240,
+            "text": "Like Maximiliano Ferreira Bartholomeu and chat with the person who looks after her.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 240,
+            "x": 496,
+            "y": 389
+          },
+          {
+            "font": "14px",
+            "height": 40,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 240,
+            "text": "You'll need the app. It's free and takes a minute.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 240,
+            "x": 496,
+            "y": 621
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 0,
+            "text": "She wants to make friends.",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "src": "https://www.pegada.app/landing/nina.avif",
+        "sticky": [
+          {
+            "font": "16px",
+            "height": 80,
+            "line": "24px",
+            "radius": "9999px",
+            "scroll": 240,
+            "text": "Like Maximiliano Ferreira Bartholomeu",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 240,
+            "x": 496,
+            "y": 529
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "9999px",
+            "scroll": 0,
+            "text": "Get Pegada",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "title": "Maximiliano Ferreira Bartholomeu | Pegada",
+        "url": "http://localhost:3017/dog/share-long-333",
+        "width": 768
+      }
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz9td4i-cebdc2bd.png"
+  },
+  {
+    "locale": "en",
+    "width": 1280,
+    "data": {
+      "toolIcon": {
+        "_tag": "website",
+        "pageUrl": "http://localhost:3017/dog/share-long-333"
+      },
+      "value": {
+        "bar": 1,
+        "card": {
+          "font": "16px",
+          "height": 500,
+          "line": "24px",
+          "radius": "24px",
+          "scroll": 400,
+          "text": "Maximiliano Ferreira Bartholomeu\n\nShih-tzu\n\nReady for a walk with new friends.",
+          "tracking": "normal",
+          "weight": "400",
+          "width": 400,
+          "x": 160,
+          "y": 152.5
+        },
+        "complete": true,
+        "description": "Shih-tzu — Ready for a walk with new friends. Meet Maximiliano Ferreira Bartholomeu and other dogs near you on Pegada.",
+        "fonts": [
+          {
+            "family": "Gilroy",
+            "status": "unloaded",
+            "weight": "700"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "300"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "500"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "600"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "800"
+          },
+          {
+            "family": "Gilroy Fallback",
+            "status": "unloaded",
+            "weight": "normal"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          }
+        ],
+        "headline": {
+          "font": "48px",
+          "height": 180,
+          "line": "60px",
+          "radius": "0px",
+          "scroll": 448,
+          "text": "Maximiliano Ferreira Bartholomeu wants to make friends",
+          "tracking": "-0.96px",
+          "weight": "800",
+          "width": 448,
+          "x": 624,
+          "y": 216.5
+        },
+        "height": 800,
+        "name": {
+          "font": "30px",
+          "height": 75,
+          "line": "37.5px",
+          "radius": "0px",
+          "scroll": 360,
+          "text": "Maximiliano Ferreira Bartholomeu",
+          "tracking": "-0.6px",
+          "weight": "800",
+          "width": 360,
+          "x": 180,
+          "y": 509.5
+        },
+        "naturalHeight": 1028,
+        "naturalWidth": 720,
+        "og": "https://www.pegada.app/dog/share-long-333/opengraph-image",
+        "overflow": false,
+        "paragraphs": [
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 360,
+            "text": "Shih-tzu",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 360,
+            "x": 180,
+            "y": 588.5
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 360,
+            "text": "Ready for a walk with new friends.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 360,
+            "x": 180,
+            "y": 612.5
+          },
+          {
+            "font": "18px",
+            "height": 56,
+            "line": "28px",
+            "radius": "0px",
+            "scroll": 448,
+            "text": "Like Maximiliano Ferreira Bartholomeu and chat with the person who looks after her.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 448,
+            "x": 624,
+            "y": 416.5
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 306,
+            "text": "You'll need the app. It's free and takes a minute.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 306.1875,
+            "x": 624,
+            "y": 568.5
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 0,
+            "text": "She wants to make friends.",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "src": "https://www.pegada.app/landing/nina.avif",
+        "sticky": [
+          {
+            "font": "16px",
+            "height": 56,
+            "line": "24px",
+            "radius": "9999px",
+            "scroll": 345,
+            "text": "Like Maximiliano Ferreira Bartholomeu",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 345.171875,
+            "x": 624,
+            "y": 500.5
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "9999px",
+            "scroll": 0,
+            "text": "Get Pegada",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "title": "Maximiliano Ferreira Bartholomeu | Pegada",
+        "url": "http://localhost:3017/dog/share-long-333",
+        "width": 1280
+      }
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz9tdh0-21d9e0e8.png"
+  },
+  {
+    "locale": "en",
+    "width": 1920,
+    "data": {
+      "toolIcon": {
+        "_tag": "website",
+        "pageUrl": "http://localhost:3017/dog/share-long-333"
+      },
+      "value": {
+        "bar": 1,
+        "card": {
+          "font": "16px",
+          "height": 500,
+          "line": "24px",
+          "radius": "24px",
+          "scroll": 400,
+          "text": "Maximiliano Ferreira Bartholomeu\n\nShih-tzu\n\nReady for a walk with new friends.",
+          "tracking": "normal",
+          "weight": "400",
+          "width": 400,
+          "x": 480,
+          "y": 152.5
+        },
+        "complete": true,
+        "description": "Shih-tzu — Ready for a walk with new friends. Meet Maximiliano Ferreira Bartholomeu and other dogs near you on Pegada.",
+        "fonts": [
+          {
+            "family": "Gilroy",
+            "status": "unloaded",
+            "weight": "700"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "300"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "500"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "600"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "800"
+          },
+          {
+            "family": "Gilroy Fallback",
+            "status": "unloaded",
+            "weight": "normal"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          }
+        ],
+        "headline": {
+          "font": "48px",
+          "height": 180,
+          "line": "60px",
+          "radius": "0px",
+          "scroll": 448,
+          "text": "Maximiliano Ferreira Bartholomeu wants to make friends",
+          "tracking": "-0.96px",
+          "weight": "800",
+          "width": 448,
+          "x": 944,
+          "y": 216.5
+        },
+        "height": 800,
+        "name": {
+          "font": "30px",
+          "height": 75,
+          "line": "37.5px",
+          "radius": "0px",
+          "scroll": 360,
+          "text": "Maximiliano Ferreira Bartholomeu",
+          "tracking": "-0.6px",
+          "weight": "800",
+          "width": 360,
+          "x": 500,
+          "y": 509.5
+        },
+        "naturalHeight": 1028,
+        "naturalWidth": 720,
+        "og": "https://www.pegada.app/dog/share-long-333/opengraph-image",
+        "overflow": false,
+        "paragraphs": [
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 360,
+            "text": "Shih-tzu",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 360,
+            "x": 500,
+            "y": 588.5
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 360,
+            "text": "Ready for a walk with new friends.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 360,
+            "x": 500,
+            "y": 612.5
+          },
+          {
+            "font": "18px",
+            "height": 56,
+            "line": "28px",
+            "radius": "0px",
+            "scroll": 448,
+            "text": "Like Maximiliano Ferreira Bartholomeu and chat with the person who looks after her.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 448,
+            "x": 944,
+            "y": 416.5
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 306,
+            "text": "You'll need the app. It's free and takes a minute.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 306.1875,
+            "x": 944,
+            "y": 568.5
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 0,
+            "text": "She wants to make friends.",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "src": "https://www.pegada.app/landing/nina.avif",
+        "sticky": [
+          {
+            "font": "16px",
+            "height": 56,
+            "line": "24px",
+            "radius": "9999px",
+            "scroll": 345,
+            "text": "Like Maximiliano Ferreira Bartholomeu",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 345.171875,
+            "x": 944,
+            "y": 500.5
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "9999px",
+            "scroll": 0,
+            "text": "Get Pegada",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "title": "Maximiliano Ferreira Bartholomeu | Pegada",
+        "url": "http://localhost:3017/dog/share-long-333",
+        "width": 1920
+      }
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz9tdsr-5bba32f3.png"
+  },
+  {
+    "locale": "en",
+    "width": 2560,
+    "data": {
+      "toolIcon": {
+        "_tag": "website",
+        "pageUrl": "http://localhost:3017/dog/share-long-333"
+      },
+      "value": {
+        "bar": 1,
+        "card": {
+          "font": "16px",
+          "height": 500,
+          "line": "24px",
+          "radius": "24px",
+          "scroll": 400,
+          "text": "Maximiliano Ferreira Bartholomeu\n\nShih-tzu\n\nReady for a walk with new friends.",
+          "tracking": "normal",
+          "weight": "400",
+          "width": 400,
+          "x": 800,
+          "y": 152.5
+        },
+        "complete": true,
+        "description": "Shih-tzu — Ready for a walk with new friends. Meet Maximiliano Ferreira Bartholomeu and other dogs near you on Pegada.",
+        "fonts": [
+          {
+            "family": "Gilroy",
+            "status": "unloaded",
+            "weight": "700"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "300"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "500"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "600"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "800"
+          },
+          {
+            "family": "Gilroy Fallback",
+            "status": "unloaded",
+            "weight": "normal"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          }
+        ],
+        "headline": {
+          "font": "48px",
+          "height": 180,
+          "line": "60px",
+          "radius": "0px",
+          "scroll": 448,
+          "text": "Maximiliano Ferreira Bartholomeu wants to make friends",
+          "tracking": "-0.96px",
+          "weight": "800",
+          "width": 448,
+          "x": 1264,
+          "y": 216.5
+        },
+        "height": 800,
+        "name": {
+          "font": "30px",
+          "height": 75,
+          "line": "37.5px",
+          "radius": "0px",
+          "scroll": 360,
+          "text": "Maximiliano Ferreira Bartholomeu",
+          "tracking": "-0.6px",
+          "weight": "800",
+          "width": 360,
+          "x": 820,
+          "y": 509.5
+        },
+        "naturalHeight": 1028,
+        "naturalWidth": 720,
+        "og": "https://www.pegada.app/dog/share-long-333/opengraph-image",
+        "overflow": false,
+        "paragraphs": [
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 360,
+            "text": "Shih-tzu",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 360,
+            "x": 820,
+            "y": 588.5
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 360,
+            "text": "Ready for a walk with new friends.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 360,
+            "x": 820,
+            "y": 612.5
+          },
+          {
+            "font": "18px",
+            "height": 56,
+            "line": "28px",
+            "radius": "0px",
+            "scroll": 448,
+            "text": "Like Maximiliano Ferreira Bartholomeu and chat with the person who looks after her.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 448,
+            "x": 1264,
+            "y": 416.5
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 306,
+            "text": "You'll need the app. It's free and takes a minute.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 306.1875,
+            "x": 1264,
+            "y": 568.5
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 0,
+            "text": "She wants to make friends.",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "src": "https://www.pegada.app/landing/nina.avif",
+        "sticky": [
+          {
+            "font": "16px",
+            "height": 56,
+            "line": "24px",
+            "radius": "9999px",
+            "scroll": 345,
+            "text": "Like Maximiliano Ferreira Bartholomeu",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 345.171875,
+            "x": 1264,
+            "y": 500.5
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "9999px",
+            "scroll": 0,
+            "text": "Get Pegada",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "title": "Maximiliano Ferreira Bartholomeu | Pegada",
+        "url": "http://localhost:3017/dog/share-long-333",
+        "width": 2560
+      }
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz9te4r-62a9ccca.png"
+  },
+  {
+    "locale": "pt",
+    "width": 375,
+    "data": {
+      "toolIcon": {
+        "_tag": "website",
+        "pageUrl": "http://localhost:3017/pt-br/dog/share-long-333"
+      },
+      "value": {
+        "bar": 1,
+        "card": {
+          "font": "16px",
+          "height": 428.75,
+          "line": "24px",
+          "radius": "24px",
+          "scroll": 343,
+          "text": "Maximiliano Ferreira Bartholomeu\n\nShih-tzu\n\nReady for a walk with new friends.",
+          "tracking": "normal",
+          "weight": "400",
+          "width": 343,
+          "x": 16,
+          "y": 69
+        },
+        "complete": true,
+        "description": "Shih-tzu — Ready for a walk with new friends. Conheça Maximiliano Ferreira Bartholomeu e outros cachorros perto de você no Pegada.",
+        "fonts": [
+          {
+            "family": "Gilroy",
+            "status": "unloaded",
+            "weight": "700"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "300"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "500"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "600"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "800"
+          },
+          {
+            "family": "Gilroy Fallback",
+            "status": "unloaded",
+            "weight": "normal"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "loaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          }
+        ],
+        "headline": {
+          "font": "36px",
+          "height": 0,
+          "line": "45px",
+          "radius": "0px",
+          "scroll": 0,
+          "text": "A Maximiliano Ferreira Bartholomeu quer fazer amigos",
+          "tracking": "-0.72px",
+          "weight": "800",
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "height": 844,
+        "name": {
+          "font": "24px",
+          "height": 60,
+          "line": "30px",
+          "radius": "0px",
+          "scroll": 303,
+          "text": "Maximiliano Ferreira Bartholomeu",
+          "tracking": "-0.48px",
+          "weight": "800",
+          "width": 303,
+          "x": 36,
+          "y": 369.75
+        },
+        "naturalHeight": 1028,
+        "naturalWidth": 720,
+        "og": "https://www.pegada.app/pt-br/dog/share-long-333/opengraph-image",
+        "overflow": false,
+        "paragraphs": [
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 303,
+            "text": "Shih-tzu",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 303,
+            "x": 36,
+            "y": 433.75
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 303,
+            "text": "Ready for a walk with new friends.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 303,
+            "x": 36,
+            "y": 457.75
+          },
+          {
+            "font": "18px",
+            "height": 0,
+            "line": "28px",
+            "radius": "0px",
+            "scroll": 0,
+            "text": "Curte a Maximiliano Ferreira Bartholomeu e fala com quem cuida dela.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 0,
+            "text": "Você vai precisar do app. É de graça e leva um minuto.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 191,
+            "text": "Ela quer fazer amigos.",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 191.265625,
+            "x": 16,
+            "y": 796
+          }
+        ],
+        "src": "https://www.pegada.app/landing/nina.avif",
+        "sticky": [
+          {
+            "font": "16px",
+            "height": 0,
+            "line": "24px",
+            "radius": "9999px",
+            "scroll": 0,
+            "text": "Curtir a Maximiliano Ferreira Bartholomeu",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "font": "14px",
+            "height": 44,
+            "line": "20px",
+            "radius": "9999px",
+            "scroll": 136,
+            "text": "Baixar Pegada",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 135.734375,
+            "x": 223.265625,
+            "y": 784
+          }
+        ],
+        "title": "Maximiliano Ferreira Bartholomeu | Pegada",
+        "url": "http://localhost:3017/pt-br/dog/share-long-333",
+        "width": 375
+      }
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz9texj-a6f03959.png"
+  },
+  {
+    "locale": "pt",
+    "width": 768,
+    "data": {
+      "toolIcon": {
+        "_tag": "website",
+        "pageUrl": "http://localhost:3017/pt-br/dog/share-long-333"
+      },
+      "value": {
+        "bar": 1,
+        "card": {
+          "font": "16px",
+          "height": 500,
+          "line": "24px",
+          "radius": "24px",
+          "scroll": 400,
+          "text": "Maximiliano Ferreira Bartholomeu\n\nShih-tzu\n\nReady for a walk with new friends.",
+          "tracking": "normal",
+          "weight": "400",
+          "width": 400,
+          "x": 32,
+          "y": 152.5
+        },
+        "complete": true,
+        "description": "Shih-tzu — Ready for a walk with new friends. Conheça Maximiliano Ferreira Bartholomeu e outros cachorros perto de você no Pegada.",
+        "fonts": [
+          {
+            "family": "Gilroy",
+            "status": "unloaded",
+            "weight": "700"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "300"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "500"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "600"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "800"
+          },
+          {
+            "family": "Gilroy Fallback",
+            "status": "unloaded",
+            "weight": "normal"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          }
+        ],
+        "headline": {
+          "font": "36px",
+          "height": 225,
+          "line": "45px",
+          "radius": "0px",
+          "scroll": 240,
+          "text": "A Maximiliano Ferreira Bartholomeu quer fazer amigos",
+          "tracking": "-0.72px",
+          "weight": "800",
+          "width": 240,
+          "x": 496,
+          "y": 158
+        },
+        "height": 800,
+        "name": {
+          "font": "30px",
+          "height": 75,
+          "line": "37.5px",
+          "radius": "0px",
+          "scroll": 360,
+          "text": "Maximiliano Ferreira Bartholomeu",
+          "tracking": "-0.6px",
+          "weight": "800",
+          "width": 360,
+          "x": 52,
+          "y": 509.5
+        },
+        "naturalHeight": 1028,
+        "naturalWidth": 720,
+        "og": "https://www.pegada.app/pt-br/dog/share-long-333/opengraph-image",
+        "overflow": false,
+        "paragraphs": [
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 360,
+            "text": "Shih-tzu",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 360,
+            "x": 52,
+            "y": 588.5
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 360,
+            "text": "Ready for a walk with new friends.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 360,
+            "x": 52,
+            "y": 612.5
+          },
+          {
+            "font": "18px",
+            "height": 84,
+            "line": "28px",
+            "radius": "0px",
+            "scroll": 240,
+            "text": "Curte a Maximiliano Ferreira Bartholomeu e fala com quem cuida dela.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 240,
+            "x": 496,
+            "y": 403
+          },
+          {
+            "font": "14px",
+            "height": 40,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 240,
+            "text": "Você vai precisar do app. É de graça e leva um minuto.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 240,
+            "x": 496,
+            "y": 607
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 0,
+            "text": "Ela quer fazer amigos.",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "src": "https://www.pegada.app/landing/nina.avif",
+        "sticky": [
+          {
+            "font": "16px",
+            "height": 80,
+            "line": "24px",
+            "radius": "9999px",
+            "scroll": 240,
+            "text": "Curtir a Maximiliano Ferreira Bartholomeu",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 240,
+            "x": 496,
+            "y": 515
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "9999px",
+            "scroll": 0,
+            "text": "Baixar Pegada",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "title": "Maximiliano Ferreira Bartholomeu | Pegada",
+        "url": "http://localhost:3017/pt-br/dog/share-long-333",
+        "width": 768
+      }
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz9tfwf-e505cba3.png"
+  },
+  {
+    "locale": "pt",
+    "width": 1280,
+    "data": {
+      "toolIcon": {
+        "_tag": "website",
+        "pageUrl": "http://localhost:3017/pt-br/dog/share-long-333"
+      },
+      "value": {
+        "bar": 1,
+        "card": {
+          "font": "16px",
+          "height": 500,
+          "line": "24px",
+          "radius": "24px",
+          "scroll": 400,
+          "text": "Maximiliano Ferreira Bartholomeu\n\nShih-tzu\n\nReady for a walk with new friends.",
+          "tracking": "normal",
+          "weight": "400",
+          "width": 400,
+          "x": 160,
+          "y": 152.5
+        },
+        "complete": true,
+        "description": "Shih-tzu — Ready for a walk with new friends. Conheça Maximiliano Ferreira Bartholomeu e outros cachorros perto de você no Pegada.",
+        "fonts": [
+          {
+            "family": "Gilroy",
+            "status": "unloaded",
+            "weight": "700"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "300"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "500"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "600"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "800"
+          },
+          {
+            "family": "Gilroy Fallback",
+            "status": "unloaded",
+            "weight": "normal"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          }
+        ],
+        "headline": {
+          "font": "48px",
+          "height": 240,
+          "line": "60px",
+          "radius": "0px",
+          "scroll": 448,
+          "text": "A Maximiliano Ferreira Bartholomeu quer fazer amigos",
+          "tracking": "-0.96px",
+          "weight": "800",
+          "width": 448,
+          "x": 624,
+          "y": 186.5
+        },
+        "height": 800,
+        "name": {
+          "font": "30px",
+          "height": 75,
+          "line": "37.5px",
+          "radius": "0px",
+          "scroll": 360,
+          "text": "Maximiliano Ferreira Bartholomeu",
+          "tracking": "-0.6px",
+          "weight": "800",
+          "width": 360,
+          "x": 180,
+          "y": 509.5
+        },
+        "naturalHeight": 1028,
+        "naturalWidth": 720,
+        "og": "https://www.pegada.app/pt-br/dog/share-long-333/opengraph-image",
+        "overflow": false,
+        "paragraphs": [
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 360,
+            "text": "Shih-tzu",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 360,
+            "x": 180,
+            "y": 588.5
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 360,
+            "text": "Ready for a walk with new friends.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 360,
+            "x": 180,
+            "y": 612.5
+          },
+          {
+            "font": "18px",
+            "height": 56,
+            "line": "28px",
+            "radius": "0px",
+            "scroll": 448,
+            "text": "Curte a Maximiliano Ferreira Bartholomeu e fala com quem cuida dela.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 448,
+            "x": 624,
+            "y": 446.5
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 356,
+            "text": "Você vai precisar do app. É de graça e leva um minuto.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 355.9140625,
+            "x": 624,
+            "y": 598.5
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 0,
+            "text": "Ela quer fazer amigos.",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "src": "https://www.pegada.app/landing/nina.avif",
+        "sticky": [
+          {
+            "font": "16px",
+            "height": 56,
+            "line": "24px",
+            "radius": "9999px",
+            "scroll": 373,
+            "text": "Curtir a Maximiliano Ferreira Bartholomeu",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 372.609375,
+            "x": 624,
+            "y": 530.5
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "9999px",
+            "scroll": 0,
+            "text": "Baixar Pegada",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "title": "Maximiliano Ferreira Bartholomeu | Pegada",
+        "url": "http://localhost:3017/pt-br/dog/share-long-333",
+        "width": 1280
+      }
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz9tg8x-eef8ebf6.png"
+  },
+  {
+    "locale": "pt",
+    "width": 1920,
+    "data": {
+      "toolIcon": {
+        "_tag": "website",
+        "pageUrl": "http://localhost:3017/pt-br/dog/share-long-333"
+      },
+      "value": {
+        "bar": 1,
+        "card": {
+          "font": "16px",
+          "height": 500,
+          "line": "24px",
+          "radius": "24px",
+          "scroll": 400,
+          "text": "Maximiliano Ferreira Bartholomeu\n\nShih-tzu\n\nReady for a walk with new friends.",
+          "tracking": "normal",
+          "weight": "400",
+          "width": 400,
+          "x": 480,
+          "y": 152.5
+        },
+        "complete": true,
+        "description": "Shih-tzu — Ready for a walk with new friends. Conheça Maximiliano Ferreira Bartholomeu e outros cachorros perto de você no Pegada.",
+        "fonts": [
+          {
+            "family": "Gilroy",
+            "status": "unloaded",
+            "weight": "700"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "300"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "500"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "600"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "800"
+          },
+          {
+            "family": "Gilroy Fallback",
+            "status": "unloaded",
+            "weight": "normal"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          }
+        ],
+        "headline": {
+          "font": "48px",
+          "height": 240,
+          "line": "60px",
+          "radius": "0px",
+          "scroll": 448,
+          "text": "A Maximiliano Ferreira Bartholomeu quer fazer amigos",
+          "tracking": "-0.96px",
+          "weight": "800",
+          "width": 448,
+          "x": 944,
+          "y": 186.5
+        },
+        "height": 800,
+        "name": {
+          "font": "30px",
+          "height": 75,
+          "line": "37.5px",
+          "radius": "0px",
+          "scroll": 360,
+          "text": "Maximiliano Ferreira Bartholomeu",
+          "tracking": "-0.6px",
+          "weight": "800",
+          "width": 360,
+          "x": 500,
+          "y": 509.5
+        },
+        "naturalHeight": 1028,
+        "naturalWidth": 720,
+        "og": "https://www.pegada.app/pt-br/dog/share-long-333/opengraph-image",
+        "overflow": false,
+        "paragraphs": [
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 360,
+            "text": "Shih-tzu",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 360,
+            "x": 500,
+            "y": 588.5
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 360,
+            "text": "Ready for a walk with new friends.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 360,
+            "x": 500,
+            "y": 612.5
+          },
+          {
+            "font": "18px",
+            "height": 56,
+            "line": "28px",
+            "radius": "0px",
+            "scroll": 448,
+            "text": "Curte a Maximiliano Ferreira Bartholomeu e fala com quem cuida dela.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 448,
+            "x": 944,
+            "y": 446.5
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 356,
+            "text": "Você vai precisar do app. É de graça e leva um minuto.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 355.9140625,
+            "x": 944,
+            "y": 598.5
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 0,
+            "text": "Ela quer fazer amigos.",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "src": "https://www.pegada.app/landing/nina.avif",
+        "sticky": [
+          {
+            "font": "16px",
+            "height": 56,
+            "line": "24px",
+            "radius": "9999px",
+            "scroll": 373,
+            "text": "Curtir a Maximiliano Ferreira Bartholomeu",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 372.609375,
+            "x": 944,
+            "y": 530.5
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "9999px",
+            "scroll": 0,
+            "text": "Baixar Pegada",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "title": "Maximiliano Ferreira Bartholomeu | Pegada",
+        "url": "http://localhost:3017/pt-br/dog/share-long-333",
+        "width": 1920
+      }
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz9tgkr-47747866.png"
+  },
+  {
+    "locale": "pt",
+    "width": 2560,
+    "data": {
+      "toolIcon": {
+        "_tag": "website",
+        "pageUrl": "http://localhost:3017/pt-br/dog/share-long-333"
+      },
+      "value": {
+        "bar": 1,
+        "card": {
+          "font": "16px",
+          "height": 500,
+          "line": "24px",
+          "radius": "24px",
+          "scroll": 400,
+          "text": "Maximiliano Ferreira Bartholomeu\n\nShih-tzu\n\nReady for a walk with new friends.",
+          "tracking": "normal",
+          "weight": "400",
+          "width": 400,
+          "x": 800,
+          "y": 152.5
+        },
+        "complete": true,
+        "description": "Shih-tzu — Ready for a walk with new friends. Conheça Maximiliano Ferreira Bartholomeu e outros cachorros perto de você no Pegada.",
+        "fonts": [
+          {
+            "family": "Gilroy",
+            "status": "unloaded",
+            "weight": "700"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "300"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "400"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "500"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "600"
+          },
+          {
+            "family": "Gilroy",
+            "status": "loaded",
+            "weight": "800"
+          },
+          {
+            "family": "Gilroy Fallback",
+            "status": "unloaded",
+            "weight": "normal"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist",
+            "status": "unloaded",
+            "weight": "400 600"
+          },
+          {
+            "family": "__nextjs-Geist Mono",
+            "status": "unloaded",
+            "weight": "400 600"
+          }
+        ],
+        "headline": {
+          "font": "48px",
+          "height": 240,
+          "line": "60px",
+          "radius": "0px",
+          "scroll": 448,
+          "text": "A Maximiliano Ferreira Bartholomeu quer fazer amigos",
+          "tracking": "-0.96px",
+          "weight": "800",
+          "width": 448,
+          "x": 1264,
+          "y": 186.5
+        },
+        "height": 800,
+        "name": {
+          "font": "30px",
+          "height": 75,
+          "line": "37.5px",
+          "radius": "0px",
+          "scroll": 360,
+          "text": "Maximiliano Ferreira Bartholomeu",
+          "tracking": "-0.6px",
+          "weight": "800",
+          "width": 360,
+          "x": 820,
+          "y": 509.5
+        },
+        "naturalHeight": 1028,
+        "naturalWidth": 720,
+        "og": "https://www.pegada.app/pt-br/dog/share-long-333/opengraph-image",
+        "overflow": false,
+        "paragraphs": [
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 360,
+            "text": "Shih-tzu",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 360,
+            "x": 820,
+            "y": 588.5
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 360,
+            "text": "Ready for a walk with new friends.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 360,
+            "x": 820,
+            "y": 612.5
+          },
+          {
+            "font": "18px",
+            "height": 56,
+            "line": "28px",
+            "radius": "0px",
+            "scroll": 448,
+            "text": "Curte a Maximiliano Ferreira Bartholomeu e fala com quem cuida dela.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 448,
+            "x": 1264,
+            "y": 446.5
+          },
+          {
+            "font": "14px",
+            "height": 20,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 356,
+            "text": "Você vai precisar do app. É de graça e leva um minuto.",
+            "tracking": "normal",
+            "weight": "300",
+            "width": 355.9140625,
+            "x": 1264,
+            "y": 598.5
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "0px",
+            "scroll": 0,
+            "text": "Ela quer fazer amigos.",
+            "tracking": "normal",
+            "weight": "500",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "src": "https://www.pegada.app/landing/nina.avif",
+        "sticky": [
+          {
+            "font": "16px",
+            "height": 56,
+            "line": "24px",
+            "radius": "9999px",
+            "scroll": 373,
+            "text": "Curtir a Maximiliano Ferreira Bartholomeu",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 372.609375,
+            "x": 1264,
+            "y": 530.5
+          },
+          {
+            "font": "14px",
+            "height": 0,
+            "line": "20px",
+            "radius": "9999px",
+            "scroll": 0,
+            "text": "Baixar Pegada",
+            "tracking": "normal",
+            "weight": "600",
+            "width": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "title": "Maximiliano Ferreira Bartholomeu | Pegada",
+        "url": "http://localhost:3017/pt-br/dog/share-long-333",
+        "width": 2560
+      }
+    },
+    "screenshot": "/Users/gabrieltaveira/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mvz9tgxm-7ad73660.png"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "prefix": "",
+    "result": {
+      "toolIcon": {
+        "_tag": "website",
+        "pageUrl": "http://localhost:3017/story"
+      },
+      "value": {
+        "description": "Pegada builds a story out of your dog's photos. Pick the photos, it comes out on your phone, you post it.",
+        "heading": "Make your dog's story",
+        "og": "https://www.pegada.app/story/og-en.jpg",
+        "title": "Pegada | Your dog's story",
+        "twitter": "https://www.pegada.app/story/og-en.jpg"
+      }
+    }
+  },
+  {
+    "prefix": "pt-br/",
+    "result": {
+      "toolIcon": {
+        "_tag": "website",
+        "pageUrl": "http://localhost:3017/pt-br/story"
+      },
+      "value": {
+        "description": "O Pegada monta um story com as fotos do seu cachorro. Você escolhe as fotos, ele fica pronto no celular e você posta.",
+        "heading": "Faz o story do seu dog",
+        "og": "https://www.pegada.app/story/og.jpg",
+        "title": "Pegada | O story do seu dog",
+        "twitter": "https://www.pegada.app/story/og.jpg"
+      }
+    }
+  }
+]

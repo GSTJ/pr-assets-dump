@@ -1,0 +1,26 @@
+Scope: all 6 workspace projects
+✓ Lockfile passes supply-chain policies (verified 13m ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 0, reused 1, downloaded 0, added 0
+Packages: -126
+--------------------------------------------------------------------------------
+Progress: resolved 0, reused 126, downloaded 0, added 0, done
+
+packages/database postinstall$ pnpm run build
+packages/database postinstall: $ npx prisma generate
+packages/database postinstall: npm notice run npx
+packages/database postinstall: npm notice run 'prisma' generate
+packages/database postinstall: Prisma schema loaded from schema.prisma
+packages/database postinstall: ✔ Generated Prisma Client (v5.17.0) to ./../../node_modules/@prisma/client in 55ms
+packages/database postinstall: Start by importing your Prisma Client (See: http://pris.ly/d/importing-client)
+packages/database postinstall: Tip: Interested in query caching in just a few lines of code? Try Accelerate today! https://pris.ly/tip-3-accelerate
+packages/database postinstall: Done
+apps/mobile preinstall$ pnpm setup:secret:files
+apps/mobile preinstall: $ bash ./scripts/setup-secret-files.sh
+apps/mobile preinstall: Done
+Done in 2.9s using pnpm v11.17.0
+$ oxfmt --check .
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 203ms on 795 files using 18 threads.
