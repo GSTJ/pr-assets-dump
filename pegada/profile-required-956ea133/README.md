@@ -1,0 +1,1 @@
+Automated API, serialized mobile saga and reducer regression evidence for issue #282. The PNG is a test evidence summary, not an app screenshot. Native device acceptance and production exception counts are unverified.

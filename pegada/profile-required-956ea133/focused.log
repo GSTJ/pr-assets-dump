@@ -1,0 +1,12 @@
+$ jest --runInBand --runTestsByPath src/store/sagas/dogs/profile-required.test.ts
+PASS src/store/sagas/dogs/profile-required.test.ts
+  ✓ recovers from serialized missing profile on list (1 ms)
+  ✓ recovers from serialized missing profile on swipe
+  ✓ still reports unexpected list errors
+  ✓ clears stale cards and disables automatic refills during profile creation (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        0.451 s, estimated 1 s
+Ran all test suites within paths "src/store/sagas/dogs/profile-required.test.ts".
