@@ -1,0 +1,1 @@
+$ rimraf lib && tsc -p tsconfig.build.json

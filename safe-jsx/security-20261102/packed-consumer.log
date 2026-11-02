@@ -1,0 +1,1 @@
+Packed ESLint consumer rejects numeric JSX guard and accepts explicit boolean guard

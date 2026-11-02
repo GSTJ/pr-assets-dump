@@ -1,0 +1,21 @@
+npm notice
+npm notice 📦  eslint-plugin-safe-jsx@1.3.9
+npm notice Tarball Contents
+npm notice 13.1kB CHANGELOG.md
+npm notice 1.1kB LICENSE
+npm notice 4.3kB README.md
+npm notice 339B SECURITY.md
+npm notice 1.4kB lib/index.js
+npm notice 9.6kB lib/rules/jsx-explicit-boolean.js
+npm notice 3.0kB package.json
+npm notice Tarball Details
+npm notice name: eslint-plugin-safe-jsx
+npm notice version: 1.3.9
+npm notice filename: eslint-plugin-safe-jsx-1.3.9.tgz
+npm notice package size: 11.6 kB
+npm notice unpacked size: 32.8 kB
+npm notice shasum: dde7245172ebe18b94573831a0baca4652ce52a4
+npm notice integrity: sha512-d62WJb1HHO1XB[...]z/bCPzjl6dLAw==
+npm notice total files: 7
+npm notice
+eslint-plugin-safe-jsx-1.3.9.tgz

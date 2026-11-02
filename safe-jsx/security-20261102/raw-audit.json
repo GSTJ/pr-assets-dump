@@ -1,0 +1,45 @@
+{
+  "advisories": {
+    "1243505": {
+      "findings": [
+        {
+          "version": "4.3.1",
+          "paths": [
+            ".>jest>@jest/core>jest-config>deepmerge",
+            ".>jest>jest-cli>@jest/core>jest-config>deepmerge",
+            ".>jest>jest-cli>jest-config>deepmerge",
+            ".>ts-jest>jest>@jest/core>jest-config>deepmerge",
+            ".>ts-jest>jest>jest-cli>@jest/core>jest-config>deepmerge",
+            ".>ts-jest>jest>jest-cli>jest-config>deepmerge"
+          ],
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1243505,
+      "title": "deepmerge mergeObject() allows prototype poisoning of returned objects",
+      "module_name": "deepmerge",
+      "vulnerable_versions": ">=4.2.0 <=4.3.1",
+      "patched_versions": null,
+      "patched_versions_unpublished": true,
+      "severity": "low",
+      "cwe": "CWE-1321",
+      "github_advisory_id": "GHSA-gcqx-w48m-w2h4",
+      "url": "https://github.com/advisories/GHSA-gcqx-w48m-w2h4"
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 1,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0
+    },
+    "dependencies": 1,
+    "devDependencies": 443,
+    "optionalDependencies": 93,
+    "totalDependencies": 458
+  }
+}

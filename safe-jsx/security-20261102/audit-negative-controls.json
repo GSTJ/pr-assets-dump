@@ -1,0 +1,22 @@
+[
+  {
+    "case": "new-advisory",
+    "exit": 1,
+    "stderr": "node:internal/modules/run_main:107\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: unmitigated advisory: GHSA-new-unmitigated\n+ actual - expected\n\n+ 'GHSA-new-unmitigated'\n- 'GHSA-gcqx-w48m-w2h4'\n        ^\n\n    at file:///private/tmp/safe-jsx-security-g973BHm1/GSTJ-safe-jsx-ba6dc62/tools/security-audit.mjs:41:10 {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: 'GHSA-new-unmitigated',\n  expected: 'GHSA-gcqx-w48m-w2h4',\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n\nNode.js v24.18.1\n"
+  },
+  {
+    "case": "wrong-version",
+    "exit": 1,
+    "stderr": "node:internal/modules/run_main:107\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n'4.3.2' !== '4.3.1'\n\n    at verifyInstalled (file:///private/tmp/safe-jsx-security-g973BHm1/GSTJ-safe-jsx-ba6dc62/tools/security-audit.mjs:24:10)\n    at file:///private/tmp/safe-jsx-security-g973BHm1/GSTJ-safe-jsx-ba6dc62/tools/security-audit.mjs:48:45 {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: '4.3.2',\n  expected: '4.3.1',\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n\nNode.js v24.18.1\n"
+  },
+  {
+    "case": "unresolved-path",
+    "exit": 1,
+    "stderr": "node:internal/modules/cjs/loader:1517\n  const err = new Error(message);\n              ^\n\nError: Cannot find module 'not-an-installed-package'\nRequire stack:\n- /private/tmp/safe-jsx-security-g973BHm1/GSTJ-safe-jsx-ba6dc62/package.json\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1517:15)\n    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1122:12)\n    at require.resolve (node:internal/modules/helpers:171:31)\n    at verifyPath (file:///private/tmp/safe-jsx-security-g973BHm1/GSTJ-safe-jsx-ba6dc62/tools/security-audit.mjs:14:34)\n    at verifyInstalled (file:///private/tmp/safe-jsx-security-g973BHm1/GSTJ-safe-jsx-ba6dc62/tools/security-audit.mjs:26:39)\n    at file:///private/tmp/safe-jsx-security-g973BHm1/GSTJ-safe-jsx-ba6dc62/tools/security-audit.mjs:48:45 {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [\n    '/private/tmp/safe-jsx-security-g973BHm1/GSTJ-safe-jsx-ba6dc62/package.json'\n  ]\n}\n\nNode.js v24.18.1\n"
+  },
+  {
+    "case": "registry-error",
+    "exit": 1,
+    "stderr": "node:internal/modules/run_main:107\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: missing audit response\n    at file:///private/tmp/safe-jsx-security-g973BHm1/GSTJ-safe-jsx-ba6dc62/tools/security-audit.mjs:38:8 {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: undefined,\n  expected: true,\n  operator: '==',\n  diff: 'simple'\n}\n\nNode.js v24.18.1\n"
+  }
+]

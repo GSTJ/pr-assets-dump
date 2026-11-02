@@ -1,0 +1,294 @@
+{
+  "head": "509d7e262100716a409310ba76e11c4c0d1cb37a",
+  "tree": "1f6b94d637548c14b90491224cb25671ae1b3566",
+  "base": "5911f740a0c42c2fca58826adb5c9c51fbc3e372",
+  "branch": "security/tooling-audit-20261102",
+  "files": [
+    {
+      "path": ".github/FUNDING.yml",
+      "sha256": "a0181996486aa8fe93915d27ec237aa094187410bc869beed750a1c3b431f52b",
+      "gitBlob": "b087db5c7659bbcfa16cbc52ef0cbfd8c7cbe5c0"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "sha256": "903bde1e7cea0a55c832b841d1ded6c8691e50b9c82306069bc54270cb784cba",
+      "gitBlob": "9b77ea713f9805f941350851fb4f79c0f70a0f4b"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "sha256": "122a7de2da6f15269100a9effc7c7ec8c407bc9dcc1038e16204337fc2785398",
+      "gitBlob": "2bc5d5f7118646c11eac4472d076e00ffdd1a944"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "b69775de8cb4668318f892be34b94e727d692701da2800b7c9e3f78afd97a6e4",
+      "gitBlob": "81ce74a07bc3a8f837b7637523ec9d2e18723ccf"
+    },
+    {
+      "path": ".github/workflows/codeql.yml",
+      "sha256": "7bf608380c9986bec47680a3b37c75090c3ad9bda12ab84f7e641baf66c6d216",
+      "gitBlob": "7ad86db3fd1e4ea35365567c5c2f221b7f7d15eb"
+    },
+    {
+      "path": ".github/workflows/greetings.yml",
+      "sha256": "69ecaef91c64b87900005c31b3e1cf845b1d41b7daed6b7182cdc40f2b4519b1",
+      "gitBlob": "dca05fb641ce235cf9f3c1f347944a843f9711c7"
+    },
+    {
+      "path": ".github/workflows/npm-publish.yml",
+      "sha256": "6444501e4df37abbe632f5a399382301eab203a5a2fdea341836be5569f01cd2",
+      "gitBlob": "2fb16a0a00c1c04629761220cd0b223201dce262"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "ada7c362cb3d8fdb74eb8af805c0783603bf4d586e6a95a6c35d997eaee5a6b5",
+      "gitBlob": "af060ed0b4a019c5b4ac5a38dc0e95c47e679e1e"
+    },
+    {
+      "path": ".npmrc",
+      "sha256": "eecb1f3455c03439ab7d49b3079ce751ffb9acd5b40dc307799b69b1e454b83c",
+      "gitBlob": "9aa0af1084ffd2f08a402b9b2fe7884bb3c72434"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "a277b24012529643532148116400855d0b682a0fa617681e90b4119bdba6d1ed",
+      "gitBlob": "2d43c1d8d266d373cf0c1c0cae4b98a5643e9a06"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "c243eab074be580080812d5b4f3a8e5bae2154fa00d0c0c83633e856ae452c38",
+      "gitBlob": "5fa63fab3d7bb6021287557dc3a992065b91d71e"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "83926e13a9ed0b223112e7506d1ca4e05e9c919a9b7a8bbef21a1484fd8785ef",
+      "gitBlob": "9f237ca2911f8cf582c8c318a57a4640650cf283"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "c657b350eb4fc20e2555b69159f07647acf8ac1c32fe2e058961ba3116bb2a90",
+      "gitBlob": "a6360ab4d36f62d6f0089c8f7421fb2303ded8e1"
+    },
+    {
+      "path": "README.md",
+      "sha256": "2fe8cb3922aca7a040c5eb1e27c8507f4a68c46e427e74a74592ea0a0b4c251d",
+      "gitBlob": "573950107699b0c0dc0836f681d9c8b16b847d18"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "585f1c890bd91e967654d34cce9f26a427ad77f95f4f814b0b3247a1e91b9e06",
+      "gitBlob": "92a2f84ec3b30138e5b2803a8056c79ee8d939c0"
+    },
+    {
+      "path": "oxfmt.config.mts",
+      "sha256": "7cc037e12b113d713554ed30503e08c8ccd540ca7fdea2f9deb8d59815aee0fb",
+      "gitBlob": "bb925eb3f140eee247ecdf823ae239370c997164"
+    },
+    {
+      "path": "oxlint.config.mts",
+      "sha256": "d3082c212e200c6e1a9465bedd7d19519223897390c7e8c8eaa16fd1a392f729",
+      "gitBlob": "6e69ebf54801cfbc5a264fcd47d10dc415976e4c"
+    },
+    {
+      "path": "package.json",
+      "sha256": "ecf49c7aaca0dcd9e40b61cd41b0a7f24b457f81305655eba924b517493930f4",
+      "gitBlob": "514a898f08a583e252337655b9dc05bb87c3eb98"
+    },
+    {
+      "path": "patches/deepmerge@4.3.1.patch",
+      "sha256": "c21a9bf8c2484fbeac67de5d2dab17636e3d4a290ec37832db08d53bb9ff523a",
+      "gitBlob": "86e7c86f4bd2a84d1c50e6c993b525373ff5937e"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "1ab74c8afff5a7bb5cace6a7b3090be4e3a078948729c18ed1bc4cd2e7d46a06",
+      "gitBlob": "ab0966a7284f36e5fa667fb9e542f574c66da574"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "sha256": "7c9521e6b5b53741bac4267ea3e6fc1441edcc2579b9ef45d542d93feff25572",
+      "gitBlob": "a611ab16fdf20e3cf528c8820b02abb2e142e47a"
+    },
+    {
+      "path": "renovate.json",
+      "sha256": "21c216ede22bf7c9d6aac2fd7f37de2d4a3ff1a3ac82271ba52439ace262fe59",
+      "gitBlob": "8eeff1910c3afb8f5f716b70e7e462ade2bb7e58"
+    },
+    {
+      "path": "src/index.test.ts",
+      "sha256": "668d966bab333724765cf003e798d5b3582135a6c18c0fa3217ca86d0fdf6cb0",
+      "gitBlob": "26b80c4d804aefe163492ecd6e1cfb21605c5722"
+    },
+    {
+      "path": "src/index.ts",
+      "sha256": "8510ebcabf4463bdf23b86160f150820a3383a938facb9969fe3e9ca81962992",
+      "gitBlob": "d1c518bd621720728037e3b9dc643ff530e782b9"
+    },
+    {
+      "path": "src/rules/jsx-explicit-boolean.test.tsx",
+      "sha256": "66dfe2a320501d59527b9e473061c79c71da185c81bff3b55e4a3d675a9e37ae",
+      "gitBlob": "14c6bf475783ca83fde3b5eb2f5372dc60738121"
+    },
+    {
+      "path": "src/rules/jsx-explicit-boolean.ts",
+      "sha256": "a1c6e44d2734ea10c8c33996635671d153ad745089e2eeb9620a7299aa725b41",
+      "gitBlob": "88c7b5f5e96a51498aef9662fa77de4a49c04e13"
+    },
+    {
+      "path": "tools/changelog-check.mjs",
+      "sha256": "786ea69632e1535f48554724c99e46124e92b9af096e470bb24359ade807c074",
+      "gitBlob": "5dca16bd38ff7aa99a5afd20c3e8ebeeb60e28c3"
+    },
+    {
+      "path": "tools/changelog-history.md",
+      "sha256": "8b63de0d6cbc119c126467a07064bd1563c7b4b9511694c03b4b84fe210992b9",
+      "gitBlob": "a1a5152cc6e1e4f7328403e62ac8866cfc158128"
+    },
+    {
+      "path": "tools/changelog-preset.mjs",
+      "sha256": "9d7e6933d73cf42a368e200aa1d3c4a3fd6580d2e01348f7e03a6790015f05af",
+      "gitBlob": "cc5b4a4505d2b05be079d594cb9290ffd5a7b303"
+    },
+    {
+      "path": "tools/changelog.mjs",
+      "sha256": "8f8c92fa5d987d36bed593bc7e874c1a83997eea4c5b4fd4bcd2b2230e1f249f",
+      "gitBlob": "f4e5589f53271aefb2770962164a405f9d03e8bc"
+    },
+    {
+      "path": "tools/greetings-workflow-check.mjs",
+      "sha256": "6ece2ee66ed2e8bba786915ac17f99f363c7745c6978d1e164260c80ee6a613e",
+      "gitBlob": "9bffc7ec07541a5b08bc58ceb9e0c9204a2bfe62"
+    },
+    {
+      "path": "tools/publish-check.mjs",
+      "sha256": "78494d811f5feef88610d0896ed28eb23ec53ace130eade55444034fd2428000",
+      "gitBlob": "698799e5246303efe092865019df5270c38fa711"
+    },
+    {
+      "path": "tools/release-check.mjs",
+      "sha256": "cfe3bea23c7770b283f59c8d7dcf036d37ab7674401af5da54968e2f8976e5f7",
+      "gitBlob": "d197939bb3a47a7f4cdb9922bc77c1ed88864783"
+    },
+    {
+      "path": "tools/release-notes.mjs",
+      "sha256": "48841301416f2fbd0e0b01804eca530a5cb047d2bbcd7af5f37bb6451fcfc2d2",
+      "gitBlob": "596ea7e64d9269cb4fd8ff6fabeb827c080eb67e"
+    },
+    {
+      "path": "tools/security-audit.mjs",
+      "sha256": "481cb9a4b99d437fdab929002bf58cd2a0ee4e9eb2b1ae134c06f461602e0f85",
+      "gitBlob": "bbdbeda5c3fad3590c1d355f141c240f0e975e1e"
+    },
+    {
+      "path": "tools/security-check.mjs",
+      "sha256": "a5094c2c72dd28bc8c0d0438ec999567c42ce5f8fbd8fae5783f3ea10a8f2179",
+      "gitBlob": "4bfab9528e39ba5408c6d7c2eefa9ceb4a59ddc4"
+    },
+    {
+      "path": "tools/tag-release.mjs",
+      "sha256": "066e9902e8edbb33268c56bc59cbb20f1786ae38e460ca4993e0d2fd1a7fd913",
+      "gitBlob": "4cb022fad5574c799d306d8c75c41f638b41f5eb"
+    },
+    {
+      "path": "tsconfig.build.json",
+      "sha256": "bd255f5d55d6ddb074c8fef6cd20777aca60dc596e5659dea800cccbcdcc32d7",
+      "gitBlob": "103dc2018b0f7f589040bc46228147ca571caf18"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "3bc16edc955ec780a9cabdb99562fe54c0499f70cf70876e4bffe1ac3550b856",
+      "gitBlob": "bc1d1a9c1f03d5bc196e03e500eef20691f4def3"
+    }
+  ],
+  "changes": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81ce74a07bc3a8f837b7637523ec9d2e18723ccf"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d43c1d8d266d373cf0c1c0cae4b98a5643e9a06"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f237ca2911f8cf582c8c318a57a4640650cf283"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "514a898f08a583e252337655b9dc05bb87c3eb98"
+    },
+    {
+      "path": "patches/deepmerge@4.3.1.patch",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86e7c86f4bd2a84d1c50e6c993b525373ff5937e"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab0966a7284f36e5fa667fb9e542f574c66da574"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a611ab16fdf20e3cf528c8820b02abb2e142e47a"
+    },
+    {
+      "path": "tools/security-audit.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbdbeda5c3fad3590c1d355f141c240f0e975e1e"
+    },
+    {
+      "path": "tools/security-check.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bfab9528e39ba5408c6d7c2eefa9ceb4a59ddc4"
+    }
+  ],
+  "commit": {
+    "sha": "509d7e262100716a409310ba76e11c4c0d1cb37a",
+    "node_id": "C_kwDOJiCer9oAKDUwOWQ3ZTI2MjEwMDcxNmE0MDkzMTBiYTc2ZTExYzRjMGQxY2IzN2E",
+    "url": "https://api.github.com/repos/GSTJ/safe-jsx/git/commits/509d7e262100716a409310ba76e11c4c0d1cb37a",
+    "html_url": "https://github.com/GSTJ/safe-jsx/commit/509d7e262100716a409310ba76e11c4c0d1cb37a",
+    "author": {
+      "name": "Gabriel Taveira",
+      "email": "gabrielstaveira@gmail.com",
+      "date": "2026-11-02T23:01:24Z"
+    },
+    "committer": {
+      "name": "Gabriel Taveira",
+      "email": "gabrielstaveira@gmail.com",
+      "date": "2026-11-02T23:01:24Z"
+    },
+    "tree": {
+      "sha": "1f6b94d637548c14b90491224cb25671ae1b3566",
+      "url": "https://api.github.com/repos/GSTJ/safe-jsx/git/trees/1f6b94d637548c14b90491224cb25671ae1b3566"
+    },
+    "message": "chore(deps)!: remediate tooling advisories\n\nRefresh eligible dependencies, scope modern glob and minimatch upgrades,\nand backport deepmerge prototype poisoning protection. Keep exact\nsecurity quarantine exceptions and reject unmitigated audit findings.\n\nBREAKING CHANGE: development requires Node.js 24 or newer and the pinned\npnpm 12 toolchain. Published plugin Node.js and ESLint support is unchanged.",
+    "parents": [
+      {
+        "sha": "5911f740a0c42c2fca58826adb5c9c51fbc3e372",
+        "url": "https://api.github.com/repos/GSTJ/safe-jsx/git/commits/5911f740a0c42c2fca58826adb5c9c51fbc3e372",
+        "html_url": "https://github.com/GSTJ/safe-jsx/commit/5911f740a0c42c2fca58826adb5c9c51fbc3e372"
+      }
+    ],
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  }
+}

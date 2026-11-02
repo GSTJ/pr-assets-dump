@@ -1,0 +1,3 @@
+$ node tools/security-audit.mjs
+security regressions passed: deepmerge CJS/UMD, patch coverage, minimatch amplification, glob cancellation and compatibility
+audit passed: 1 locally patched advisory reports; raw registry count is not zero

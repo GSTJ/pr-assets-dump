@@ -1,0 +1,22 @@
+$ jest --coverage && node tools/release-check.mjs && node tools/security-check.mjs
+
+Test Suites: 2 passed, 2 total
+Tests:       71 passed, 71 total
+Snapshots:   0 total
+Time:        8.844 s
+Ran all test suites.
+ok - missing changelog dependency never reaches npx
+ok - same-version releases cannot make npm force a tag
+ok - release tags are annotated and idempotent
+ok - an unpublished release tag can follow its squash commit
+ok - a published release tag is immutable
+ok - an unexpected local annotation is preserved
+ok - publish accepts the matching annotated tag on main
+ok - publish rejects a tag that does not match package.json
+ok - publish rejects a tag moved after the release event
+ok - publish rejects release notes that drift from the changelog
+ok - publish rejects a lightweight release tag
+ok - publish rejects a release tag outside main
+ok - publish accepts a main checkout past the release tag
+release tooling check passed (13 controls)
+security regressions passed: deepmerge CJS/UMD, patch coverage, minimatch amplification, glob cancellation and compatibility

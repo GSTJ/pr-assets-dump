@@ -1,0 +1,272 @@
+[
+  {
+    "name": "@babel/helpers",
+    "version": "7.29.10",
+    "published": "2026-10-07T09:51:46.135Z",
+    "ageDays": 26.546971770833334,
+    "exactException": false,
+    "integrity": "sha512-EMCx3AGZ3WfAl6ht7AyQoPm2Lh+BGYEMdc4Q6Hf7uSCDOZFuLq44qNwL+iaim8VlyYhRAo4X43+weadK8ZB4Yg==",
+    "tarball": "https://registry.npmjs.org/@babel/helpers/-/helpers-7.29.10.tgz"
+  },
+  {
+    "name": "@babel/traverse",
+    "version": "7.29.10",
+    "published": "2026-10-07T09:50:57.831Z",
+    "ageDays": 26.547533935185186,
+    "exactException": false,
+    "integrity": "sha512-B3lYAs2nkKskbgQ1nfy8Ma9ao9Q1rntTAQHrzzyDuj+TSO+X3le6PfWwqDvodsb+OumE10eMFfuMCTQSQ5iuIQ==",
+    "tarball": "https://registry.npmjs.org/@babel/traverse/-/traverse-7.29.10.tgz"
+  },
+  {
+    "name": "@conventional-changelog/git-client",
+    "version": "3.2.0",
+    "published": "2026-10-05T18:13:08.948Z",
+    "ageDays": 28.198795127314813,
+    "exactException": false,
+    "integrity": "sha512-sD/E0vzpkoDz/dqM1Hhv0ihC4KBw6RXjefeO8SG1XrX+wGkMxe1pKeedkKDPCtr2JjuhbuS9aJNgOvnT8hbeBw==",
+    "tarball": "https://registry.npmjs.org/@conventional-changelog/git-client/-/git-client-3.2.0.tgz"
+  },
+  {
+    "name": "@isaacs/nonrecursive-glob-match",
+    "version": "1.0.1",
+    "published": "2026-10-27T04:24:52.559Z",
+    "ageDays": 6.773987858796296,
+    "exactException": true,
+    "integrity": "sha512-rNKPuTXBacPpn5+CP+S3/UI6uq/0jHZjPpaBLaRE3blpgX+E+ZUIrGfViPvUjUnQG6W1+3OTFUiVRCjTffs2+Q==",
+    "tarball": "https://registry.npmjs.org/@isaacs/nonrecursive-glob-match/-/nonrecursive-glob-match-1.0.1.tgz"
+  },
+  {
+    "name": "@napi-rs/wasm-runtime",
+    "version": "1.2.5",
+    "published": "2026-10-05T08:43:15.369Z",
+    "ageDays": 28.594558449074075,
+    "exactException": false,
+    "integrity": "sha512-HshSvXzmBxNzqejd3k/KemgQ3hdREUYFRRrgxOZ+gPljDIsO2SDZrVZMd4Z/HsxudQbE62OVyVFE8z9BCurfjA==",
+    "tarball": "https://registry.npmjs.org/@napi-rs/wasm-runtime/-/wasm-runtime-1.2.5.tgz"
+  },
+  {
+    "name": "@typescript-eslint/parser",
+    "version": "8.72.0",
+    "published": "2026-10-19T17:11:48.266Z",
+    "ageDays": 14.241417766203703,
+    "exactException": false,
+    "integrity": "sha512-0O+x3ynciD6zuXb1CKSu165haQV6ey53DKhHHUnujP7U+XlltJG+/keT0Xhd1HXCze+IHf7Tvt39ovyepX/LNw==",
+    "tarball": "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-8.72.0.tgz"
+  },
+  {
+    "name": "@typescript-eslint/project-service",
+    "version": "8.72.0",
+    "published": "2026-10-19T17:10:18.937Z",
+    "ageDays": 14.242455717592593,
+    "exactException": false,
+    "integrity": "sha512-bzHngBbmIgzj6TsTjVUCntGx6FFLgE7mPjpO0PzHycOaZHXqS43XnrkFIHRS16LLr/xO6FHSXG3GJFo/F4bSBQ==",
+    "tarball": "https://registry.npmjs.org/@typescript-eslint/project-service/-/project-service-8.72.0.tgz"
+  },
+  {
+    "name": "@typescript-eslint/scope-manager",
+    "version": "8.72.0",
+    "published": "2026-10-19T17:07:24.395Z",
+    "ageDays": 14.244489375,
+    "exactException": false,
+    "integrity": "sha512-JewPyJOYcXBSAS7PIgufscHOwZqhTGyBRiQJhhuDln66tMchxvvt7nJ90JKKIoOelmdHA3kAQbm9cEUHc4JSEA==",
+    "tarball": "https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-8.72.0.tgz"
+  },
+  {
+    "name": "@typescript-eslint/tsconfig-utils",
+    "version": "8.72.0",
+    "published": "2026-10-19T17:07:36.708Z",
+    "ageDays": 14.244351296296296,
+    "exactException": false,
+    "integrity": "sha512-0vbxCf7xLVPSjcOdm6eQbgViH8EDJ8xnl1laLT9yoqSz2YmcSfSg5Vdl0JUvZf6rcuJ0ZivJIuMD4edTg8obaA==",
+    "tarball": "https://registry.npmjs.org/@typescript-eslint/tsconfig-utils/-/tsconfig-utils-8.72.0.tgz"
+  },
+  {
+    "name": "@typescript-eslint/types",
+    "version": "8.72.0",
+    "published": "2026-10-19T17:07:35.499Z",
+    "ageDays": 14.244381076388889,
+    "exactException": false,
+    "integrity": "sha512-Adfoy59kxNEjT5E5fnyrp7GpHYuWs8ONbdohu4ez6IU46qDq8LltG90tLmkucZB2uhYL8mqBjtXqGd8yhfjXqQ==",
+    "tarball": "https://registry.npmjs.org/@typescript-eslint/types/-/types-8.72.0.tgz"
+  },
+  {
+    "name": "@typescript-eslint/typescript-estree",
+    "version": "8.72.0",
+    "published": "2026-10-19T17:10:29.340Z",
+    "ageDays": 14.242379178240741,
+    "exactException": false,
+    "integrity": "sha512-gwLfFgWcw15tN2KXDCJvxEOQjPn+P3j/n3eSqkZ5sX4VpW9Cosodr+tWwBZRvJT3TcKx6HnPRGZMCNAiP1Xhug==",
+    "tarball": "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-8.72.0.tgz"
+  },
+  {
+    "name": "@typescript-eslint/visitor-keys",
+    "version": "8.72.0",
+    "published": "2026-10-19T17:08:15.774Z",
+    "ageDays": 14.243932199074074,
+    "exactException": false,
+    "integrity": "sha512-E2mroviasaWecDzTGiGMtuEguuLVOeRggnrIn93CJuxYJzQBHbyymlT08aVQydbBal5538o+JkBKXh2sRuCyIA==",
+    "tarball": "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.72.0.tgz"
+  },
+  {
+    "name": "acorn",
+    "version": "8.19.0",
+    "published": "2026-10-05T12:51:20.979Z",
+    "ageDays": 28.422344953703703,
+    "exactException": false,
+    "integrity": "sha512-oJlA3XiRm7Cyk6qFD2Jn8ak9B7jSy0qy00ADO3+8dpT0LSjFihQYv4C02LFCSYJV3Q37xYwwRy5m+IpIiUzqWw==",
+    "tarball": "https://registry.npmjs.org/acorn/-/acorn-8.19.0.tgz"
+  },
+  {
+    "name": "baseline-browser-mapping",
+    "version": "2.11.30",
+    "published": "2026-10-19T19:47:37.763Z",
+    "ageDays": 14.133263194444444,
+    "exactException": false,
+    "integrity": "sha512-YJs6Pz17RMNv8HoyKREtCY38E3BV1nPkWVmIb+XN1uHC1Vqt3KZCH/uJH9ZKRoiKb/icZ6tvehyee6RZNbFfRA==",
+    "tarball": "https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.11.30.tgz"
+  },
+  {
+    "name": "browserslist",
+    "version": "4.29.4",
+    "published": "2026-10-19T11:01:43.789Z",
+    "ageDays": 14.498472881944444,
+    "exactException": false,
+    "integrity": "sha512-2TcbbiwXEq+N0kD36tykpCfyyQigUXmuwNQbnPp4Xk4PX9JOqVIKjJlIDjpH7uY6tmRGoAd+apeT1p60T8wsdA==",
+    "tarball": "https://registry.npmjs.org/browserslist/-/browserslist-4.29.4.tgz"
+  },
+  {
+    "name": "bser",
+    "version": "2.1.2",
+    "published": "2026-10-09T17:29:42.631Z",
+    "ageDays": 24.229042569444445,
+    "exactException": false,
+    "integrity": "sha512-V2o8YS2EhrKMO9AumnkK0ynynfFlsajpYupwq7S46H5mhcanwxDkNTw3K67wPIcKTH1ffkA4vhMOtAc7gRmPZw==",
+    "tarball": "https://registry.npmjs.org/bser/-/bser-2.1.2.tgz"
+  },
+  {
+    "name": "caniuse-lite",
+    "version": "1.0.30001816",
+    "published": "2026-10-13T12:11:26.899Z",
+    "ageDays": 20.450062303240742,
+    "exactException": false,
+    "integrity": "sha512-+8Yx7BXCoqk6IF8yTicjfUR6D/ldJzdlsodlEOiOSPmhK844WIgk67/zIQaGAOxNkZyyvBlrRFnLvqKIoqbAFw==",
+    "tarball": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001816.tgz"
+  },
+  {
+    "name": "cjs-module-lexer",
+    "version": "2.3.0",
+    "published": "2026-10-05T07:57:24.285Z",
+    "ageDays": 28.62648284722222,
+    "exactException": false,
+    "integrity": "sha512-lmNyBzi6iYiqyrExTctfmjd8tInx+dHu9PBomTfH5RXS53c27JMFJgzNv5TyAnm3PgGf+MLy0+Ws41/HlVxdKQ==",
+    "tarball": "https://registry.npmjs.org/cjs-module-lexer/-/cjs-module-lexer-2.3.0.tgz"
+  },
+  {
+    "name": "conventional-changelog-writer",
+    "version": "9.3.0",
+    "published": "2026-10-05T18:13:14.091Z",
+    "ageDays": 28.198826608796296,
+    "exactException": false,
+    "integrity": "sha512-lxiECDlvy880e7JIYAtAhxg0wD/CGCVbZCdeua5aOlQVFTEd39zAeOzwK22i/FO4xnEOURK1gbUTETNEYW7zxQ==",
+    "tarball": "https://registry.npmjs.org/conventional-changelog-writer/-/conventional-changelog-writer-9.3.0.tgz"
+  },
+  {
+    "name": "conventional-commits-parser",
+    "version": "7.1.3",
+    "published": "2026-10-05T18:13:06.119Z",
+    "ageDays": 28.198920636574073,
+    "exactException": false,
+    "integrity": "sha512-Q9oWm1o9uy/oEsZQIraoFMZ4RuPD+79KgwWj6mJVP356tazolCB0piRLZ5Kz9te9p027uSEcUW+Gu44Eh+X79g==",
+    "tarball": "https://registry.npmjs.org/conventional-commits-parser/-/conventional-commits-parser-7.1.3.tgz"
+  },
+  {
+    "name": "electron-to-chromium",
+    "version": "1.5.459",
+    "published": "2026-10-17T06:03:37.917Z",
+    "ageDays": 16.705502256944445,
+    "exactException": false,
+    "integrity": "sha512-4SC9HHSFjO/liAhifpdOL5hG9b4BP7/5G3y3UPZVO8trlAXr1CaUEEJL0gWK3kOcYcZrOA5rkwG45Gra/lTIgg==",
+    "tarball": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.459.tgz"
+  },
+  {
+    "name": "fb-watchman",
+    "version": "2.0.4",
+    "published": "2026-10-09T17:49:25.524Z",
+    "ageDays": 24.21536861111111,
+    "exactException": false,
+    "integrity": "sha512-tGQtaoYisPDriJBN0mT5yZSyNETnJGA1gTYxaVRAE5KUO3LI9kPUc9WIu8JXcxaIci+faIKlzXqXyPgrmubtBQ==",
+    "tarball": "https://registry.npmjs.org/fb-watchman/-/fb-watchman-2.0.4.tgz"
+  },
+  {
+    "name": "glob",
+    "version": "14.0.2",
+    "published": "2026-10-27T22:07:00.325Z",
+    "ageDays": 6.036495891203704,
+    "exactException": true,
+    "integrity": "sha512-vfMgTR2djMHPUchsJMLpZlYQvtjVL+mHpEr5wPpoCbQs2vr/FBNK+3Gnl9Ara1DSs4Aeg4eG9HiADb5/rkY/ZA==",
+    "tarball": "https://registry.npmjs.org/glob/-/glob-14.0.2.tgz"
+  },
+  {
+    "name": "minimatch",
+    "version": "11.0.1",
+    "published": "2026-10-27T22:26:03.755Z",
+    "ageDays": 6.023262847222222,
+    "exactException": true,
+    "integrity": "sha512-t+Vn6DX4wPCxS23y03C0uhF7S1jpi1GfqPrnlEipCJaA2ykiNbMkVlDutZtmvLfRcUN6R8AYVlzTsQrT4RZoLQ==",
+    "tarball": "https://registry.npmjs.org/minimatch/-/minimatch-11.0.1.tgz"
+  },
+  {
+    "name": "napi-postinstall",
+    "version": "0.3.5",
+    "published": "2026-10-19T13:17:43.774Z",
+    "ageDays": 14.40405048611111,
+    "exactException": false,
+    "integrity": "sha512-NFMjXXkyodBJnRrM0A6qxFO1OLUbrYLDhP1ZLetlXnyx41gKOAmVyROibq85j7I8dda4aZMs9L7kmRvvjNf7Cg==",
+    "tarball": "https://registry.npmjs.org/napi-postinstall/-/napi-postinstall-0.3.5.tgz"
+  },
+  {
+    "name": "node-releases",
+    "version": "2.0.59",
+    "published": "2026-10-15T08:12:40.371Z",
+    "ageDays": 18.615896805555554,
+    "exactException": false,
+    "integrity": "sha512-5qr2okC4ItAI0hG5SaV0HoYMpnM/Y6+Oqr7AmPYy/2uEoGvS+GbSKLeRxSS1uAdu59yz0ouzcuXievSgg///WA==",
+    "tarball": "https://registry.npmjs.org/node-releases/-/node-releases-2.0.59.tgz"
+  },
+  {
+    "name": "path-scurry",
+    "version": "3.0.0",
+    "published": "2026-10-27T21:14:48.842Z",
+    "ageDays": 6.072744108796297,
+    "exactException": true,
+    "integrity": "sha512-1pTbQqH1wIwMi/eleQ5leFTTCkzFsPcgXNjwOA8YGGW/W4/kHT3dssE7Z6NH+zuqNLOzOB0uaD61yl7cAcVhgg==",
+    "tarball": "https://registry.npmjs.org/path-scurry/-/path-scurry-3.0.0.tgz"
+  },
+  {
+    "name": "react-is",
+    "version": "19.3.1",
+    "published": "2026-10-14T16:47:50.866Z",
+    "ageDays": 19.258145046296296,
+    "exactException": false,
+    "integrity": "sha512-RRieF6IyxQBkcK6pP8xOHprLTPW6QjRkbGdImtqNme+/hYVwCZkLQLdlZGOhUqXwkS9IEynaGvPJtv6XB/cz0Q==",
+    "tarball": "https://registry.npmjs.org/react-is/-/react-is-19.3.1.tgz"
+  },
+  {
+    "name": "update-browserslist-db",
+    "version": "1.3.4",
+    "published": "2026-10-07T20:28:48.154Z",
+    "ageDays": 26.104704918981483,
+    "exactException": false,
+    "integrity": "sha512-t8wonIOdQyOjtPd2VktlBu6QjTVTks6v8bSi7kd0r2Vll8TK1JYDZtRRdbmCHOAMphkZgrzK+L+vXK4pyZ8t4A==",
+    "tarball": "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.3.4.tgz"
+  },
+  {
+    "name": "verkit",
+    "version": "0.5.0",
+    "published": "2026-09-18T17:52:29.936Z",
+    "ageDays": 45.213250208333335,
+    "exactException": false,
+    "integrity": "sha512-u4J1hr6Y+C/hit34GwL3eIcUf3wngT8TlYUjK7tk0jxydKLAq3sYvifjdTDA6U3KCKRcQCQDGf/srjxfZF3l7g==",
+    "tarball": "https://registry.npmjs.org/verkit/-/verkit-0.5.0.tgz"
+  }
+]
