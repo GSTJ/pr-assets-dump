@@ -1,0 +1,14 @@
+5 overrides were added to pnpm-workspace.yaml to fix vulnerabilities.
+Run "pnpm install" to apply the fixes.
+
+The added overrides:
+{
+  "dompurify@<=3.4.16": "^3.4.17",
+  "minimatch@<11.0.1": "^11.0.1",
+  "sharp@<0.35.5": "^0.35.5",
+  "undici@>=7.0.0 <7.30.1": "^7.30.1",
+  "zod@<4.6.6": "^4.6.6"
+}
+
+1 entries were added to minimumReleaseAgeExclude to allow installing the patched versions:
+minimatch@11.0.1

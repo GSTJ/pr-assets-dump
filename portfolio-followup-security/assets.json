@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://assets.gabrieltaveira.dev/curriculum.pdf",
+    "exit": 0,
+    "sha256": "459ff9b032c579cb80324727d7c9e5677f34327b80eab5ebbaedaf0d75b7991d",
+    "artifact_sha256": "459ff9b032c579cb80324727d7c9e5677f34327b80eab5ebbaedaf0d75b7991d",
+    "matches": true
+  },
+  {
+    "url": "https://www.gabrieltaveira.dev/curriculum.pdf",
+    "exit": 0,
+    "sha256": "459ff9b032c579cb80324727d7c9e5677f34327b80eab5ebbaedaf0d75b7991d",
+    "artifact_sha256": "459ff9b032c579cb80324727d7c9e5677f34327b80eab5ebbaedaf0d75b7991d",
+    "matches": true
+  },
+  {
+    "url": "https://assets.gabrieltaveira.dev/demo.gif",
+    "exit": 0,
+    "sha256": "8bbbc64d3d5646cd77ae5b11e83764085cd7ada521cb0eae2e90cc1cf77ea648",
+    "artifact_sha256": "e3c4908f080313242d7aa6fb09f37e64127d10d1f9b8b853094c05e64d7fe40f",
+    "matches": false
+  }
+]

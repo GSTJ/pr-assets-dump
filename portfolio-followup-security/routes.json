@@ -1,0 +1,67 @@
+[
+  {
+    "path": "/en-US",
+    "bytes": 422785,
+    "portfolio_content": true
+  },
+  {
+    "path": "/pt-BR",
+    "bytes": 425257,
+    "portfolio_content": true
+  },
+  {
+    "path": "/en-US/resume",
+    "bytes": 206958,
+    "portfolio_content": true
+  },
+  {
+    "path": "/robots.txt",
+    "bytes": 2752,
+    "portfolio_content": true
+  },
+  {
+    "path": "/sitemap.xml",
+    "bytes": 2309,
+    "portfolio_content": true
+  },
+  {
+    "image": "/_next/image?url=%2Fprojects%2Fcurvinha%2Froom-dark-en.webp&amp;w=3840&amp;q=75",
+    "exit": 0,
+    "bytes": 31720
+  },
+  {
+    "image": "/notes/space-cast/t0W2Eas3TYY.webp",
+    "exit": 0,
+    "bytes": 11552
+  },
+  {
+    "image": "/notes/space-cast/jtyi0PmJzLQ.webp",
+    "exit": 0,
+    "bytes": 11562
+  },
+  {
+    "image": "/hero/mm.webp",
+    "exit": 0,
+    "bytes": 3242
+  },
+  {
+    "image": "/notes/space-cast/SmkOSCqnBsg.webp",
+    "exit": 0,
+    "bytes": 7782
+  },
+  {
+    "image": "/hero/meta.webp",
+    "exit": 0,
+    "bytes": 2502
+  },
+  {
+    "image": "/notes/space-cast/k2vWbLIc9vU.webp",
+    "exit": 0,
+    "bytes": 7912
+  },
+  {
+    "image": "/hero/coinbase.webp",
+    "exit": 0,
+    "bytes": 2356
+  }
+]

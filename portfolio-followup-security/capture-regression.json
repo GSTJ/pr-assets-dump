@@ -1,0 +1,10 @@
+{
+  "get-pdf.js": {
+    "exit": 1,
+    "rejected_login": true
+  },
+  "get-demo.js": {
+    "exit": 1,
+    "rejected_login": true
+  }
+}

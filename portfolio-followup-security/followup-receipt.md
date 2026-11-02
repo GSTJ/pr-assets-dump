@@ -1,0 +1,11 @@
+# Portfolio release follow-up
+
+PR 494 merged as abdc07e8aa7bbae1d91b40292f0e8fd883af2f65 with the tested feature tree. PR 493 merged as e9c76e6db7cb19a037b28f81a9fc3db0b7281e2e after full checks on its refreshed head 2c43c49028b4f838b4992cb38df18ff8c4562b98.
+
+The first automatic annotation failed because GraphQL updateRefs rejects tag objects. The replacement uses Git transport with force-with-lease on the exact original tag ref. It uses a temporary bare object store, no source checkout, and creates feature commits only through the Git Database API. Real local tests cover an annotated-tag push and concurrent remote mutation. Live conversion of v1.3.2 succeeded, object f3f120b75d9d8da608f98a80387a20df6a3eb2aa, preserving e9c76e6db7cb19a037b28f81a9fc3db0b7281e2e.
+
+The baseline raw audit reported 16 advisories across DOMPurify, sharp, Zod, undici and minimatch. Patched transitive overrides eliminate all reported findings. The minimatch major is scoped to @ts-morph/common and tested with positive and negative source-file glob expansion. SVG rasterization through patched sharp passed. Two exact age exceptions admit minimatch 11.0.1 and its required @isaacs/nonrecursive-glob-match 1.0.1 helper; the two-week default and existing Renovate age gate remain intact. No advisory is ignored. Zero registry findings does not prove absence of vulnerabilities or production exploitability. Full lint, format, typecheck, live boundary controls, release controls and production build passed locally.
+
+Published asset receipt: d6dfa12 run 41444472417 PDF matches custom-domain and site-origin bytes and contains experience/contact text. Its GIF has 24 frames showing the portfolio; cache-busted URL matches the run artifact. Bare GIF GET may still serve the old cached login GIF even when HEAD reports the new object, so README now uses an exact-capture query. These checks establish source/artifact/HTTP semantics; no exact-final browser acceptance is claimed. Direct Vercel CLI inspection could not resolve the deployment in available scopes. GitHub's Vercel integration supplies the SHA/deployment mapping.
+
+404 e90278cc8ce638b005e7c907d0695d95bd269161 passed independent full checks but remains subject to renovate/stability-days. Any regenerated head needs revalidation. Pegada remains untouched. No merge comment was added.

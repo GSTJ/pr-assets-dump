@@ -1,0 +1,2 @@
+$ node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON ./scripts/check-live.mjs
+live: validators ok, stalled headers and body cut at 8007ms

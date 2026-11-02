@@ -1,0 +1,43 @@
+✓ Lockfile passes supply-chain policies (verified 12m ago)
+Lockfile is up to date, resolution step is skipped
+Packages are cloned from the content-addressable store to the virtual store.
+  Content-addressable store is at: /Users/gabrieltaveira/Library/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 77, reused 77, downloaded 0, added 62
+Progress: resolved 97, reused 97, downloaded 0, added 82
+Packages: +168
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 168, reused 168, downloaded 0, added 168, done
+
+dependencies:
++ @posthog/react 1.11.3
++ @vercel/analytics 2.0.1
++ gsap 3.15.0
++ magic-modal 10.2.1
++ magic-observability 1.0.5
++ next 16.4.2
++ next-intl 4.14.9
++ posthog-js 1.438.12
++ posthog-node 5.56.2
++ react 19.3.1
++ react-dom 19.3.1
++ typescript 7.0.2
+
+devDependencies:
++ @total-typescript/ts-reset 0.6.1
++ @types/node 26.6.5
++ @types/react 19.3.0
++ @types/react-dom 19.3.0
++ babel-plugin-react-compiler 1.0.0
++ critters <- beasties 0.5.5
++ magic-codemods 1.1.6
++ magic-oxfmt-config 1.2.5
++ magic-oxlint-config 3.0.0
++ magic-oxlint-plugin 1.2.4
++ magic-tsconfig 1.2.4
++ oxfmt 0.73.0
++ oxlint 1.88.0
++ puppeteer 25.14.0
++ wrangler 4.151.2
+
+Done in 3.2s using pnpm v12.14.0
