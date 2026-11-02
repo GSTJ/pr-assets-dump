@@ -1,0 +1,18 @@
+$ turbo run release:check --filter=magic-modal
+
+   • turbo 2.11.7
+   • Packages in scope: magic-modal
+   • Running release:check in 1 package
+   • Remote caching disabled
+
+magic-modal:release:check: cache bypass, force executing 5f4656511c628dbd
+magic-modal:release:check: $ node tools/burned-version-check.mjs && node tools/release-integrity.mjs self-test && node tools/release-artifacts.mjs self-test && node tools/release-integrity.mjs check
+magic-modal:release:check: burned version check passed (breaking over 10.1.1: guarded=12.0.0, raw plugin=11.0.0; fix over 10.1.1: attached=10.1.2, branch=10.1.2)
+magic-modal:release:check: release integrity self-test passed
+magic-modal:release:check: release artifact self-test passed
+magic-modal:release:check: release tree 10.2.1 is internally consistent
+
+ Tasks:    1 successful, 1 total
+Cached:    0 cached, 1 total
+  Time:    3.799s 
+

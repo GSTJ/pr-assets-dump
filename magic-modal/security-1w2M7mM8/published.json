@@ -1,0 +1,26 @@
+{
+  "head": "d3a1466fa41e0d423677a870b76e950b9c315715",
+  "hashes": {
+    ".github/workflows/demo-video.yml": "dc004a48b59db481f9b09e00f9a9aeaea3051140",
+    ".github/workflows/docs.yml": "27a94d9acf527c7ba2f385d7daa0af3ed88f2274",
+    ".github/workflows/e2e-ios.yml": "c6d214d2b59d9973bc8b80888bff1512d7673ccf",
+    ".github/workflows/release.yml": "7fe2d86213ba1fd77753d00a431efc51ec89bf01",
+    "apps/demo-video/package.json": "3bd8cd808b768dcef5282bd2dd94da81fe2682bb",
+    "apps/docs/package.json": "fe313658487c687c42a2f398ffd43b43e2eaf806",
+    "examples/kitchen-sink/package.json": "f648b446cf34f75f58d3eb43541c92019fb7d2bb",
+    "examples/next-web/package.json": "abd9c72077c732a942193e25a43b85c7fb094e14",
+    "package.json": "d98608c30e6a60c3aaec917271df75d5b51aa296",
+    "packages/modal/package.json": "7ca8e4cbdb4d9b9fc44840fe408f399f07b3c729",
+    "pnpm-lock.yaml": "31b6a74849ef411e4e47efff16d38ffe28b52979",
+    "pnpm-workspace.yaml": "b2026cb1966c367fe610829ac3422b4a83c63988",
+    "tools/deepmerge-security.test.cjs": "7d26ae6107de4384006bee0e1f1a87a59e9a13f3",
+    "tools/vendor/deepmerge/cjs.js": "ad194fff6c0fe3580102fb6864e35c52387241aa",
+    "tools/vendor/deepmerge/README.md": "98762222ca41cd3f4a122ea8f79f5d30ac3e6784",
+    "tools/vendor/deepmerge/package.json": "5bec535f621f73260eb7f501be55339d19be55aa",
+    "tools/vendor/deepmerge/license.txt": "5003078718343fc207823c9f543ef906ac59dcbe",
+    "tools/vendor/deepmerge/index.d.ts": "46784de5625a962c3c4c68c8fe16078815cce018",
+    "tools/vendor/minimatch/README.md": "12512a17efa25a33d9b87f5be05cd72191627550",
+    "tools/vendor/minimatch/package.json": "9ecb372ba61da296e8a05c53b2326c2caeb61bb3",
+    "tools/vendor/minimatch/index.cjs": "8627ed99c6a4ca521a32bcf1315f962a7c64e7c8"
+  }
+}

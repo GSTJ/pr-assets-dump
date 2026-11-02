@@ -1,0 +1,16 @@
+$ node --test tools/deepmerge-security.test.cjs && pnpm audit
+✔ preserves the result prototype with a malicious target (0.4725ms)
+✔ preserves the result prototype with a malicious source (0.060542ms)
+✔ nested poison remains data without changing prototypes (0.06075ms)
+✔ retains arrays, symbols, custom merge, and merge.all (0.538208ms)
+✔ the installed dependency uses the hardened merge (1.095916ms)
+✔ legacy minimatch consumers use the patched matcher (8.805666ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 53.581542
+No known vulnerabilities found
