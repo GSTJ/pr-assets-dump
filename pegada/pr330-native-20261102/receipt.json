@@ -1,0 +1,51 @@
+{
+  "source": "a37c4f0fd64f604ff3c318b389d75694550b1c0f",
+  "checkout": "/Users/gabrieltaveira/.t3/worktrees/pegada/t3-15b7ff86",
+  "device": {
+    "hostId": "local",
+    "id": "4B56D214-31BD-456E-B744-E064A670AA41",
+    "name": "iPhone 18 Pro",
+    "os": "iOS 27.2"
+  },
+  "database": "pegada_pr330_native on isolated local PostGIS at localhost:3355",
+  "api": "http://localhost:9999/api",
+  "storage": "http://localhost:9198/dog.png",
+  "native_acceptance": "BLOCKED, no Pegada native app installed or launched",
+  "local_export_sha256": "11c67eb2cfcc9a298ea1a31b960a7b6cf867d15811fe400923dd1381295063a9",
+  "limits": [
+    "No source edits",
+    "No production writes",
+    "Hosted job 41449163814 was not duplicated",
+    "Local export has not yet been consumed by a running native binary"
+  ],
+  "native_artifact": null,
+  "hosted_build": {
+    "run": 41449163814,
+    "head": "a37c4f0fd64f604ff3c318b389d75694550b1c0f",
+    "state": "in_progress at 2026-11-02 13:16 UTC, no uploaded artifacts"
+  },
+  "local_build": {
+    "xcode": "27.2 (27B52)",
+    "initial_exit": 65,
+    "retry_exit": 65,
+    "retry_override": "IPHONEOS_DEPLOYMENT_TARGET=15.1",
+    "blocker": "RevenueCat 5.33.0 PaywallColor.swift:57 invalid redeclaration of synthesized memberwise init(stringRepresentation:), CustomerCenterConfigData.swift:605 and :612 ambiguous initializer"
+  },
+  "results": {
+    "mobile": "49 suites, 387 tests passed",
+    "api_native_env": "37 suites passed, one storage URL expectation failed due to local endpoint env",
+    "api_storage_recheck_normal_env": "11 tests passed",
+    "profile_valid_save_reopen": "NOT RUN",
+    "preferences_valid_save_reopen": "NOT RUN",
+    "invalid_inputs_en_pt": "NOT RUN",
+    "db_native_mutations": "NONE",
+    "images_video": "NONE"
+  },
+  "next_step": "Download ios-app-required from existing run 41449163814 once available, verify artifact identity, install on claimed simulator, use isolated API at baked http://localhost:9999/api, exercise native form flows and publish evidence. Do not rerun hosted build.",
+  "processes": {
+    "backend_session": 6960,
+    "storage_session": 38504,
+    "backend_log": "/tmp/pegada-native-backend.log",
+    "storage_log": "/tmp/pegada-native-storage.log"
+  }
+}

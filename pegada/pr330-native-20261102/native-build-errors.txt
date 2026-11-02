@@ -1,0 +1,7 @@
+/Users/gabrieltaveira/.t3/worktrees/pegada/t3-15b7ff86/apps/mobile/ios/Pods/RevenueCat/Sources/CustomerCenter/CustomerCenterConfigData.swift:605:42: error: ambiguous use of 'init(stringRepresentation:)'
+/Users/gabrieltaveira/.t3/worktrees/pegada/t3-15b7ff86/apps/mobile/ios/Pods/RevenueCat/Sources/CustomerCenter/CustomerCenterConfigData.swift:612:41: error: ambiguous use of 'init(stringRepresentation:)'
+/Users/gabrieltaveira/.t3/worktrees/pegada/t3-15b7ff86/apps/mobile/ios/Pods/RevenueCat/Sources/Paywalls/PaywallColor.swift:57:12: error: invalid redeclaration of synthesized memberwise 'init(stringRepresentation:)'
+/Users/gabrieltaveira/.t3/worktrees/pegada/t3-15b7ff86/apps/mobile/ios/Pods/RevenueCat/Sources/Paywalls/PaywallColor.swift:260:18: error: ambiguous use of 'init'
+/Users/gabrieltaveira/.t3/worktrees/pegada/t3-15b7ff86/apps/mobile/ios/Pods/RevenueCat/Sources/CustomerCenter/CustomerCenterConfigData.swift:605:42: error: ambiguous use of 'init(stringRepresentation:)'
+/Users/gabrieltaveira/.t3/worktrees/pegada/t3-15b7ff86/apps/mobile/ios/Pods/RevenueCat/Sources/CustomerCenter/CustomerCenterConfigData.swift:612:41: error: ambiguous use of 'init(stringRepresentation:)'
+** BUILD FAILED **

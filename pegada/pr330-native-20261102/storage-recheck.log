@@ -1,0 +1,20 @@
+PASS src/shared/file-upload.test.ts
+  moveImageToFolder
+    ✓ copies the object and deletes the original (1 ms)
+    ✓ returns a URL rebuilt from the storage base
+    ✓ refuses a URL on a host we do not serve images from (6 ms)
+    ✓ refuses a host that only contains the bucket host as a substring (1 ms)
+    ✓ refuses loopback and link-local addresses
+    ✓ refuses a key already under the permanent folder (1 ms)
+    ✓ refuses a key under any other prefix
+    ✓ refuses a key nested deeper than one segment under the temporary folder (1 ms)
+    ✓ does not delete the original when the copy fails
+  deleteImageFromS3
+    ✓ deletes the full key, folder prefix included (1 ms)
+    ✓ refuses a URL on a host we do not serve images from
+
+Test Suites: 1 passed, 1 total
+Tests:       11 passed, 11 total
+Snapshots:   0 total
+Time:        0.637 s, estimated 1 s
+Ran all test suites matching /src\/shared\/file-upload.test.ts/i.
