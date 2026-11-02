@@ -1,0 +1,14 @@
+{
+  "parent_head": "509d7e262100716a409310ba76e11c4c0d1cb37a",
+  "policy": "Preserve existing first-party magic-* exemption; exact third-party security exceptions unchanged.",
+  "validation": {
+    "frozen_install": "pass",
+    "format": "pass",
+    "tests": 71,
+    "release_controls": 13,
+    "security_regressions": "pass",
+    "configured_audit": "pass",
+    "raw_audit_limit": "one locally patched deepmerge advisory"
+  },
+  "workspace_sha256": "e009aedae7bc35a9c934654ad248b9402433f064d2a254427cf0da1edb709170"
+}
