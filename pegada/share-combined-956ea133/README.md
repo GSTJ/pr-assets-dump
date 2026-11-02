@@ -1,0 +1,1 @@
+Full root suites and forced uncached checks after merging security PR332 into share PR333. The share route source and JPEG assets are unchanged from the visual proof branch proof/pegada-share-956ea133.

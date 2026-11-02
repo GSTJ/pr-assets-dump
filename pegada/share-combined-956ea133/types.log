@@ -1,0 +1,43 @@
+Scope: all 6 workspace projects
+✓ Lockfile passes supply-chain policies (verified 33s ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 0, reused 1, downloaded 0, added 0
+Packages: -126
+--------------------------------------------------------------------------------
+Progress: resolved 0, reused 126, downloaded 0, added 0, done
+
+packages/database postinstall$ pnpm run build
+packages/database postinstall: $ npx prisma generate
+packages/database postinstall: npm notice run npx
+packages/database postinstall: npm notice run 'prisma' generate
+packages/database postinstall: Prisma schema loaded from schema.prisma
+packages/database postinstall: ✔ Generated Prisma Client (v5.17.0) to ./../../node_modules/@prisma/client in 199ms
+packages/database postinstall: Start by importing your Prisma Client (See: http://pris.ly/d/importing-client)
+packages/database postinstall: Tip: Easily identify and fix slow SQL queries in your app. Optimize helps you enhance your visibility: https://pris.ly/--optimize
+packages/database postinstall: Done
+apps/mobile preinstall$ pnpm setup:secret:files
+apps/mobile preinstall: $ bash ./scripts/setup-secret-files.sh
+apps/mobile preinstall: Done
+Done in 2.7s using pnpm v11.17.0
+$ turbo typecheck --force
+• turbo 2.9.14
+
+   • Packages in scope: @pegada/api, @pegada/database, @pegada/mobile, @pegada/nextjs, @pegada/shared
+   • Running typecheck in 5 packages
+   • Remote caching disabled, using shared worktree cache
+
+@pegada/api:typecheck: cache bypass, force executing c2005f18b489dcf4
+@pegada/nextjs:typecheck: cache bypass, force executing 3cc18f3950d9f44d
+@pegada/shared:typecheck: cache bypass, force executing bd3b7f988ce6b1d5
+@pegada/database:typecheck: cache bypass, force executing b5bcbd3b13c96513
+@pegada/mobile:typecheck: cache bypass, force executing 8f2127dc655928cc
+@pegada/database:typecheck: $ tsc --noEmit --emitDeclarationOnly false
+@pegada/mobile:typecheck: $ tsc --noEmit --emitDeclarationOnly false
+@pegada/shared:typecheck: $ tsc --noEmit --emitDeclarationOnly false
+@pegada/nextjs:typecheck: $ tsc --noEmit --emitDeclarationOnly false
+@pegada/api:typecheck: $ tsc --noEmit --emitDeclarationOnly false
+
+ Tasks:    5 successful, 5 total
+Cached:    0 cached, 5 total
+  Time:    4.865s 
+
