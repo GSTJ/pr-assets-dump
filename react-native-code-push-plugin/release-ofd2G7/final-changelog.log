@@ -1,0 +1,3 @@
+$ node tools/changelog-check.mjs
+changelog preset check passed (13 synthetic commits, 3 breaking; bumps: feat!=major, feat=minor, fix=patch, build(deps)=patch, changelog-only=null, hidden-only=null)
+negative control passed (hiding the visible types breaks 7 assertions: feat renders, fix renders, build renders, build:deps renders, refactor renders, chore renders, docs renders)

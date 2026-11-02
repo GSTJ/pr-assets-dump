@@ -1,0 +1,29 @@
+$ node tools/dependency-security-check.mjs && node tools/release-check.mjs && jest
+undici 7.30.1 rejected excessive content encodings without crashing.
+Dependency security checks passed for @xmldom/xmldom, js-yaml, nanoid and image-size.
+Security migrations passed: deepmerge prototype controls, callable/named minimatch, bounded patterns, glob cancellation, Zod size gates and Expo schemas, FTP parser.
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-y1qu8R"
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-y1qu8R"
+Release plan passed: chore: maintain tooling -> skip
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-wUW1iO"
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-wUW1iO"
+Release plan passed: build(deps): patch tooling -> 2.0.2
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-OXYiVQ"
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-OXYiVQ"
+Release plan passed: fix: correct plugin -> 2.0.2
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-pJCNXf"
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-pJCNXf"
+Release plan passed: feat: add option -> 2.1.0
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-f3JIt4"
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-f3JIt4"
+Release plan passed: ci!: change contract -> 3.0.0
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-c3cx9H"
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-c3cx9H"
+WARNING The recommended bump is "undefined", but is overridden with "patch".
+Release plan passed: chore: maintain tooling -> 2.0.2
+
+Test Suites: 9 passed, 9 total
+Tests:       76 passed, 76 total
+Snapshots:   0 total
+Time:        0.364 s, estimated 1 s
+Ran all test suites.
