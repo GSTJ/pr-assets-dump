@@ -1,0 +1,47 @@
+GSTJ/react-native-magic-toast
+Local dependency verification, 6d28f69e7351b7280e6620f063189b9e04c66eb2
+Node 24.18.1 / pnpm 11.17.0
+Source archive: 168dcac3981705061dd36e7658cc13ff3114c3d5
+
+$ tests (exit 0)
+PASS src/public-api.test.tsx
+PASS src/index.test.tsx
+
+Test Suites: 2 passed, 2 total
+Tests:       8 passed, 8 total
+Snapshots:   2 passed, 2 total
+Time:        1.857 s, estimated 9 s
+Ran all test suites.
+PASS ICNS zero-length entry
+PASS JXL zero-length box
+PASS HEIF zero-length box
+
+$ typecheck (exit 0)
+
+$ lint (exit 0)
+
+$ format (exit 0)
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 185ms on 42 files using 18 threads.
+
+$ build (exit 0)
+ℹ [module] Cleaning up previous build at lib/module
+ℹ [typescript] Cleaning up previous build at lib/typescript
+ℹ [commonjs] Cleaning up previous build at lib/commonjs
+ℹ [module] Compiling 14 files in src with babel
+ℹ [typescript] Generating type definitions with tsc
+ℹ [commonjs] Compiling 14 files in src with babel
+✔ [module] Wrote files to lib/module
+✔ [commonjs] Wrote files to lib/commonjs
+✔ [typescript] Wrote definition files to lib/typescript
+
+$ changelog (exit 0)
+changelog preset check passed (13 synthetic commits, 3 breaking; bumps: feat!=major, feat=minor, fix=patch, changelog-only=null, hidden-only=null, chore(security)=patch)
+negative control passed (hiding the visible types breaks 8 assertions: feat renders, fix renders, build renders, refactor renders, chore renders, docs renders, chore(security) renders, chore(security) renders under "Security")
+
+npm audit: 7 findings remain (1 low, 2 moderate, 4 high).
+Packages: basic-ftp, deepmerge, glob, minimatch, zod.
+pnpm-workspace.yaml SHA256 cd0b575becac1d1fae360c16a8b475af8497c33c49e8bcef95f03e51244f2511
+pnpm-lock.yaml SHA256 a2362543a7046c0d30cacd71cee5b69f1895fbd5c0ed76e8dff01d69cc107c79
