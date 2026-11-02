@@ -1,0 +1,6 @@
+{
+  "pt": "O nome deve conter pelo menos 2 caracteres",
+  "en": "Name needs at least 2 characters",
+  "browserHarness": true,
+  "nativeDeviceAcceptance": false
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "package": "image-size",
+    "severity": "high",
+    "patched": ">=2.0.3",
+    "url": "https://github.com/advisories/GHSA-5p2g-fcmc-qvqq"
+  },
+  {
+    "package": "image-size",
+    "severity": "high",
+    "patched": ">=2.0.3",
+    "url": "https://github.com/advisories/GHSA-w3rx-r6r6-pgpr"
+  },
+  {
+    "package": "node-forge",
+    "severity": "high",
+    "patched": ">=1.4.1",
+    "url": "https://github.com/advisories/GHSA-86w9-cpqp-85rv"
+  },
+  {
+    "package": "zod",
+    "severity": "high",
+    "patched": ">=4.6.6",
+    "url": "https://github.com/advisories/GHSA-mrhx-c7xc-m3w5"
+  },
+  {
+    "package": "deepmerge",
+    "severity": "low",
+    "patched": ">=4.3.2",
+    "url": "https://github.com/advisories/GHSA-gcqx-w48m-w2h4"
+  },
+  {
+    "package": "decode-uri-component",
+    "severity": "high",
+    "patched": ">=0.5.1",
+    "url": "https://github.com/advisories/GHSA-qr28-fpjm-wq7f"
+  },
+  {
+    "package": "joi",
+    "severity": "high",
+    "patched": ">=17.13.9",
+    "url": "https://github.com/advisories/GHSA-4528-x5fx-h6hg"
+  },
+  {
+    "package": "minimatch",
+    "severity": "moderate",
+    "patched": ">=11.0.1",
+    "url": "https://github.com/advisories/GHSA-g3hv-75wg-m249"
+  },
+  {
+    "package": "glob",
+    "severity": "moderate",
+    "patched": ">=14.0.2",
+    "url": "https://github.com/advisories/GHSA-3g3m-2fjr-6pw4"
+  },
+  {
+    "package": "node-forge",
+    "severity": "low",
+    "patched": ">=1.4.1",
+    "url": "https://github.com/advisories/GHSA-4642-5mcj-2rqw"
+  },
+  {
+    "package": "node-forge",
+    "severity": "moderate",
+    "patched": ">=1.4.1",
+    "url": "https://github.com/advisories/GHSA-6wvx-3r32-xmcg"
+  },
+  {
+    "package": "node-forge",
+    "severity": "moderate",
+    "patched": ">=1.4.1",
+    "url": "https://github.com/advisories/GHSA-525v-9gp9-w22h"
+  },
+  {
+    "package": "node-forge",
+    "severity": "high",
+    "patched": ">=1.4.1",
+    "url": "https://github.com/advisories/GHSA-7wch-p9px-956x"
+  },
+  {
+    "package": "node-forge",
+    "severity": "low",
+    "patched": ">=1.4.1",
+    "url": "https://github.com/advisories/GHSA-h6cr-wjv9-3cpp"
+  },
+  {
+    "package": "node-forge",
+    "severity": "low",
+    "patched": ">=1.4.1",
+    "url": "https://github.com/advisories/GHSA-4487-j8r4-4g2f"
+  },
+  {
+    "package": "node-forge",
+    "severity": "moderate",
+    "patched": ">=1.4.1",
+    "url": "https://github.com/advisories/GHSA-5cwg-6vw7-rj6p"
+  },
+  {
+    "package": "node-forge",
+    "severity": "high",
+    "patched": ">=1.4.1",
+    "url": "https://github.com/advisories/GHSA-jc66-7q78-782g"
+  },
+  {
+    "package": "node-forge",
+    "severity": "high",
+    "patched": ">=1.4.1",
+    "url": "https://github.com/advisories/GHSA-8hrf-8g6f-7xwp"
+  },
+  {
+    "package": "node-forge",
+    "severity": "high",
+    "patched": ">=1.4.1",
+    "url": "https://github.com/advisories/GHSA-hqq3-7jhf-c5jx"
+  },
+  {
+    "package": "node-forge",
+    "severity": "high",
+    "patched": ">=1.4.1",
+    "url": "https://github.com/advisories/GHSA-5x38-2vff-x55p"
+  }
+]

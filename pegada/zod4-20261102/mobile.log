@@ -1,0 +1,61 @@
+watchman warning:  Recrawled this watch 3 times, most recently because:
+MustScanSubDirs UserDroppedTo resolve, please review the information on
+https://facebook.github.io/watchman/docs/troubleshooting.html#recrawl
+To clear this warning, run:
+`watchman watch-del '/Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e' ; watchman watch-project '/Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e'`
+
+PASS src/services/get-initial-route-name.test.ts
+PASS src/services/storage.test.ts
+PASS src/views/(auth)/SignIn/components/HeroText/index.test.tsx
+PASS scripts/setup-secret-files.test.ts
+PASS src/services/expired-upload-retry.test.ts
+PASS src/views/NewMatch/index.test.tsx
+PASS src/views/Chat/components/NextDay/index.test.ts
+PASS src/views/(tabs)/Swipe/components/SwipeRequestFeedback/index.test.tsx
+PASS src/components/DogShareOptions/share-actions.test.ts
+PASS src/services/linking/index.test.ts
+PASS src/components/Picker/sheet-accessibility.test.tsx
+PASS src/components/DogShareOptions/story/photos.test.ts
+PASS src/components/ProfileImageUploader/components/AddUserPhoto/index.test.tsx
+PASS src/services/app-review.test.tsx
+PASS src/views/(auth)/AskForLocation/update-user-location.test.ts
+PASS src/components/PendingDogProfileBanner/index.test.tsx
+PASS src/services/analytics/events.test.ts
+PASS src/services/image-mime-types.test.ts
+PASS src/components/SharePromptCard/index.test.tsx
+PASS src/services/advertisement/interstitial.test.ts
+PASS plugins/initial-theme-override.test.js
+PASS src/views/(tabs)/Profile/components/language-config.test.tsx
+PASS src/components/image.test.tsx
+PASS src/contexts/theme-provider.test.ts
+PASS __tests__/app/dog/[id].test.tsx
+PASS src/services/quick-actions/handlers/action.test.ts
+PASS src/components/RadioButtons/index.test.tsx
+PASS src/components/FakeDoor/tracking.test.ts
+PASS src/services/analytics/index.test.ts
+PASS src/components/ProfileImageUploader/index.test.tsx
+PASS src/services/linking/handlers/pending-dog-profile.test.ts
+PASS src/services/analytics/ota-properties.test.ts
+PASS src/services/referral/parse-referral-from-url.test.ts
+PASS src/services/referral/pending-referral.test.ts
+PASS src/services/app-review-policy.test.ts
+PASS src/components/Picker/select-item.test.tsx
+PASS plugins/cleartext-traffic.test.js
+PASS src/services/linking/handlers/notification.test.ts
+PASS src/services/logout.test.ts
+PASS src/components/image-props.test.ts
+PASS src/views/UpgradeWall/components/PlanPackages/sort-packages.test.ts
+PASS src/views/UpgradeWall/components/PlanPackages/saving-percent.test.ts
+PASS src/views/Chat/hooks/keyboard-anchor.test.ts
+PASS src/hooks/keyboard-overlap.test.ts
+PASS src/components/SharePromptCard/tracking.test.ts
+PASS src/components/SharePromptCard/match-gate.test.ts
+PASS __tests__/app/no-test-files-in-router-root.test.ts
+PASS src/services/transient-retry.test.ts
+PASS src/views/Preferences/preference-limit.test.ts
+
+Test Suites: 49 passed, 49 total
+Tests:       387 passed, 387 total
+Snapshots:   0 total
+Time:        6.263 s, estimated 7 s
+Ran all test suites.

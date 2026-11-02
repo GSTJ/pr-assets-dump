@@ -1,0 +1,40 @@
+Scope: all 6 workspace projects
+✓ Lockfile passes supply-chain policies (verified 3m ago)
+Lockfile is up to date, resolution step is skipped
+Packages: +1525
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 0, reused 1, downloaded 0, added 0
+Progress: resolved 0, reused 1428, downloaded 0, added 74
+Progress: resolved 0, reused 1430, downloaded 0, added 192
+Progress: resolved 0, reused 1430, downloaded 0, added 450
+Progress: resolved 0, reused 1430, downloaded 0, added 1016
+Progress: resolved 0, reused 1430, downloaded 0, added 1297
+Progress: resolved 0, reused 1430, downloaded 0, added 1443
+Progress: resolved 0, reused 1430, downloaded 0, added 1522
+Progress: resolved 0, reused 1430, downloaded 0, added 1525, done
+node_modules/@swc/core postinstall$ node postinstall.js
+node_modules/@parcel/watcher install$ node scripts/build-from-source.js
+node_modules/@parcel/watcher install: Done
+node_modules/@swc/core postinstall: Done
+node_modules/prisma preinstall$ node scripts/preinstall-entry.js
+node_modules/prisma preinstall: Done
+node_modules/@prisma/client postinstall$ node scripts/postinstall.js
+node_modules/@prisma/client postinstall: prisma:warn We could not find your Prisma schema in the default locations (see: https://pris.ly/d/prisma-schema-location).
+node_modules/@prisma/client postinstall: If you have a Prisma schema file in a custom path, you will need to run
+node_modules/@prisma/client postinstall: `prisma generate --schema=./path/to/your/schema.prisma` to generate Prisma Client.
+node_modules/@prisma/client postinstall: If you do not have a Prisma schema file yet, you can ignore this message.
+node_modules/@prisma/client postinstall: Done
+
+packages/database postinstall$ pnpm run build
+packages/database postinstall: $ npx prisma generate
+packages/database postinstall: npm notice run npx
+packages/database postinstall: npm notice run 'prisma' generate
+packages/database postinstall: Prisma schema loaded from schema.prisma
+packages/database postinstall: ✔ Generated Prisma Client (v5.17.0) to ./../../node_modules/@prisma/client in 77ms
+packages/database postinstall: Start by importing your Prisma Client (See: http://pris.ly/d/importing-client)
+packages/database postinstall: Tip: Want real-time updates to your database without manual polling? Discover how with Pulse: https://pris.ly/tip-0-pulse
+packages/database postinstall: Done
+apps/mobile preinstall$ pnpm setup:secret:files
+apps/mobile preinstall: $ bash ./scripts/setup-secret-files.sh
+apps/mobile preinstall: Done
+Done in 9.9s using pnpm v11.17.0

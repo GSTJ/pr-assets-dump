@@ -1,0 +1,11 @@
+const {chromium}=require('/tmp/expo-shots/node_modules/playwright');
+const fs=require('node:fs');
+(async()=>{ const browser=await chromium.launch({headless:true});const page=await browser.newPage({viewport:{width:900,height:600}});
+await page.setContent('<html><style>body{font:20px system-ui;background:#fff6ec;color:#332718;padding:40px}form{max-width:650px}input,button{font:inherit;padding:12px}p[role=alert]{color:#a42116}</style><div id="root"></div></html>');
+await page.addScriptTag({type:'module',content:fs.readFileSync('/tmp/pegada-zod4-proof/form.js','utf8')});
+await page.getByRole('button').click();await page.getByText('O nome deve conter pelo menos 2 caracteres').waitFor();
+await page.screenshot({path:'/tmp/pegada-zod4-proof/profile-pt.png'});
+await page.evaluate(()=>window.setLanguage('en-US'));await page.getByText('Name needs at least 2 characters').waitFor();
+await page.screenshot({path:'/tmp/pegada-zod4-proof/profile-en.png'});
+fs.writeFileSync('/tmp/pegada-zod4-proof/results.json',JSON.stringify({pt:'O nome deve conter pelo menos 2 caracteres',en:'Name needs at least 2 characters',browserHarness:true,nativeDeviceAcceptance:false},null,2));
+await browser.close();console.log('PASS: both localized form submissions produced field errors');})().catch(e=>{console.error(e);process.exit(1)});

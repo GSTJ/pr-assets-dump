@@ -1,0 +1,143 @@
+(node:57987) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/src/services/analytics.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the event properties are the snake_case ones PostHog gets (0.982792ms)
+✔ a direct visit reports its locale and nothing else (0.110208ms)
+✔ a query string is read into the four attribution fields (0.0895ms)
+✔ an empty or missing parameter is undefined, not an empty string (0.0745ms)
+✔ a repeated parameter keeps the first value (0.050292ms)
+✔ a parameter is trimmed and capped before it is written down (0.18975ms)
+✔ the store link always carries the page's own ref (0.104708ms)
+✔ the ref the visitor arrived on does not overwrite it (0.054917ms)
+✔ the campaign rides along, because Play keeps it and Apple does not (0.082375ms)
+✔ a click on the store button reports the page and where on it (0.379166ms)
+✔ the apex has a redirect to the canonical www host (0.344833ms)
+✔ the well-known files stay on the apex (0.303041ms)
+✔ every other apex path still goes to www (0.065041ms)
+✔ the path is carried over to the destination (0.213ms)
+✔ claims the unprefixed dog path and every non-default locale prefix (0.915916ms)
+✔ every claimed path has an expo-router route to render it (0.24725ms)
+✔ Android claims the same paths on every verified host (0.51025ms)
+✔ declares the app for applinks and webcredentials (0.396875ms)
+(node:57990) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/src/app/.well-known/assetlinks.json/route.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ grants app.pegada permission to handle every pegada.app URL (0.675667ms)
+✔ serves both the upload key and the Play app signing key (0.0825ms)
+✔ every fingerprint is a SHA-256 digest, not a SHA-1 one (0.153708ms)
+(node:57991) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/src/components/landing/curvinha-urls.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the App Store link carries the campaign for this site (0.394625ms)
+✔ the curvinha.app link is the plain backlink, with no UTM (0.10725ms)
+✔ two dev servers on different ports get different build directories (57.995792ms)
+✔ the ordinary single dev server is unchanged (2.005125ms)
+✔ a production build is never redirected (0.545ms)
+(node:57993) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/src/services/analytics.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the event name is the one the insight is saved against (0.35175ms)
+✔ a landing page click reports page, placement and store (0.315167ms)
+✔ a share page click carries the dog it came from (0.048125ms)
+✔ a click on a shared link carries the referrer it arrived with (0.104083ms)
+✔ ref is absent rather than null when nobody referred the visitor (0.057917ms)
+✔ dog_id is absent rather than null when there is no dog (0.091ms)
+✔ a click without a PostHog key is silent, not a crash (0.673709ms)
+(node:57994) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/src/lib/indexnow.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the key is 32 hex characters (0.457167ms)
+✔ the public key file holds only the key (2.911417ms)
+✔ the payload only carries www.pegada.app URLs (0.453417ms)
+(node:57995) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/src/components/landing/deck-swipe.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ a slow drag commits only past 100px (0.380417ms)
+✔ a flick commits from 24px, only in the direction it moves (0.081708ms)
+✔ sideways wins over up (0.053916ms)
+✔ the card tilts 8deg per 100px (0.056167ms)
+✔ the reaction fades in between 10px and 100px (0.383708ms)
+✔ the lean names the answer, how far, and when it would commit (0.084875ms)
+(node:57996) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/src/components/landing/radius-scale.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the rings and dots sit where the map draws them (0.383459ms)
+✔ a dog is in when it is within the radius, and 300 has no limit (0.081625ms)
+✔ the scroll sweep runs from 300 to 10 in steps of 5, Maui out before Bento (0.239667ms)
+(node:57997) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/src/components/landing/rich.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ a tag inside a sentence becomes its own part (0.8415ms)
+✔ several tags, including one at each end (0.098834ms)
+✔ text with no tags, or a tag left open, stays as written (0.065916ms)
+(node:57998) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/src/lib/llms.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ llms.txt opens with the Pegada heading and a summary (0.391208ms)
+✔ every llms.txt link is a sitemap page or a store link (0.148959ms)
+✔ llms.txt links the indexable pages and not the noindexed ones (0.148083ms)
+✔ llms-full.txt carries both locales with no placeholders or HTML (0.18925ms)
+(node:57999) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/src/lib/locale-cookie.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ a shared Portuguese link neither pins nor clears the cookie (0.402834ms)
+✔ choosing Portuguese in the switch sticks (0.079125ms)
+✔ choosing English in the switch sticks (0.063166ms)
+✔ unprefixed URLs leave the visitor's choice alone (0.053667ms)
+(node:58000) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/src/lib/og-assets.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the app has image routes to trace assets for (0.267875ms)
+✔ every image route is covered by an include key (0.816791ms)
+✔ the include globs resolve to every file the route reads (0.578166ms)
+✔ the assets read back as fonts and a logo (2.465125ms)
+(node:58001) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/src/app/robots.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ robots allows exactly the listed AI crawlers and keeps the sitemap (0.676333ms)
+✔ sitemap leaves out noindex pages and carries no lastmod (0.171709ms)
+✔ secondary legal pages are noindex and the privacy policy is not (0.421167ms)
+(node:58002) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/src/app/store/store-urls.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ routes each user agent to its own store (0.736959ms)
+✔ an App Store link carries the referrer as a campaign token (0.257917ms)
+✔ a Play link carries the referrer as an install referrer string (0.148666ms)
+✔ incoming utm values win over the share defaults on Play (0.094958ms)
+✔ a channel token is a valid referrer everywhere (0.111083ms)
+✔ the desktop fallback stays on this site and keeps the campaign (0.241ms)
+✔ a link with no campaign is the link we shipped before (0.106583ms)
+✔ a campaign value that could not have come from a link never reaches a store (0.602541ms)
+✔ readCampaign takes only the campaign parameters, validated (0.51225ms)
+✔ the shared dog rides to Play as utm_term and nowhere on iOS (0.243167ms)
+✔ a dog that could not be an id never reaches Play (0.114166ms)
+(node:58003) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/src/lib/structured-data.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e/apps/nextjs/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the graph has the app, the site and the organization (0.490416ms)
+✔ the app and the site point at the organization by @id (0.1265ms)
+✔ no rating, review or search action anywhere (0.165667ms)
+✔ every sameAs and logo is an absolute https url (0.108375ms)
+✔ inLanguage follows the locale it is given (0.078625ms)
+ℹ tests 79
+ℹ suites 0
+ℹ pass 79
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 138.057709

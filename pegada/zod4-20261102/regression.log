@@ -1,0 +1,19 @@
+watchman warning:  Recrawled this watch 3 times, most recently because:
+MustScanSubDirs UserDroppedTo resolve, please review the information on
+https://facebook.github.io/watchman/docs/troubleshooting.html#recrawl
+To clear this warning, run:
+`watchman watch-del '/Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e' ; watchman watch-project '/Users/gabrieltaveira/.t3/worktrees/pegada/t3-a114023e'`
+
+PASS packages/api/src/shared/zod-migration.test.ts
+  ✓ keeps en-US profile errors in schema and resolver (4 ms)
+  ✓ keeps pt-BR profile errors in schema and resolver (1 ms)
+  ✓ preserves successful transforms, nulls and optional fields (1 ms)
+  ✓ translates generic errors in en-US without v3 runtime APIs (1 ms)
+  ✓ translates generic errors in pt-BR without v3 runtime APIs (1 ms)
+  ✓ rejects oversized collections before validating their elements
+
+Test Suites: 1 passed, 1 total
+Tests:       6 passed, 6 total
+Snapshots:   0 total
+Time:        0.186 s, estimated 1 s
+Ran all test suites matching /zod-migration/i.
