@@ -1,0 +1,67 @@
+✓ Lockfile passes supply-chain policies (verified 10h ago)
+Lockfile is up to date, resolution step is skipped
+Packages are cloned from the content-addressable store to the virtual store.
+  Content-addressable store is at: /Users/gabrieltaveira/Library/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 141, reused 140, downloaded 0, added 126
+Packages: +169
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 169, reused 169, downloaded 0, added 169, done
+.../node_modules/puppeteer postinstall$ node install.mjs
+.../node_modules/@swc/core postinstall$ node postinstall.js
+.../node_modules/@parcel/watcher install$ node scripts/build-from-source.js
+.../node_modules/@parcel/watcher install: Done
+.../node_modules/puppeteer postinstall: **INFO** Skipping Firefox download as instructed.
+.../node_modules/puppeteer postinstall: chrome-headless-shell (155.0.8059.79) downloaded to /Users/gabrieltaveira/.cache/puppeteer/chrome-headless-shell/mac_arm-155.0.8059.79
+.../node_modules/puppeteer postinstall: Error: ERROR: Failed to set up chrome v155.0.8059.79! Set "PUPPETEER_SKIP_DOWNLOAD" env variable to skip download.
+.../node_modules/puppeteer postinstall:     at downloadBrowser (file:///private/tmp/portfolio-404-gate.tLaQUm/release/GSTJ-gabriel-taveira-portfolio-05d8cd6/node_modules/.pnpm/puppeteer@25.14.0/node_modules/puppeteer/lib/puppeteer/node/install.js:26:15)
+.../node_modules/puppeteer postinstall:     at async Promise.allSettled (index 0)
+.../node_modules/puppeteer postinstall:     at async downloadBrowsers (file:///private/tmp/portfolio-404-gate.tLaQUm/release/GSTJ-gabriel-taveira-portfolio-05d8cd6/node_modules/.pnpm/puppeteer@25.14.0/node_modules/puppeteer/lib/puppeteer/node/install.js:83:21)
+.../node_modules/puppeteer postinstall:     at async file:///private/tmp/portfolio-404-gate.tLaQUm/release/GSTJ-gabriel-taveira-portfolio-05d8cd6/node_modules/.pnpm/puppeteer@25.14.0/node_modules/puppeteer/install.mjs:40:3 {
+.../node_modules/puppeteer postinstall:   [cause]: IncompleteInstallationError: All providers failed for chrome 155.0.8059.79:
+.../node_modules/puppeteer postinstall:     - DefaultProvider: The browser folder (/Users/gabrieltaveira/.cache/puppeteer/chrome/mac_arm-155.0.8059.79) exists but the executable (/Users/gabrieltaveira/.cache/puppeteer/chrome/mac_arm-155.0.8059.79/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing) is missing. An earlier install of this build probably did not finish. Delete /Users/gabrieltaveira/.cache/puppeteer/chrome/mac_arm-155.0.8059.79 and install the browser again.
+.../node_modules/puppeteer postinstall:       at installWithProviders (file:///private/tmp/portfolio-404-gate.tLaQUm/release/GSTJ-gabriel-taveira-portfolio-05d8cd6/node_modules/.pnpm/@puppeteer+browsers@3.2.5/node_modules/@puppeteer/browsers/lib/install.js:121:15)
+.../node_modules/puppeteer postinstall:       at async install (file:///private/tmp/portfolio-404-gate.tLaQUm/release/GSTJ-gabriel-taveira-portfolio-05d8cd6/node_modules/.pnpm/@puppeteer+browsers@3.2.5/node_modules/@puppeteer/browsers/lib/install.js:134:12)
+.../node_modules/puppeteer postinstall:       at async downloadBrowser (file:///private/tmp/portfolio-404-gate.tLaQUm/release/GSTJ-gabriel-taveira-portfolio-05d8cd6/node_modules/.pnpm/puppeteer@25.14.0/node_modules/puppeteer/lib/puppeteer/node/install.js:14:24)
+.../node_modules/puppeteer postinstall:       at async Promise.allSettled (index 0)
+.../node_modules/puppeteer postinstall:       at async downloadBrowsers (file:///private/tmp/portfolio-404-gate.tLaQUm/release/GSTJ-gabriel-taveira-portfolio-05d8cd6/node_modules/.pnpm/puppeteer@25.14.0/node_modules/puppeteer/lib/puppeteer/node/install.js:83:21)
+.../node_modules/puppeteer postinstall:       at async file:///private/tmp/portfolio-404-gate.tLaQUm/release/GSTJ-gabriel-taveira-portfolio-05d8cd6/node_modules/.pnpm/puppeteer@25.14.0/node_modules/puppeteer/install.mjs:40:3
+.../node_modules/puppeteer postinstall: }
+.../node_modules/puppeteer postinstall: Browser download failed Error: Failed to download one or more browsers. Run `npx puppeteer browsers install` to try again, or `npx puppeteer browsers clear` first if the cache holds an unfinished install.
+.../node_modules/puppeteer postinstall:     at downloadBrowsers (file:///private/tmp/portfolio-404-gate.tLaQUm/release/GSTJ-gabriel-taveira-portfolio-05d8cd6/node_modules/.pnpm/puppeteer@25.14.0/node_modules/puppeteer/lib/puppeteer/node/install.js:98:15)
+.../node_modules/puppeteer postinstall:     at async file:///private/tmp/portfolio-404-gate.tLaQUm/release/GSTJ-gabriel-taveira-portfolio-05d8cd6/node_modules/.pnpm/puppeteer@25.14.0/node_modules/puppeteer/install.mjs:40:3
+.../node_modules/puppeteer postinstall: Done
+.../node_modules/@swc/core postinstall: Done
+
+dependencies:
++ @posthog/react 1.11.3
++ @vercel/analytics 2.0.1
++ gsap 3.15.0
++ magic-modal 10.2.1
++ magic-observability 1.0.5
++ next 16.4.2
++ next-intl 4.14.9
++ posthog-js 1.438.12
++ posthog-node 5.56.2
++ react 19.3.1
++ react-dom 19.3.1
++ typescript 7.0.2
+
+devDependencies:
++ @total-typescript/ts-reset 0.6.1
++ @types/node 26.6.5
++ @types/react 19.3.0
++ @types/react-dom 19.3.0
++ babel-plugin-react-compiler 1.0.0
++ critters <- beasties 0.5.5
++ magic-codemods 1.1.6
++ magic-oxfmt-config 1.2.5
++ magic-oxlint-config 3.0.0
++ magic-oxlint-plugin 1.2.4
++ magic-tsconfig 1.2.4
++ oxfmt 0.73.0
++ oxlint 1.88.0
++ puppeteer 25.14.0
++ wrangler 4.151.2
+
+Done in 3.2s using pnpm v12.14.0

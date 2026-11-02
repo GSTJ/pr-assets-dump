@@ -1,0 +1,431 @@
+﻿2026-11-02T23:26:10.0312046Z Current runner version: '2.338.2'
+2026-11-02T23:26:10.0332966Z ##[group]Runner Image Provisioner
+2026-11-02T23:26:10.0333679Z Hosted Compute Agent
+2026-11-02T23:26:10.0334162Z Version: 20261021.618
+2026-11-02T23:26:10.0334794Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-11-02T23:26:10.0335421Z Build Date: 2026-10-21T00:45:21Z
+2026-11-02T23:26:10.0336061Z Worker ID: {687cca02-e79d-42e9-a156-9e7bd08a9bbc}
+2026-11-02T23:26:10.0336674Z Region: westus3
+2026-11-02T23:26:10.0337231Z Cloud: Azure
+2026-11-02T23:26:10.0337733Z ##[endgroup]
+2026-11-02T23:26:10.0339019Z ##[group]Operating System
+2026-11-02T23:26:10.0339607Z Ubuntu
+2026-11-02T23:26:10.0340059Z 26.04.1
+2026-11-02T23:26:10.0340484Z LTS
+2026-11-02T23:26:10.0341137Z ##[endgroup]
+2026-11-02T23:26:10.0341607Z ##[group]Runner Image
+2026-11-02T23:26:10.0342192Z Image: ubuntu-26.04
+2026-11-02T23:26:10.0342686Z Version: 20261025.179.1
+2026-11-02T23:26:10.0343808Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261025.179/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-02T23:26:10.0345201Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261025.179
+2026-11-02T23:26:10.0346363Z ##[endgroup]
+2026-11-02T23:26:10.0347488Z ##[group]GITHUB_TOKEN Permissions
+2026-11-02T23:26:10.0349387Z Actions: write
+2026-11-02T23:26:10.0349894Z Contents: write
+2026-11-02T23:26:10.0350390Z Metadata: read
+2026-11-02T23:26:10.0350893Z PullRequests: write
+2026-11-02T23:26:10.0351595Z ##[endgroup]
+2026-11-02T23:26:10.0353304Z Secret source: Actions
+2026-11-02T23:26:10.0354207Z Cache mode: write
+2026-11-02T23:26:10.0354765Z Prepare workflow directory
+2026-11-02T23:26:10.0616437Z Prepare all required actions
+2026-11-02T23:26:10.0654982Z Getting action download info
+2026-11-02T23:26:10.3677422Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-02T23:26:10.4436936Z Download action repository 'googleapis/release-please-action@45996ed1f6d02564a971a2fa1b5860e934307cf7' (SHA:45996ed1f6d02564a971a2fa1b5860e934307cf7)
+2026-11-02T23:26:11.0618593Z Complete job name: release-please
+2026-11-02T23:26:11.1304656Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-11-02T23:26:11.1305617Z with:
+2026-11-02T23:26:11.1306101Z   repository: GSTJ/gabriel-taveira-portfolio
+2026-11-02T23:26:11.1310056Z   token: ***
+2026-11-02T23:26:11.1310452Z   ssh-strict: true
+2026-11-02T23:26:11.1310857Z   ssh-user: git
+2026-11-02T23:26:11.1311454Z   persist-credentials: true
+2026-11-02T23:26:11.1311907Z   clean: true
+2026-11-02T23:26:11.1312308Z   sparse-checkout-cone-mode: true
+2026-11-02T23:26:11.1312790Z   fetch-depth: 1
+2026-11-02T23:26:11.1313188Z   fetch-tags: false
+2026-11-02T23:26:11.1313608Z   show-progress: true
+2026-11-02T23:26:11.1314016Z   lfs: false
+2026-11-02T23:26:11.1314403Z   submodules: false
+2026-11-02T23:26:11.1314818Z   set-safe-directory: true
+2026-11-02T23:26:11.1315275Z   allow-unsafe-pr-checkout: false
+2026-11-02T23:26:11.1315945Z ##[endgroup]
+2026-11-02T23:26:11.3237809Z Syncing repository: GSTJ/gabriel-taveira-portfolio
+2026-11-02T23:26:11.3239434Z ##[group]Getting Git version info
+2026-11-02T23:26:11.3240295Z Working directory is '/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio'
+2026-11-02T23:26:11.3241673Z [command]/usr/bin/git version
+2026-11-02T23:26:11.3243451Z git version 2.56.0
+2026-11-02T23:26:11.3258666Z ##[endgroup]
+2026-11-02T23:26:11.3267059Z Temporarily overriding HOME='/home/runner/work/_temp/bde03b6a-5724-4630-a46d-89dcc094c8fa' before making global git config changes
+2026-11-02T23:26:11.3268627Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-02T23:26:11.3270816Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio
+2026-11-02T23:26:11.3316269Z Deleting the contents of '/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio'
+2026-11-02T23:26:11.3318774Z ##[group]Determining repository object format
+2026-11-02T23:26:11.3320306Z ##[endgroup]
+2026-11-02T23:26:11.3321459Z ##[group]Initializing the repository
+2026-11-02T23:26:11.3322898Z [command]/usr/bin/git init /home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio
+2026-11-02T23:26:11.3389915Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-02T23:26:11.3390977Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-02T23:26:11.3392318Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-02T23:26:11.3393044Z hint: call:
+2026-11-02T23:26:11.3393585Z hint:
+2026-11-02T23:26:11.3394120Z hint: 	git config --global init.defaultBranch <name>
+2026-11-02T23:26:11.3394918Z hint:
+2026-11-02T23:26:11.3395605Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-02T23:26:11.3396705Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-02T23:26:11.3397973Z hint:
+2026-11-02T23:26:11.3398662Z hint: 	git branch -m <name>
+2026-11-02T23:26:11.3399406Z hint:
+2026-11-02T23:26:11.3400283Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-02T23:26:11.3402386Z Initialized empty Git repository in /home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git/
+2026-11-02T23:26:11.3406408Z [command]/usr/bin/git remote add origin https://github.com/GSTJ/gabriel-taveira-portfolio
+2026-11-02T23:26:11.3593135Z ##[endgroup]
+2026-11-02T23:26:11.3593859Z ##[group]Disabling automatic garbage collection
+2026-11-02T23:26:11.3596999Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-02T23:26:11.3624835Z ##[endgroup]
+2026-11-02T23:26:11.3625733Z ##[group]Setting up auth
+2026-11-02T23:26:11.3626275Z Removing SSH command configuration
+2026-11-02T23:26:11.3629056Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-02T23:26:11.3655199Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-02T23:26:11.3963725Z Removing HTTP extra header
+2026-11-02T23:26:11.3967500Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-02T23:26:11.3992744Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-02T23:26:11.4212769Z Removing includeIf entries pointing to credentials config files
+2026-11-02T23:26:11.4216553Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-02T23:26:11.4249954Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-02T23:26:11.4477900Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-02T23:26:11.4509425Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git.path /home/runner/work/_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config
+2026-11-02T23:26:11.4538130Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config
+2026-11-02T23:26:11.4587498Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config
+2026-11-02T23:26:11.4614589Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config
+2026-11-02T23:26:11.4641530Z ##[endgroup]
+2026-11-02T23:26:11.4642217Z ##[group]Fetching the repository
+2026-11-02T23:26:11.4646467Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +7415189690d46d776c501f6bb94d8968cd34ad5e:refs/remotes/origin/main
+2026-11-02T23:26:12.2161581Z From https://github.com/GSTJ/gabriel-taveira-portfolio
+2026-11-02T23:26:12.2162991Z  * [new ref]         7415189690d46d776c501f6bb94d8968cd34ad5e -> origin/main
+2026-11-02T23:26:12.2168363Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-02T23:26:12.2191630Z   origin/main
+2026-11-02T23:26:12.2199149Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-02T23:26:12.2219350Z 7415189690d46d776c501f6bb94d8968cd34ad5e
+2026-11-02T23:26:12.2223338Z ##[endgroup]
+2026-11-02T23:26:12.2224515Z ##[group]Determining the checkout info
+2026-11-02T23:26:12.2225792Z ##[endgroup]
+2026-11-02T23:26:12.2227022Z [command]/usr/bin/git sparse-checkout disable
+2026-11-02T23:26:12.2270817Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-02T23:26:12.2298595Z ##[group]Checking out the ref
+2026-11-02T23:26:12.2300923Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-02T23:26:12.2454485Z Switched to a new branch 'main'
+2026-11-02T23:26:12.2458641Z branch 'main' set up to track 'origin/main'.
+2026-11-02T23:26:12.2465508Z ##[endgroup]
+2026-11-02T23:26:12.2502277Z [command]/usr/bin/git log -1 --format=%H
+2026-11-02T23:26:12.2523906Z 7415189690d46d776c501f6bb94d8968cd34ad5e
+2026-11-02T23:26:12.2912704Z ##[group]Run googleapis/release-please-action@45996ed1f6d02564a971a2fa1b5860e934307cf7
+2026-11-02T23:26:12.2914223Z with:
+2026-11-02T23:26:12.2915012Z   config-file: release-please-config.json
+2026-11-02T23:26:12.2916123Z   manifest-file: .release-please-manifest.json
+2026-11-02T23:26:12.2925033Z   token: ***
+2026-11-02T23:26:12.2925876Z   repo-url: GSTJ/gabriel-taveira-portfolio
+2026-11-02T23:26:12.2926973Z   github-api-url: https://api.github.com
+2026-11-02T23:26:12.2928158Z   github-graphql-url: https://api.github.com/graphql
+2026-11-02T23:26:12.2929272Z   fork: false
+2026-11-02T23:26:12.2930056Z   include-component-in-tag: false
+2026-11-02T23:26:12.2931135Z   skip-github-release: false
+2026-11-02T23:26:12.2932116Z   skip-github-pull-request: false
+2026-11-02T23:26:12.2933089Z   skip-labeling: false
+2026-11-02T23:26:12.2933971Z   changelog-host: https://github.com
+2026-11-02T23:26:12.2934978Z   versioning-strategy: default
+2026-11-02T23:26:12.2935868Z ##[endgroup]
+2026-11-02T23:26:12.4216954Z Running release-please version: 17.6.0
+2026-11-02T23:26:12.8263057Z ❯ Fetching release-please-config.json from branch main
+2026-11-02T23:26:12.8267383Z ❯ Fetching .release-please-manifest.json from branch main
+2026-11-02T23:26:13.3931254Z ✔ Building releases
+2026-11-02T23:26:13.3932015Z ✔ Building strategies by path
+2026-11-02T23:26:13.3932343Z ❯ .: node
+2026-11-02T23:26:13.8531279Z ❯ Found pull request #500: 'chore(main): release 1.3.4'
+2026-11-02T23:26:13.8545549Z ✔ Building release for path: .
+2026-11-02T23:26:13.8545998Z ❯ type: node
+2026-11-02T23:26:13.8611857Z ❯ targetBranch: main
+2026-11-02T23:26:16.6441568Z ✔ Creating 1 releases for pull #500
+2026-11-02T23:26:18.0714532Z ❯ adding comment to https://github.com/GSTJ/gabriel-taveira-portfolio/issues/500
+2026-11-02T23:26:18.8387133Z ❯ removing labels: autorelease: pending from issue/pull 500
+2026-11-02T23:26:19.7166865Z ❯ adding labels: autorelease: tagged from issue/pull 500
+2026-11-02T23:26:20.7107118Z ❯ Fetching release-please-config.json from branch main
+2026-11-02T23:26:20.7107811Z ❯ Fetching .release-please-manifest.json from branch main
+2026-11-02T23:26:20.7113234Z ✔ Building pull requests
+2026-11-02T23:26:20.7113752Z ✔ Building strategies by path
+2026-11-02T23:26:20.7114177Z ❯ .: node
+2026-11-02T23:26:20.7114598Z ✔ Collecting release commit SHAs
+2026-11-02T23:26:20.7115072Z ❯ release search depth: 400
+2026-11-02T23:26:20.7116614Z ❯ Fetching releases with cursor undefined
+2026-11-02T23:26:21.2009356Z ❯ Found release for path ., v1.3.4
+2026-11-02T23:26:21.2010138Z ❯ release for path: ., version: 1.3.4, sha: 7415189690d46d776c501f6bb94d8968cd34ad5e
+2026-11-02T23:26:21.2010745Z ✔ Collecting commits since all latest releases
+2026-11-02T23:26:21.2011332Z ❯ commit search depth: 500
+2026-11-02T23:26:21.2011760Z ❯ Set(1) { '7415189690d46d776c501f6bb94d8968cd34ad5e' }
+2026-11-02T23:26:21.2012929Z ❯ Fetching merge commits on branch main with cursor: undefined
+2026-11-02T23:26:22.2351284Z ✔ Splitting 0 commits by path
+2026-11-02T23:26:22.2370497Z ✔ Building candidate release pull request for path: .
+2026-11-02T23:26:22.2371174Z ❯ type: node
+2026-11-02T23:26:22.2371571Z ❯ targetBranch: main
+2026-11-02T23:26:22.2371894Z ❯ commits: 0
+2026-11-02T23:26:22.2372203Z ✔ Considering: 0 commits
+2026-11-02T23:26:22.2372553Z ✔ No commits for path: ., skipping
+2026-11-02T23:26:22.2552904Z ##[group]Run node scripts/annotate-release.cjs
+2026-11-02T23:26:22.2553251Z [36;1mnode scripts/annotate-release.cjs[0m
+2026-11-02T23:26:22.2583731Z shell: /usr/bin/bash -e {0}
+2026-11-02T23:26:22.2583950Z env:
+2026-11-02T23:26:22.2586035Z   GH_TOKEN: ***
+2026-11-02T23:26:22.2586219Z ##[endgroup]
+2026-11-02T23:26:28.3639320Z Annotated v1.3.4, preserved commit 7415189690d46d776c501f6bb94d8968cd34ad5e
+2026-11-02T23:26:28.5014840Z Post job cleanup.
+2026-11-02T23:26:28.5666554Z [command]/usr/bin/git version
+2026-11-02T23:26:28.5698854Z git version 2.56.0
+2026-11-02T23:26:28.5726800Z Temporarily overriding HOME='/home/runner/work/_temp/2e8ed1b9-4a19-483c-a03d-b22d0abaa45a' before making global git config changes
+2026-11-02T23:26:28.5727774Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-02T23:26:28.5731723Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio
+2026-11-02T23:26:28.5758194Z Removing SSH command configuration
+2026-11-02T23:26:28.5762895Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-02T23:26:28.5792785Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-02T23:26:28.6020664Z Removing HTTP extra header
+2026-11-02T23:26:28.6024424Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-02T23:26:28.6051485Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-02T23:26:28.6271535Z Removing includeIf entries pointing to credentials config files
+2026-11-02T23:26:28.6275787Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-02T23:26:28.6296537Z includeif.gitdir:/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git.path
+2026-11-02T23:26:28.6297642Z includeif.gitdir:/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git/worktrees/*.path
+2026-11-02T23:26:28.6298489Z includeif.gitdir:/github/workspace/.git.path
+2026-11-02T23:26:28.6299009Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-02T23:26:28.6304654Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git.path
+2026-11-02T23:26:28.6324884Z /home/runner/work/_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config
+2026-11-02T23:26:28.6333432Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-cf40d896\-0b15\-4024\-8bc3\-df3f1f16e00b\.config
+2026-11-02T23:26:28.6395192Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git/worktrees/*.path
+2026-11-02T23:26:28.6421963Z /home/runner/work/_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config
+2026-11-02T23:26:28.6428930Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-cf40d896\-0b15\-4024\-8bc3\-df3f1f16e00b\.config
+2026-11-02T23:26:28.6455955Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-02T23:26:28.6474689Z /github/runner_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config
+2026-11-02T23:26:28.6480251Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-cf40d896\-0b15\-4024\-8bc3\-df3f1f16e00b\.config
+2026-11-02T23:26:28.6507182Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-02T23:26:28.6525942Z /github/runner_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config
+2026-11-02T23:26:28.6531569Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-cf40d896\-0b15\-4024\-8bc3\-df3f1f16e00b\.config
+2026-11-02T23:26:28.6559470Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-02T23:26:28.6785162Z Removing credentials config '/home/runner/work/_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config'
+2026-11-02T23:26:28.6944641Z Cleaning up orphan processes
+2026-11-02T23:26:06.8820000Z Requested labels: ubuntu-latest
+2026-11-02T23:26:06.8820000Z Job defined at: GSTJ/gabriel-taveira-portfolio/.github/workflows/release.yml@refs/heads/main
+2026-11-02T23:26:06.8820000Z Waiting for a runner to pick up this job...
+2026-11-02T23:26:06.8830000Z Evaluating release-please.if
+2026-11-02T23:26:06.8830000Z Evaluating: success()
+2026-11-02T23:26:06.8830000Z Result: true
+2026-11-02T23:26:07.4960000Z Job is waiting for a hosted runner to come online.
+2026-11-02T23:26:07.4980000Z Job is about to start running on the hosted runner: GitHub Actions 1000030728﻿2026-11-02T23:26:10.0310943Z Current runner version: '2.338.2'
+2026-11-02T23:26:10.0332944Z ##[group]Runner Image Provisioner
+2026-11-02T23:26:10.0333676Z Hosted Compute Agent
+2026-11-02T23:26:10.0334159Z Version: 20261021.618
+2026-11-02T23:26:10.0334790Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-11-02T23:26:10.0335416Z Build Date: 2026-10-21T00:45:21Z
+2026-11-02T23:26:10.0336057Z Worker ID: {687cca02-e79d-42e9-a156-9e7bd08a9bbc}
+2026-11-02T23:26:10.0336670Z Region: westus3
+2026-11-02T23:26:10.0337228Z Cloud: Azure
+2026-11-02T23:26:10.0337729Z ##[endgroup]
+2026-11-02T23:26:10.0339010Z ##[group]Operating System
+2026-11-02T23:26:10.0339605Z Ubuntu
+2026-11-02T23:26:10.0340054Z 26.04.1
+2026-11-02T23:26:10.0340480Z LTS
+2026-11-02T23:26:10.0341135Z ##[endgroup]
+2026-11-02T23:26:10.0341604Z ##[group]Runner Image
+2026-11-02T23:26:10.0342189Z Image: ubuntu-26.04
+2026-11-02T23:26:10.0342682Z Version: 20261025.179.1
+2026-11-02T23:26:10.0343613Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261025.179/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-02T23:26:10.0345194Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261025.179
+2026-11-02T23:26:10.0346359Z ##[endgroup]
+2026-11-02T23:26:10.0347483Z ##[group]GITHUB_TOKEN Permissions
+2026-11-02T23:26:10.0349373Z Actions: write
+2026-11-02T23:26:10.0349889Z Contents: write
+2026-11-02T23:26:10.0350387Z Metadata: read
+2026-11-02T23:26:10.0350889Z PullRequests: write
+2026-11-02T23:26:10.0351592Z ##[endgroup]
+2026-11-02T23:26:10.0353293Z Secret source: Actions
+2026-11-02T23:26:10.0354203Z Cache mode: write
+2026-11-02T23:26:10.0354762Z Prepare workflow directory
+2026-11-02T23:26:10.0616407Z Prepare all required actions
+2026-11-02T23:26:10.0654954Z Getting action download info
+2026-11-02T23:26:10.3677353Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-02T23:26:10.4436902Z Download action repository 'googleapis/release-please-action@45996ed1f6d02564a971a2fa1b5860e934307cf7' (SHA:45996ed1f6d02564a971a2fa1b5860e934307cf7)
+2026-11-02T23:26:11.0618563Z Complete job name: release-please
+﻿2026-11-02T23:26:11.1304630Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-11-02T23:26:11.1305610Z with:
+2026-11-02T23:26:11.1306095Z   repository: GSTJ/gabriel-taveira-portfolio
+2026-11-02T23:26:11.1310053Z   token: ***
+2026-11-02T23:26:11.1310449Z   ssh-strict: true
+2026-11-02T23:26:11.1310854Z   ssh-user: git
+2026-11-02T23:26:11.1311451Z   persist-credentials: true
+2026-11-02T23:26:11.1311904Z   clean: true
+2026-11-02T23:26:11.1312304Z   sparse-checkout-cone-mode: true
+2026-11-02T23:26:11.1312786Z   fetch-depth: 1
+2026-11-02T23:26:11.1313184Z   fetch-tags: false
+2026-11-02T23:26:11.1313604Z   show-progress: true
+2026-11-02T23:26:11.1314013Z   lfs: false
+2026-11-02T23:26:11.1314386Z   submodules: false
+2026-11-02T23:26:11.1314814Z   set-safe-directory: true
+2026-11-02T23:26:11.1315272Z   allow-unsafe-pr-checkout: false
+2026-11-02T23:26:11.1315941Z ##[endgroup]
+2026-11-02T23:26:11.3237750Z Syncing repository: GSTJ/gabriel-taveira-portfolio
+2026-11-02T23:26:11.3239345Z ##[group]Getting Git version info
+2026-11-02T23:26:11.3240288Z Working directory is '/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio'
+2026-11-02T23:26:11.3241666Z [command]/usr/bin/git version
+2026-11-02T23:26:11.3243438Z git version 2.56.0
+2026-11-02T23:26:11.3258647Z ##[endgroup]
+2026-11-02T23:26:11.3267035Z Temporarily overriding HOME='/home/runner/work/_temp/bde03b6a-5724-4630-a46d-89dcc094c8fa' before making global git config changes
+2026-11-02T23:26:11.3268619Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-02T23:26:11.3270805Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio
+2026-11-02T23:26:11.3316244Z Deleting the contents of '/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio'
+2026-11-02T23:26:11.3318756Z ##[group]Determining repository object format
+2026-11-02T23:26:11.3320298Z ##[endgroup]
+2026-11-02T23:26:11.3321443Z ##[group]Initializing the repository
+2026-11-02T23:26:11.3322888Z [command]/usr/bin/git init /home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio
+2026-11-02T23:26:11.3389890Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-02T23:26:11.3390973Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-02T23:26:11.3392310Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-02T23:26:11.3393040Z hint: call:
+2026-11-02T23:26:11.3393581Z hint:
+2026-11-02T23:26:11.3394115Z hint: 	git config --global init.defaultBranch <name>
+2026-11-02T23:26:11.3394913Z hint:
+2026-11-02T23:26:11.3395600Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-02T23:26:11.3396698Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-02T23:26:11.3397961Z hint:
+2026-11-02T23:26:11.3398655Z hint: 	git branch -m <name>
+2026-11-02T23:26:11.3399400Z hint:
+2026-11-02T23:26:11.3400268Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-02T23:26:11.3402369Z Initialized empty Git repository in /home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git/
+2026-11-02T23:26:11.3406397Z [command]/usr/bin/git remote add origin https://github.com/GSTJ/gabriel-taveira-portfolio
+2026-11-02T23:26:11.3593101Z ##[endgroup]
+2026-11-02T23:26:11.3593855Z ##[group]Disabling automatic garbage collection
+2026-11-02T23:26:11.3596987Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-02T23:26:11.3624814Z ##[endgroup]
+2026-11-02T23:26:11.3625728Z ##[group]Setting up auth
+2026-11-02T23:26:11.3626269Z Removing SSH command configuration
+2026-11-02T23:26:11.3629048Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-02T23:26:11.3655174Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-02T23:26:11.3963298Z Removing HTTP extra header
+2026-11-02T23:26:11.3967470Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-02T23:26:11.3992720Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-02T23:26:11.4212715Z Removing includeIf entries pointing to credentials config files
+2026-11-02T23:26:11.4216545Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-02T23:26:11.4249930Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-02T23:26:11.4477859Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-02T23:26:11.4509366Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git.path /home/runner/work/_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config
+2026-11-02T23:26:11.4538102Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config
+2026-11-02T23:26:11.4587465Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config
+2026-11-02T23:26:11.4614566Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config
+2026-11-02T23:26:11.4641507Z ##[endgroup]
+2026-11-02T23:26:11.4642214Z ##[group]Fetching the repository
+2026-11-02T23:26:11.4646431Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +7415189690d46d776c501f6bb94d8968cd34ad5e:refs/remotes/origin/main
+2026-11-02T23:26:12.2161492Z From https://github.com/GSTJ/gabriel-taveira-portfolio
+2026-11-02T23:26:12.2162972Z  * [new ref]         7415189690d46d776c501f6bb94d8968cd34ad5e -> origin/main
+2026-11-02T23:26:12.2168350Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-02T23:26:12.2191610Z   origin/main
+2026-11-02T23:26:12.2199127Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-02T23:26:12.2219325Z 7415189690d46d776c501f6bb94d8968cd34ad5e
+2026-11-02T23:26:12.2223327Z ##[endgroup]
+2026-11-02T23:26:12.2224509Z ##[group]Determining the checkout info
+2026-11-02T23:26:12.2225786Z ##[endgroup]
+2026-11-02T23:26:12.2226996Z [command]/usr/bin/git sparse-checkout disable
+2026-11-02T23:26:12.2270764Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-02T23:26:12.2298507Z ##[group]Checking out the ref
+2026-11-02T23:26:12.2300903Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-02T23:26:12.2454420Z Switched to a new branch 'main'
+2026-11-02T23:26:12.2458624Z branch 'main' set up to track 'origin/main'.
+2026-11-02T23:26:12.2465495Z ##[endgroup]
+2026-11-02T23:26:12.2502256Z [command]/usr/bin/git log -1 --format=%H
+2026-11-02T23:26:12.2523881Z 7415189690d46d776c501f6bb94d8968cd34ad5e
+﻿2026-11-02T23:26:12.2912667Z ##[group]Run googleapis/release-please-action@45996ed1f6d02564a971a2fa1b5860e934307cf7
+2026-11-02T23:26:12.2914217Z with:
+2026-11-02T23:26:12.2915007Z   config-file: release-please-config.json
+2026-11-02T23:26:12.2916120Z   manifest-file: .release-please-manifest.json
+2026-11-02T23:26:12.2925023Z   token: ***
+2026-11-02T23:26:12.2925873Z   repo-url: GSTJ/gabriel-taveira-portfolio
+2026-11-02T23:26:12.2926969Z   github-api-url: https://api.github.com
+2026-11-02T23:26:12.2928153Z   github-graphql-url: https://api.github.com/graphql
+2026-11-02T23:26:12.2929268Z   fork: false
+2026-11-02T23:26:12.2930052Z   include-component-in-tag: false
+2026-11-02T23:26:12.2931124Z   skip-github-release: false
+2026-11-02T23:26:12.2932109Z   skip-github-pull-request: false
+2026-11-02T23:26:12.2933084Z   skip-labeling: false
+2026-11-02T23:26:12.2933963Z   changelog-host: https://github.com
+2026-11-02T23:26:12.2934973Z   versioning-strategy: default
+2026-11-02T23:26:12.2935864Z ##[endgroup]
+2026-11-02T23:26:12.4216740Z Running release-please version: 17.6.0
+2026-11-02T23:26:12.8262981Z ❯ Fetching release-please-config.json from branch main
+2026-11-02T23:26:12.8267264Z ❯ Fetching .release-please-manifest.json from branch main
+2026-11-02T23:26:13.3931201Z ✔ Building releases
+2026-11-02T23:26:13.3932011Z ✔ Building strategies by path
+2026-11-02T23:26:13.3932339Z ❯ .: node
+2026-11-02T23:26:13.8531235Z ❯ Found pull request #500: 'chore(main): release 1.3.4'
+2026-11-02T23:26:13.8545534Z ✔ Building release for path: .
+2026-11-02T23:26:13.8545994Z ❯ type: node
+2026-11-02T23:26:13.8611830Z ❯ targetBranch: main
+2026-11-02T23:26:16.6441509Z ✔ Creating 1 releases for pull #500
+2026-11-02T23:26:18.0714470Z ❯ adding comment to https://github.com/GSTJ/gabriel-taveira-portfolio/issues/500
+2026-11-02T23:26:18.8387032Z ❯ removing labels: autorelease: pending from issue/pull 500
+2026-11-02T23:26:19.7166801Z ❯ adding labels: autorelease: tagged from issue/pull 500
+2026-11-02T23:26:20.7107015Z ❯ Fetching release-please-config.json from branch main
+2026-11-02T23:26:20.7107776Z ❯ Fetching .release-please-manifest.json from branch main
+2026-11-02T23:26:20.7113182Z ✔ Building pull requests
+2026-11-02T23:26:20.7113748Z ✔ Building strategies by path
+2026-11-02T23:26:20.7114173Z ❯ .: node
+2026-11-02T23:26:20.7114593Z ✔ Collecting release commit SHAs
+2026-11-02T23:26:20.7115065Z ❯ release search depth: 400
+2026-11-02T23:26:20.7116602Z ❯ Fetching releases with cursor undefined
+2026-11-02T23:26:21.2009311Z ❯ Found release for path ., v1.3.4
+2026-11-02T23:26:21.2010132Z ❯ release for path: ., version: 1.3.4, sha: 7415189690d46d776c501f6bb94d8968cd34ad5e
+2026-11-02T23:26:21.2010742Z ✔ Collecting commits since all latest releases
+2026-11-02T23:26:21.2011328Z ❯ commit search depth: 500
+2026-11-02T23:26:21.2011755Z ❯ Set(1) { '7415189690d46d776c501f6bb94d8968cd34ad5e' }
+2026-11-02T23:26:21.2012916Z ❯ Fetching merge commits on branch main with cursor: undefined
+2026-11-02T23:26:22.2351240Z ✔ Splitting 0 commits by path
+2026-11-02T23:26:22.2370442Z ✔ Building candidate release pull request for path: .
+2026-11-02T23:26:22.2371169Z ❯ type: node
+2026-11-02T23:26:22.2371568Z ❯ targetBranch: main
+2026-11-02T23:26:22.2371889Z ❯ commits: 0
+2026-11-02T23:26:22.2372199Z ✔ Considering: 0 commits
+2026-11-02T23:26:22.2372550Z ✔ No commits for path: ., skipping
+﻿2026-11-02T23:26:22.2552892Z ##[group]Run node scripts/annotate-release.cjs
+2026-11-02T23:26:22.2553248Z [36;1mnode scripts/annotate-release.cjs[0m
+2026-11-02T23:26:22.2583721Z shell: /usr/bin/bash -e {0}
+2026-11-02T23:26:22.2583948Z env:
+2026-11-02T23:26:22.2586033Z   GH_TOKEN: ***
+2026-11-02T23:26:22.2586217Z ##[endgroup]
+2026-11-02T23:26:28.3639275Z Annotated v1.3.4, preserved commit 7415189690d46d776c501f6bb94d8968cd34ad5e
+﻿2026-11-02T23:26:28.5014827Z Post job cleanup.
+2026-11-02T23:26:28.5666510Z [command]/usr/bin/git version
+2026-11-02T23:26:28.5698838Z git version 2.56.0
+2026-11-02T23:26:28.5726790Z Temporarily overriding HOME='/home/runner/work/_temp/2e8ed1b9-4a19-483c-a03d-b22d0abaa45a' before making global git config changes
+2026-11-02T23:26:28.5727770Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-02T23:26:28.5731708Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio
+2026-11-02T23:26:28.5758182Z Removing SSH command configuration
+2026-11-02T23:26:28.5762882Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-02T23:26:28.5792768Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-02T23:26:28.6020640Z Removing HTTP extra header
+2026-11-02T23:26:28.6024346Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-02T23:26:28.6051474Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-02T23:26:28.6271503Z Removing includeIf entries pointing to credentials config files
+2026-11-02T23:26:28.6275782Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-02T23:26:28.6296521Z includeif.gitdir:/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git.path
+2026-11-02T23:26:28.6297635Z includeif.gitdir:/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git/worktrees/*.path
+2026-11-02T23:26:28.6298483Z includeif.gitdir:/github/workspace/.git.path
+2026-11-02T23:26:28.6299005Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-02T23:26:28.6304607Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git.path
+2026-11-02T23:26:28.6324870Z /home/runner/work/_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config
+2026-11-02T23:26:28.6333417Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-cf40d896\-0b15\-4024\-8bc3\-df3f1f16e00b\.config
+2026-11-02T23:26:28.6395175Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git/worktrees/*.path
+2026-11-02T23:26:28.6421949Z /home/runner/work/_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config
+2026-11-02T23:26:28.6428907Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/gabriel-taveira-portfolio/gabriel-taveira-portfolio/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-cf40d896\-0b15\-4024\-8bc3\-df3f1f16e00b\.config
+2026-11-02T23:26:28.6455941Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-02T23:26:28.6474677Z /github/runner_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config
+2026-11-02T23:26:28.6480242Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-cf40d896\-0b15\-4024\-8bc3\-df3f1f16e00b\.config
+2026-11-02T23:26:28.6507171Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-02T23:26:28.6525930Z /github/runner_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config
+2026-11-02T23:26:28.6531560Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-cf40d896\-0b15\-4024\-8bc3\-df3f1f16e00b\.config
+2026-11-02T23:26:28.6559260Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-02T23:26:28.6785129Z Removing credentials config '/home/runner/work/_temp/git-credentials-cf40d896-0b15-4024-8bc3-df3f1f16e00b.config'
+﻿2026-11-02T23:26:28.6944629Z Cleaning up orphan processes

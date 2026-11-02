@@ -1,0 +1,8 @@
+/private/tmp/portfolio-404-gate.tLaQUm/GSTJ-gabriel-taveira-portfolio-17f22c5/scripts/get-pdf.js:73
+      throw new Error("Capture source is not the resume page");
+            ^
+
+Error: Capture source is not the resume page
+    at getPdf (/private/tmp/portfolio-404-gate.tLaQUm/GSTJ-gabriel-taveira-portfolio-17f22c5/scripts/get-pdf.js:73:13)
+
+Node.js v24.18.1

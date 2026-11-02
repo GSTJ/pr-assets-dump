@@ -1,0 +1,142 @@
+Gabriel Taveira
+
+Fractional CTO · Engineering Leader
+Ribeirão Preto, Brazil · Remote with US teams
+gabrielstaveira@gmail.com | gabrieltaveira.dev | linkedin.com/in/gabrieltaveira | github.com/GSTJ
+SUMMARY
+
+Engineering leader and independent consultant with 9+ years in product companies. I work on architecture, teams,
+hiring and delivery, and at my largest, 56 people reported up to me. Recently: Coinbase's app infrastructure, D-ID's
+app built from zero, and Curvinha, my own product.
+EXPERIENCE
+
+Fractional CTO & Engineering Consultant
+
+2025 to Present
+
+Independent
+
+Architecture reviews and large migrations for product companies. Client details under NDA.
+Interim engineering lead while clients hire: rituals, code review standards and the hiring loop.
+AI work: reinforcement learning (RL) training environments and evaluations for AI models.
+
+Senior Software Engineer
+
+Mar 2024 to Dec 2025
+
+Coinbase · G2i
+
+Helped with the app's large migrations on Consumer App Infra: React Native's new architecture, React Compiler,
+Expo Prebuild and the design system.
+Supported app releases and raised test coverage on team-owned files from 25% to 45%.
+
+Lead Mobile Engineer
+
+Sep 2023 to Feb 2025
+
+D-ID · A.Team
+
+Built the company's new core product, its mobile app, from zero with React Native and Expo.
+4.6 stars from 3.4K App Store ratings. Golden Kitty 2023 on Product Hunt, Best UX 2023 at A.Team.
+
+Senior Software Engineer
+
+Oct 2022 to Dec 2023
+
+Kustomer · Meta
+
+Built the open-source design system and SDKs for developers integrating with Kustomer's APIs.
+
+Senior Software Engineer
+
+Apr 2022 to Sep 2023
+
+Groundswell · X-Team
+
+Raised test coverage from 30% to 80%+ with MSW and made the Discover page 200% faster.
+Founded the Mobile Engineering Biweekly forum.
+
+Software Engineer III
+
+Sep 2020 to Apr 2022
+
+Zé Delivery · AB InBev
+
+Rebuilt the Browse module and shipped deep-link handling that lifted campaign conversion.
+Co-wrote Mozeic, the in-house design system (178k+ npm downloads), and interviewed engineering candidates.
+
+Mobile Engineer
+
+Oct 2019 to Sep 2020
+
+Alfred Delivery
+
+As the only engineer, led the migration from Ionic to React Native for an app serving 90+ franchises.
+
+Software Engineer
+Micro Import Group
+
+Built a real-time repair-status tracker and internal dashboards for an Apple Service Provider.
+
+Apr 2017 to Oct 2019
+
+PROJECTS & OPEN SOURCE
+
+Curvinha
+
+2026 to Present
+
+Founder · curvinha.app
+
+Native iPhone app (SwiftUI, RoomPlan, RealityKit): scan a room, get a furnished plan with real products and the
+shopping list. On the App Store since Oct 2026.
+
+Pegada
+
+2023 to Present
+
+Founder · github.com/GSTJ/pegada
+
+Dog dating app for iOS and Android, built with Expo and React Native. #2 Product of the Day on Product Hunt, open
+source since 2025.
+
+Open source
+
+2022 to Present
+
+Maintainer · github.com/GSTJ
+
+magic-modal, eslint-plugin-safe-jsx, react-native-code-push-plugin and more: 350k+ npm downloads and 714
+GitHub stars.
+SKILLS
+
+Leadership: Engineering management, Technical hiring, Mentoring, Roadmaps, Remote teams
+Engineering: App architecture, Migrations, Design systems, Testing, CI/CD, Developer experience
+Stack: TypeScript, React, React Native, Expo, Next.js, Node.js, Swift, SwiftUI
+AI: RL training environments, Model evaluation, AI agents
+Languages: English, Portuguese (native)
+TALKS
+
+Eficiência com IA, The Brooklyn Brothers, São Paulo
+
+2024
+
+Shipping Mozeic at Zé Delivery, TDC · Design Systems, São Paulo
+
+2024
+
+Forming a Tech Lead, three days at a time, Assemble · Rocketseat, Remote
+
+2023
+
+AWARDS
+
+Global Legal Hackathon SP, 1st place
+
+2020
+
+Mão na Cevada, 1st place
+
+2019
+
+

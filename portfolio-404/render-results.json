@@ -1,0 +1,37 @@
+[
+  {
+    "locale": "en-US",
+    "h1": "I build apps and help teams build theirs.",
+    "width": 375,
+    "viewport": 375,
+    "brokenVisibleImages": []
+  },
+  {
+    "locale": "en-US",
+    "h1": "I build apps and help teams build theirs.",
+    "width": 1280,
+    "viewport": 1280,
+    "brokenVisibleImages": []
+  },
+  {
+    "locale": "en-US",
+    "h1": "I build apps and help teams build theirs.",
+    "width": 2560,
+    "viewport": 2560,
+    "brokenVisibleImages": []
+  },
+  {
+    "locale": "pt-BR",
+    "h1": "Faço apps e ajudo times a fazer os deles.",
+    "width": 375,
+    "viewport": 375,
+    "brokenVisibleImages": []
+  },
+  {
+    "locale": "pt-BR",
+    "h1": "Faço apps e ajudo times a fazer os deles.",
+    "width": 1280,
+    "viewport": 1280,
+    "brokenVisibleImages": []
+  }
+]

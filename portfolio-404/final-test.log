@@ -1,0 +1,25 @@
+$ node --test scripts/annotate-release.test.cjs
+✔ annotates with exact release notes and preserves commit; rerun writes nothing (3.290416ms)
+✔ missing release is a no-op (0.133459ms)
+✔ refuses denied (0.783417ms)
+✔ refuses draft (0.087833ms)
+✔ refuses emptyNotes (0.088791ms)
+✔ refuses wrongTag (0.30525ms)
+✔ refuses wrongCommit (0.131875ms)
+✔ refuses movedRef (0.253875ms)
+✔ refuses changedNotes (0.133ms)
+✔ refuses postRace (0.147042ms)
+✔ refuses invalidSha (0.268541ms)
+✔ refuses tree (0.120791ms)
+✔ rejects an existing annotation with different notes (1.078292ms)
+✔ rejects invalid versions before API access (0.234542ms)
+✔ Git transport publishes an annotation without moving the commit (708.764958ms)
+✔ Git transport rejects a concurrent update (642.009958ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1425.229459

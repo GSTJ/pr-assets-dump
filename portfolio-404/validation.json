@@ -1,0 +1,30 @@
+[
+  {
+    "command": "corepack pnpm lint",
+    "exit": 0
+  },
+  {
+    "command": "corepack pnpm format",
+    "exit": 0
+  },
+  {
+    "command": "corepack pnpm typecheck",
+    "exit": 0
+  },
+  {
+    "command": "corepack pnpm check:live",
+    "exit": 0
+  },
+  {
+    "command": "corepack pnpm test",
+    "exit": 0
+  },
+  {
+    "command": "corepack pnpm build",
+    "exit": 0
+  },
+  {
+    "command": "corepack pnpm audit --json",
+    "exit": 0
+  }
+]

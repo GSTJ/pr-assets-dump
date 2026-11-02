@@ -1,0 +1,10 @@
+[
+  {
+    "script": "get-pdf.js",
+    "rejectsLogin": true
+  },
+  {
+    "script": "get-demo.js",
+    "rejectsLogin": true
+  }
+]

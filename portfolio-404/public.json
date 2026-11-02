@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://www.gabrieltaveira.dev/en-US",
+    "bytes": 423189,
+    "sha256": "151e85c859a6843ab7dc3c0ec13d096f88f72fb1be9b36871d03c9f63965e686"
+  },
+  {
+    "url": "https://www.gabrieltaveira.dev/pt-BR",
+    "bytes": 426178,
+    "sha256": "2a5870023b18c3b7dc7602a555bb1f0850759a34a4fb3d1b0b52cb1a1e0591ef"
+  },
+  {
+    "url": "https://www.gabrieltaveira.dev/en-US/resume",
+    "bytes": 207008,
+    "sha256": "c6e92e2b974a70225c7d3bcf2ef2863dd13a93cf56d1cde419d07ee1b6822725"
+  },
+  {
+    "url": "https://www.gabrieltaveira.dev/robots.txt",
+    "bytes": 2752,
+    "sha256": "f2512b212e9cb5b27f8b238d759140407769c8a8630095fc1669addb744bca80"
+  },
+  {
+    "url": "https://www.gabrieltaveira.dev/sitemap.xml",
+    "bytes": 2309,
+    "sha256": "8d1e4258590d0c42df1331da7a238a6886a4639d1e517a53b6d81557b6f8f005"
+  },
+  {
+    "url": "https://assets.gabrieltaveira.dev/demo.gif",
+    "bytes": 1228059,
+    "sha256": "dcb6e3eed0f47240642f8d949cb8a2be6f6422ab7c25a0ce26af269c83e80745"
+  },
+  {
+    "url": "https://assets.gabrieltaveira.dev/demo.gif?capture=d6dfa12f766cf3574e0c0dd85135baf2eda17b2c",
+    "bytes": 1228059,
+    "sha256": "dcb6e3eed0f47240642f8d949cb8a2be6f6422ab7c25a0ce26af269c83e80745"
+  },
+  {
+    "url": "https://assets.gabrieltaveira.dev/curriculum.pdf",
+    "bytes": 60654,
+    "sha256": "add36289ac979354a7112529e7b51ca4ba4d17b65f25419d104498a84e3d21fc"
+  },
+  {
+    "url": "https://www.gabrieltaveira.dev/curriculum.pdf",
+    "bytes": 60654,
+    "sha256": "add36289ac979354a7112529e7b51ca4ba4d17b65f25419d104498a84e3d21fc"
+  }
+]

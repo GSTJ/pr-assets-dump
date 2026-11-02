@@ -1,0 +1,41 @@
+✓ Lockfile passes supply-chain policies (verified 10h ago)
+Lockfile is up to date, resolution step is skipped
+Packages: +169
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 169, reused 169, downloaded 0, added 169, done
+.../node_modules/puppeteer postinstall$ node install.mjs
+.../node_modules/@swc/core postinstall$ node postinstall.js
+Packages are cloned from the content-addressable store to the virtual store.
+  Content-addressable store is at: /Users/gabrieltaveira/Library/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+.../node_modules/@parcel/watcher install$ node scripts/build-from-source.js
+.../node_modules/@parcel/watcher install: Done
+.../node_modules/puppeteer postinstall: **INFO** Skipping Firefox download as instructed.
+.../node_modules/@swc/core postinstall: Done
+.../node_modules/puppeteer postinstall: chrome-headless-shell (155.0.8059.79) downloaded to /Users/gabrieltaveira/.cache/puppeteer/chrome-headless-shell/mac_arm-155.0.8059.79
+.../node_modules/puppeteer postinstall: Error: ERROR: Failed to set up chrome v155.0.8059.79! Set "PUPPETEER_SKIP_DOWNLOAD" env variable to skip download.
+.../node_modules/puppeteer postinstall:     at downloadBrowser (file:///private/tmp/portfolio-404-gate.tLaQUm/GSTJ-gabriel-taveira-portfolio-17f22c5/node_modules/.pnpm/puppeteer@25.14.0/node_modules/puppeteer/lib/puppeteer/node/install.js:26:15)
+.../node_modules/puppeteer postinstall:     at async Promise.allSettled (index 0)
+.../node_modules/puppeteer postinstall:     at async downloadBrowsers (file:///private/tmp/portfolio-404-gate.tLaQUm/GSTJ-gabriel-taveira-portfolio-17f22c5/node_modules/.pnpm/puppeteer@25.14.0/node_modules/puppeteer/lib/puppeteer/node/install.js:83:21)
+.../node_modules/puppeteer postinstall:     at async file:///private/tmp/portfolio-404-gate.tLaQUm/GSTJ-gabriel-taveira-portfolio-17f22c5/node_modules/.pnpm/puppeteer@25.14.0/node_modules/puppeteer/install.mjs:40:3 {
+.../node_modules/puppeteer postinstall:   [cause]: Error: All providers failed for chrome 155.0.8059.79:
+.../node_modules/puppeteer postinstall:     - DefaultProvider: Extraction failed:   End-of-central-directory signature not found.  Either this file is not
+.../node_modules/puppeteer postinstall:     a zipfile, or it constitutes one disk of a multi-part archive.  In the
+.../node_modules/puppeteer postinstall:     latter case the central directory and zipfile comment will be found on
+.../node_modules/puppeteer postinstall:     the last disk(s) of this archive.
+.../node_modules/puppeteer postinstall:   unzip:  cannot find zipfile directory in one of /Users/gabrieltaveira/.cache/puppeteer/chrome/155.0.8059.79-chrome-mac-arm64.zip or
+.../node_modules/puppeteer postinstall:           /Users/gabrieltaveira/.cache/puppeteer/chrome/155.0.8059.79-chrome-mac-arm64.zip.zip, and cannot find /Users/gabrieltaveira/.cache/puppeteer/chrome/155.0.8059.79-chrome-mac-arm64.zip.ZIP, period.
+.../node_modules/puppeteer postinstall:   
+.../node_modules/puppeteer postinstall:       at installWithProviders (file:///private/tmp/portfolio-404-gate.tLaQUm/GSTJ-gabriel-taveira-portfolio-17f22c5/node_modules/.pnpm/@puppeteer+browsers@3.2.5/node_modules/@puppeteer/browsers/lib/install.js:123:11)
+.../node_modules/puppeteer postinstall:       at async install (file:///private/tmp/portfolio-404-gate.tLaQUm/GSTJ-gabriel-taveira-portfolio-17f22c5/node_modules/.pnpm/@puppeteer+browsers@3.2.5/node_modules/@puppeteer/browsers/lib/install.js:134:12)
+.../node_modules/puppeteer postinstall:       at async downloadBrowser (file:///private/tmp/portfolio-404-gate.tLaQUm/GSTJ-gabriel-taveira-portfolio-17f22c5/node_modules/.pnpm/puppeteer@25.14.0/node_modules/puppeteer/lib/puppeteer/node/install.js:14:24)
+.../node_modules/puppeteer postinstall:       at async Promise.allSettled (index 0)
+.../node_modules/puppeteer postinstall:       at async downloadBrowsers (file:///private/tmp/portfolio-404-gate.tLaQUm/GSTJ-gabriel-taveira-portfolio-17f22c5/node_modules/.pnpm/puppeteer@25.14.0/node_modules/puppeteer/lib/puppeteer/node/install.js:83:21)
+.../node_modules/puppeteer postinstall:       at async file:///private/tmp/portfolio-404-gate.tLaQUm/GSTJ-gabriel-taveira-portfolio-17f22c5/node_modules/.pnpm/puppeteer@25.14.0/node_modules/puppeteer/install.mjs:40:3
+.../node_modules/puppeteer postinstall: }
+.../node_modules/puppeteer postinstall: Browser download failed Error: Failed to download one or more browsers. Run `npx puppeteer browsers install` to try again, or `npx puppeteer browsers clear` first if the cache holds an unfinished install.
+.../node_modules/puppeteer postinstall:     at downloadBrowsers (file:///private/tmp/portfolio-404-gate.tLaQUm/GSTJ-gabriel-taveira-portfolio-17f22c5/node_modules/.pnpm/puppeteer@25.14.0/node_modules/puppeteer/lib/puppeteer/node/install.js:98:15)
+.../node_modules/puppeteer postinstall:     at async file:///private/tmp/portfolio-404-gate.tLaQUm/GSTJ-gabriel-taveira-portfolio-17f22c5/node_modules/.pnpm/puppeteer@25.14.0/node_modules/puppeteer/install.mjs:40:3
+.../node_modules/puppeteer postinstall: Done
+Done in 841ms using pnpm v12.14.0
+$ oxlint --report-unused-disable-directives

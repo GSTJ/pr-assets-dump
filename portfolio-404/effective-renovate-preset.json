@@ -1,0 +1,130 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "GSTJ shared Renovate preset. Consume with \"extends\": [\"github>GSTJ/magic\"], which Renovate resolves to this file. Presets must live in default.json; serving one from renovate.json is deprecated. Dependency releases stay quarantined for 14 days in both Renovate and pnpm. Renovate opens PRs immediately so pending upgrades stay visible, refuses releases without a registry timestamp, and merges eligible non-major updates after repository checks pass.",
+  "extends": [
+    "config:recommended",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(chore)"
+  ],
+  "rebaseWhen": "behind-base-branch",
+  "postUpdateOptions": ["pnpmDedupe"],
+  "minimumReleaseAge": "14 days",
+  "minimumReleaseAgeBehaviour": "timestamp-required",
+  "internalChecksFilter": "strict",
+  "prCreation": "immediate",
+  "platformAutomerge": false,
+  "osvVulnerabilityAlerts": false,
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"],
+    "minimumReleaseAge": "14 days",
+    "prCreation": "immediate"
+  },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "schedule": ["before 6am on monday"]
+  },
+  "packageRules": [
+    {
+      "description": "Dev dependencies are not shipped to users, so let them merge themselves once CI is green. Dev-scope MAJORS are not covered: the last rule in this list takes them back, because a devDependency major is how a breaking tooling change reaches every repo at once. magic-oxlint-config@2.0.0 removed three rule names and oxlint treats an unknown rule name as a fatal config error, so that one bump exits 1 in every consumer on the same morning. Not shipping to users bounds the runtime blast radius, not the operational one. This rule stays unrestricted so rollback, replacement, pinDigest and lockFileMaintenance keep automerging; narrowing it with matchUpdateTypes silently drops those.",
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true
+    },
+    {
+      "description": "Minor, patch, pin and digest bumps automerge everywhere. This rule cannot grant a major: majors are denied by the last rule in this list.",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "description": "The magic-* packages are first-party shared tooling. They normally land together and may move immediately because GSTJ owns their source and publish path. The lint and format toolchain rules below override this rule so each config moves with the binary it targets.",
+      "matchPackageNames": ["magic-{/,}**"],
+      "groupName": "magic tooling",
+      "automerge": true,
+      "minimumReleaseAge": null
+    },
+    {
+      "description": "oxlint, its type-aware runner, and the matching Magic config and plugin are one toolchain. Keep them together, wait through the release quarantine, and require review because a rule change can fail every repo at once.",
+      "matchPackageNames": [
+        "oxlint",
+        "oxlint-tsgolint",
+        "magic-oxlint-config",
+        "magic-oxlint-plugin"
+      ],
+      "groupName": "oxlint toolchain",
+      "automerge": false,
+      "minimumReleaseAge": "14 days",
+      "separateMajorMinor": false
+    },
+    {
+      "description": "oxfmt and the matching Magic config are one toolchain. Keep them together, wait through the release quarantine, and require review because formatting changes can rewrite a whole repository.",
+      "matchPackageNames": ["oxfmt", "magic-oxfmt-config"],
+      "groupName": "oxfmt toolchain",
+      "automerge": false,
+      "minimumReleaseAge": "14 days",
+      "separateMajorMinor": false
+    },
+    {
+      "description": "The PostHog SDKs share @posthog/core and are released in lockstep several times a week. Group them so a repo gets one PR instead of four, and so posthog-js never lands a version ahead of the @posthog/react that peers on it.",
+      "matchPackageNames": [
+        "posthog-js",
+        "posthog-node",
+        "posthog-react-native",
+        "@posthog/{/,}**"
+      ],
+      "groupName": "posthog sdks",
+      "automerge": true
+    },
+    {
+      "description": "Fumadocs Core, UI, MDX, integrations, and zbsearch are one coupled docs stack. Group upgrades and require review because even patch releases can change generated content, peer pins, search APIs, or exported layout types.",
+      "matchPackageNames": ["fumadocs-{/,}**", "@fumadocs/{/,}**", "zbsearch"],
+      "groupName": "fumadocs",
+      "automerge": false,
+      "separateMajorMinor": false
+    },
+    {
+      "description": "GitHub Actions pinned by tag; group so a PR isn't opened per action.",
+      "matchManagers": ["github-actions"],
+      "groupName": "github actions",
+      "automerge": true
+    },
+    {
+      "description": "This repo's own reusable workflows and composite actions. Repos on the moving `@v1` tag get releases for free and Renovate has nothing to open; this rule is for the ones that pin `@v1.3.0` exactly. Tags are the contract, so never rewrite them to a digest, and land them in the same PR as the magic-* npm packages — a workflow that expects a new config option and the config that has it are one change.",
+      "matchManagers": ["github-actions"],
+      "matchPackageNames": ["GSTJ/magic", "GSTJ/magic{/,}**"],
+      "groupName": "magic tooling",
+      "automerge": true,
+      "pinDigests": false,
+      "minimumReleaseAge": null
+    },
+    {
+      "description": "TypeScript majors change emit and rule behaviour. Human review.",
+      "matchPackageNames": ["typescript"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    },
+    {
+      "description": "Expo SDK dictates react/react-native/metro versions. Refresh inside declared ranges only; SDK jumps are done by hand.",
+      "matchPackageNames": [
+        "react-native",
+        "@react-native/{/,}**",
+        "metro",
+        "metro-config",
+        "metro-resolver",
+        "expo",
+        "expo-{/,}**"
+      ],
+      "rangeStrategy": "in-range-only"
+    },
+    {
+      "description": "react-test-renderer must match the installed react exactly or @testing-library/react-native refuses to run. React's version comes from the Expo SDK.",
+      "matchPackageNames": ["react-test-renderer"],
+      "enabled": false
+    },
+    {
+      "description": "Majors always get a human. This rule is last on purpose. Renovate evaluates every packageRule in order and the last match wins, so this overrides the automerge: true that the magic tooling, posthog sdks and github actions rules above would otherwise grant on a major. A rule appended below this line silently takes majors back, so scripts/validate-renovate.mjs fails the build when this is not the final entry.",
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "artifact": "merged-assets/demo.gif",
+    "publicIndex": 5,
+    "artifactHash": "4585c6fe606e509031181d833a662e1085a38cf95e7c3d3f6138957f1c70cc69",
+    "servedHash": "dcb6e3eed0f47240642f8d949cb8a2be6f6422ab7c25a0ce26af269c83e80745",
+    "matches": false
+  },
+  {
+    "artifact": "merged-assets/demo.gif",
+    "publicIndex": 6,
+    "artifactHash": "4585c6fe606e509031181d833a662e1085a38cf95e7c3d3f6138957f1c70cc69",
+    "servedHash": "dcb6e3eed0f47240642f8d949cb8a2be6f6422ab7c25a0ce26af269c83e80745",
+    "matches": false
+  },
+  {
+    "artifact": "merged-assets/public/curriculum.pdf",
+    "publicIndex": 7,
+    "artifactHash": "8907a43f23c24cdd073c45503f95fc46990f882ff02b593665e1b9067bd9c241",
+    "servedHash": "add36289ac979354a7112529e7b51ca4ba4d17b65f25419d104498a84e3d21fc",
+    "matches": false
+  },
+  {
+    "artifact": "merged-assets/public/curriculum.pdf",
+    "publicIndex": 8,
+    "artifactHash": "8907a43f23c24cdd073c45503f95fc46990f882ff02b593665e1b9067bd9c241",
+    "servedHash": "add36289ac979354a7112529e7b51ca4ba4d17b65f25419d104498a84e3d21fc",
+    "matches": false
+  },
+  {
+    "url": "https://assets.gabrieltaveira.dev/demo.gif?ci=41545096641-1",
+    "sha256": "4585c6fe606e509031181d833a662e1085a38cf95e7c3d3f6138957f1c70cc69",
+    "matches": true
+  },
+  {
+    "url": "https://assets.gabrieltaveira.dev/curriculum.pdf?ci=41545096641-1",
+    "sha256": "8907a43f23c24cdd073c45503f95fc46990f882ff02b593665e1b9067bd9c241",
+    "matches": true
+  }
+]
