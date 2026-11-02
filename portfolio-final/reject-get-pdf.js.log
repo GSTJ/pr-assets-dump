@@ -1,0 +1,8 @@
+/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/portfolio-followup-udsazpix/main/scripts/get-pdf.js:73
+      throw new Error("Capture source is not the resume page");
+            ^
+
+Error: Capture source is not the resume page
+    at getPdf (/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/portfolio-followup-udsazpix/main/scripts/get-pdf.js:73:13)
+
+Node.js v24.18.1

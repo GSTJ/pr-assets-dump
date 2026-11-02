@@ -1,0 +1,16 @@
+[
+  {
+    "version": "1.3.1",
+    "annotation": "56f9ece86af9c2c7dd94371118d6a753f39f7888",
+    "commit": "cecfd74038d61afdf1eb5d645dd9712e2ac9cdac",
+    "notes_match": true,
+    "changelog_matches": true
+  },
+  {
+    "version": "1.3.2",
+    "annotation": "f3f120b75d9d8da608f98a80387a20df6a3eb2aa",
+    "commit": "e9c76e6db7cb19a037b28f81a9fc3db0b7281e2e",
+    "notes_match": true,
+    "changelog_matches": true
+  }
+]

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>https://www.gabrieltaveira.dev/en-US</loc>
+<xhtml:link rel="alternate" hreflang="en-US" href="https://www.gabrieltaveira.dev/en-US" />
+<xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.gabrieltaveira.dev/pt-BR" />
+<lastmod>2026-11-02T12:47:25.199Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://www.gabrieltaveira.dev/en-US/resume</loc>
+<xhtml:link rel="alternate" hreflang="en-US" href="https://www.gabrieltaveira.dev/en-US/resume" />
+<xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.gabrieltaveira.dev/pt-BR/resume" />
+<lastmod>2026-11-02T12:47:25.199Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.gabrieltaveira.dev/en-US/links</loc>
+<xhtml:link rel="alternate" hreflang="en-US" href="https://www.gabrieltaveira.dev/en-US/links" />
+<xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.gabrieltaveira.dev/pt-BR/links" />
+<lastmod>2026-11-02T12:47:25.199Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://www.gabrieltaveira.dev/pt-BR</loc>
+<xhtml:link rel="alternate" hreflang="en-US" href="https://www.gabrieltaveira.dev/en-US" />
+<xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.gabrieltaveira.dev/pt-BR" />
+<lastmod>2026-11-02T12:47:25.199Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.gabrieltaveira.dev/pt-BR/resume</loc>
+<xhtml:link rel="alternate" hreflang="en-US" href="https://www.gabrieltaveira.dev/en-US/resume" />
+<xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.gabrieltaveira.dev/pt-BR/resume" />
+<lastmod>2026-11-02T12:47:25.199Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.gabrieltaveira.dev/pt-BR/links</loc>
+<xhtml:link rel="alternate" hreflang="en-US" href="https://www.gabrieltaveira.dev/en-US/links" />
+<xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.gabrieltaveira.dev/pt-BR/links" />
+<lastmod>2026-11-02T12:47:25.199Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.6</priority>
+</url>
+</urlset>
