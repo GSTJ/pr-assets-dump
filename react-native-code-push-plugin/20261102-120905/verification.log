@@ -1,0 +1,132 @@
+GSTJ/react-native-code-push-plugin local source snapshot
+Base: dd65073f15a0af328f0db07489626c7a51c46554
+Node 24.18.1, pnpm 11.17.0
+
+$ pnpm run lint
+✓ Lockfile passes supply-chain policies (verified 13s ago)
+Lockfile is up to date, resolution step is skipped
+Already up to date
+
+. prepare$ pnpm run build
+. prepare: $ tsc --project tsconfig.build.json
+. prepare: Done
+Done in 1.5s using pnpm v11.17.0
+$ oxlint --report-unused-disable-directives --deny-warnings
+EXIT 0
+
+$ pnpm run format
+$ oxfmt --check .
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 133ms on 43 files using 18 threads.
+EXIT 0
+
+$ pnpm run typecheck
+$ tsc --noEmit
+EXIT 0
+
+$ pnpm run test --runInBand
+$ node tools/dependency-security-check.mjs && jest --runInBand
+undici 7.30.1 rejected excessive content encodings without crashing.
+Dependency security checks passed for @xmldom/xmldom, js-yaml, nanoid and image-size.
+PASS src/ios/__tests__/app-delegate.test.ts
+PASS src/android/__tests__/expo-templates.test.ts
+PASS src/android/__tests__/gradle-paths.test.ts
+PASS src/ios/__tests__/config.test.ts
+PASS src/android/__tests__/config.test.ts
+PASS src/utils/__tests__/anchors.test.ts
+PASS src/utils/__tests__/insert-last-argument.test.ts
+PASS src/utils/__tests__/add-import.test.ts
+PASS src/utils/__tests__/code-push-gradle-path.test.ts
+
+Test Suites: 9 passed, 9 total
+Tests:       76 passed, 76 total
+Snapshots:   0 total
+Time:        0.532 s, estimated 1 s
+Ran all test suites.
+EXIT 0
+
+$ pnpm run build
+$ tsc --project tsconfig.build.json
+EXIT 0
+
+$ pnpm run changelog:check
+$ node tools/changelog-check.mjs
+changelog preset check passed (13 synthetic commits, 3 breaking; bumps: feat!=major, feat=minor, fix=patch, build(deps)=patch, changelog-only=null, hidden-only=null)
+negative control passed (hiding the visible types breaks 7 assertions: feat renders, fix renders, build renders, build:deps renders, refactor renders, chore renders, docs renders)
+EXIT 0
+
+$ npm pack --dry-run
+npm notice run react-native-code-push-plugin@2.0.1 prepare
+npm notice run pnpm run build
+$ tsc --project tsconfig.build.json
+npm notice
+npm notice 📦  react-native-code-push-plugin@2.0.1
+npm notice Tarball Contents
+npm notice 3.9kB README.md
+npm notice 37B app.plugin.js
+npm notice 1.4kB build/android/buildscript-dependency.d.ts
+npm notice 2.8kB build/android/buildscript-dependency.js
+npm notice 959B build/android/buildscript-dependency.js.map
+npm notice 791B build/android/main-application-dependency.d.ts
+npm notice 3.6kB build/android/main-application-dependency.js
+npm notice 1.5kB build/android/main-application-dependency.js.map
+npm notice 523B build/android/settings-dependency.d.ts
+npm notice 1.4kB build/android/settings-dependency.js
+npm notice 734B build/android/settings-dependency.js.map
+npm notice 312B build/android/strings-dependency.d.ts
+npm notice 1.9kB build/android/strings-dependency.js
+npm notice 1.3kB build/android/strings-dependency.js.map
+npm notice 195B build/index.d.ts
+npm notice 1.9kB build/index.js
+npm notice 1.0kB build/index.js.map
+npm notice 1.3kB build/ios/app-delegate-dependency.d.ts
+npm notice 3.2kB build/ios/app-delegate-dependency.js
+npm notice 1.2kB build/ios/app-delegate-dependency.js.map
+npm notice 1.2kB build/ios/bridging-header-dependency.d.ts
+npm notice 3.2kB build/ios/bridging-header-dependency.js
+npm notice 1.4kB build/ios/bridging-header-dependency.js.map
+npm notice 367B build/ios/info-plist-dependency.d.ts
+npm notice 1.2kB build/ios/info-plist-dependency.js
+npm notice 714B build/ios/info-plist-dependency.js.map
+npm notice 308B build/plugin-config.d.ts
+npm notice 118B build/plugin-config.js
+npm notice 118B build/plugin-config.js.map
+npm notice 781B build/utils/add-below-anchor-if-not-found.d.ts
+npm notice 1.3kB build/utils/add-below-anchor-if-not-found.js
+npm notice 551B build/utils/add-below-anchor-if-not-found.js.map
+npm notice 777B build/utils/add-import.d.ts
+npm notice 1.9kB build/utils/add-import.js
+npm notice 1.2kB build/utils/add-import.js.map
+npm notice 688B build/utils/code-push-gradle-path.d.ts
+npm notice 1.1kB build/utils/code-push-gradle-path.js
+npm notice 294B build/utils/code-push-gradle-path.js.map
+npm notice 920B build/utils/insert-last-argument.d.ts
+npm notice 4.7kB build/utils/insert-last-argument.js
+npm notice 3.5kB build/utils/insert-last-argument.js.map
+npm notice 866B build/utils/replace-if-not-found.d.ts
+npm notice 1.4kB build/utils/replace-if-not-found.js
+npm notice 561B build/utils/replace-if-not-found.js.map
+npm notice 2.0kB package.json
+npm notice Tarball Details
+npm notice name: react-native-code-push-plugin
+npm notice version: 2.0.1
+npm notice filename: react-native-code-push-plugin-2.0.1.tgz
+npm notice package size: 18.6 kB
+npm notice unpacked size: 61.2 kB
+npm notice shasum: fb74150a55f2e955e2d1448833b78659688db679
+npm notice integrity: sha512-CWlsExCOT7FrB[...]qM8ABIj2IVqFA==
+npm notice total files: 45
+npm notice
+react-native-code-push-plugin-2.0.1.tgz
+EXIT 0
+
+$ pnpm audit --json
+Remaining registry advisories (not suppressed):
+basic-ftp high https://github.com/advisories/GHSA-c475-qrg2-pj4r
+zod high https://github.com/advisories/GHSA-mrhx-c7xc-m3w5
+deepmerge low https://github.com/advisories/GHSA-gcqx-w48m-w2h4
+minimatch moderate https://github.com/advisories/GHSA-g3hv-75wg-m249
+glob moderate https://github.com/advisories/GHSA-3g3m-2fjr-6pw4
+Audit exit: 1
