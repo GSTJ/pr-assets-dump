@@ -1,0 +1,12 @@
+{
+  "regression-evidence.png": "e9514da6c3b32521435e46f5c736e89f5862e52d4f88e1875ab97137d5f99579",
+  "README.md": "4ce48f8dcf82544435c798d292d9809825128bf5ebd8cccc72411e92b0857ea5",
+  "pegada-956-security-regression.log": "eb2bf019ffd15059ece0522e898935202f4c05dc1a604ea6e1b181be89ce023d",
+  "pegada-956-security-test.log": "a483a5bc570279af0237f4b2c9f6249097d1f1b6a59db66af88b85baa7c2a874",
+  "pegada-956-security-lint.log": "b9193608b484b1f604b5b0fa623783a6932e8cdf69eaa524d133e324f4e9a131",
+  "pegada-956-security-dedupe.log": "736bddd0426570ee4ba1915df50e7fd1097461e97f9d20db54a1e08d87f38eed",
+  "pegada-956-security-audit.json": "03375963355977526195e9c8c512e50811423742a7c414c9c857ad65d8312330",
+  "pegada-956-security-types.log": "82a4c6a11f49fe6855ca8afa1852929ea3afc1db656f0a62fe333dcd5d6f6bc5",
+  "head.txt": "3fa50c871918c1e941fa99a8e2423347552a3eeaa847b636a7db9e0ba5f6a8ef",
+  "pegada-956-security-format.log": "789e82e1eb85572586ccd17f2cb926d7bd1afd73e8b678eb4aefe3e527e0e467"
+}
