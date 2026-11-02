@@ -1,0 +1,982 @@
+$ pnpm run build && pnpm run validate-rules && pnpm run validate-observability && pnpm run validate-workflows && pnpm run validate-registry && pnpm run validate-renovate && pnpm run validate-readmes && pnpm run lint && pnpm run format && pnpm run typecheck && pnpm run test && pnpm run test:scripts && pnpm run smoke && pnpm run adversarial
+$ turbo run build
+• turbo 2.10.7
+
+   • Packages in scope: @magic/docs-site, @magic/fixture-smoke, magic-codemods, magic-docs, magic-observability, magic-oxfmt-config, magic-oxlint-config, magic-oxlint-plugin, magic-readmes, magic-theme, magic-tsconfig, magic-video
+   • Running build in 12 packages
+   • Remote caching disabled
+
+magic-oxlint-plugin:build: cache miss, executing 9b0c1c0db028a2b4
+magic-docs:build: cache miss, executing d1f4f1708a44f52d
+magic-oxfmt-config:build: cache miss, executing 5da8309704f80f77
+magic-observability:build: cache miss, executing 0efe700cf95c8cc2
+magic-oxfmt-config:build: $ tsc -p tsconfig.build.json && chmod +x dist/cli.js
+magic-oxlint-plugin:build: $ tsc -p tsconfig.build.json
+magic-observability:build: $ tsc -p tsconfig.build.json
+magic-docs:build: $ tsc -p tsconfig.build.json && chmod +x dist/cli.js
+magic-oxlint-config:build: cache miss, executing 42df622b6cf71eec
+magic-oxlint-config:build: $ tsc -p tsconfig.build.json && node scripts/emit-json.mjs
+magic-oxlint-config:build: emitted base.json
+magic-oxlint-config:build: emitted react.json
+magic-oxlint-config:build: emitted react-native.json
+magic-oxlint-config:build: emitted next.json
+magic-oxlint-config:build: emitted expo.json
+magic-codemods:build: cache miss, executing c3489e1034f56d8e
+magic-codemods:build: $ tsc -p tsconfig.build.json && chmod +x dist/cli.js
+@magic/docs-site:build: cache miss, executing 8adf0eb3a49dcc18
+@magic/docs-site:build: $ next build
+@magic/docs-site:build: ▲ Next.js 16.4.4 (Turbopack)
+@magic/docs-site:build: [MDX] generated files in 4.769166999999925ms
+@magic/docs-site:build: ✓ Running next.config.ts took 347ms
+@magic/docs-site:build: 
+@magic/docs-site:build:   Creating an optimized production build ...
+@magic/docs-site:build: ✓ Compiled successfully in 1034ms
+@magic/docs-site:build:   Running TypeScript ...
+@magic/docs-site:build:   Finished TypeScript in 1052ms ...
+@magic/docs-site:build:   Collecting page data using 7 workers ...
+@magic/docs-site:build:   Generating static pages using 7 workers (0/20) ...
+@magic/docs-site:build:   Generating static pages using 7 workers (5/20) 
+@magic/docs-site:build:   Generating static pages using 7 workers (10/20) 
+@magic/docs-site:build:   Generating static pages using 7 workers (15/20) 
+@magic/docs-site:build: ✓ Generating static pages using 7 workers (20/20) in 479ms
+@magic/docs-site:build:   Finalizing page optimization ...
+@magic/docs-site:build: 
+@magic/docs-site:build: Route (app)
+@magic/docs-site:build: ┌ ○ /_not-found
+@magic/docs-site:build: ├   /[[...slug]]
+@magic/docs-site:build: │ ├ ● /ci-and-automation
+@magic/docs-site:build: │ ├ ● /
+@magic/docs-site:build: │ ├ ● /readme-standard
+@magic/docs-site:build: │ └ ● [+12 more paths]
+@magic/docs-site:build: ├ ○ /api/search
+@magic/docs-site:build: ├ ○ /llms-full.txt
+@magic/docs-site:build: └ ○ /llms.txt
+@magic/docs-site:build: 
+@magic/docs-site:build: 
+@magic/docs-site:build: ○  (Static)  prerendered as static content
+@magic/docs-site:build: ●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+@magic/docs-site:build: 
+
+ Tasks:    7 successful, 7 total
+Cached:    0 cached, 7 total
+  Time:    5.941s 
+
+$ node scripts/validate-rules.mjs
+validate-rules: OK — every rule in 5 variants exists in oxlint's schema.
+validate-rules: OK — every magic/* name in 12 configs and docs resolves to one of the 8 rules the plugin exports, and every rule is documented.
+validate-rules: OK — all 4 react-native/* rules are enabled by a variant and documented.
+$ node scripts/validate-observability.mjs
+validate-observability: OK — 7 entry points, each reaching only its own SDKs.
+  .           → (no SDK)
+  ./boundary  → react
+  ./web       → posthog-js
+  ./react     → @posthog/react, posthog-js, react
+  ./next      → posthog-node
+  ./node      → posthog-node
+  ./expo      → posthog-react-native, react
+$ node scripts/validate-workflows.mjs
+validate-workflows: OK — 14 workflow/action files and 11 READMEs, third-party actions pinned by SHA, self-references on the running commit, and consumer docs on v1.
+$ node scripts/validate-registry.mjs
+validate-registry: OK, ./registry.json, source files, and public/r payloads are consistent.
+$ node scripts/validate-renovate.mjs
+validate-renovate: OK, ./default.json denies automerge on majors and the gate is the last rule.
+$ node scripts/validate-readmes.mjs
+validate-readmes: OK, 11 READMEs follow the standard.
+$ oxlint --disable-nested-config --report-unused-disable-directives
+$ oxfmt --check .
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 426ms on 300 files using 18 threads.
+$ turbo run typecheck && pnpm run typecheck:registry
+• turbo 2.10.7
+
+   • Packages in scope: @magic/docs-site, @magic/fixture-smoke, magic-codemods, magic-docs, magic-observability, magic-oxfmt-config, magic-oxlint-config, magic-oxlint-plugin, magic-readmes, magic-theme, magic-tsconfig, magic-video
+   • Running typecheck in 12 packages
+   • Remote caching disabled
+
+magic-tsconfig:typecheck: cache hit, replaying logs 5ec6c9bbb131de6a
+magic-tsconfig:typecheck: $ echo "magic-tsconfig ships JSON only"
+magic-tsconfig:typecheck: magic-tsconfig ships JSON only
+magic-theme:typecheck: cache hit, replaying logs c9fb6821a6c06ef6
+magic-video:typecheck: cache miss, executing fbb02ac4f9af89d6
+magic-theme:typecheck: $ echo "magic-theme ships JS + JSON"
+magic-theme:typecheck: magic-theme ships JS + JSON
+magic-oxfmt-config:typecheck: cache miss, executing 046b6a2685ae6295
+magic-readmes:typecheck: cache miss, executing 80951c04116b57bc
+magic-docs:build: cache hit, replaying logs d1f4f1708a44f52d
+magic-observability:typecheck: cache miss, executing 58dd1d7674cc44a0
+magic-oxlint-plugin:typecheck: cache miss, executing ac6c04a37485379e
+magic-oxlint-plugin:build: cache hit, replaying logs 9b0c1c0db028a2b4
+magic-docs:build: $ tsc -p tsconfig.build.json && chmod +x dist/cli.js
+magic-oxlint-plugin:build: $ tsc -p tsconfig.build.json
+magic-docs:typecheck: cache miss, executing 4bc124d4dd0ec981
+magic-oxlint-config:typecheck: cache miss, executing ce9348b773303cf0
+magic-oxlint-config:build: cache hit, replaying logs 42df622b6cf71eec
+magic-oxlint-config:build: $ tsc -p tsconfig.build.json && node scripts/emit-json.mjs
+magic-oxlint-config:build: emitted base.json
+magic-oxlint-config:build: emitted react.json
+magic-oxlint-config:build: emitted react-native.json
+magic-oxlint-config:build: emitted next.json
+magic-oxlint-config:build: emitted expo.json
+magic-codemods:typecheck: cache miss, executing 80b93e3eca705503
+magic-video:typecheck: $ tsc --noEmit
+magic-docs:typecheck: $ tsc -p tsconfig.build.json --noEmit
+magic-oxlint-config:typecheck: $ tsc -p tsconfig.build.json --noEmit
+magic-oxlint-plugin:typecheck: $ tsc -p tsconfig.build.json --noEmit
+magic-codemods:typecheck: $ tsc -p tsconfig.build.json --noEmit
+magic-readmes:typecheck: $ echo "magic-readmes ships plain JS"
+magic-readmes:typecheck: magic-readmes ships plain JS
+magic-observability:typecheck: $ tsc -p tsconfig.build.json --noEmit
+magic-oxfmt-config:typecheck: $ tsc -p tsconfig.build.json --noEmit
+
+ Tasks:    13 successful, 13 total
+Cached:    5 cached, 13 total
+  Time:    2.064s 
+
+$ tsc -p registry/tsconfig.json
+$ turbo run test
+• turbo 2.10.7
+
+   • Packages in scope: @magic/docs-site, @magic/fixture-smoke, magic-codemods, magic-docs, magic-observability, magic-oxfmt-config, magic-oxlint-config, magic-oxlint-plugin, magic-readmes, magic-theme, magic-tsconfig, magic-video
+   • Running test in 12 packages
+   • Remote caching disabled
+
+magic-tsconfig:test: cache hit, replaying logs c0742594d27e1379
+magic-theme:test: cache hit, replaying logs 9742528bf7853d0d
+magic-theme:test: $ node --test test/*.test.mjs
+magic-theme:test: ✔ install replaces a theme symlink without overwriting its target (84.598209ms)
+magic-theme:test: ▶ magic-theme
+magic-tsconfig:test: $ node --test test/*.test.mjs
+magic-tsconfig:test: ✔ no emitting variant turns on `incremental` without saying where the cache goes (2.244042ms)
+magic-tsconfig:test: ✔ nextjs.json declares `incremental`, so next build stops rewriting tsconfig.json (0.257834ms)
+magic-tsconfig:test: ✔ the emitting bases still leave `incremental` alone (0.194916ms)
+magic-theme:test:   ✔ projects Magic Theme from the vscode theme (0.565542ms)
+magic-theme:test:   ✔ renders warp with the theme name (0.231041ms)
+magic-theme:test: ✔ magic-theme (1.358459ms)
+magic-theme:test: ℹ tests 3
+magic-theme:test: ℹ suites 1
+magic-theme:test: ℹ pass 3
+magic-theme:test: ℹ fail 0
+magic-theme:test: ℹ cancelled 0
+magic-theme:test: ℹ skipped 0
+magic-theme:test: ℹ todo 0
+magic-theme:test: ℹ duration_ms 184.249334
+magic-tsconfig:test: ✔ internal-package.json still emits declarations only (0.1215ms)
+magic-tsconfig:test: ✔ a library build survives `rimraf out && tsc` twice (177.306584ms)
+magic-tsconfig:test: ℹ tests 5
+magic-tsconfig:test: ℹ suites 0
+magic-tsconfig:test: ℹ pass 5
+magic-tsconfig:test: ℹ fail 0
+magic-tsconfig:test: ℹ cancelled 0
+magic-tsconfig:test: ℹ skipped 0
+magic-tsconfig:test: ℹ todo 0
+magic-tsconfig:test: ℹ duration_ms 261.698666
+magic-oxlint-plugin:test: cache miss, executing 15c21543ba5d5152
+magic-docs:test: cache miss, executing ba4c396801b7df61
+magic-docs:build: cache hit, replaying logs d1f4f1708a44f52d
+magic-docs:build: $ tsc -p tsconfig.build.json && chmod +x dist/cli.js
+magic-oxfmt-config:test: cache miss, executing 76485d23f1564672
+magic-readmes:test: cache miss, executing 2474bcc853db54bf
+magic-observability:test: cache miss, executing 0338812cf03f0652
+magic-oxlint-plugin:build: cache hit, replaying logs 9b0c1c0db028a2b4
+magic-oxlint-plugin:build: $ tsc -p tsconfig.build.json
+magic-oxlint-config:test: cache miss, executing 29ecb334b321b64d
+magic-oxlint-config:build: cache hit, replaying logs 42df622b6cf71eec
+magic-oxlint-config:build: $ tsc -p tsconfig.build.json && node scripts/emit-json.mjs
+magic-oxlint-config:build: emitted base.json
+magic-oxlint-config:build: emitted react.json
+magic-oxlint-config:build: emitted react-native.json
+magic-oxlint-config:build: emitted next.json
+magic-oxlint-config:build: emitted expo.json
+magic-codemods:test: cache miss, executing 388b8b95f4113ab5
+@magic/fixture-smoke:test: cache miss, executing 86c20d8986c1d8ec
+magic-oxlint-config:test: $ node --test test/*.test.mjs
+magic-readmes:test: $ node --test test/*.test.mjs
+magic-oxfmt-config:test: $ node --test test/*.test.mjs
+magic-docs:test: $ node --test test/*.test.mjs
+magic-observability:test: $ node --test test/*.test.mjs
+@magic/fixture-smoke:test: $ node ../../scripts/smoke.mjs
+magic-oxlint-plugin:test: $ node --test test/*.test.mjs
+magic-codemods:test: $ node --test test/*.test.mjs
+magic-observability:test: ▶ reportBoundaryError
+magic-observability:test:   ✔ tags the source and carries the component stack (0.727584ms)
+magic-observability:test:   ✔ sends componentStack: null when React did not give one (0.096166ms)
+magic-observability:test:   ✔ reports nothing through a no-op client, and does not throw (0.112292ms)
+magic-observability:test: ✔ reportBoundaryError (1.460542ms)
+magic-observability:test: ▶ ObservabilityBoundary
+magic-observability:test:   ✔ normalises a thrown string into state (0.204333ms)
+magic-observability:test:   ✔ renders children while there is no error (0.109ms)
+magic-observability:test:   ✔ reports through componentDidCatch and then calls onError (0.127917ms)
+magic-observability:test:   ✔ renders a fallback component with error, stack and reset (1.179167ms)
+magic-observability:test:   ✔ renders a fallback node as-is (0.108459ms)
+magic-observability:test:   ✔ renders nothing when no fallback was given (0.074916ms)
+magic-observability:test:   ✔ clears the error when resetKeys change, and not otherwise (0.14375ms)
+magic-observability:test:   ✔ reset() clears the error by hand (0.086833ms)
+magic-observability:test: ✔ ObservabilityBoundary (2.257917ms)
+magic-readmes:test: ✔ init refuses an existing symlink without overwriting its target (51.149167ms)
+magic-observability:test: ▶ normalizeError
+magic-observability:test:   ✔ passes an Error through untouched (0.388375ms)
+magic-observability:test:   ✔ wraps a thrown string as a NonError so the throw site is findable (0.117167ms)
+magic-observability:test:   ✔ rebuilds an error-shaped object, keeping its name and stack (0.114083ms)
+magic-observability:test:   ✔ does not mistake a non-string message for an error shape (0.215042ms)
+magic-observability:test:   ✔ handles null, undefined and cycles without throwing (0.2645ms)
+magic-observability:test: ✔ normalizeError (1.799959ms)
+magic-observability:test: ▶ flattenContext
+magic-observability:test:   ✔ joins nested keys with a dot so PostHog can filter on them (0.756ms)
+magic-observability:test:   ✔ drops undefined rather than sending null (0.240709ms)
+magic-observability:test:   ✔ keeps booleans and finite numbers as-is, stringifies the rest (0.189ms)
+magic-observability:test:   ✔ expands an Error value into name/message/stack (0.214209ms)
+magic-observability:test:   ✔ serialises a Date to ISO and an array to JSON (3.855375ms)
+magic-observability:test:   ✔ stops recursing at depth 3 and stringifies what is left (0.110375ms)
+magic-observability:test:   ✔ truncates a string that would blow up the property (0.838ms)
+magic-observability:test:   ✔ survives a cyclic object (0.133791ms)
+magic-observability:test: ✔ flattenContext (6.872834ms)
+magic-observability:test: ▶ mergeContext
+magic-observability:test:   ✔ lets later objects win and ignores explicit undefined (0.089875ms)
+magic-observability:test: ✔ mergeContext (0.137833ms)
+magic-observability:test: ▶ buildErrorProperties
+magic-observability:test:   ✔ merges defaults under call-site context and strips distinctId (0.088041ms)
+magic-observability:test: ✔ buildErrorProperties (0.115292ms)
+magic-observability:test: ▶ describeValue
+magic-observability:test:   ✔ renders primitives and objects readably (0.050917ms)
+magic-observability:test: ✔ describeValue (0.086334ms)
+magic-observability:test: ▶ buildWebOptions
+magic-observability:test:   ✔ turns exception autocapture on in code, not in project settings (0.541916ms)
+magic-observability:test:   ✔ pins the dated defaults bundle (0.087333ms)
+magic-observability:test:   ✔ falls back to US cloud when no host is resolved (0.403667ms)
+magic-observability:test:   ✔ leaves session recording to the project setting unless told otherwise (0.105291ms)
+magic-observability:test:   ✔ lets posthogOptions win over every default (0.074584ms)
+magic-observability:test: ✔ buildWebOptions (2.16375ms)
+magic-observability:test: ▶ buildNodeOptions
+magic-observability:test:   ✔ batches for a worker (0.399292ms)
+magic-observability:test:   ✔ sends immediately for serverless, where a batch never leaves (0.202916ms)
+magic-observability:test:   ✔ lets an explicit runtime beat the entry point's default (0.226459ms)
+magic-observability:test:   ✔ turns server exception autocapture on (0.074166ms)
+magic-observability:test:   ✔ sets a request timeout so a hung ingest cannot hold a handler open (0.090833ms)
+magic-observability:test: ✔ buildNodeOptions (1.2835ms)
+magic-observability:test: ▶ buildExpoOptions
+magic-observability:test:   ✔ captures uncaught exceptions, rejections and native crashes (0.300333ms)
+magic-observability:test:   ✔ defaults console capture off, because we ship an error boundary (0.371542ms)
+magic-observability:test:   ✔ lets a product without a boundary opt console capture back in (1.355792ms)
+magic-observability:test:   ✔ leaves mobile session replay off (0.0605ms)
+magic-observability:test:   ✔ defaults to US cloud (0.03525ms)
+magic-observability:test: ✔ buildExpoOptions (2.321042ms)
+magic-observability:test: ▶ createClientFacade
+magic-observability:test:   ✔ normalises a thrown non-Error before it reaches the SDK (0.581834ms)
+magic-observability:test:   ✔ routes distinctId positionally and keeps it out of the properties (0.457333ms)
+magic-observability:test:   ✔ merges defaultContext underneath the call-site context (0.100042ms)
+magic-observability:test:   ✔ flattens nested context on capture too (0.124458ms)
+magic-observability:test:   ✔ swallows an SDK throw and reports it through onInternalError (0.14425ms)
+magic-observability:test:   ✔ swallows an async SDK rejection the same way (0.132958ms)
+magic-observability:test:   ✔ no-ops reset and register when the adapter has neither (0.094791ms)
+magic-observability:test:   ✔ reports itself as enabled (0.064792ms)
+magic-observability:test: ✔ createClientFacade (2.320667ms)
+magic-observability:test: ▶ installGlobalHandlers
+magic-observability:test:   ✔ captures an uncaught exception, flushes, then restores the crash (3.447541ms)
+magic-observability:test:   ✔ can be told not to exit, for a supervisor that handles it (0.894167ms)
+magic-observability:test:   ✔ captures an unhandled rejection without killing the process (2.980916ms)
+magic-observability:test:   ✔ flushes on SIGTERM and re-raises so the exit code is honest (1.316334ms)
+magic-observability:test:   ✔ removes every listener it added (0.258209ms)
+magic-observability:test:   ✔ installs only what it was asked for (0.08125ms)
+magic-observability:test: ✔ installGlobalHandlers (9.711542ms)
+magic-observability:test: ▶ distinctIdFromCookieHeader
+magic-observability:test:   ✔ reads distinct_id out of PostHog's cookie (0.499917ms)
+magic-observability:test:   ✔ finds it among other cookies (0.095417ms)
+magic-observability:test:   ✔ skips a long cookie name with repeated PostHog prefixes (0.357791ms)
+magic-observability:test:   ✔ accepts the array form Node hands over for repeated headers (0.203791ms)
+magic-observability:test:   ✔ returns null when the header is missing (0.33ms)
+magic-observability:test:   ✔ returns null when there is no PostHog cookie (0.659042ms)
+magic-observability:test:   ✔ returns null rather than throwing on a corrupted payload (0.407083ms)
+magic-observability:test:   ✔ returns null when distinct_id is present but not a usable string (0.218458ms)
+magic-observability:test: ✔ distinctIdFromCookieHeader (4.880041ms)
+magic-readmes:test: ▶ hero image
+magic-readmes:test:   ✔ passes a centered absolute-https hero before the first heading (1.388958ms)
+magic-readmes:test:   ✔ fails when the hero sits after a heading (0.231ms)
+magic-readmes:test:   ✔ fails when the hero src is not https (0.120209ms)
+magic-readmes:test: ✔ hero image (2.239209ms)
+magic-readmes:test: ▶ tagline
+magic-readmes:test:   ✔ passes a centered text block with no image (0.117959ms)
+magic-readmes:test:   ✔ passes text wrapped in inline HTML (0.087958ms)
+magic-readmes:test:   ✔ fails without one before the first heading (0.066375ms)
+magic-readmes:test:   ✔ does not synthesize tagline text from nested tags (0.076083ms)
+magic-readmes:test: ✔ tagline (0.459959ms)
+magic-readmes:test: ▶ npm version badge
+magic-readmes:test:   ✔ passes when the badge points at the package's own name (1.243875ms)
+magic-readmes:test:   ✔ fails when the badge comes from somewhere else (0.150416ms)
+magic-readmes:test:   ✔ fails when the badge names a different package (0.115541ms)
+magic-readmes:test:   ✔ exempts a README with no package name, badges or not (0.084875ms)
+magic-readmes:test:   ✔ never asks for a stars or license badge (0.059084ms)
+magic-readmes:test: ✔ npm version badge (1.829625ms)
+magic-readmes:test: ▶ install heading
+magic-readmes:test:   ✔ passes with an ## Install heading (0.071542ms)
+magic-readmes:test:   ✔ fails without one (0.075584ms)
+magic-readmes:test: ✔ install heading (0.188542ms)
+magic-readmes:test: ▶ dashes
+magic-readmes:test:   ✔ allows em dashes inside fenced code blocks (0.337834ms)
+magic-readmes:test:   ✔ fails on an em dash in prose (0.066792ms)
+magic-readmes:test:   ✔ fails on an en dash in prose (0.044708ms)
+magic-readmes:test: ✔ dashes (0.496666ms)
+magic-readmes:test: ▶ relative image srcs
+magic-readmes:test:   ✔ passes when every image src is absolute (0.053917ms)
+magic-readmes:test:   ✔ fails on a relative markdown image (0.06425ms)
+magic-readmes:test:   ✔ fails on a relative html image (0.038625ms)
+magic-readmes:test: ✔ relative image srcs (0.195292ms)
+magic-readmes:test: ▶ pinned versions
+magic-readmes:test:   ✔ passes an unpinned install snippet (0.051958ms)
+magic-readmes:test:   ✔ fails on an exact pin in a code block (0.059375ms)
+magic-readmes:test:   ✔ fails on a pinned scoped package (0.036917ms)
+magic-readmes:test:   ✔ passes a moving major tag (0.049292ms)
+magic-readmes:test:   ✔ passes a range, which floats with releases (0.043542ms)
+magic-readmes:test:   ✔ ignores a version written in prose (0.040959ms)
+magic-readmes:test: ✔ pinned versions (0.337125ms)
+magic-readmes:test: ℹ tests 27
+magic-readmes:test: ℹ suites 7
+magic-readmes:test: ℹ pass 27
+magic-readmes:test: ℹ fail 0
+magic-readmes:test: ℹ cancelled 0
+magic-readmes:test: ℹ skipped 0
+magic-readmes:test: ℹ todo 0
+magic-readmes:test: ℹ duration_ms 110.954209
+magic-observability:test: ▶ no key present
+magic-observability:test:   ✔ gives every entry point a disabled client and never throws (0.640958ms)
+magic-observability:test:   ✔ writes nothing to the console (0.431292ms)
+magic-observability:test:   ✔ tells you why, but only if you asked, via onDisabled (0.1575ms)
+magic-observability:test:   ✔ createNoopClient reports the reason it was given (0.052917ms)
+magic-observability:test: ✔ no key present (1.8145ms)
+magic-observability:test: ▶ resolveConfig
+magic-observability:test:   ✔ prefers an explicit key over the environment (0.123083ms)
+magic-observability:test:   ✔ falls back to the environment, and trims it (0.065833ms)
+magic-observability:test:   ✔ treats a blank string as no key at all (0.051875ms)
+magic-observability:test:   ✔ honours enabled: false even with a key (0.060583ms)
+magic-observability:test: ✔ resolveConfig (0.428ms)
+magic-observability:test: ℹ tests 72
+magic-observability:test: ℹ suites 15
+magic-observability:test: ℹ pass 72
+magic-observability:test: ℹ fail 0
+magic-observability:test: ℹ cancelled 0
+magic-observability:test: ℹ skipped 0
+magic-observability:test: ℹ todo 0
+magic-observability:test: ℹ duration_ms 127.505833
+@magic/fixture-smoke:test: smoke: oxlint reported 12 diagnostics
+@magic/fixture-smoke:test: 
+@magic/fixture-smoke:test:   src/index.ts:2 magic(no-barrel-file)
+@magic/fixture-smoke:test:   src/bad.tsx:5 eslint(no-unused-vars)
+@magic/fixture-smoke:test:   src/bad.tsx:7 eslint(prefer-destructuring)
+@magic/fixture-smoke:test:   src/bad.tsx:7 eslint(no-restricted-properties)
+@magic/fixture-smoke:test:   src/bad.tsx:12 eslint(no-console)
+@magic/fixture-smoke:test:   src/bad.tsx:14 eslint(no-nested-ternary)
+@magic/fixture-smoke:test:   src/bad.tsx:17 jsx-a11y(click-events-have-key-events)
+@magic/fixture-smoke:test:   src/bad.tsx:17 jsx-a11y(no-static-element-interactions)
+@magic/fixture-smoke:test:   src/bad.tsx:17 react-perf(jsx-no-new-function-as-prop)
+@magic/fixture-smoke:test:   src/bad.tsx:18 unicorn(explicit-length-check)
+@magic/fixture-smoke:test:   src/bad.tsx:18 safe-jsx(jsx-explicit-boolean)
+@magic/fixture-smoke:test:   src/bad.tsx:25 magic(prefer-early-return)
+@magic/fixture-smoke:test: 
+@magic/fixture-smoke:test:   PASS  safe-jsx(jsx-explicit-boolean) — `items.length && <span/>` renders a bare 0
+@magic/fixture-smoke:test:   PASS  eslint(no-restricted-properties) — direct process.env access
+@magic/fixture-smoke:test:   PASS  eslint(no-console) — leftover console.log
+@magic/fixture-smoke:test:   PASS  eslint(no-nested-ternary) — nested ternary
+@magic/fixture-smoke:test:   PASS  eslint(no-unused-vars) — unused import
+@magic/fixture-smoke:test:   PASS  magic(prefer-early-return) — whole body wrapped in a lone if
+@magic/fixture-smoke:test:   PASS  magic(no-barrel-file) — catch-all `export * from`
+@magic/fixture-smoke:test: 
+@magic/fixture-smoke:test: smoke: PASS — all 7 expected rules fired.
+magic-docs:test: ▶ magic-docs-init
+magic-docs:test:   ✔ materializes an idempotent theme and GitHub Pages marker (103.069916ms)
+magic-docs:test:   ✔ refuses a local customization unless --force is explicit (89.745333ms)
+magic-docs:test:   ✔ replaces a forced symlink without overwriting its target (45.377583ms)
+magic-docs:test:   ✔ rejects unknown arguments (52.1595ms)
+magic-docs:test: ✔ magic-docs-init (291.009791ms)
+magic-docs:test: ▶ agent-readable generated API reference
+magic-docs:test:   ✔ preserves TypeTable as a build-time placeholder (0.677667ms)
+magic-docs:test:   ✔ renders useful Markdown without leaking ESTree (0.72825ms)
+magic-docs:test:   ✔ creates a canonical page and prefixes llms.txt links (0.622292ms)
+magic-docs:test: ✔ agent-readable generated API reference (2.629208ms)
+magic-codemods:test: │  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/tmp/magic-kebab-krpAFI"
+magic-docs:test: ▶ site contract
+magic-docs:test:   ✔ normalizes canonical URLs and resolves defaults (0.853083ms)
+magic-docs:test:   ✔ fails early on links that would produce a broken deployment (0.523708ms)
+magic-docs:test: ✔ site contract (1.980167ms)
+magic-docs:test: ▶ public paths
+magic-docs:test:   ✔ configures Next static export with basePath but no assetPrefix (0.148625ms)
+magic-docs:test:   ✔ prefixes fetch, Markdown, LLM, and canonical URLs exactly once (0.157875ms)
+magic-docs:test:   ✔ keeps root/custom-domain deployments unprefixed (0.086167ms)
+magic-docs:test: ✔ public paths (0.499458ms)
+magic-docs:test: ▶ metadata and repository links
+magic-docs:test:   ✔ uses explicit canonical and Open Graph URLs (0.119709ms)
+magic-docs:test:   ✔ builds encoded source and npm links (0.101958ms)
+magic-docs:test: ✔ metadata and repository links (0.371042ms)
+magic-docs:test: ▶ Fumadocs presets
+magic-docs:test:   ✔ keeps discoverability controls on by default (0.133416ms)
+magic-docs:test:   ✔ ships one CSS entry with upstream preset and GSTJ tokens (0.192292ms)
+magic-docs:test:   ✔ adds the rich components and build-time TypeScript plugin (0.415083ms)
+magic-docs:test: ✔ Fumadocs presets (0.84975ms)
+magic-docs:test: ℹ tests 17
+magic-docs:test: ℹ suites 6
+magic-docs:test: ℹ pass 17
+magic-docs:test: ℹ fail 0
+magic-docs:test: ℹ cancelled 0
+magic-docs:test: ℹ skipped 0
+magic-docs:test: ℹ todo 0
+magic-docs:test: ℹ duration_ms 522.655792
+magic-codemods:test: magic-kebab: Working tree is not clean (1 entry).
+magic-codemods:test: 
+magic-codemods:test: M src/utils/formatDate.ts
+magic-codemods:test: 
+magic-codemods:test: Commit or stash first. This codemod moves files and rewrites imports across the
+magic-codemods:test: repo; `git checkout .` is only a complete undo if the tree started clean.
+magic-codemods:test: Pass --allow-dirty to override, and keep the pieces.
+magic-codemods:test: magic-kebab: Working tree is not clean (1 entry).
+magic-codemods:test: 
+magic-codemods:test: ?? src/Stray.ts
+magic-codemods:test: 
+magic-codemods:test: Commit or stash first. This codemod moves files and rewrites imports across the
+magic-codemods:test: repo; `git checkout .` is only a complete undo if the tree started clean.
+magic-codemods:test: Pass --allow-dirty to override, and keep the pieces.
+magic-codemods:test: magic-kebab: --write and --dry-run contradict each other.
+magic-oxfmt-config:test: magic-oxfmt-init: refusing to write /private/tmp/magic-oxfmt-init-aTwLU4/.oxfmtrc.json.
+magic-oxfmt-config:test: /private/tmp/magic-oxfmt-init-aTwLU4 already contains oxfmt.config.mts, and oxfmt accepts only one
+magic-oxfmt-config:test: config file per directory — writing a second one makes every later oxfmt run
+magic-oxfmt-config:test: fail with "Failed to load configuration file. Both ... found in <dir>".
+magic-oxfmt-config:test: 
+magic-oxfmt-config:test: oxfmt.config.mts is the recommended setup (it tracks magic-oxfmt-config across
+magic-oxfmt-config:test: version bumps; this snapshot would not). Keep it, or delete it first if you
+magic-oxfmt-config:test: really want JSON.
+magic-codemods:test: magic-kebab: --detect must be "oxlint" or "builtin", got "vibes".
+magic-oxfmt-config:test: magic-oxfmt-init: refusing to write /private/tmp/magic-oxfmt-init-MzT36l/.oxfmtrc.json.
+magic-oxfmt-config:test: /private/tmp/magic-oxfmt-init-MzT36l already contains oxfmt.config.mts, and oxfmt accepts only one
+magic-oxfmt-config:test: config file per directory — writing a second one makes every later oxfmt run
+magic-oxfmt-config:test: fail with "Failed to load configuration file. Both ... found in <dir>".
+magic-oxfmt-config:test: 
+magic-oxfmt-config:test: oxfmt.config.mts is the recommended setup (it tracks magic-oxfmt-config across
+magic-oxfmt-config:test: version bumps; this snapshot would not). Keep it, or delete it first if you
+magic-oxfmt-config:test: really want JSON.
+magic-oxfmt-config:test: magic-oxfmt-init: refusing to write /private/tmp/magic-oxfmt-init-g5vfVt/.oxfmtrc.json.
+magic-oxfmt-config:test: /private/tmp/magic-oxfmt-init-g5vfVt already contains oxfmt.config.ts, and oxfmt accepts only one
+magic-oxfmt-config:test: config file per directory — writing a second one makes every later oxfmt run
+magic-oxfmt-config:test: fail with "Failed to load configuration file. Both ... found in <dir>".
+magic-oxfmt-config:test: 
+magic-oxfmt-config:test: oxfmt.config.ts is the recommended setup (it tracks magic-oxfmt-config across
+magic-oxfmt-config:test: version bumps; this snapshot would not). Keep it, or delete it first if you
+magic-oxfmt-config:test: really want JSON.
+magic-oxfmt-config:test: magic-oxfmt-init: refusing to write /private/tmp/magic-oxfmt-init-FqlQgh/.oxfmtrc.json.
+magic-oxfmt-config:test: /private/tmp/magic-oxfmt-init-FqlQgh already contains oxfmt.config.ts, and oxfmt accepts only one
+magic-oxfmt-config:test: config file per directory — writing a second one makes every later oxfmt run
+magic-oxfmt-config:test: fail with "Failed to load configuration file. Both ... found in <dir>".
+magic-oxfmt-config:test: 
+magic-oxfmt-config:test: oxfmt.config.ts is the recommended setup (it tracks magic-oxfmt-config across
+magic-oxfmt-config:test: version bumps; this snapshot would not). Keep it, or delete it first if you
+magic-oxfmt-config:test: really want JSON.
+magic-oxfmt-config:test: magic-oxfmt-init: refusing to write /private/tmp/magic-oxfmt-init-ZeidYQ/.oxfmtrc.json.
+magic-oxfmt-config:test: /private/tmp/magic-oxfmt-init-ZeidYQ already contains .oxfmtrc.jsonc, and oxfmt accepts only one
+magic-oxfmt-config:test: config file per directory — writing a second one makes every later oxfmt run
+magic-oxfmt-config:test: fail with "Failed to load configuration file. Both ... found in <dir>".
+magic-oxfmt-config:test: 
+magic-oxfmt-config:test: Delete .oxfmtrc.jsonc first, or pass --out to write elsewhere.
+magic-oxfmt-config:test: magic-oxfmt-init: refusing to write /private/tmp/magic-oxfmt-init-ZMrNoK/.oxfmtrc.json.
+magic-oxfmt-config:test: /private/tmp/magic-oxfmt-init-ZMrNoK already contains .oxfmtrc.jsonc, and oxfmt accepts only one
+magic-oxfmt-config:test: config file per directory — writing a second one makes every later oxfmt run
+magic-oxfmt-config:test: fail with "Failed to load configuration file. Both ... found in <dir>".
+magic-oxfmt-config:test: 
+magic-oxfmt-config:test: Delete .oxfmtrc.jsonc first, or pass --out to write elsewhere.
+magic-codemods:test: │  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/tmp/magic-kebab-dtvnrZ"
+magic-oxfmt-config:test: magic-oxfmt-init: /private/tmp/magic-oxfmt-init-Hgodax/.oxfmtrc.json already exists. Pass --force to overwrite.
+magic-oxfmt-config:test: ▶ house style
+magic-oxfmt-config:test:   ✔ wraps at 80 columns, not oxfmt's default 100 (169.089ms)
+magic-oxfmt-config:test:   ✔ uses double quotes and semicolons (147.870875ms)
+magic-oxfmt-config:test:   ✔ uses trailing commas everywhere (150.802666ms)
+magic-oxfmt-config:test: ✔ house style (468.465833ms)
+magic-oxfmt-config:test: ▶ import sorting
+magic-oxfmt-config:test:   ✔ puts types first, then react, then expo, then third party, then relative (179.255166ms)
+magic-oxfmt-config:test:   ✔ classifies ~/ @/ # aliases as internal, after third-party (253.552875ms)
+magic-oxfmt-config:test:   ✔ does not move side-effect imports (152.467875ms)
+magic-oxfmt-config:test: ✔ import sorting (585.650958ms)
+magic-oxfmt-config:test: ▶ variants
+magic-oxfmt-config:test:   ✔ react-native ignores native build directories (0.301667ms)
+magic-oxfmt-config:test:   ✔ every variant leaves a generated CHANGELOG.md alone (181.512625ms)
+magic-oxfmt-config:test:   ✔ withoutIgnorePatterns lets a hand-written CHANGELOG.md be formatted (229.554333ms)
+magic-oxfmt-config:test:   ✔ withoutIgnorePatterns throws on a pattern that is not there (0.714917ms)
+magic-oxfmt-config:test:   ✔ every variant keeps the house style (0.164667ms)
+magic-oxfmt-config:test: ✔ variants (412.584708ms)
+magic-oxfmt-config:test: ▶ magic-oxfmt-init
+magic-oxfmt-config:test:   ✔ writes a snapshot in a clean directory (47.482042ms)
+magic-oxfmt-config:test:   ✔ refuses to write .oxfmtrc.json next to oxfmt.config.mts (44.485416ms)
+magic-oxfmt-config:test:   ✔ --force does not bypass the oxfmt.config.mts conflict (45.0405ms)
+magic-oxfmt-config:test:   ✔ refuses to write .oxfmtrc.json next to oxfmt.config.ts (45.249917ms)
+magic-oxfmt-config:test:   ✔ --force does not bypass the oxfmt.config.ts conflict (44.437459ms)
+magic-oxfmt-config:test:   ✔ refuses to write .oxfmtrc.json next to .oxfmtrc.jsonc (45.259209ms)
+magic-oxfmt-config:test:   ✔ --force does not bypass the .oxfmtrc.jsonc conflict (42.507417ms)
+magic-oxfmt-config:test:   ✔ --out lets the snapshot escape the conflict (43.460584ms)
+magic-oxfmt-config:test:   ✔ still guards a plain overwrite, and --force still allows it (87.698667ms)
+magic-oxfmt-config:test:   ✔ replaces a forced symlink without overwriting its target (46.578291ms)
+magic-oxfmt-config:test: ✔ magic-oxfmt-init (492.633ms)
+magic-oxfmt-config:test: ℹ tests 21
+magic-oxfmt-config:test: ℹ suites 4
+magic-oxfmt-config:test: ℹ pass 21
+magic-oxfmt-config:test: ℹ fail 0
+magic-oxfmt-config:test: ℹ cancelled 0
+magic-oxfmt-config:test: ℹ skipped 0
+magic-oxfmt-config:test: ℹ todo 0
+magic-oxfmt-config:test: ℹ duration_ms 2031.783291
+magic-codemods:test: magic-kebab: Refusing to inspect 1 unsafe tracked source path:
+magic-codemods:test:   src/consumer.ts (symbolic link at src/consumer.ts)
+magic-codemods:test: 
+magic-codemods:test: magic-kebab rewrites source files in place. Restore these paths as regular files inside the repo before running it.
+magic-codemods:test: │  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/tmp/magic-kebab-p11BAU"
+magic-codemods:test: magic-kebab: Refusing to inspect 2 unsafe tracked source paths:
+magic-codemods:test:   src/Button.ts (symbolic link at src)
+magic-codemods:test:   src/consumer.ts (symbolic link at src)
+magic-codemods:test: 
+magic-codemods:test: magic-kebab rewrites source files in place. Restore these paths as regular files inside the repo before running it.
+magic-codemods:test: │  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/tmp/magic-kebab-410dGX"
+magic-codemods:test: magic-kebab: Refusing to inspect 1 unsafe tracked source path:
+magic-codemods:test:   src/consumer.ts (has 2 hard links)
+magic-codemods:test: 
+magic-codemods:test: magic-kebab rewrites source files in place. Restore these paths as regular files inside the repo before running it.
+magic-codemods:test: │  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/tmp/magic-kebab-L1FUjH"
+magic-codemods:test: │  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/tmp/magic-kebab-IAwcI3"
+magic-codemods:test: │  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/tmp/magic-kebab-IAwcI3"
+magic-codemods:test: │  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/tmp/magic-kebab-YjxxeE"
+magic-oxlint-plugin:test: ▶ magic/prefer-early-return
+magic-oxlint-plugin:test:   ✔ reports a function whose whole body is a lone if (161.034375ms)
+magic-oxlint-plugin:test:   ✔ leaves a guard-clause function alone (128.021209ms)
+magic-oxlint-plugin:test:   ✔ leaves an if/else alone — there is nothing to invert into (110.215042ms)
+magic-oxlint-plugin:test:   ✔ honours maximumStatements (265.407625ms)
+magic-oxlint-plugin:test:   ✔ re-reads options per file when an override changes them (197.805875ms)
+magic-oxlint-plugin:test:   ✔ reports a braceless expression consequent at maximumStatements 0 (124.708417ms)
+magic-oxlint-plugin:test:   ✔ leaves a braceless return/throw/continue body alone (136.82625ms)
+magic-oxlint-plugin:test:   ✔ does not report a braceless consequent once the budget is non-zero (130.530958ms)
+magic-oxlint-plugin:test: ✔ magic/prefer-early-return (1256.045ms)
+magic-oxlint-plugin:test: ▶ magic/no-barrel-file
+magic-oxlint-plugin:test:   ✔ reports a wildcard re-export in src/index.ts (132.810167ms)
+magic-oxlint-plugin:test:   ✔ allows named re-exports (118.639583ms)
+magic-oxlint-plugin:test:   ✔ ignores non-entry-point files by default (127.141708ms)
+magic-oxlint-plugin:test:   ✔ honours the allow list (114.709667ms)
+magic-oxlint-plugin:test:   ✔ ignores type-only wildcard re-exports — they are erased at runtime (115.10725ms)
+magic-oxlint-plugin:test: ✔ magic/no-barrel-file (608.800542ms)
+magic-oxlint-plugin:test: ▶ magic/no-module-mocks
+magic-oxlint-plugin:test:   ✔ reports vi.mock and jest.mock in test files (108.618417ms)
+magic-oxlint-plugin:test:   ✔ ignores non-test files (104.338666ms)
+magic-oxlint-plugin:test:   ✔ uses the conditional message when the mock is inside an if (100.231583ms)
+magic-oxlint-plugin:test:   ✔ honours a narrowed objects list (92.498792ms)
+magic-oxlint-plugin:test:   ✔ reports the whole default method family, not just mock (87.2035ms)
+magic-oxlint-plugin:test:   ✔ reports optional-chained calls (vi?.mock) (81.219208ms)
+magic-oxlint-plugin:test:   ✔ applies to __tests__/ files with no .test infix (Jest's default layout) (84.838666ms)
+magic-oxlint-plugin:test:   ✔ leaves vi.spyOn and vi.fn alone — instance mocking is the alternative (80.713417ms)
+magic-oxlint-plugin:test: ✔ magic/no-module-mocks (739.939458ms)
+magic-oxlint-plugin:test: ▶ magic/prefer-suspense-query
+magic-oxlint-plugin:test:   ✔ reports useQuery on a configured root (81.78275ms)
+magic-oxlint-plugin:test:   ✔ ignores useQuery on an unrelated object (79.114291ms)
+magic-oxlint-plugin:test:   ✔ ignores useSuspenseQuery (77.149417ms)
+magic-oxlint-plugin:test:   ✔ honours configurable roots (77.202792ms)
+magic-oxlint-plugin:test:   ✔ reports optional-chained call sites (api?.things.useQuery()) (77.491166ms)
+magic-oxlint-plugin:test:   ✔ ignores useMutation — only the configured hooks are steered (75.283375ms)
+magic-oxlint-plugin:test: ✔ magic/prefer-suspense-query (468.252458ms)
+magic-oxlint-plugin:test: ▶ magic/no-ancestor-directory-import
+magic-oxlint-plugin:test:   ✔ reports the ancestor spellings that route through an index (84.490584ms)
+magic-oxlint-plugin:test:   ✔ reports the own-directory index too (87.51375ms)
+magic-oxlint-plugin:test:   ✔ leaves sibling and descendant imports alone (86.634833ms)
+magic-oxlint-plugin:test:   ✔ leaves bare and aliased specifiers alone (84.955625ms)
+magic-oxlint-plugin:test:   ✔ does not treat index.module.css as an index file (81.419166ms)
+magic-oxlint-plugin:test:   ✔ covers re-export forms, which the original rule missed (76.418125ms)
+magic-oxlint-plugin:test: ✔ magic/no-ancestor-directory-import (501.649625ms)
+magic-oxlint-plugin:test: ▶ magic/react-require-autocomplete
+magic-oxlint-plugin:test:   ✔ reports an autofillable input with no autoComplete (76.902875ms)
+magic-oxlint-plugin:test:   ✔ accepts either casing of the attribute (76.29125ms)
+magic-oxlint-plugin:test:   ✔ ignores input types the browser cannot autofill (76.062666ms)
+magic-oxlint-plugin:test:   ✔ matches the type attribute case-insensitively, as HTML does (74.332166ms)
+magic-oxlint-plugin:test:   ✔ skips spread attributes and computed types (80.975625ms)
+magic-oxlint-plugin:test:   ✔ honours inputComponents (80.621625ms)
+magic-oxlint-plugin:test: ✔ magic/react-require-autocomplete (465.359833ms)
+magic-oxlint-plugin:test: ▶ magic/react-hooks-strict-return
+magic-oxlint-plugin:test:   ✔ reports a hook returning more than two tuple values (76.85375ms)
+magic-oxlint-plugin:test:   ✔ allows a two-value tuple and an object of any size (74.923958ms)
+magic-oxlint-plugin:test:   ✔ ignores plain functions that are not hooks (79.045625ms)
+magic-oxlint-plugin:test:   ✔ attributes a return to the nearest enclosing function (73.66875ms)
+magic-oxlint-plugin:test:   ✔ honours maximumReturnValues (147.453625ms)
+magic-oxlint-plugin:test: ✔ magic/react-hooks-strict-return (452.30275ms)
+magic-oxlint-plugin:test: ▶ magic/no-manual-classname
+magic-oxlint-plugin:test:   ✔ reports the side-class Record map interpolated into a template literal (107.0815ms)
+magic-oxlint-plugin:test:   ✔ finds the lookup table even when it is declared after the JSX (104.984417ms)
+magic-oxlint-plugin:test:   ✔ keeps the cva/tv message when the splice happens in a const (90.187958ms)
+magic-oxlint-plugin:test:   ✔ reports the three inline shapes: template, concat, ternary (85.680166ms)
+magic-oxlint-plugin:test:   ✔ reports `&&` but leaves `||` and `??` alone — those read as a default (84.761417ms)
+magic-oxlint-plugin:test:   ✔ follows a same-file const into the attribute (88.399584ms)
+magic-oxlint-plugin:test:   ✔ leaves cn/clsx/cva/tv calls, plain literals and static templates alone (93.865125ms)
+magic-oxlint-plugin:test:   ✔ only looks at the configured attributes (100.629083ms)
+magic-oxlint-plugin:test:   ✔ honours the attributes option (NativeWind's extra class props) (200.71475ms)
+magic-oxlint-plugin:test:   ✔ names the repo's own composer in the diagnostic (99.417583ms)
+magic-oxlint-plugin:test:   ✔ gives up when a prop binds the same name as the hand-built const (104.2145ms)
+magic-oxlint-plugin:test:   ✔ does not follow `let`, and gives up on a name declared twice (100.440916ms)
+magic-oxlint-plugin:test:   ✔ also covers the `class` attribute, for NativeWind and non-React JSX (103.723959ms)
+magic-oxlint-plugin:test:   ✔ does not leak collected state between files in one run (110.028042ms)
+magic-oxlint-plugin:test: ✔ magic/no-manual-classname (1474.571709ms)
+magic-oxlint-plugin:test: ℹ tests 58
+magic-oxlint-plugin:test: ℹ suites 8
+magic-oxlint-plugin:test: ℹ pass 58
+magic-oxlint-plugin:test: ℹ fail 0
+magic-oxlint-plugin:test: ℹ cancelled 0
+magic-oxlint-plugin:test: ℹ skipped 0
+magic-oxlint-plugin:test: ℹ todo 0
+magic-oxlint-plugin:test: ℹ duration_ms 6044.478584
+magic-codemods:test: magic-kebab: 1 --rename override matched nothing:
+magic-codemods:test:   --rename AsyncStorage.ts=async-storage.ts No file in the plan has that basename.
+magic-codemods:test: magic-kebab: 1 --rename override matched nothing:
+magic-codemods:test:   --rename Button=btn.tsx Did you mean `Button.tsx=btn.tsx`? Keys are full basenames, extension included.
+magic-codemods:test: │  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/tmp/magic-kebab-atRJJL"
+magic-codemods:test: │  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/tmp/magic-kebab-atRJJL"
+magic-codemods:test: │  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/tmp/magic-kebab-lsJakU"
+magic-codemods:test: magic-kebab: --tsconfig /private/tmp/magic-kebab-lsJakU/apps/nope/tsconfig.json does not exist.
+magic-codemods:test: │  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/tmp/magic-kebab-MbHpNT"
+magic-codemods:test: │  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/tmp/magic-kebab-pGKlKx"
+magic-codemods:test: │  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/tmp/magic-kebab-UXFai2"
+magic-codemods:test: ▶ magic-kebab preconditions
+magic-codemods:test:   ✔ refuses to run on a dirty tree (285.178375ms)
+magic-codemods:test:   ✔ counts untracked files as dirty (367.055708ms)
+magic-codemods:test:   ✔ --write and --dry-run are mutually exclusive (258.551084ms)
+magic-codemods:test:   ✔ rejects an unknown --detect mode (249.023959ms)
+magic-codemods:test: ✔ magic-kebab preconditions (1545.763458ms)
+magic-codemods:test: ▶ magic-kebab tracked source symlinks
+magic-codemods:test:   ✔ refuses the run without rewriting the symlink target (509.865875ms)
+magic-codemods:test:   ✔ refuses a symlinked parent with --allow-dirty (374.595042ms)
+magic-codemods:test:   ✔ refuses a hard-linked source without rewriting its other name (374.71375ms)
+magic-codemods:test: ✔ magic-kebab tracked source symlinks (1259.399417ms)
+magic-codemods:test: ▶ magic-kebab --dry-run
+magic-codemods:test:   ✔ exits 0 and changes nothing at all (15.974458ms)
+magic-codemods:test:   ✔ plans every violating file and no others (0.591709ms)
+magic-codemods:test:   ✔ prints the specifier rewrites it would make, not just the renames (0.154958ms)
+magic-codemods:test:   ✔ never plans the route parameter or the package mock (0.141583ms)
+magic-codemods:test:   ✔ has nothing to skip, because the preset already exempts those files (0.045167ms)
+magic-codemods:test:   ✔ reports the computed import, the runner config and the doc (0.069584ms)
+magic-codemods:test:   ✔ reports a bare string literal that is really a module path (0.058208ms)
+magic-codemods:test:   ✔ never rewrites those strings, only reports them (0.024333ms)
+magic-codemods:test:   ✔ is byte-identical to the plan --write then executes (280.955167ms)
+magic-codemods:test: ✔ magic-kebab --dry-run (779.366292ms)
+magic-codemods:test: ▶ magic-kebab --write
+magic-codemods:test:   ✔ exits 0 (0.115625ms)
+magic-codemods:test:   ✔ performs the case-only rename for real, not just in the index (25.968709ms)
+magic-codemods:test:   ✔ leaves no temp files behind (11.457875ms)
+magic-codemods:test:   ✔ renames multi-word and camelCase files (10.678916ms)
+magic-codemods:test:   ✔ moves the whole platform-variant trio together (11.046875ms)
+magic-codemods:test:   ✔ drags a local module's __mocks__ along but leaves the package mock (10.770167ms)
+magic-codemods:test:   ✔ leaves router files alone (11.025333ms)
+magic-codemods:test:   ✔ renames only — it never changes a directory or loses a file (22.873959ms)
+magic-codemods:test:   ✔ rewrites relative, alias, extension-bearing and barrel specifiers (0.365417ms)
+magic-codemods:test:   ✔ rewrites dynamic import(), import-type and require() (0.166292ms)
+magic-codemods:test:   ✔ does not touch the template-literal import it cannot resolve (0.07425ms)
+magic-codemods:test:   ✔ does not touch the runner config or the docs (0.137209ms)
+magic-codemods:test:   ✔ silences unicorn/filename-case (46.968458ms)
+magic-codemods:test:   ✔ leaves the repo typechecking (72.975209ms)
+magic-codemods:test:   ✔ keeps git log --follow continuity across the rename (266.245125ms)
+magic-codemods:test:   ✔ is idempotent — a second run finds nothing (264.497ms)
+magic-codemods:test: ✔ magic-kebab --write (1478.396167ms)
+magic-codemods:test: ▶ magic-kebab options
+magic-codemods:test:   ✔ --detect builtin plans exactly what --detect oxlint plans (699.022333ms)
+magic-codemods:test:   ✔ --detect builtin falls back on the skip list for what the preset would have exempted (356.82975ms)
+magic-codemods:test:   ✔ --rename overrides a target, and carries the paired mock with it (540.787541ms)
+magic-codemods:test:   ✔ --rename forces a file past the skip list, but only one the detector saw (1055.60575ms)
+magic-codemods:test:   ✔ rejects a --rename key that omits the extension instead of ignoring it (597.842ms)
+magic-codemods:test:   ✔ rejects a --rename target that would still violate the rule (791.607208ms)
+magic-codemods:test:   ✔ rejects a --rename target that moves the file (968.628542ms)
+magic-codemods:test:   ✔ --strict fails when anything needs review (427.568833ms)
+magic-codemods:test:   ✔ --json emits a machine-readable plan (454.155917ms)
+magic-codemods:test:   ✔ scopes to the paths it is given (433.708208ms)
+magic-codemods:test:   ✔ detects a collision instead of destroying a file (3347.36675ms)
+magic-codemods:test: ✔ magic-kebab options (9917.797166ms)
+magic-codemods:test: ▶ a monorepo with no tsconfig at the root
+magic-codemods:test:   ✔ finds the workspace packages' tsconfigs instead of giving up at the root (0.169292ms)
+magic-codemods:test:   ✔ rewrites the alias import that a root-only lookup would have missed (0.078084ms)
+magic-codemods:test:   ✔ reports — loudly — an alias it still cannot resolve (0.068334ms)
+magic-codemods:test:   ✔ --strict refuses to let that pass (879.51225ms)
+magic-codemods:test:   ✔ --tsconfig is repeatable and takes over discovery (1084.068208ms)
+magic-codemods:test: ✔ a monorepo with no tsconfig at the root (3963.029959ms)
+magic-codemods:test: ▶ the App.tsx exemption is conditional on it being a React Native app
+magic-codemods:test:   ✔ skips App.tsx in a React Native package (942.181125ms)
+magic-codemods:test:   ✔ skips App.tsx in an Expo package (818.028292ms)
+magic-codemods:test:   ✔ renames App.tsx in a plain web package, and fixes the import (1006.218458ms)
+magic-codemods:test: ✔ the App.tsx exemption is conditional on it being a React Native app (2766.565125ms)
+magic-codemods:test: ▶ the builtin kebab-case check matches oxlint
+magic-codemods:test:   ✔ generates a corpus with violations on both sides of the line (0.37575ms)
+magic-codemods:test:   ✔ agrees with oxlint on every name in the corpus (0.985333ms)
+magic-codemods:test:   ✔ suggests the same rename target oxlint does (1.816291ms)
+magic-codemods:test:   ✔ only ever produces targets the rule accepts (2.030875ms)
+magic-codemods:test: ✔ the builtin kebab-case check matches oxlint (325.45475ms)
+magic-codemods:test: ▶ kebab helpers
+magic-codemods:test:   ✔ only examines the first dot-segment (0.235834ms)
+magic-codemods:test:   ✔ accepts the punctuation file-based routers rely on (0.099834ms)
+magic-codemods:test:   ✔ rejects uppercase, interior underscores and spaces, and nothing else (0.077875ms)
+magic-codemods:test:   ✔ handles long underscore runs without regex backtracking (2.540958ms)
+magic-codemods:test:   ✔ preserves everything after the stem when renaming (0.113625ms)
+magic-codemods:test: ✔ kebab helpers (3.28875ms)
+magic-codemods:test: ℹ tests 60
+magic-codemods:test: ℹ suites 9
+magic-codemods:test: ℹ pass 60
+magic-codemods:test: ℹ fail 0
+magic-codemods:test: ℹ cancelled 0
+magic-codemods:test: ℹ skipped 0
+magic-codemods:test: ℹ todo 0
+magic-codemods:test: ℹ duration_ms 21793.51175
+magic-oxlint-config:test: ▶ shipped JSON variants
+magic-oxlint-config:test:   ✔ base.json is accepted by oxlint (70.577708ms)
+magic-oxlint-config:test:   ✔ react.json is accepted by oxlint (114.294083ms)
+magic-oxlint-config:test:   ✔ react-native.json is accepted by oxlint (109.768708ms)
+magic-oxlint-config:test:   ✔ next.json is accepted by oxlint (113.355709ms)
+magic-oxlint-config:test:   ✔ expo.json is accepted by oxlint (109.705791ms)
+magic-oxlint-config:test:   ✔ keeps the JSON mirrors in sync with the JS entry points (8.799291ms)
+magic-oxlint-config:test: ✔ shipped JSON variants (527.352709ms)
+magic-oxlint-config:test: ▶ variant composition
+magic-oxlint-config:test:   ✔ react inherits base rules (0.411875ms)
+magic-oxlint-config:test:   ✔ expo inherits the react-native ignore patterns (0.17225ms)
+magic-oxlint-config:test:   ✔ allows separate declarations while keeping safety rules enabled (96.725ms)
+magic-oxlint-config:test:   ✔ base bans namespace imports, react allows the ecosystem ones (257.875083ms)
+magic-oxlint-config:test:   ✔ applies the jest recommended set in test files, identically in every variant (590.978375ms)
+magic-oxlint-config:test:   ✔ mirrors env and globals into an override, in every variant (1.258792ms)
+magic-oxlint-config:test:   ✔ keeps the JSX-handler escape hatch on typescript/no-misused-promises (0.254333ms)
+magic-oxlint-config:test:   ✔ react catches leaked && JSX via the safe-jsx JS plugin (119.28925ms)
+magic-oxlint-config:test: ✔ variant composition (1067.326125ms)
+magic-oxlint-config:test: ▶ unicorn/filename-case exemptions
+magic-oxlint-config:test:   ✔ base leaves framework-reserved filenames alone (1402.482875ms)
+magic-oxlint-config:test:   ✔ base still reports ordinary PascalCase and camelCase files (114.412791ms)
+magic-oxlint-config:test:   ✔ react leaves framework-reserved filenames alone (2319.412166ms)
+magic-oxlint-config:test:   ✔ react still reports ordinary PascalCase and camelCase files (284.835791ms)
+magic-oxlint-config:test:   ✔ react-native leaves framework-reserved filenames alone (4726.684916ms)
+magic-oxlint-config:test:   ✔ react-native still reports ordinary PascalCase and camelCase files (358.523875ms)
+magic-oxlint-config:test:   ✔ next leaves framework-reserved filenames alone (7409.315542ms)
+magic-oxlint-config:test:   ✔ next still reports ordinary PascalCase and camelCase files (414.32875ms)
+magic-oxlint-config:test:   ✔ expo leaves framework-reserved filenames alone (4386.694041ms)
+magic-oxlint-config:test:   ✔ expo still reports ordinary PascalCase and camelCase files (418.550417ms)
+magic-oxlint-config:test:   ✔ exempts App.tsx in the React Native family and nowhere else (618.215583ms)
+magic-oxlint-config:test:   ✔ keeps the __mocks__ exemption last, in every variant (1.064541ms)
+magic-oxlint-config:test: ✔ unicorn/filename-case exemptions (22455.2055ms)
+magic-oxlint-config:test: ℹ tests 26
+magic-oxlint-config:test: ℹ suites 3
+magic-oxlint-config:test: ℹ pass 26
+magic-oxlint-config:test: ℹ fail 0
+magic-oxlint-config:test: ℹ cancelled 0
+magic-oxlint-config:test: ℹ skipped 0
+magic-oxlint-config:test: ℹ todo 0
+magic-oxlint-config:test: ℹ duration_ms 24126.50675
+
+ Tasks:    13 successful, 13 total
+Cached:    5 cached, 13 total
+  Time:    24.624s 
+
+$ node --test scripts/*.test.mjs
+✔ parseVersion accepts both tag and bare forms, rejects the rest (2.141417ms)
+✔ highestVersion sorts numerically, not lexically (0.159625ms)
+✔ no commits means no release (0.104292ms)
+✔ feat is a minor, anything unremarkable is a patch (0.3425ms)
+✔ a breaking marker wins over everything, in any position (0.107833ms)
+✔ breakingChangeFor prefers the footer text, in any wording or wrap (0.139417ms)
+✔ breakingChangeFor falls back to the subject for a bare `!` (0.059083ms)
+✔ breakingChangeFor is null for anything that isn't breaking (0.060292ms)
+✔ notesFor puts a BREAKING CHANGES section on top, only when one applies (0.13825ms)
+✔ nextVersion zeroes the lower places (0.382667ms)
+✔ the checked-in shadcn registry is internally consistent (6.251833ms)
+✔ registry validation rejects a missing source file (6.420542ms)
+✔ registry validation catches product copy in the reusable block (3.796167ms)
+✔ registry validation rejects stale content in a published item (5.30775ms)
+✔ registry validation rejects catalog drift and stale output (13.546167ms)
+✔ the checked-in preset passes (2.856542ms)
+✔ pending updates open PRs at the root and for vulnerability alerts (0.318166ms)
+✔ the checked-in coupled dependency groups stay exact (0.341792ms)
+✔ every coupled group is required exactly once (7.314875ms)
+✔ every coupled group keeps its exact package set (7.20175ms)
+✔ every coupled group keeps its review controls (7.93975ms)
+✔ the broad magic rule is required and keeps its exact controls (4.009833ms)
+✔ the reviewed toolchain rules must follow the broad magic exception (0.826666ms)
+✔ magic itself is the explicit immediate-update exception (1.092292ms)
+✔ a preset with no major gate fails (2.149916ms)
+✔ the gate must be the last rule, not merely present (0.908ms)
+✔ a narrowed gate fails, because it stops covering every major (0.735375ms)
+✔ a scoped major denial alongside the gate is fine (0.831459ms)
+✔ another rule granting automerge on majors fails (0.628083ms)
+✔ two gates fail, because only one can be last (0.573875ms)
+✔ a rule without a description fails (1.073167ms)
+✔ weakening minimumReleaseAge fails (1.060208ms)
+✔ weakening a strict release-age control fails (0.82825ms)
+✔ hiding pending updates at the root fails (0.7995ms)
+✔ hiding pending vulnerability updates fails (0.935958ms)
+✔ the experimental OSV source stays disabled (0.919333ms)
+✔ GitHub vulnerability alerts stay enabled (1.124625ms)
+✔ vulnerability PRs keep the same quarantine (0.801083ms)
+✔ only first-party magic rules may drop the release-age quarantine (0.768666ms)
+✔ a mixed first-party and third-party rule cannot skip quarantine (0.721916ms)
+✔ a rule without package matchers cannot skip quarantine (1.935833ms)
+✔ a third-party rule may restate the full quarantine (1.177875ms)
+✔ a first-party-only rule may keep the full quarantine (0.893667ms)
+✔ a lookalike GSTJ repository cannot skip quarantine (0.905375ms)
+✔ first-party magic packages may move immediately (1.2135ms)
+✔ a preset that is not valid JSON is reported, not thrown (0.849417ms)
+✔ a missing preset is reported (0.416208ms)
+validate-workflows: OK — 14 workflow/action files and 11 READMEs, third-party actions pinned by SHA, self-references on the running commit, and consumer docs on v1.
+✔ remote third-party actions require immutable refs (1.617959ms)
+✔ immutable refs carry a readable release comment (0.193125ms)
+✔ self-references use the running workflow commit (0.162916ms)
+✔ workspace actions stay local to repository-owned workflows (0.130292ms)
+✔ Maestro workspaces stay independent of caller-controlled names (0.255167ms)
+✔ Turbo cache persists its local directory with the pinned first-party action (0.145667ms)
+✔ Turbo cache rejects proxy cache-server actions (0.089625ms)
+✔ Turbo cache keys retain platform, job, commit and restore scopes (0.17075ms)
+✔ Turbo cache requires the complete ordered restore-key block (0.2115ms)
+✔ Turbo cache contract cannot be moved into a decoy step (0.1625ms)
+ℹ tests 57
+ℹ suites 0
+ℹ pass 57
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 155.375708
+$ node scripts/smoke.mjs
+smoke: oxlint reported 12 diagnostics
+
+  src/index.ts:2 magic(no-barrel-file)
+  src/bad.tsx:5 eslint(no-unused-vars)
+  src/bad.tsx:7 eslint(prefer-destructuring)
+  src/bad.tsx:7 eslint(no-restricted-properties)
+  src/bad.tsx:12 eslint(no-console)
+  src/bad.tsx:14 eslint(no-nested-ternary)
+  src/bad.tsx:17 jsx-a11y(click-events-have-key-events)
+  src/bad.tsx:17 jsx-a11y(no-static-element-interactions)
+  src/bad.tsx:17 react-perf(jsx-no-new-function-as-prop)
+  src/bad.tsx:18 unicorn(explicit-length-check)
+  src/bad.tsx:18 safe-jsx(jsx-explicit-boolean)
+  src/bad.tsx:25 magic(prefer-early-return)
+
+  PASS  safe-jsx(jsx-explicit-boolean) — `items.length && <span/>` renders a bare 0
+  PASS  eslint(no-restricted-properties) — direct process.env access
+  PASS  eslint(no-console) — leftover console.log
+  PASS  eslint(no-nested-ternary) — nested ternary
+  PASS  eslint(no-unused-vars) — unused import
+  PASS  magic(prefer-early-return) — whole body wrapped in a lone if
+  PASS  magic(no-barrel-file) — catch-all `export * from`
+
+smoke: PASS — all 7 expected rules fired.
+$ node fixtures/adversarial/run.mjs
+
+[base] default preset, no opt-ins
+  PASS  process.env access fires twice
+  PASS  process.env ban carries the custom message
+  PASS  env.ts is exempt from the process.env ban — got: none
+  PASS  nested ternary fires
+  PASS  unused import fires
+  PASS  for..in fires guard-for-in (closest thing to the old ForInStatement ban)
+  PASS  with statement fires no-with
+  PASS  vi.mock / api.useQuery do NOT fire under the default preset
+  PASS  filename-case fires on BadFileName.ts and nothing else — src/BadFileName.ts
+  PASS  the diagnostic carries the rename target magic-kebab reads — Rename the file to 'bad-file-name.ts'
+  PASS  [postId].tsx is exempt (route parameter, not a word)
+  PASS  __mocks__/AsyncStorage.ts is exempt (the package names the file)
+  PASS  unicorn/no-array-reverse is off (its autofix needs ES2023; base pins ES2022) — none
+  PASS  unicorn/catch-error-name leaves a `{ cause }` binding alone — none
+  PASS  consistent-type-definitions prefers `type`: the interface is reported, the alias is not — 10
+  PASS  jest/valid-title fires on the 3 real offenders, not on identifier-shaped titles — 12, 17, 22
+  PASS  `describe("itemsToChunks")` and `describe("shouldRetry")` pass (the \b fix) — 12, 17, 22
+  PASS  unicorn/prefer-export-from does not fire on a derived-export barrel — none
+  PASS  `--fix-suggestions` no longer deletes the derived exports (M18) — file was rewritten
+
+[optin] base + the opt-in magic rules, and the same tree with none of them
+  PASS  vi.mock + jest.mock + conditional vi.mock all fire
+  PASS  conditional mock uses the hoisting message
+  PASS  vi.mock outside a test file does not fire
+  PASS  useQuery fires on api + trpc roots only (2 hits, not 4) — got 2
+  PASS  no-manual-classname fires on the 6 hand-composed classNames — got 6: 32, 36, 40, 44, 28, 50
+  PASS  the SIDE_CLASS splice gets the cva/tv message, through a const and inline — `className` interpolates `SIDE_CLASS`, a | `className` is assembled with `+`. Conca | `className` picks its classes with `?:`  | `className` picks its classes with `&&`  | `className` interpolates `SIDE_CLASS`, a | `classes` is assembled by hand (a templa
+  PASS  cn(), a cva result, literals, static templates, `||`/`??` and other attributes are silent — 32, 36, 40, 44, 28, 50
+  PASS  with the plugin loaded but no magic rule named, every magic rule is silent
+  PASS  no emitted preset names a magic/* rule at all
+
+[shopify] every @shopify rule's disposition, executed
+  PASS  prefer-early-return fires on a wrapped body and a braceless expression — got 2
+  PASS  a braceless `return` / `throw` consequent is NOT reported (fidelity fix) — 5, 16
+  PASS  no-ancestor-directory-import fires on 3 imports + 2 re-exports — got 5
+  PASS  `../elsewhere/index.ts` is NOT reported — it goes down, not up
+  PASS  react-require-autocomplete fires on <input type=email> and a listed component — got 2
+  PASS  an explicit autoComplete, a checkbox, a spread and a computed type are all silent — 14, 17
+  PASS  react-hooks-strict-return fires once, on the 4-tuple hook — got 1
+  PASS  an object return and a non-hook function are NOT reported
+  PASS  restrict-full-import: `importNames: [default]` catches both spellings — got 2
+  PASS  `import { debounce } from 'lodash/debounce.js'` is left alone — 2, 5
+  PASS  no-namespace-imports: only node:path is reported; react + @radix-ui pass — 2
+  PASS  strict-component-boundaries: `patterns` reports the deep reach, not the entry point — got 1
+  PASS  jsx-no-hardcoded-content: only the untranslatable copy is reported — 4
+  PASS  allowedStrings, elementOverrides.allowElement and ignoreProps all hold — expected line 4, got 4
+
+[react] safe-jsx trip + --fix
+  PASS  leaked && JSX fires safe-jsx(jsx-explicit-boolean)
+  PASS  --fix rewrites to Boolean(items.length) &&
+  PASS  safe-jsx no longer fires after --fix
+  PASS  second --fix pass converges to zero diagnostics
+
+[react-native] variant + README restricted-imports snippet
+  PASS  three restricted imports fire
+  PASS  TouchableOpacity gets the PressableArea message
+  PASS  TouchableHighlight gets the PressableArea message
+  PASS  Image gets its OWN message (per-entry messages work)
+  PASS  View is not flagged
+  PASS  the react-native jsPlugin loads and no-inline-styles fires 8 times — got 8
+  PASS  …and every near-miss below it is silent (empty object, reference, array of
+        references, identifier value, spread, non-literal conditional, nested
+        object, string attribute, valueless attribute) — 22, 23, 24, 25, 26, 27, 28, 30
+  PASS  a valueless `style` attribute does not take the plugin host down with it
+  PASS  no-color-literals fires on the inline hex too
+  PASS  no-color-literals fires 6 times: 3 inline, 3 inside StyleSheet.create — got 6
+  PASS  `colour`, a token value, a non-literal conditional, a fake StyleSheet and
+        StyleSheet.compose are all silent — 13, 14, 15, 38, 39, 40
+  PASS  no-single-element-style-arrays fires twice — got 2
+  PASS  a 2-element array, an empty array, `contentContainerStyle` and a bare
+        reference are silent — this rule matches `style` exactly, unlike
+        no-inline-styles — 15, 16
+  PASS  --fix unwraps both single-element arrays in one pass
+  PASS  …and the rule no longer fires on the fixed file
+  PASS  no-unused-styles fires 3 times and leaves `used` alone — Unused style detected: styles.neverReferenced, Unused style detected: styles.deepAccessOnly, Unused style detected: styles.computedAccessOnly
+  PASS  a deep access, a computed access and a same-named property on another
+        object all fail to mark an entry as used — Unused style detected: styles.neverReferenced, Unused style detected: styles.deepAccessOnly, Unused style detected: styles.computedAccessOnly
+  PASS  the component gate holds: a sheet in a file with no component is silent — none
+
+[next] App Router file conventions the preset promises to exempt
+  PASS  middleware.ts keeps its plain-string matcher (unicorn/prefer-string-raw off) — none
+  PASS  `export default async () => {}` passes in an App Router page — none
+  PASS  `export default function Layout()` passes in an App Router layout — none
+  PASS  the Pages Router keeps the same exemptions — none
+  PASS  the whole App Router fixture is clean — no page shape is left unlintable
+
+[override] can a consumer turn off a rule the preset sets inside an override?
+  PASS  an override entry that omits `plugins` cannot switch a jest rule off — got 1 — if this is 0, oxlint changed and the README Gotchas bullet is stale
+  PASS  repeating the plugin list via `testFilePlugins` makes the same `off` work
+
+[extends] what oxlint's `extends` really carries, and what it drops
+  PASS  no-global-assign fires twice under the supported form — got 2
+  PASS  …and twice under `extends` too — env/globals now survive it (M1) — got 2
+  PASS  categories survive `extends` (contradicting --print-config) — flat 1, extends 1
+  PASS  rule options survive `extends` (contradicting --print-config) — flat 1, extends 1
+  PASS  `unicorn/filename-case`'s ignore list survives `extends`
+  PASS  the supported form applies `**/generated/**` from ignorePatterns
+  PASS  `extends` still drops ignorePatterns — generated/ gets linted — 0 diagnostics here means oxlint fixed `extends`; the README warning would be stale
+  PASS  --print-config renders the supported form in full
+  PASS  --print-config under-reports `extends`: empty categories, bare rule entries — if this fails, oxlint fixed the printer and the README Gotcha is stale
+
+[clean] false-positive guard under every emitted JSON variant
+  PASS  clean.tsx is clean under base
+  PASS  clean.tsx is clean under react
+  PASS  clean.tsx is clean under react-native
+  PASS  clean.tsx is clean under next
+  PASS  clean.tsx is clean under expo
+
+[format] oxfmt house style + import sorting edge cases
+  PASS  single quotes become double quotes
+  PASS  long signature wraps at printWidth 80 (not oxfmt's default 100)
+  PASS  glued doc comment travels with its import when sorted (documented gotcha)
+  PASS  type group before react-type custom group
+  PASS  builtin before react before external
+  PASS  side-effect imports keep their ordinal positions (sortSideEffects: false) — polyfill@2 globals.css@8
+  PASS  @/ alias sorts as internal, after external — @/lib/helper@6 zod@5
+  PASS  prefix-syntax internalPattern (["~/", "@/", "#"]) groups aliases as internal
+  PASS  formatting is idempotent (second run --check passes)
+
+[typecheck] the README's own config files, compiled against oxlint's types
+  PASS  every variant's README snippet is assignable to oxlint's OxlintConfig
+
+95/95 expectations hold
