@@ -1,0 +1,147 @@
+Source snapshot: /tmp/safe-jsx-audit-nov02/143/GSTJ-safe-jsx-a350cd1
+
+$ corepack pnpm install --frozen-lockfile --ignore-scripts
+? Verifying lockfile against supply-chain policies (458 entries)...
+Packages are cloned from the content-addressable store to the virtual store.
+  Content-addressable store is at: /Users/gabrieltaveira/Library/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Downloading @oxlint/binding-darwin-arm64@1.88.0: 0.00 B/5.51 MB
+Downloading @oxlint/binding-darwin-arm64@1.88.0: 40.99 kB/5.51 MB
+Downloading @oxlint/binding-darwin-arm64@1.88.0: 323.56 kB/5.51 MB
+✓ Lockfile passes supply-chain policies (458 entries in 3.6s)
+Lockfile is up to date, resolution step is skipped
+Packages: +384
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 384, reused 382, downloaded 2, added 384, done
+
+devDependencies:
++ @types/estree 1.0.9
++ @types/jest 30.0.0
++ @types/node 26.6.5
++ @typescript-eslint/parser 8.71.2
++ conventional-changelog 8.1.3
++ conventional-changelog-conventionalcommits 10.4.1
++ conventional-recommended-bump 12.1.0
++ eslint 10.13.0
++ jest 30.5.2
++ magic-codemods 1.1.6
++ magic-oxfmt-config 1.2.5
++ magic-oxlint-config 3.0.0
++ magic-tsconfig 1.2.4
++ oxfmt 0.71.0
++ oxlint 1.88.0
++ rimraf 6.1.3
++ safe-publish-latest 2.0.0
++ ts-jest 29.4.15
++ typescript 6.0.3
+
+Done in 4.2s using pnpm v12.14.0
+EXIT 0
+
+$ corepack pnpm run lint
+$ oxlint --report-unused-disable-directives
+EXIT 0
+
+$ corepack pnpm run format
+$ oxfmt --check .
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 268ms on 30 files using 18 threads.
+EXIT 0
+
+$ corepack pnpm run typecheck
+$ tsc --noEmit
+EXIT 0
+
+$ corepack pnpm run test
+$ jest --coverage && node tools/release-check.mjs
+
+Test Suites: 2 passed, 2 total
+Tests:       71 passed, 71 total
+Snapshots:   0 total
+Time:        3.189 s
+Ran all test suites.
+ok - missing changelog dependency never reaches npx
+ok - same-version releases cannot make npm force a tag
+ok - release tags are annotated and idempotent
+ok - an unpublished release tag can follow its squash commit
+ok - a published release tag is immutable
+ok - an unexpected local annotation is preserved
+ok - publish accepts the matching annotated tag on main
+ok - publish rejects a tag that does not match package.json
+ok - publish rejects a tag moved after the release event
+ok - publish rejects release notes that drift from the changelog
+ok - publish rejects a lightweight release tag
+ok - publish rejects a release tag outside main
+ok - publish accepts a main checkout past the release tag
+release tooling check passed (13 controls)
+EXIT 0
+
+$ corepack pnpm run build
+$ rimraf lib && tsc -p tsconfig.build.json
+EXIT 0
+
+$ corepack pnpm run changelog:check
+$ node tools/changelog-check.mjs
+changelog preset check passed (12 synthetic commits, 3 breaking; bumps: feat!=major, feat=minor, fix=patch, changelog-only=null, hidden-only=null)
+negative control passed (hiding the visible types breaks 6 assertions: feat renders, fix renders, build renders, refactor renders, chore renders, docs renders)
+EXIT 0
+
+$ node tools/greetings-workflow-check.mjs
+greetings workflow event contract passed (issues=opened, pull_request_target=opened)
+EXIT 0
+
+$ npm pack --ignore-scripts --json
+{
+  "eslint-plugin-safe-jsx": {
+    "id": "eslint-plugin-safe-jsx@1.3.9",
+    "name": "eslint-plugin-safe-jsx",
+    "version": "1.3.9",
+    "size": 11398,
+    "unpackedSize": 32296,
+    "shasum": "92d7bbe52e9b0849f449bc79c0640d280cd1bf5d",
+    "integrity": "sha512-JA2VzhvbZyxCns5Hj6MWySi1QFyeBJNLVo0bC/AqHL6JGqzXn3i4vibzrlV53VxIKzZXJ4ak4LVtFtjs0WuKnA==",
+    "filename": "eslint-plugin-safe-jsx-1.3.9.tgz",
+    "files": [
+      {
+        "path": "CHANGELOG.md",
+        "size": 12700,
+        "mode": 420
+      },
+      {
+        "path": "LICENSE",
+        "size": 1072,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 4300,
+        "mode": 420
+      },
+      {
+        "path": "SECURITY.md",
+        "size": 339,
+        "mode": 420
+      },
+      {
+        "path": "lib/index.js",
+        "size": 1400,
+        "mode": 420
+      },
+      {
+        "path": "lib/rules/jsx-explicit-boolean.js",
+        "size": 9577,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 2908,
+        "mode": 420
+      }
+    ],
+    "entryCount": 7,
+    "bundled": []
+  }
+}
+EXIT 0
