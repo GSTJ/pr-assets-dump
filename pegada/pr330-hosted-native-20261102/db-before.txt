@@ -1,0 +1,10 @@
+  current_database   | inet_server_port 
+---------------------+------------------
+ pegada_pr330_native |             5432
+(1 row)
+
+      id      | name | weight | preferredMaxDistance | preferredMinAge | preferredMaxAge 
+--------------+------+--------+----------------------+-----------------+-----------------
+ seed-dog-rex | Rex  |     30 |                   50 |               1 |              15
+(1 row)
+

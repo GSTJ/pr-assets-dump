@@ -1,0 +1,50 @@
+{
+  "pr": "https://github.com/GSTJ/pegada/pull/330",
+  "requested_head": "a37c4f0fd64f604ff3c318b389d75694550b1c0f",
+  "build_checkout": "6b0b18e12c66cb9949aa4eb45706fe9f556b279b",
+  "artifact": {
+    "run": 41449163814,
+    "id": 13146443833,
+    "name": "ios-app-required",
+    "size": 52053912,
+    "zip_sha256": "4820a1bbb7b22a8d216267082aed7ecc7609d56bee5403e2b5a40453c576ae52",
+    "bundle_sha256": "c136963d09823f511537aeb5cbcc9716ccc000f039e24e78fa33f77a066d0c1b",
+    "bundle_id": "app.pegada",
+    "version": "1.7.3",
+    "build": "1",
+    "api": "http://localhost:9999/api"
+  },
+  "device": {
+    "hostId": "local",
+    "id": "4B56D214-31BD-456E-B744-E064A670AA41",
+    "name": "iPhone 18 Pro",
+    "os": "iOS 27.2",
+    "session": "t3-e0c10839df4f97c77ab4ed0a"
+  },
+  "backend": {
+    "database": "pegada_pr330_native",
+    "host": "localhost",
+    "published_port": 3355,
+    "api": "http://localhost:9999/api",
+    "checkout": "/Users/gabrieltaveira/.t3/worktrees/pegada/t3-15b7ff86",
+    "source": "a37c4f0fd64f604ff3c318b389d75694550b1c0f"
+  },
+  "status": "BLOCKED",
+  "flows": {
+    "install": "PASS, exact downloaded artifact, no rebuild",
+    "login": "PASS seeded magic account, tracking declined",
+    "profile_edit": "Visible name Rex Native 330 entered after explicit coordinate focus",
+    "profile_save_reopen": "NOT VERIFIED",
+    "preferences_save_reopen": "NOT RUN",
+    "invalid_inputs_en_pt": "NOT RUN",
+    "database_persistence": "No mutation observed; before and after Rex 30 50 1 15"
+  },
+  "stop_reason": "Repeated COMMAND_FAILED: Selector did not match: label=\"30\" editable=true. Stopped per user command-failure rule after snapshot/focus recovery.",
+  "limits": [
+    "Hosted run builds PR merge ref, not standalone requested head; relevant form/schema/localization source files identical (source-manifest.json).",
+    "App contains Hermes bytecode and Expo app manifest, no source map or dependency provenance manifest. Prior local dependency versions are reference only, not proof of hosted bundled package versions.",
+    "Hermes disassembly confirms API URL and localizedZodError/zodResolver identifiers; this does not prove form behavior.",
+    "No production writes, email, purchases, source edits, rebuilds, merges, PR333 interaction, or public comments.",
+    "Original native recording and review transcode are actual device recordings; no helper harness."
+  ]
+}

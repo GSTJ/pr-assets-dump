@@ -1,0 +1,16 @@
+{
+  "receipt.json": "8faaf314320696b5702a3b3ea5b066a5118c81556d6a1bdce7a8ae268b2b0195",
+  "artifact-metadata.json": "c7028d18c44ec7932c29db1a19438f43553b486e944c7566cf717d75a26cf039",
+  "run-metadata.json": "dd15423b497dc1fad95d692ac25a76100df82c311cf9bda80db8e29d89ffeff9",
+  "previous-receipt.json": "0f40c232c20475b583c5de71e767d05f7b2c6b426aee8583983cf6940ab89bae",
+  "source-manifest.json": "b539e78da2c5b2b0b92fa64016f6200e6b771e30de1a382c8bcd1bf6ce4838ae",
+  "head-to-build-diff.json": "361e4869e5d7012c8190ed756bbf753dfb3eeaf4753561acb62b4db3942f11df",
+  "build-commit.json": "75f48d6776eb64c7bafedb4bd5780a40b2f03402ccab76f6248f2d4b3c9637f2",
+  "app.manifest.json": "c5a58aac5a7a34bf31034b6e11a95580aaec98d40f487459c03df5e769085b88",
+  "bundle-identifiers.txt": "5e4adf6160e07c3bea7cebe688f6071227ec445dfb745fe5054c46c904d92d10",
+  "previous-local-dependencies.txt": "c1908437b2d59360027cc0ead690bb26515bae73faf4f131cd92dde8fe920ef1",
+  "db-before.txt": "d5ad0499d65b6d1fc5db5b403d17caed6dd01e379f381c88b519b966f9173dff",
+  "db-after.txt": "d5ad0499d65b6d1fc5db5b403d17caed6dd01e379f381c88b519b966f9173dff",
+  "native-flows-review.mp4": "ba0c6a9a55e10e42771d18464e598d37109f358e6e151d161b8216e7eac63df7",
+  "native-flows.gesture-telemetry.json": "b86cd6817b548738d04e41c527e0d725378fed5adc3449ba29c12c40e2f2ee0e"
+}

@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-02T14:07:27.027Z",
+  "events": [
+    {
+      "kind": "tap",
+      "tMs": 2328,
+      "x": 201,
+      "y": 446,
+      "referenceWidth": 402,
+      "referenceHeight": 874
+    },
+    {
+      "kind": "tap",
+      "tMs": 3430.478271484375,
+      "x": 201,
+      "y": 523,
+      "referenceWidth": 402,
+      "referenceHeight": 874
+    },
+    {
+      "kind": "tap",
+      "tMs": 17196.14990234375,
+      "x": 201,
+      "y": 546,
+      "referenceWidth": 402,
+      "referenceHeight": 874
+    },
+    {
+      "kind": "tap",
+      "tMs": 51610.571533203125,
+      "x": 335,
+      "y": 814,
+      "referenceWidth": 402,
+      "referenceHeight": 874
+    },
+    {
+      "kind": "tap",
+      "tMs": 57104.79931640625,
+      "x": 201,
+      "y": 647,
+      "referenceWidth": 402,
+      "referenceHeight": 874
+    },
+    {
+      "kind": "tap",
+      "tMs": 98165.76000976562,
+      "x": 201,
+      "y": 647,
+      "referenceWidth": 402,
+      "referenceHeight": 874
+    },
+    {
+      "kind": "tap",
+      "tMs": 115260.666015625,
+      "x": 100,
+      "y": 518,
+      "referenceWidth": 402,
+      "referenceHeight": 874
+    },
+    {
+      "kind": "tap",
+      "tMs": 128218,
+      "x": 188,
+      "y": 414,
+      "referenceWidth": 402,
+      "referenceHeight": 874
+    },
+    {
+      "kind": "swipe",
+      "tMs": 138142.20703125,
+      "x": 300,
+      "y": 530,
+      "x2": 300,
+      "y2": 250,
+      "referenceWidth": 402,
+      "referenceHeight": 874,
+      "durationMs": 456
+    },
+    {
+      "kind": "tap",
+      "tMs": 150567.0693359375,
+      "x": 350,
+      "y": 786,
+      "referenceWidth": 402,
+      "referenceHeight": 874
+    },
+    {
+      "kind": "swipe",
+      "tMs": 152296.48608398438,
+      "x": 380,
+      "y": 570,
+      "x2": 380,
+      "y2": 240,
+      "referenceWidth": 402,
+      "referenceHeight": 874,
+      "durationMs": 461
+    },
+    {
+      "kind": "tap",
+      "tMs": 158608.93115234375,
+      "x": 75,
+      "y": 410,
+      "referenceWidth": 402,
+      "referenceHeight": 874
+    }
+  ]
+}
