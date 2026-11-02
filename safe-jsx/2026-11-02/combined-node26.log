@@ -1,0 +1,115 @@
+Source snapshot: /tmp/safe-jsx-audit-nov02/142/GSTJ-safe-jsx-203cb84
+
+$ corepack pnpm install --frozen-lockfile --ignore-scripts
+✓ Lockfile passes supply-chain policies (verified 2m ago)
+Lockfile is up to date, resolution step is skipped
+Done in 77ms using pnpm v12.14.0
+EXIT 0
+
+$ corepack pnpm run lint
+$ oxlint --report-unused-disable-directives
+EXIT 0
+
+$ corepack pnpm run format
+$ oxfmt --check .
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 26ms on 30 files using 18 threads.
+EXIT 0
+
+$ corepack pnpm run typecheck
+$ tsc --noEmit
+EXIT 0
+
+$ corepack pnpm run test
+$ jest --coverage && node tools/release-check.mjs
+
+Test Suites: 2 passed, 2 total
+Tests:       71 passed, 71 total
+Snapshots:   0 total
+Time:        1.563 s, estimated 2 s
+Ran all test suites.
+ok - missing changelog dependency never reaches npx
+ok - same-version releases cannot make npm force a tag
+ok - release tags are annotated and idempotent
+ok - an unpublished release tag can follow its squash commit
+ok - a published release tag is immutable
+ok - an unexpected local annotation is preserved
+ok - publish accepts the matching annotated tag on main
+ok - publish rejects a tag that does not match package.json
+ok - publish rejects a tag moved after the release event
+ok - publish rejects release notes that drift from the changelog
+ok - publish rejects a lightweight release tag
+ok - publish rejects a release tag outside main
+ok - publish accepts a main checkout past the release tag
+release tooling check passed (13 controls)
+EXIT 0
+
+$ corepack pnpm run build
+$ rimraf lib && tsc -p tsconfig.build.json
+EXIT 0
+
+$ corepack pnpm run changelog:check
+$ node tools/changelog-check.mjs
+changelog preset check passed (12 synthetic commits, 3 breaking; bumps: feat!=major, feat=minor, fix=patch, changelog-only=null, hidden-only=null)
+negative control passed (hiding the visible types breaks 6 assertions: feat renders, fix renders, build renders, refactor renders, chore renders, docs renders)
+EXIT 0
+
+$ node tools/greetings-workflow-check.mjs
+greetings workflow event contract passed (issues=opened, pull_request_target=opened)
+EXIT 0
+
+$ npm pack --ignore-scripts --json
+[
+  {
+    "id": "eslint-plugin-safe-jsx@1.3.9",
+    "name": "eslint-plugin-safe-jsx",
+    "version": "1.3.9",
+    "size": 11398,
+    "unpackedSize": 32296,
+    "shasum": "fb59dc1d8cbb94b74d804163a3f0b96088b45c9f",
+    "integrity": "sha512-lGZ1DDwLFQ3sgXPXmrJuZhxkCMmptqIGuKaoYqZCNRljnyCppTo48uocIdnDoCCYz5WbDXSAN6B0irnTe9r2Sw==",
+    "filename": "eslint-plugin-safe-jsx-1.3.9.tgz",
+    "files": [
+      {
+        "path": "CHANGELOG.md",
+        "size": 12700,
+        "mode": 420
+      },
+      {
+        "path": "LICENSE",
+        "size": 1072,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 4300,
+        "mode": 420
+      },
+      {
+        "path": "SECURITY.md",
+        "size": 339,
+        "mode": 420
+      },
+      {
+        "path": "lib/index.js",
+        "size": 1400,
+        "mode": 420
+      },
+      {
+        "path": "lib/rules/jsx-explicit-boolean.js",
+        "size": 9577,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 2908,
+        "mode": 420
+      }
+    ],
+    "entryCount": 7,
+    "bundled": []
+  }
+]
+EXIT 0
