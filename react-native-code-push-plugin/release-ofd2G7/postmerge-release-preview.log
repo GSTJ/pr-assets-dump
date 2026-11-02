@@ -1,0 +1,431 @@
+Publish to npm	Set up job	﻿2026-11-02T12:37:34.5599767Z Current runner version: '2.338.2'
+Publish to npm	Set up job	2026-11-02T12:37:34.5625427Z ##[group]Runner Image Provisioner
+Publish to npm	Set up job	2026-11-02T12:37:34.5626392Z Hosted Compute Agent
+Publish to npm	Set up job	2026-11-02T12:37:34.5626915Z Version: 20261021.618
+Publish to npm	Set up job	2026-11-02T12:37:34.5627504Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+Publish to npm	Set up job	2026-11-02T12:37:34.5628181Z Build Date: 2026-10-21T00:45:21Z
+Publish to npm	Set up job	2026-11-02T12:37:34.5628842Z Worker ID: {d4ad4cfd-93ab-4d54-a353-ede73e894b3e}
+Publish to npm	Set up job	2026-11-02T12:37:34.5629524Z Region: westus3
+Publish to npm	Set up job	2026-11-02T12:37:34.5630052Z Cloud: Azure
+Publish to npm	Set up job	2026-11-02T12:37:34.5630593Z ##[endgroup]
+Publish to npm	Set up job	2026-11-02T12:37:34.5632170Z ##[group]Operating System
+Publish to npm	Set up job	2026-11-02T12:37:34.5632739Z Ubuntu
+Publish to npm	Set up job	2026-11-02T12:37:34.5633261Z 26.04.1
+Publish to npm	Set up job	2026-11-02T12:37:34.5633712Z LTS
+Publish to npm	Set up job	2026-11-02T12:37:34.5634226Z ##[endgroup]
+Publish to npm	Set up job	2026-11-02T12:37:34.5634751Z ##[group]Runner Image
+Publish to npm	Set up job	2026-11-02T12:37:34.5635277Z Image: ubuntu-26.04
+Publish to npm	Set up job	2026-11-02T12:37:34.5636178Z Version: 20261025.179.1
+Publish to npm	Set up job	2026-11-02T12:37:34.5637151Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261025.179/images/ubuntu/Ubuntu2604-Readme.md
+Publish to npm	Set up job	2026-11-02T12:37:34.5638782Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261025.179
+Publish to npm	Set up job	2026-11-02T12:37:34.5639637Z ##[endgroup]
+Publish to npm	Set up job	2026-11-02T12:37:34.5640787Z ##[group]GITHUB_TOKEN Permissions
+Publish to npm	Set up job	2026-11-02T12:37:34.5643011Z Contents: write
+Publish to npm	Set up job	2026-11-02T12:37:34.5643693Z Metadata: read
+Publish to npm	Set up job	2026-11-02T12:37:34.5644208Z PullRequests: write
+Publish to npm	Set up job	2026-11-02T12:37:34.5644737Z ##[endgroup]
+Publish to npm	Set up job	2026-11-02T12:37:34.5646796Z Secret source: Actions
+Publish to npm	Set up job	2026-11-02T12:37:34.5647736Z Cache mode: write
+Publish to npm	Set up job	2026-11-02T12:37:34.5648367Z Prepare workflow directory
+Publish to npm	Set up job	2026-11-02T12:37:34.5980818Z Prepare all required actions
+Publish to npm	Set up job	2026-11-02T12:37:34.6030189Z Getting action download info
+Publish to npm	Set up job	2026-11-02T12:37:34.8888495Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Publish to npm	Set up job	2026-11-02T12:37:35.0138453Z Download action repository 'pnpm/action-setup@v4' (SHA:b906affcce14559ad1aafd4ab0e942779e9f58b1)
+Publish to npm	Set up job	2026-11-02T12:37:35.6362657Z Download action repository 'actions/setup-node@v7' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+Publish to npm	Set up job	2026-11-02T12:37:35.7853882Z Complete job name: Publish to npm
+Publish to npm	Run actions/checkout@v7	﻿2026-11-02T12:37:35.8887033Z ##[group]Run actions/checkout@v7
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:35.8888000Z with:
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:35.8888509Z   fetch-depth: 0
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:35.8889093Z   repository: GSTJ/react-native-code-push-plugin
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:35.8893569Z   token: ***
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:35.8894065Z   ssh-strict: true
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:35.8894572Z   ssh-user: git
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:35.8895083Z   persist-credentials: true
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:35.8895640Z   clean: true
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:35.8896148Z   sparse-checkout-cone-mode: true
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:35.8896736Z   fetch-tags: false
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:35.8897238Z   show-progress: true
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:35.8897744Z   lfs: false
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:35.8898232Z   submodules: false
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:35.8898743Z   set-safe-directory: true
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:35.8899323Z   allow-unsafe-pr-checkout: false
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:35.8900174Z ##[endgroup]
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1349252Z Syncing repository: GSTJ/react-native-code-push-plugin
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1351886Z ##[group]Getting Git version info
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1353065Z Working directory is '/home/runner/work/react-native-code-push-plugin/react-native-code-push-plugin'
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1354601Z [command]/usr/bin/git version
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1363011Z git version 2.56.0
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1380052Z ##[endgroup]
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1391108Z Temporarily overriding HOME='/home/runner/work/_temp/fde9e6fd-8f28-4034-9b50-da09f69c59f7' before making global git config changes
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1393085Z Adding repository directory to the temporary git global config as a safe directory
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1395494Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/react-native-code-push-plugin/react-native-code-push-plugin
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1452406Z Deleting the contents of '/home/runner/work/react-native-code-push-plugin/react-native-code-push-plugin'
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1455235Z ##[group]Determining repository object format
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1457005Z ##[endgroup]
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1457831Z ##[group]Initializing the repository
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1460808Z [command]/usr/bin/git init /home/runner/work/react-native-code-push-plugin/react-native-code-push-plugin
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1551241Z hint: Using 'master' as the name for the initial branch. This default branch name
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1552849Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1553967Z hint: to use in all of your new repositories, which will suppress this warning,
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1554798Z hint: call:
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1555322Z hint:
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1555916Z hint: 	git config --global init.defaultBranch <name>
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1556597Z hint:
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1557251Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1558280Z hint: 'development'. The just-created branch can be renamed via this command:
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1559104Z hint:
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1559651Z hint: 	git branch -m <name>
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1560200Z hint:
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1560900Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1575203Z Initialized empty Git repository in /home/runner/work/react-native-code-push-plugin/react-native-code-push-plugin/.git/
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1584679Z [command]/usr/bin/git remote add origin https://github.com/GSTJ/react-native-code-push-plugin
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1628605Z ##[endgroup]
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1629559Z ##[group]Disabling automatic garbage collection
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1631121Z [command]/usr/bin/git config --local gc.auto 0
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1662027Z ##[endgroup]
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1663237Z ##[group]Setting up auth
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1663886Z Removing SSH command configuration
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1667943Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.1697897Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.2043547Z Removing HTTP extra header
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.2049458Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.2078573Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.2292486Z Removing includeIf entries pointing to credentials config files
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.2293692Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.2324133Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.2543063Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-33810bf5-fad9-4eea-955e-f41e449bb30b.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.2576905Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/react-native-code-push-plugin/react-native-code-push-plugin/.git.path /home/runner/work/_temp/git-credentials-33810bf5-fad9-4eea-955e-f41e449bb30b.config
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.2605380Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/react-native-code-push-plugin/react-native-code-push-plugin/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-33810bf5-fad9-4eea-955e-f41e449bb30b.config
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.2634217Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-33810bf5-fad9-4eea-955e-f41e449bb30b.config
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.2660189Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-33810bf5-fad9-4eea-955e-f41e449bb30b.config
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.2686834Z ##[endgroup]
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.2688491Z ##[group]Fetching the repository
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:36.2695209Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2314713Z From https://github.com/GSTJ/react-native-code-push-plugin
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2318134Z  * [new branch]      chore/release-1.0.8   -> origin/chore/release-1.0.8
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2321532Z  * [new branch]      chore/release-v1.0.12 -> origin/chore/release-v1.0.12
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2324507Z  * [new branch]      chore/release-v1.0.13 -> origin/chore/release-v1.0.13
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2327656Z  * [new branch]      chore/release-v1.0.14 -> origin/chore/release-v1.0.14
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2330673Z  * [new branch]      chore/release-v2.0.0  -> origin/chore/release-v2.0.0
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2333940Z  * [new branch]      chore/release-v2.0.1  -> origin/chore/release-v2.0.1
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2336463Z  * [new branch]      evidence/pr-44-xmldom -> origin/evidence/pr-44-xmldom
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2338405Z  * [new branch]      evidence/pr-videos    -> origin/evidence/pr-videos
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2340799Z  * [new branch]      fix/monorepo-gradle-paths -> origin/fix/monorepo-gradle-paths
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2343861Z  * [new branch]      gstj/pr-assets-dump   -> origin/gstj/pr-assets-dump
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2346485Z  * [new branch]      master                -> origin/master
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2348579Z  * [new tag]         1.0.6                 -> 1.0.6
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2350669Z  * [new tag]         1.0.7                 -> 1.0.7
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2352146Z  * [new tag]         v1.0.10               -> v1.0.10
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2353416Z  * [new tag]         v1.0.11               -> v1.0.11
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2355268Z  * [new tag]         v1.0.12               -> v1.0.12
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2357334Z  * [new tag]         v1.0.13               -> v1.0.13
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2359315Z  * [new tag]         v1.0.14               -> v1.0.14
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2361710Z  * [new tag]         v1.0.8                -> v1.0.8
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2364069Z  * [new tag]         v1.0.9                -> v1.0.9
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2366301Z  * [new tag]         v2.0.0                -> v2.0.0
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2368729Z  * [new tag]         v2.0.1                -> v2.0.1
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2374128Z [command]/usr/bin/git branch --list --remote origin/master
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2375883Z   origin/master
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2378960Z [command]/usr/bin/git rev-parse refs/remotes/origin/master
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2389008Z 716fdd3e19fe3c5d9f3748e77c380f0431c2257b
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2394947Z ##[endgroup]
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2397113Z ##[group]Determining the checkout info
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2399389Z ##[endgroup]
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2400766Z [command]/usr/bin/git sparse-checkout disable
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2440216Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2467366Z ##[group]Checking out the ref
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2470678Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2550631Z Reset branch 'master'
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2554657Z branch 'master' set up to track 'origin/master'.
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2562124Z ##[endgroup]
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2601739Z [command]/usr/bin/git log -1 --format=%H
+Publish to npm	Run actions/checkout@v7	2026-11-02T12:37:37.2623161Z 716fdd3e19fe3c5d9f3748e77c380f0431c2257b
+Publish to npm	Run pnpm/action-setup@v4	﻿2026-11-02T12:37:37.2940430Z ##[group]Run pnpm/action-setup@v4
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:37.2941878Z with:
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:37.2942759Z   dest: ~/setup-pnpm
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:37.2943728Z   run_install: null
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:37.2944663Z   cache: false
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:37.2945641Z   cache_dependency_path: pnpm-lock.yaml
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:37.2946873Z   package_json_file: package.json
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:37.2948007Z   standalone: false
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:37.2948928Z ##[endgroup]
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:37.4451107Z ##[group]Running self-installer...
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:37.8403748Z (node:2388) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:37.8409065Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:38.0146565Z Progress: resolved 1, reused 0, downloaded 0, added 0
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:38.0228274Z Packages: +1
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:38.0229916Z +
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:38.4847488Z Progress: resolved 1, reused 0, downloaded 1, added 1, done
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:38.5197428Z 
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:38.5199081Z dependencies:
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:38.5201089Z + pnpm 11.17.0 (12.16.1 is available)
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:38.5202613Z 
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:38.5224297Z Done in 904ms
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:38.6281293Z ##[endgroup]
+Publish to npm	Run pnpm/action-setup@v4	2026-11-02T12:37:38.6282683Z Installation Completed!
+Publish to npm	Run actions/setup-node@v7	﻿2026-11-02T12:37:38.6531237Z ##[group]Run actions/setup-node@v7
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:38.6532447Z with:
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:38.6533222Z   node-version-file: .nvmrc
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:38.6534172Z   cache: pnpm
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:38.6534972Z   check-latest: false
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:38.6542781Z   token: ***
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:38.6543636Z   package-manager-cache: true
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:38.6544584Z env:
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:38.6545504Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:38.6546597Z ##[endgroup]
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:38.7823855Z Node version file is not TOML file
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:38.7825864Z Resolved .nvmrc as 24
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:38.7882814Z Found in cache @ /opt/hostedtoolcache/node/24.22.1/x64
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:38.8506999Z ##[group]Environment details
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:39.1746467Z node: v24.22.1
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:39.1746838Z npm: 11.19.1
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:39.1747064Z yarn: 1.22.22
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:39.1747609Z ##[endgroup]
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:39.1769363Z [command]/home/runner/setup-pnpm/node_modules/.bin/pnpm store path --silent
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:39.7368481Z /home/runner/setup-pnpm/node_modules/.bin/store/v11
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:39.9624805Z Cache hit for: node-cache-Linux-x64-pnpm-7aea4454f7a105476526e5670d4d2853b145eb1cd9a4e79d26b32af9d9e62e0e
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:41.1827303Z Received 62914560 of 136373505 (46.1%), 59.9 MBs/sec
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:41.7435046Z Received 136373505 of 136373505 (100.0%), 83.3 MBs/sec
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:41.7435954Z Cache Size: ~130 MB (136373505 B)
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:41.7469205Z [command]/usr/bin/tar -xf /home/runner/work/_temp/76f0d901-950b-4113-ae6b-eb2349ed8012/cache.tzst -P -C /home/runner/work/react-native-code-push-plugin/react-native-code-push-plugin --use-compress-program unzstd
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:42.5668116Z Cache restored successfully
+Publish to npm	Run actions/setup-node@v7	2026-11-02T12:37:42.5720234Z Cache restored from key: node-cache-Linux-x64-pnpm-7aea4454f7a105476526e5670d4d2853b145eb1cd9a4e79d26b32af9d9e62e0e
+Publish to npm	Run pnpm install --frozen-lockfile	﻿2026-11-02T12:37:42.5902171Z ##[group]Run pnpm install --frozen-lockfile
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:42.5902684Z ^[[36;1mpnpm install --frozen-lockfile^[[0m
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:42.5931148Z shell: /usr/bin/bash -e {0}
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:42.5931749Z env:
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:42.5932106Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:42.5932443Z ##[endgroup]
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:43.2619210Z ? Verifying lockfile against supply-chain policies (911 entries)...
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:43.3354370Z Lockfile is up to date, resolution step is skipped
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:43.4004226Z Progress: resolved 1, reused 0, downloaded 0, added 0
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:43.5086954Z Packages: +828
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:43.5133686Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:44.4027509Z Progress: resolved 828, reused 346, downloaded 0, added 0
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:45.4064475Z Progress: resolved 828, reused 828, downloaded 0, added 0
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:46.4123370Z Progress: resolved 828, reused 828, downloaded 0, added 764
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:46.4613219Z Progress: resolved 828, reused 828, downloaded 0, added 828, done
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.2710470Z ✓ Lockfile passes supply-chain policies (911 entries in 4s)
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4437022Z 
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4437682Z devDependencies:
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4438580Z + @babel/core 7.29.7
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4439057Z + @release-it/conventional-changelog 12.0.0
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4439511Z + @types/jest 30.0.0
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4439872Z + @types/node 24.13.3
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4440249Z + conventional-changelog 8.1.0
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4440750Z + conventional-changelog-conventionalcommits 10.2.1
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4441499Z + conventional-recommended-bump 12.1.0
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4441937Z + expo 57.0.8
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4442267Z + jest 30.5.2
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4442622Z + magic-codemods 1.1.0
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4442991Z + magic-oxfmt-config 1.2.0
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4443411Z + magic-oxlint-config 1.2.0
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4443818Z + magic-tsconfig 1.2.0
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4444291Z + oxfmt 0.60.0
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4444657Z + oxlint 1.75.0
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4445053Z + release-it 21.0.0
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4445433Z + typescript 5.9.3
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4445659Z 
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:47.4533089Z . prepare$ pnpm run build
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:48.0065280Z . prepare: $ tsc --project tsconfig.build.json
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:48.9242464Z . prepare: Done
+Publish to npm	Run pnpm install --frozen-lockfile	2026-11-02T12:37:48.9445463Z Done in 6.3s using pnpm v11.17.0
+Publish to npm	Run pnpm run lint	﻿2026-11-02T12:37:48.9938893Z ##[group]Run pnpm run lint
+Publish to npm	Run pnpm run lint	2026-11-02T12:37:48.9939213Z ^[[36;1mpnpm run lint^[[0m
+Publish to npm	Run pnpm run lint	2026-11-02T12:37:48.9957558Z shell: /usr/bin/bash -e {0}
+Publish to npm	Run pnpm run lint	2026-11-02T12:37:48.9957836Z env:
+Publish to npm	Run pnpm run lint	2026-11-02T12:37:48.9958112Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Publish to npm	Run pnpm run lint	2026-11-02T12:37:48.9958423Z ##[endgroup]
+Publish to npm	Run pnpm run lint	2026-11-02T12:37:49.5666862Z $ oxlint --report-unused-disable-directives --deny-warnings
+Publish to npm	Run pnpm run lint	2026-11-02T12:37:49.6732030Z Found 0 warnings and 0 errors.
+Publish to npm	Run pnpm run lint	2026-11-02T12:37:49.6732806Z Finished in 64ms on 35 files with 354 rules using 4 threads.
+Publish to npm	Run pnpm run format	﻿2026-11-02T12:37:49.6931846Z ##[group]Run pnpm run format
+Publish to npm	Run pnpm run format	2026-11-02T12:37:49.6932166Z ^[[36;1mpnpm run format^[[0m
+Publish to npm	Run pnpm run format	2026-11-02T12:37:49.6949723Z shell: /usr/bin/bash -e {0}
+Publish to npm	Run pnpm run format	2026-11-02T12:37:49.6949990Z env:
+Publish to npm	Run pnpm run format	2026-11-02T12:37:49.6950238Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Publish to npm	Run pnpm run format	2026-11-02T12:37:49.6950567Z ##[endgroup]
+Publish to npm	Run pnpm run format	2026-11-02T12:37:50.2653945Z $ oxfmt --check .
+Publish to npm	Run pnpm run format	2026-11-02T12:37:50.3706294Z Checking formatting...
+Publish to npm	Run pnpm run format	2026-11-02T12:37:50.3762018Z 
+Publish to npm	Run pnpm run format	2026-11-02T12:37:50.6214648Z All matched files use the correct format.
+Publish to npm	Run pnpm run format	2026-11-02T12:37:50.6215259Z Finished in 302ms on 45 files using 4 threads.
+Publish to npm	Run pnpm run typecheck	﻿2026-11-02T12:37:50.6962773Z ##[group]Run pnpm run typecheck
+Publish to npm	Run pnpm run typecheck	2026-11-02T12:37:50.6963088Z ^[[36;1mpnpm run typecheck^[[0m
+Publish to npm	Run pnpm run typecheck	2026-11-02T12:37:50.6980901Z shell: /usr/bin/bash -e {0}
+Publish to npm	Run pnpm run typecheck	2026-11-02T12:37:50.6981174Z env:
+Publish to npm	Run pnpm run typecheck	2026-11-02T12:37:50.6981778Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Publish to npm	Run pnpm run typecheck	2026-11-02T12:37:50.6982121Z ##[endgroup]
+Publish to npm	Run pnpm run typecheck	2026-11-02T12:37:51.2560733Z $ tsc --noEmit
+Publish to npm	Run pnpm run test	﻿2026-11-02T12:37:52.2115426Z ##[group]Run pnpm run test
+Publish to npm	Run pnpm run test	2026-11-02T12:37:52.2115937Z ^[[36;1mpnpm run test^[[0m
+Publish to npm	Run pnpm run test	2026-11-02T12:37:52.2143750Z shell: /usr/bin/bash -e {0}
+Publish to npm	Run pnpm run test	2026-11-02T12:37:52.2144172Z env:
+Publish to npm	Run pnpm run test	2026-11-02T12:37:52.2144586Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Publish to npm	Run pnpm run test	2026-11-02T12:37:52.2145079Z ##[endgroup]
+Publish to npm	Run pnpm run test	2026-11-02T12:37:52.7774834Z $ node tools/dependency-security-check.mjs && node tools/release-check.mjs && jest
+Publish to npm	Run pnpm run test	2026-11-02T12:37:53.3248039Z undici 7.30.1 rejected excessive content encodings without crashing.
+Publish to npm	Run pnpm run test	2026-11-02T12:37:53.3249005Z Dependency security checks passed for @xmldom/xmldom, js-yaml, nanoid and image-size.
+Publish to npm	Run pnpm run test	2026-11-02T12:37:53.4723166Z Security migrations passed: deepmerge prototype controls, callable/named minimatch, bounded patterns, glob cancellation, Zod size gates and Expo schemas, FTP parser.
+Publish to npm	Run pnpm run test	2026-11-02T12:37:53.9570020Z Release plan passed: chore: maintain tooling -> skip
+Publish to npm	Run pnpm run test	2026-11-02T12:37:54.7663611Z Release plan passed: build(deps): patch tooling -> 2.0.2
+Publish to npm	Run pnpm run test	2026-11-02T12:37:55.5890639Z Release plan passed: fix: correct plugin -> 2.0.2
+Publish to npm	Run pnpm run test	2026-11-02T12:37:56.4173616Z Release plan passed: feat: add option -> 2.1.0
+Publish to npm	Run pnpm run test	2026-11-02T12:37:57.2238717Z Release plan passed: ci!: change contract -> 3.0.0
+Publish to npm	Run pnpm run test	2026-11-02T12:37:57.6337159Z WARNING The recommended bump is "undefined", but is overridden with "patch".
+Publish to npm	Run pnpm run test	2026-11-02T12:37:58.0296422Z Release plan passed: chore: maintain tooling -> 2.0.2
+Publish to npm	Run pnpm run test	2026-11-02T12:37:59.0557776Z PASS src/utils/__tests__/insert-last-argument.test.ts
+Publish to npm	Run pnpm run test	2026-11-02T12:37:59.2323867Z PASS src/android/__tests__/gradle-paths.test.ts
+Publish to npm	Run pnpm run test	2026-11-02T12:37:59.3093346Z PASS src/utils/__tests__/anchors.test.ts
+Publish to npm	Run pnpm run test	2026-11-02T12:37:59.3349389Z PASS src/android/__tests__/expo-templates.test.ts
+Publish to npm	Run pnpm run test	2026-11-02T12:37:59.3467681Z PASS src/utils/__tests__/add-import.test.ts
+Publish to npm	Run pnpm run test	2026-11-02T12:37:59.3672568Z PASS src/ios/__tests__/app-delegate.test.ts
+Publish to npm	Run pnpm run test	2026-11-02T12:37:59.4002710Z PASS src/utils/__tests__/code-push-gradle-path.test.ts
+Publish to npm	Run pnpm run test	2026-11-02T12:37:59.4345189Z PASS src/ios/__tests__/config.test.ts
+Publish to npm	Run pnpm run test	2026-11-02T12:37:59.4395920Z PASS src/android/__tests__/config.test.ts
+Publish to npm	Run pnpm run test	2026-11-02T12:37:59.4592874Z 
+Publish to npm	Run pnpm run test	2026-11-02T12:37:59.4596675Z Test Suites: 9 passed, 9 total
+Publish to npm	Run pnpm run test	2026-11-02T12:37:59.4597047Z Tests:       76 passed, 76 total
+Publish to npm	Run pnpm run test	2026-11-02T12:37:59.4597527Z Snapshots:   0 total
+Publish to npm	Run pnpm run test	2026-11-02T12:37:59.4597861Z Time:        1.17 s
+Publish to npm	Run pnpm run test	2026-11-02T12:37:59.4598234Z Ran all test suites.
+Publish to npm	Run pnpm run build	﻿2026-11-02T12:37:59.5584618Z ##[group]Run pnpm run build
+Publish to npm	Run pnpm run build	2026-11-02T12:37:59.5585117Z ^[[36;1mpnpm run build^[[0m
+Publish to npm	Run pnpm run build	2026-11-02T12:37:59.5607032Z shell: /usr/bin/bash -e {0}
+Publish to npm	Run pnpm run build	2026-11-02T12:37:59.5607322Z env:
+Publish to npm	Run pnpm run build	2026-11-02T12:37:59.5607597Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Publish to npm	Run pnpm run build	2026-11-02T12:37:59.5607917Z ##[endgroup]
+Publish to npm	Run pnpm run build	2026-11-02T12:38:00.1216843Z $ tsc --project tsconfig.build.json
+Publish to npm	Run pnpm run security:check	﻿2026-11-02T12:38:01.0472152Z ##[group]Run pnpm run security:check
+Publish to npm	Run pnpm run security:check	2026-11-02T12:38:01.0472501Z ^[[36;1mpnpm run security:check^[[0m
+Publish to npm	Run pnpm run security:check	2026-11-02T12:38:01.0490010Z shell: /usr/bin/bash -e {0}
+Publish to npm	Run pnpm run security:check	2026-11-02T12:38:01.0490297Z env:
+Publish to npm	Run pnpm run security:check	2026-11-02T12:38:01.0490551Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Publish to npm	Run pnpm run security:check	2026-11-02T12:38:01.0490883Z ##[endgroup]
+Publish to npm	Run pnpm run security:check	2026-11-02T12:38:01.6104373Z $ node tools/dependency-security-check.mjs && pnpm audit --audit-level high
+Publish to npm	Run pnpm run security:check	2026-11-02T12:38:02.1590505Z undici 7.30.1 rejected excessive content encodings without crashing.
+Publish to npm	Run pnpm run security:check	2026-11-02T12:38:02.1592036Z Dependency security checks passed for @xmldom/xmldom, js-yaml, nanoid and image-size.
+Publish to npm	Run pnpm run security:check	2026-11-02T12:38:02.3210730Z Security migrations passed: deepmerge prototype controls, callable/named minimatch, bounded patterns, glob cancellation, Zod size gates and Expo schemas, FTP parser.
+Publish to npm	Run pnpm run security:check	2026-11-02T12:38:03.1091777Z 3 vulnerabilities found
+Publish to npm	Run pnpm run security:check	2026-11-02T12:38:03.1092658Z Severity: 1 low (1 ignored) | 2 high (2 ignored)
+Publish to npm	Plan release	﻿2026-11-02T12:38:03.1365919Z ##[group]Run args=(--ci --release-version --npm.publish=false --github.release=false)
+Publish to npm	Plan release	2026-11-02T12:38:03.1366547Z ^[[36;1margs=(--ci --release-version --npm.publish=false --github.release=false)^[[0m
+Publish to npm	Plan release	2026-11-02T12:38:03.1367017Z ^[[36;1mif [ -n "$INCREMENT" ] && [ "$INCREMENT" != "auto" ]; then^[[0m
+Publish to npm	Plan release	2026-11-02T12:38:03.1367377Z ^[[36;1m  args+=("--increment=$INCREMENT")^[[0m
+Publish to npm	Plan release	2026-11-02T12:38:03.1367656Z ^[[36;1mfi^[[0m
+Publish to npm	Plan release	2026-11-02T12:38:03.1367896Z ^[[36;1mversion=$(pnpm exec release-it "${args[@]}")^[[0m
+Publish to npm	Plan release	2026-11-02T12:38:03.1368234Z ^[[36;1mecho "version=$version" >> "$GITHUB_OUTPUT"^[[0m
+Publish to npm	Plan release	2026-11-02T12:38:03.1368554Z ^[[36;1mif [ -z "$version" ]; then^[[0m
+Publish to npm	Plan release	2026-11-02T12:38:03.1368935Z ^[[36;1m  echo "::notice::No new version to release. Nothing was published or tagged."^[[0m
+Publish to npm	Plan release	2026-11-02T12:38:03.1369308Z ^[[36;1melse^[[0m
+Publish to npm	Plan release	2026-11-02T12:38:03.1369547Z ^[[36;1m  echo "::notice::Planned release v$version."^[[0m
+Publish to npm	Plan release	2026-11-02T12:38:03.1369829Z ^[[36;1mfi^[[0m
+Publish to npm	Plan release	2026-11-02T12:38:03.1387339Z shell: /usr/bin/bash -e {0}
+Publish to npm	Plan release	2026-11-02T12:38:03.1387659Z env:
+Publish to npm	Plan release	2026-11-02T12:38:03.1388054Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Publish to npm	Plan release	2026-11-02T12:38:03.1388499Z   INCREMENT: auto
+Publish to npm	Plan release	2026-11-02T12:38:03.1388780Z ##[endgroup]
+Publish to npm	Plan release	2026-11-02T12:38:04.4409483Z ##[notice]Planned release v2.0.2.
+Publish to npm	Configure release identity	﻿2026-11-02T12:38:04.4479089Z ##[group]Run git config user.email "gabrielstaveira@gmail.com"
+Publish to npm	Configure release identity	2026-11-02T12:38:04.4479555Z ^[[36;1mgit config user.email "gabrielstaveira@gmail.com"^[[0m
+Publish to npm	Configure release identity	2026-11-02T12:38:04.4479908Z ^[[36;1mgit config user.name "Gabriel Taveira"^[[0m
+Publish to npm	Configure release identity	2026-11-02T12:38:04.4497888Z shell: /usr/bin/bash -e {0}
+Publish to npm	Configure release identity	2026-11-02T12:38:04.4498301Z env:
+Publish to npm	Configure release identity	2026-11-02T12:38:04.4498559Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Publish to npm	Configure release identity	2026-11-02T12:38:04.4498863Z ##[endgroup]
+Publish to npm	Preview release	﻿2026-11-02T12:38:04.4615955Z ##[group]Run pnpm exec release-it --ci --dry-run --increment=2.0.2 --npm.publish=false --github.release=false
+Publish to npm	Preview release	2026-11-02T12:38:04.4616684Z ^[[36;1mpnpm exec release-it --ci --dry-run --increment=2.0.2 --npm.publish=false --github.release=false^[[0m
+Publish to npm	Preview release	2026-11-02T12:38:04.4634835Z shell: /usr/bin/bash -e {0}
+Publish to npm	Preview release	2026-11-02T12:38:04.4635123Z env:
+Publish to npm	Preview release	2026-11-02T12:38:04.4635391Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Publish to npm	Preview release	2026-11-02T12:38:04.4635707Z ##[endgroup]
+Publish to npm	Preview release	2026-11-02T12:38:05.3518232Z $ git rev-parse --abbrev-ref HEAD
+Publish to npm	Preview release	2026-11-02T12:38:05.3566427Z $ git diff --quiet HEAD
+Publish to npm	Preview release	2026-11-02T12:38:05.3630630Z $ git rev-parse --abbrev-ref HEAD  [cached]
+Publish to npm	Preview release	2026-11-02T12:38:05.3632923Z $ git config --get branch.master.remote
+Publish to npm	Preview release	2026-11-02T12:38:05.3671164Z $ git remote get-url origin
+Publish to npm	Preview release	2026-11-02T12:38:05.3705708Z ! git fetch
+Publish to npm	Preview release	2026-11-02T12:38:05.3708290Z $ git rev-parse --abbrev-ref HEAD  [cached]
+Publish to npm	Preview release	2026-11-02T12:38:05.3742208Z $ git describe --tags --match=v* --abbrev=0
+Publish to npm	Preview release	2026-11-02T12:38:05.3922670Z WARNING The recommended bump is "patch", but is overridden with "2.0.2".
+Publish to npm	Preview release	2026-11-02T12:38:05.4176475Z 🚀 Let's release react-native-code-push-plugin (2.0.1...2.0.2)
+Publish to npm	Preview release	2026-11-02T12:38:05.4177145Z Changelog:
+Publish to npm	Preview release	2026-11-02T12:38:05.4177688Z ## [2.0.2](https://github.com/GSTJ/react-native-code-push-plugin/compare/v2.0.1...v2.0.2) (2026-11-02)
+Publish to npm	Preview release	2026-11-02T12:38:05.4178147Z ### Bug Fixes
+Publish to npm	Preview release	2026-11-02T12:38:05.4179229Z * **deps:** bump source-map-js, compression and tinypool ([#52](https://github.com/GSTJ/react-native-code-push-plugin/issues/52)) ([e414adf](https://github.com/GSTJ/react-native-code-push-plugin/commit/e414adf5d107d0aaa97921e8cd1b74375f99c9e8))
+Publish to npm	Preview release	2026-11-02T12:38:05.4180945Z * **deps:** override shell-quote to 1.11.0 ([#51](https://github.com/GSTJ/react-native-code-push-plugin/issues/51)) ([339649e](https://github.com/GSTJ/react-native-code-push-plugin/commit/339649e8f33b5df0effd2fe6615e93a00528e74b))
+Publish to npm	Preview release	2026-11-02T12:38:05.4181972Z ### Build System
+Publish to npm	Preview release	2026-11-02T12:38:05.4182759Z * **deps:** patch undici and development tooling advisories ([57ca25a](https://github.com/GSTJ/react-native-code-push-plugin/commit/57ca25a0a4f1875d0462230c6854cf7c1c6bdc25))
+Publish to npm	Preview release	2026-11-02T12:38:05.4183976Z * **deps:** remediate remaining tooling advisories ([b267a3a](https://github.com/GSTJ/react-native-code-push-plugin/commit/b267a3afb415df36bd774757077a17d9503434c4))
+Publish to npm	Preview release	2026-11-02T12:38:05.4184633Z ### Chores
+Publish to npm	Preview release	2026-11-02T12:38:05.4185660Z * **deps:** bump ip-address to 10.5.1+ via scoped override ([#48](https://github.com/GSTJ/react-native-code-push-plugin/issues/48)) ([2ba6881](https://github.com/GSTJ/react-native-code-push-plugin/commit/2ba68817210248981a751852bbb3445ce580d2fb))
+Publish to npm	Preview release	2026-11-02T12:38:05.4188262Z * **deps:** bump undici and brace-expansion past advisories ([#49](https://github.com/GSTJ/react-native-code-push-plugin/issues/49)) ([d39ac95](https://github.com/GSTJ/react-native-code-push-plugin/commit/d39ac95cdc5388fff40c3fef93b7c9fe1e6280e0))
+Publish to npm	Preview release	2026-11-02T12:38:05.4189532Z ### Documentation
+Publish to npm	Preview release	2026-11-02T12:38:05.4190550Z * link the author's apps at the end of the README ([#53](https://github.com/GSTJ/react-native-code-push-plugin/issues/53)) ([dd65073](https://github.com/GSTJ/react-native-code-push-plugin/commit/dd65073f15a0af328f0db07489626c7a51c46554))
+Publish to npm	Preview release	2026-11-02T12:38:05.4191789Z ! npm version 2.0.2 --no-git-tag-version --workspaces=false
+Publish to npm	Preview release	2026-11-02T12:38:05.4195186Z $ Writing changelog to CHANGELOG.md
+Publish to npm	Preview release	2026-11-02T12:38:05.4199193Z $ git status --short --untracked-files=no
+Publish to npm	Preview release	2026-11-02T12:38:05.4260329Z Empty changeset
+Publish to npm	Preview release	2026-11-02T12:38:05.4265047Z ! git add . --update
+Publish to npm	Preview release	2026-11-02T12:38:05.4274098Z ! git commit --message chore(release): v2.0.2
+Publish to npm	Preview release	2026-11-02T12:38:05.4280595Z ! git tag --annotate --message v2.0.2
+Publish to npm	Preview release	2026-11-02T12:38:05.4280919Z 
+Publish to npm	Preview release	2026-11-02T12:38:05.4282068Z ## [2.0.2](https://github.com/GSTJ/react-native-code-push-plugin/compare/v2.0.1...v2.0.2) (2026-11-02)
+Publish to npm	Preview release	2026-11-02T12:38:05.4282774Z 
+Publish to npm	Preview release	2026-11-02T12:38:05.4283204Z ### Bug Fixes
+Publish to npm	Preview release	2026-11-02T12:38:05.4283329Z 
+Publish to npm	Preview release	2026-11-02T12:38:05.4284303Z * **deps:** bump source-map-js, compression and tinypool ([#52](https://github.com/GSTJ/react-native-code-push-plugin/issues/52)) ([e414adf](https://github.com/GSTJ/react-native-code-push-plugin/commit/e414adf5d107d0aaa97921e8cd1b74375f99c9e8))
+Publish to npm	Preview release	2026-11-02T12:38:05.4287338Z * **deps:** override shell-quote to 1.11.0 ([#51](https://github.com/GSTJ/react-native-code-push-plugin/issues/51)) ([339649e](https://github.com/GSTJ/react-native-code-push-plugin/commit/339649e8f33b5df0effd2fe6615e93a00528e74b))
+Publish to npm	Preview release	2026-11-02T12:38:05.4288109Z 
+Publish to npm	Preview release	2026-11-02T12:38:05.4288211Z ### Build System
+Publish to npm	Preview release	2026-11-02T12:38:05.4288400Z 
+Publish to npm	Preview release	2026-11-02T12:38:05.4289139Z * **deps:** patch undici and development tooling advisories ([57ca25a](https://github.com/GSTJ/react-native-code-push-plugin/commit/57ca25a0a4f1875d0462230c6854cf7c1c6bdc25))
+Publish to npm	Preview release	2026-11-02T12:38:05.4290346Z * **deps:** remediate remaining tooling advisories ([b267a3a](https://github.com/GSTJ/react-native-code-push-plugin/commit/b267a3afb415df36bd774757077a17d9503434c4))
+Publish to npm	Preview release	2026-11-02T12:38:05.4290926Z 
+Publish to npm	Preview release	2026-11-02T12:38:05.4291032Z ### Chores
+Publish to npm	Preview release	2026-11-02T12:38:05.4291147Z 
+Publish to npm	Preview release	2026-11-02T12:38:05.4292278Z * **deps:** bump ip-address to 10.5.1+ via scoped override ([#48](https://github.com/GSTJ/react-native-code-push-plugin/issues/48)) ([2ba6881](https://github.com/GSTJ/react-native-code-push-plugin/commit/2ba68817210248981a751852bbb3445ce580d2fb))
+Publish to npm	Preview release	2026-11-02T12:38:05.4294189Z * **deps:** bump undici and brace-expansion past advisories ([#49](https://github.com/GSTJ/react-native-code-push-plugin/issues/49)) ([d39ac95](https://github.com/GSTJ/react-native-code-push-plugin/commit/d39ac95cdc5388fff40c3fef93b7c9fe1e6280e0))
+Publish to npm	Preview release	2026-11-02T12:38:05.4295017Z 
+Publish to npm	Preview release	2026-11-02T12:38:05.4295124Z ### Documentation
+Publish to npm	Preview release	2026-11-02T12:38:05.4295262Z 
+Publish to npm	Preview release	2026-11-02T12:38:05.4296279Z * link the author's apps at the end of the README ([#53](https://github.com/GSTJ/react-native-code-push-plugin/issues/53)) ([dd65073](https://github.com/GSTJ/react-native-code-push-plugin/commit/dd65073f15a0af328f0db07489626c7a51c46554)) --cleanup=verbatim v2.0.2
+Publish to npm	Preview release	2026-11-02T12:38:05.4297428Z 🏁 Done (in 0s.)
+Publish to npm	Post Run actions/setup-node@v7	﻿2026-11-02T12:38:05.4599932Z Post job cleanup.
+Publish to npm	Post Run actions/setup-node@v7	2026-11-02T12:38:05.5725476Z Cache hit occurred on the primary key node-cache-Linux-x64-pnpm-7aea4454f7a105476526e5670d4d2853b145eb1cd9a4e79d26b32af9d9e62e0e, not saving cache.
+Publish to npm	Post Run pnpm/action-setup@v4	﻿2026-11-02T12:38:05.5822833Z Post job cleanup.
+Publish to npm	Post Run pnpm/action-setup@v4	2026-11-02T12:38:05.7302675Z Pruning is unnecessary.
+Publish to npm	Post Run actions/checkout@v7	﻿2026-11-02T12:38:05.7445319Z Post job cleanup.
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.8336739Z [command]/usr/bin/git version
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.8375131Z git version 2.56.0
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.8407480Z Temporarily overriding HOME='/home/runner/work/_temp/c6d6431c-ec48-47b4-b8ec-1bd3bac54997' before making global git config changes
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.8408308Z Adding repository directory to the temporary git global config as a safe directory
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.8413068Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/react-native-code-push-plugin/react-native-code-push-plugin
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.8442950Z Removing SSH command configuration
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.8449234Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.8484490Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.8711236Z Removing HTTP extra header
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.8717071Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.8750048Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.8977772Z Removing includeIf entries pointing to credentials config files
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.8982370Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9006247Z includeif.gitdir:/home/runner/work/react-native-code-push-plugin/react-native-code-push-plugin/.git.path
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9007478Z includeif.gitdir:/home/runner/work/react-native-code-push-plugin/react-native-code-push-plugin/.git/worktrees/*.path
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9008193Z includeif.gitdir:/github/workspace/.git.path
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9008871Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9014350Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/react-native-code-push-plugin/react-native-code-push-plugin/.git.path
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9035074Z /home/runner/work/_temp/git-credentials-33810bf5-fad9-4eea-955e-f41e449bb30b.config
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9044676Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/react-native-code-push-plugin/react-native-code-push-plugin/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-33810bf5\-fad9\-4eea\-955e\-f41e449bb30b\.config
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9079309Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/react-native-code-push-plugin/react-native-code-push-plugin/.git/worktrees/*.path
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9106050Z /home/runner/work/_temp/git-credentials-33810bf5-fad9-4eea-955e-f41e449bb30b.config
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9114587Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/react-native-code-push-plugin/react-native-code-push-plugin/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-33810bf5\-fad9\-4eea\-955e\-f41e449bb30b\.config
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9143553Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9162783Z /github/runner_temp/git-credentials-33810bf5-fad9-4eea-955e-f41e449bb30b.config
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9169895Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-33810bf5\-fad9\-4eea\-955e\-f41e449bb30b\.config
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9198903Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9218575Z /github/runner_temp/git-credentials-33810bf5-fad9-4eea-955e-f41e449bb30b.config
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9224720Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-33810bf5\-fad9\-4eea\-955e\-f41e449bb30b\.config
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9254523Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Publish to npm	Post Run actions/checkout@v7	2026-11-02T12:38:05.9471862Z Removing credentials config '/home/runner/work/_temp/git-credentials-33810bf5-fad9-4eea-955e-f41e449bb30b.config'
+Publish to npm	Complete job	﻿2026-11-02T12:38:05.9606959Z Cleaning up orphan processes
+Publish to npm	Complete job	2026-11-02T12:38:05.9958836Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: pnpm/action-setup@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

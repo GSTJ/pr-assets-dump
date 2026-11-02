@@ -1,0 +1,241 @@
+{
+  "react-native-code-push-plugin": {
+    "id": "react-native-code-push-plugin@2.0.1",
+    "name": "react-native-code-push-plugin",
+    "version": "2.0.1",
+    "size": 18639,
+    "unpackedSize": 61212,
+    "shasum": "d9c334ad1ee0ac3fadc045119f0b97f359def579",
+    "integrity": "sha512-NzvAEG8Mt2dp3is3yRkrTXJFBQY2bEb7xLjOcQVfg/lhSKiw4OnPdQyMLy9eoxrRmh5zTWGZKcH6kSGRWGaLFQ==",
+    "filename": "react-native-code-push-plugin-2.0.1.tgz",
+    "files": [
+      {
+        "path": "README.md",
+        "size": 3895,
+        "mode": 420
+      },
+      {
+        "path": "app.plugin.js",
+        "size": 37,
+        "mode": 420
+      },
+      {
+        "path": "build/android/buildscript-dependency.d.ts",
+        "size": 1420,
+        "mode": 420
+      },
+      {
+        "path": "build/android/buildscript-dependency.js",
+        "size": 2834,
+        "mode": 420
+      },
+      {
+        "path": "build/android/buildscript-dependency.js.map",
+        "size": 959,
+        "mode": 420
+      },
+      {
+        "path": "build/android/main-application-dependency.d.ts",
+        "size": 791,
+        "mode": 420
+      },
+      {
+        "path": "build/android/main-application-dependency.js",
+        "size": 3584,
+        "mode": 420
+      },
+      {
+        "path": "build/android/main-application-dependency.js.map",
+        "size": 1482,
+        "mode": 420
+      },
+      {
+        "path": "build/android/settings-dependency.d.ts",
+        "size": 523,
+        "mode": 420
+      },
+      {
+        "path": "build/android/settings-dependency.js",
+        "size": 1400,
+        "mode": 420
+      },
+      {
+        "path": "build/android/settings-dependency.js.map",
+        "size": 734,
+        "mode": 420
+      },
+      {
+        "path": "build/android/strings-dependency.d.ts",
+        "size": 312,
+        "mode": 420
+      },
+      {
+        "path": "build/android/strings-dependency.js",
+        "size": 1888,
+        "mode": 420
+      },
+      {
+        "path": "build/android/strings-dependency.js.map",
+        "size": 1260,
+        "mode": 420
+      },
+      {
+        "path": "build/index.d.ts",
+        "size": 195,
+        "mode": 420
+      },
+      {
+        "path": "build/index.js",
+        "size": 1874,
+        "mode": 420
+      },
+      {
+        "path": "build/index.js.map",
+        "size": 1008,
+        "mode": 420
+      },
+      {
+        "path": "build/ios/app-delegate-dependency.d.ts",
+        "size": 1321,
+        "mode": 420
+      },
+      {
+        "path": "build/ios/app-delegate-dependency.js",
+        "size": 3196,
+        "mode": 420
+      },
+      {
+        "path": "build/ios/app-delegate-dependency.js.map",
+        "size": 1210,
+        "mode": 420
+      },
+      {
+        "path": "build/ios/bridging-header-dependency.d.ts",
+        "size": 1219,
+        "mode": 420
+      },
+      {
+        "path": "build/ios/bridging-header-dependency.js",
+        "size": 3183,
+        "mode": 420
+      },
+      {
+        "path": "build/ios/bridging-header-dependency.js.map",
+        "size": 1428,
+        "mode": 420
+      },
+      {
+        "path": "build/ios/info-plist-dependency.d.ts",
+        "size": 367,
+        "mode": 420
+      },
+      {
+        "path": "build/ios/info-plist-dependency.js",
+        "size": 1247,
+        "mode": 420
+      },
+      {
+        "path": "build/ios/info-plist-dependency.js.map",
+        "size": 714,
+        "mode": 420
+      },
+      {
+        "path": "build/plugin-config.d.ts",
+        "size": 308,
+        "mode": 420
+      },
+      {
+        "path": "build/plugin-config.js",
+        "size": 118,
+        "mode": 420
+      },
+      {
+        "path": "build/plugin-config.js.map",
+        "size": 118,
+        "mode": 420
+      },
+      {
+        "path": "build/utils/add-below-anchor-if-not-found.d.ts",
+        "size": 781,
+        "mode": 420
+      },
+      {
+        "path": "build/utils/add-below-anchor-if-not-found.js",
+        "size": 1326,
+        "mode": 420
+      },
+      {
+        "path": "build/utils/add-below-anchor-if-not-found.js.map",
+        "size": 551,
+        "mode": 420
+      },
+      {
+        "path": "build/utils/add-import.d.ts",
+        "size": 777,
+        "mode": 420
+      },
+      {
+        "path": "build/utils/add-import.js",
+        "size": 1860,
+        "mode": 420
+      },
+      {
+        "path": "build/utils/add-import.js.map",
+        "size": 1193,
+        "mode": 420
+      },
+      {
+        "path": "build/utils/code-push-gradle-path.d.ts",
+        "size": 688,
+        "mode": 420
+      },
+      {
+        "path": "build/utils/code-push-gradle-path.js",
+        "size": 1054,
+        "mode": 420
+      },
+      {
+        "path": "build/utils/code-push-gradle-path.js.map",
+        "size": 294,
+        "mode": 420
+      },
+      {
+        "path": "build/utils/insert-last-argument.d.ts",
+        "size": 920,
+        "mode": 420
+      },
+      {
+        "path": "build/utils/insert-last-argument.js",
+        "size": 4718,
+        "mode": 420
+      },
+      {
+        "path": "build/utils/insert-last-argument.js.map",
+        "size": 3533,
+        "mode": 420
+      },
+      {
+        "path": "build/utils/replace-if-not-found.d.ts",
+        "size": 866,
+        "mode": 420
+      },
+      {
+        "path": "build/utils/replace-if-not-found.js",
+        "size": 1415,
+        "mode": 420
+      },
+      {
+        "path": "build/utils/replace-if-not-found.js.map",
+        "size": 561,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 2050,
+        "mode": 420
+      }
+    ],
+    "entryCount": 45,
+    "bundled": []
+  }
+}

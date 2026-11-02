@@ -1,0 +1,5 @@
+{"conclusion":"success","name":"Lint, test and build","status":"completed"}
+{"conclusion":"skipped","name":"checks / 🧭 Route","status":"completed"}
+{"conclusion":"success","name":"Publish to npm","status":"completed"}
+{"conclusion":"success","name":"checks / 👮 Lint, Format, Typecheck","status":"completed"}
+{"conclusion":null,"name":"Analyze (javascript)","status":"in_progress"}
