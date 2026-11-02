@@ -1,0 +1,70 @@
+TESTED HEAD bf2048044bc7f8f7d0f77b4b4de5640e2006b7cf
+$ npm ci
+
+added 37 packages, and audited 38 packages in 734ms
+
+9 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm warn install-scripts 2 packages had install scripts blocked because they are not covered by allowScripts:
+npm warn install-scripts   esbuild@0.25.12 (postinstall: node install.js)
+npm warn install-scripts   fsevents@2.3.3 (install: (install scripts present))
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+exit=0 expected=0
+$ npm run test:history
+npm notice run test:history
+npm notice run node test/history.mjs
+Historical migration output: 3cce8b30d6a14759fe78c3cca61b9bc2609b2b64
+Overlay manifest: ["apps/mobile/src/app/_layout.tsx","apps/mobile/src/components/BottomAction/styles.ts","apps/mobile/src/components/BreedPicker/index.tsx","apps/mobile/src/components/Button/styles.tsx","apps/mobile/src/components/DefaultModal/styles.tsx","apps/mobile/src/components/FeedbackCard/components/LikeFeedback/styles.tsx","apps/mobile/src/components/FeedbackCard/components/MaybeFeedback/styles.ts","apps/mobile/src/components/FeedbackCard/components/NopeFeedback/styles.ts","apps/mobile/src/components/FeedbackCard/styles.tsx","apps/mobile/src/components/Glassmorphism/styles.tsx","apps/mobile/src/components/Input/styles.ts","apps/mobile/src/components/LikeLimitReached/styles.ts","apps/mobile/src/components/MainCard/components/Distance/styles.ts","apps/mobile/src/components/MainCard/components/Pagination/styles.ts","apps/mobile/src/components/MainCard/components/PersonalInfo/styles.tsx","apps/mobile/src/components/MainCard/styles.tsx","apps/mobile/src/components/MatchActionBar/styles.tsx","apps/mobile/src/components/NetworkBoundary/styles.tsx","apps/mobile/src/components/Picker/styles.ts","apps/mobile/src/components/ProfileImageUploader/components/AddUserPhoto/styles.ts","apps/mobile/src/components/RadioButtons/styles.ts","apps/mobile/src/components/Slider/styles.ts","apps/mobile/src/components/blur-view.tsx","apps/mobile/src/components/divider.tsx","apps/mobile/src/components/layout.ts","apps/mobile/src/components/loading.tsx","apps/mobile/src/components/text.tsx","apps/mobile/src/services/app-review.tsx","apps/mobile/src/views/(auth)/AskForLocation/styles.ts","apps/mobile/src/views/(auth)/CompleteProfile/styles.ts","apps/mobile/src/views/(auth)/CreateProfile/styles.ts","apps/mobile/src/views/(auth)/OneTimeCode/components/GoBack/styles.tsx","apps/mobile/src/views/(auth)/OneTimeCode/components/OtpDigit/styles.tsx","apps/mobile/src/views/(auth)/OneTimeCode/components/OtpInput/styles.ts","apps/mobile/src/views/(auth)/OneTimeCode/styles.ts","apps/mobile/src/views/(auth)/SignIn/components/EmailInput/styles.tsx","apps/mobile/src/views/(auth)/SignIn/components/HeroText/styles.ts","apps/mobile/src/views/(auth)/SignIn/styles.ts","apps/mobile/src/views/(tabs)/Messages/components/Header/styles.tsx","apps/mobile/src/views/(tabs)/Messages/components/Message/styles.ts","apps/mobile/src/views/(tabs)/Messages/components/Preview/styles.ts","apps/mobile/src/views/(tabs)/Messages/components/SearchBar/styles.tsx","apps/mobile/src/views/(tabs)/Messages/styles.ts","apps/mobile/src/views/(tabs)/Profile/components/Config/styles.tsx","apps/mobile/src/views/(tabs)/Profile/components/UserDogProfileHeader/styles.tsx","apps/mobile/src/views/(tabs)/Profile/components/current-plan-config.tsx","apps/mobile/src/views/(tabs)/Profile/styles.ts","apps/mobile/src/views/(tabs)/Swipe/components/SwipeBackButton/styles.ts","apps/mobile/src/views/(tabs)/Swipe/components/SwipeHandler/styles.ts","apps/mobile/src/views/(tabs)/Swipe/components/SwipeRequestFeedback/styles.ts","apps/mobile/src/views/(tabs)/Swipe/styles.ts","apps/mobile/src/views/Chat/components/Header/styles.tsx","apps/mobile/src/views/Chat/components/Message/styles.ts","apps/mobile/src/views/Chat/components/NextDay/styles.ts","apps/mobile/src/views/Chat/components/Send/styles.ts","apps/mobile/src/views/Chat/styles.ts","apps/mobile/src/views/DogProfile/components/GoBack/styles.tsx","apps/mobile/src/views/DogProfile/components/breed-tag.tsx","apps/mobile/src/views/DogProfile/styles.ts","apps/mobile/src/views/EditProfile/styles.ts","apps/mobile/src/views/ForceUpdate/styles.ts","apps/mobile/src/views/LocationMap/components/Bubble/styles.ts","apps/mobile/src/views/LocationMap/components/Marker/styles.ts","apps/mobile/src/views/LocationMap/components/Submit/styles.ts","apps/mobile/src/views/LocationMap/styles.tsx","apps/mobile/src/views/NewMatch/styles.tsx","apps/mobile/src/views/Preferences/styles.ts","apps/mobile/src/views/UpgradeWall/components/Benefits/styles.ts","apps/mobile/src/views/UpgradeWall/components/Checkbox/styles.ts","apps/mobile/src/views/UpgradeWall/components/PlanPackages/styles.ts","apps/mobile/src/views/UpgradeWall/styles.tsx"]
+npm notice run test
+npm notice run tsx test/run.ts && tsx src/parity.ts && tsx src/parity-manual.ts && npm run test:security
+✓ layout-plain
+✓ divider-const
+✓ text-keystone
+✓ button-variants
+✓ pagination-animated-variants
+✓ radio-buttons-if-blocks
+✓ feedback-card-fragment
+✓ main-card-fragment-source
+✓ messages-message-attrs
+✓ signin-attrs-array
+✓ input-attrs-object
+✓ chat-message-two-branches
+✓ app-review-self-consumer
+✓ checkbox-variant-color
+✓ slider-consts
+✓ ask-for-location-stylesheet-clash
+✓ glassmorphism-attrs-fn
+✓ new-match-local-animated
+
+18 snapshots passed
+[parity] 402/402 comparisons match across 181 definitions in 44 modules
+[parity] clean
+[parity:manual] 320/320 comparisons match across 105 definitions in 28 modules
+[parity:manual] clean
+npm notice run test:security
+npm notice run node test/security.mjs
+PASS ts-morph consumer globs: braces, globstar, exclusions, missing paths, extglobs, dotfiles
+PASS ts-morph consumer globs: braces, globstar, exclusions, missing paths, extglobs, dotfiles
+PASS malicious optimizationLevel=2 pattern: 64 explicit / 100000 default cap; large-set matching
+
+exit=0 expected=0
+$ npm audit
+found 0 vulnerabilities
+
+exit=0 expected=0
+$ npm run analyze
+npm notice run analyze
+npm notice run tsx src/cli.ts analyze
+analyze: 0/0 style modules converted (0 definitions, 0 variant groups, 0 call-site files), 0 useTheme files
+report → .unistyles-codemod/report.json
+
+exit=0 expected=0
+$ node_modules/.bin/tsx src/cli.ts unknown
+unknown command "unknown"; expected analyze or transform
+
+exit=2 expected=2
+PASS all tested files restored byte for byte; developer CLI proof only
