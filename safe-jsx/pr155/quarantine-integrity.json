@@ -1,0 +1,292 @@
+{
+  "checkedAt": "2026-11-02T22:42:14.039058+00:00",
+  "cutoff": "2026-10-19T22:42:14.039058+00:00",
+  "packages": [
+    {
+      "package": "@babel/helpers",
+      "version": "7.29.10",
+      "published": "2026-10-07T09:51:46.135Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/%40babel%2Fhelpers",
+      "tarball": "https://registry.npmjs.org/@babel/helpers/-/helpers-7.29.10.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:14 GMT"
+    },
+    {
+      "package": "@babel/traverse",
+      "version": "7.29.10",
+      "published": "2026-10-07T09:50:57.831Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/%40babel%2Ftraverse",
+      "tarball": "https://registry.npmjs.org/@babel/traverse/-/traverse-7.29.10.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:14 GMT"
+    },
+    {
+      "package": "@conventional-changelog/git-client",
+      "version": "3.2.0",
+      "published": "2026-10-05T18:13:08.948Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/%40conventional-changelog%2Fgit-client",
+      "tarball": "https://registry.npmjs.org/@conventional-changelog/git-client/-/git-client-3.2.0.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:14 GMT"
+    },
+    {
+      "package": "@napi-rs/wasm-runtime",
+      "version": "1.2.5",
+      "published": "2026-10-05T08:43:15.369Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/%40napi-rs%2Fwasm-runtime",
+      "tarball": "https://registry.npmjs.org/@napi-rs/wasm-runtime/-/wasm-runtime-1.2.5.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:14 GMT"
+    },
+    {
+      "package": "@typescript-eslint/parser",
+      "version": "8.72.0",
+      "published": "2026-10-19T17:11:48.266Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/%40typescript-eslint%2Fparser",
+      "tarball": "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-8.72.0.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:14 GMT"
+    },
+    {
+      "package": "@typescript-eslint/project-service",
+      "version": "8.72.0",
+      "published": "2026-10-19T17:10:18.937Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/%40typescript-eslint%2Fproject-service",
+      "tarball": "https://registry.npmjs.org/@typescript-eslint/project-service/-/project-service-8.72.0.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:14 GMT"
+    },
+    {
+      "package": "@typescript-eslint/scope-manager",
+      "version": "8.72.0",
+      "published": "2026-10-19T17:07:24.395Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/%40typescript-eslint%2Fscope-manager",
+      "tarball": "https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-8.72.0.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:14 GMT"
+    },
+    {
+      "package": "@typescript-eslint/tsconfig-utils",
+      "version": "8.72.0",
+      "published": "2026-10-19T17:07:36.708Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/%40typescript-eslint%2Ftsconfig-utils",
+      "tarball": "https://registry.npmjs.org/@typescript-eslint/tsconfig-utils/-/tsconfig-utils-8.72.0.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:14 GMT"
+    },
+    {
+      "package": "@typescript-eslint/types",
+      "version": "8.72.0",
+      "published": "2026-10-19T17:07:35.499Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/%40typescript-eslint%2Ftypes",
+      "tarball": "https://registry.npmjs.org/@typescript-eslint/types/-/types-8.72.0.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:14 GMT"
+    },
+    {
+      "package": "@typescript-eslint/typescript-estree",
+      "version": "8.72.0",
+      "published": "2026-10-19T17:10:29.340Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/%40typescript-eslint%2Ftypescript-estree",
+      "tarball": "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-8.72.0.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:14 GMT"
+    },
+    {
+      "package": "@typescript-eslint/visitor-keys",
+      "version": "8.72.0",
+      "published": "2026-10-19T17:08:15.774Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/%40typescript-eslint%2Fvisitor-keys",
+      "tarball": "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.72.0.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:15 GMT"
+    },
+    {
+      "package": "acorn",
+      "version": "8.19.0",
+      "published": "2026-10-05T12:51:20.979Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/acorn",
+      "tarball": "https://registry.npmjs.org/acorn/-/acorn-8.19.0.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:15 GMT"
+    },
+    {
+      "package": "baseline-browser-mapping",
+      "version": "2.11.30",
+      "published": "2026-10-19T19:47:37.763Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/baseline-browser-mapping",
+      "tarball": "https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.11.30.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:15 GMT"
+    },
+    {
+      "package": "browserslist",
+      "version": "4.29.4",
+      "published": "2026-10-19T11:01:43.789Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/browserslist",
+      "tarball": "https://registry.npmjs.org/browserslist/-/browserslist-4.29.4.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:15 GMT"
+    },
+    {
+      "package": "bser",
+      "version": "2.1.2",
+      "published": "2026-10-09T17:29:42.631Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/bser",
+      "tarball": "https://registry.npmjs.org/bser/-/bser-2.1.2.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:15 GMT"
+    },
+    {
+      "package": "caniuse-lite",
+      "version": "1.0.30001816",
+      "published": "2026-10-13T12:11:26.899Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/caniuse-lite",
+      "tarball": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001816.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:15 GMT"
+    },
+    {
+      "package": "cjs-module-lexer",
+      "version": "2.3.0",
+      "published": "2026-10-05T07:57:24.285Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/cjs-module-lexer",
+      "tarball": "https://registry.npmjs.org/cjs-module-lexer/-/cjs-module-lexer-2.3.0.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:15 GMT"
+    },
+    {
+      "package": "conventional-changelog-writer",
+      "version": "9.3.0",
+      "published": "2026-10-05T18:13:14.091Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/conventional-changelog-writer",
+      "tarball": "https://registry.npmjs.org/conventional-changelog-writer/-/conventional-changelog-writer-9.3.0.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:15 GMT"
+    },
+    {
+      "package": "conventional-commits-parser",
+      "version": "7.1.3",
+      "published": "2026-10-05T18:13:06.119Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/conventional-commits-parser",
+      "tarball": "https://registry.npmjs.org/conventional-commits-parser/-/conventional-commits-parser-7.1.3.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:16 GMT"
+    },
+    {
+      "package": "electron-to-chromium",
+      "version": "1.5.459",
+      "published": "2026-10-17T06:03:37.917Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/electron-to-chromium",
+      "tarball": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.459.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:16 GMT"
+    },
+    {
+      "package": "fb-watchman",
+      "version": "2.0.4",
+      "published": "2026-10-09T17:49:25.524Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/fb-watchman",
+      "tarball": "https://registry.npmjs.org/fb-watchman/-/fb-watchman-2.0.4.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:16 GMT"
+    },
+    {
+      "package": "napi-postinstall",
+      "version": "0.3.5",
+      "published": "2026-10-19T13:17:43.774Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/napi-postinstall",
+      "tarball": "https://registry.npmjs.org/napi-postinstall/-/napi-postinstall-0.3.5.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:16 GMT"
+    },
+    {
+      "package": "node-releases",
+      "version": "2.0.59",
+      "published": "2026-10-15T08:12:40.371Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/node-releases",
+      "tarball": "https://registry.npmjs.org/node-releases/-/node-releases-2.0.59.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:16 GMT"
+    },
+    {
+      "package": "react-is",
+      "version": "19.3.1",
+      "published": "2026-10-14T16:47:50.866Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/react-is",
+      "tarball": "https://registry.npmjs.org/react-is/-/react-is-19.3.1.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:16 GMT"
+    },
+    {
+      "package": "update-browserslist-db",
+      "version": "1.3.4",
+      "published": "2026-10-07T20:28:48.154Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/update-browserslist-db",
+      "tarball": "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.3.4.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:16 GMT"
+    },
+    {
+      "package": "verkit",
+      "version": "0.5.0",
+      "published": "2026-09-18T17:52:29.936Z",
+      "eligible": true,
+      "integrityMatchesRegistry": true,
+      "tarballIntegrityVerified": true,
+      "registry": "https://registry.npmjs.org/verkit",
+      "tarball": "https://registry.npmjs.org/verkit/-/verkit-0.5.0.tgz",
+      "registryDate": "Mon, 02 Nov 2026 22:42:16 GMT"
+    }
+  ]
+}
