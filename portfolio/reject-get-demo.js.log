@@ -1,0 +1,8 @@
+/private/tmp/portfolio-validation-mglI7SJ5/fix/scripts/get-demo.js:25
+      throw new Error("Capture source is not the English portfolio");
+            ^
+
+Error: Capture source is not the English portfolio
+    at capture (/private/tmp/portfolio-validation-mglI7SJ5/fix/scripts/get-demo.js:25:13)
+
+Node.js v24.18.1
