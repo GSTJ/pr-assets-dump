@@ -1,0 +1,66 @@
+GSTJ/react-native-code-push-plugin
+Tested source commit: 69f72b6abf7b7fe37cedc2d3ff1cc8208ae96789
+
+
+$ lint
+$ oxlint --report-unused-disable-directives --deny-warnings
+
+$ format
+$ oxfmt --check .
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 194ms on 45 files using 18 threads.
+
+$ typecheck
+$ tsc --noEmit
+
+$ test
+$ node tools/dependency-security-check.mjs && node tools/release-check.mjs && jest
+undici 7.30.1 rejected excessive content encodings without crashing.
+Dependency security checks passed for @xmldom/xmldom, js-yaml, nanoid and image-size.
+Expo config merge rejected prototype poisoning and preserved safe values.
+Security migrations passed: deepmerge prototype controls, callable/named minimatch, bounded patterns, glob cancellation, Zod size gates and Expo schemas, FTP parser.
+Release plan passed: chore: maintain tooling -> skip
+Release plan passed: build(deps): patch tooling -> 2.0.2
+Release plan passed: fix: correct plugin -> 2.0.2
+Release plan passed: feat: add option -> 2.1.0
+Release plan passed: ci!: change contract -> 3.0.0
+WARNING The recommended bump is "undefined", but is overridden with "patch".
+Release plan passed: chore: maintain tooling -> 2.0.2
+
+Test Suites: 9 passed, 9 total
+Tests:       76 passed, 76 total
+Snapshots:   0 total
+Time:        0.524 s, estimated 1 s
+Ran all test suites.
+$ build
+$ tsc --project tsconfig.build.json
+
+$ changelog
+$ node tools/changelog-check.mjs
+changelog preset check passed (13 synthetic commits, 3 breaking; bumps: feat!=major, feat=minor, fix=patch, build(deps)=patch, changelog-only=null, hidden-only=null)
+negative control passed (hiding the visible types breaks 7 assertions: feat renders, fix renders, build renders, build:deps renders, refactor renders, chore renders, docs renders)
+
+$ security
+$ node tools/dependency-security-check.mjs && pnpm audit --audit-level high
+undici 7.30.1 rejected excessive content encodings without crashing.
+Dependency security checks passed for @xmldom/xmldom, js-yaml, nanoid and image-size.
+Expo config merge rejected prototype poisoning and preserved safe values.
+Security migrations passed: deepmerge prototype controls, callable/named minimatch, bounded patterns, glob cancellation, Zod size gates and Expo schemas, FTP parser.
+3 vulnerabilities found
+Severity: 1 low (1 ignored) | 2 high (2 ignored)
+
+$ pack
+npm notice 2.0kB package.json
+npm notice Tarball Details
+npm notice name: react-native-code-push-plugin
+npm notice version: 2.0.1
+npm notice filename: react-native-code-push-plugin-2.0.1.tgz
+npm notice package size: 18.6 kB
+npm notice unpacked size: 61.2 kB
+npm notice shasum: d9c334ad1ee0ac3fadc045119f0b97f359def579
+npm notice integrity: sha512-NzvAEG8Mt2dp3[...]cH6kSGRWGaLFQ==
+npm notice total files: 45
+npm notice
+react-native-code-push-plugin-2.0.1.tgz
