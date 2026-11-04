@@ -1,0 +1,89 @@
+{
+  "results": [
+    {
+      "route": "en-US",
+      "width": 375,
+      "status": 200,
+      "heading": "I build apps and help teams build theirs.",
+      "overflow": false
+    },
+    {
+      "route": "en-US",
+      "width": 768,
+      "status": 200,
+      "heading": "I build apps and help teams build theirs.",
+      "overflow": false
+    },
+    {
+      "route": "en-US",
+      "width": 1280,
+      "status": 200,
+      "heading": "I build apps and help teams build theirs.",
+      "overflow": false
+    },
+    {
+      "route": "en-US",
+      "width": 1920,
+      "status": 200,
+      "heading": "I build apps and help teams build theirs.",
+      "overflow": false
+    },
+    {
+      "route": "en-US",
+      "width": 2560,
+      "status": 200,
+      "heading": "I build apps and help teams build theirs.",
+      "overflow": false
+    },
+    {
+      "route": "pt-BR",
+      "width": 1280,
+      "status": 200,
+      "heading": "Faço apps e ajudo times a fazer os deles.",
+      "overflow": false
+    },
+    {
+      "route": "en-US/links",
+      "width": 1280,
+      "status": 200,
+      "heading": "Gabriel Taveira.",
+      "overflow": false
+    },
+    {
+      "route": "en-US/resume",
+      "width": 1280,
+      "status": 200,
+      "heading": "Gabriel Taveira",
+      "overflow": false
+    },
+    {
+      "route": "en-US/security",
+      "width": 1280,
+      "status": 200,
+      "heading": "I find the boundary, reproduce the failure, and fix it.",
+      "overflow": false
+    },
+    {
+      "route": "pt-BR/links",
+      "width": 1280,
+      "status": 200,
+      "heading": "Gabriel Taveira.",
+      "overflow": false
+    },
+    {
+      "route": "pt-BR/resume",
+      "width": 1280,
+      "status": 200,
+      "heading": "Gabriel Taveira",
+      "overflow": false
+    },
+    {
+      "route": "pt-BR/security",
+      "width": 1280,
+      "status": 200,
+      "heading": "Encontro a fronteira, reproduzo a falha e resolvo.",
+      "overflow": false
+    }
+  ],
+  "errors": []
+}
