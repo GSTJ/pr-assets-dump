@@ -1,0 +1,26 @@
+[
+  {
+    "input": "const count = 0; const view = count && <div />;",
+    "fixed": true,
+    "messages": [],
+    "output": "const count = 0; const view = Boolean(count) && <div />;"
+  },
+  {
+    "input": "const count = 0; const view = Boolean(count) && <div />;",
+    "fixed": false,
+    "messages": [],
+    "output": "const count = 0; const view = Boolean(count) && <div />;"
+  },
+  {
+    "input": "const Boolean = x => x; const count = 0; const view = count && <div />;",
+    "fixed": true,
+    "messages": [],
+    "output": "const Boolean = x => x; const count = 0; const view = !!(count) && <div />;"
+  },
+  {
+    "input": "const count = 0; const view = count && <>hello</>;",
+    "fixed": true,
+    "messages": [],
+    "output": "const count = 0; const view = Boolean(count) && <>hello</>;"
+  }
+]
