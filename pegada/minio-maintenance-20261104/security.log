@@ -1,0 +1,13 @@
+$ node scripts/test-image-size-patch.cjs && node scripts/test-transitive-security.cjs
+PASS ICNS zero-length entry
+PASS JXL zero-length box
+PASS HEIF zero-length box
+PASS node-forge signature round trip
+PASS URI decoder
+PASS Joi multiple emails
+PASS legacy minimatch
+PASS modern minimatch
+PASS glob cancellation stops traversal
+minimatch 3.1.5 /Users/gabrieltaveira/.t3/worktrees/pegada/t3-57df2862/node_modules/minimatch/minimatch.js
+deepmerge 4.3.1 /Users/gabrieltaveira/.t3/worktrees/pegada/t3-57df2862/node_modules/deepmerge/dist/cjs.js
+deepmerge UMD /Users/gabrieltaveira/.t3/worktrees/pegada/t3-57df2862/node_modules/deepmerge/dist/umd.js

@@ -1,0 +1,10 @@
+{"version":2,"width":120,"height":36,"timestamp":1793794973,"command":"bash /tmp/pegada-maintenance-20261104/run-final-proof.sh","env":{"SHELL":"/opt/homebrew/bin/fish"}}
+[0.033578, "o", "$ git rev-parse HEAD\r\n"]
+[0.051302, "o", "48dfebfb1d8280726154d8286b99c0bfc287fba3\r\n"]
+[0.051972, "o", "$ pnpm test (full output saved as final-test.log)\r\n"]
+[53.589622, "o", "155:@pegada/nextjs:test: ℹ tests 81\r\n158:@pegada/nextjs:test: ℹ fail 0\r\n313:@pegada/mobile:test: Test Suites: 50 passed, 50 total\r\n314:@pegada/mobile:test: Tests:       391 passed, 391 total\r\n"]
+[53.589869, "o", "7193:@pegada/api:test: Test Suites: 37 passed, 37 total\r\n7194:@pegada/api:test: Tests:       372 passed, 372 total\r\n7199: Tasks:    3 successful, 3 total\r\n7206:Ran 30 tests in 16.842s\r\n7208:OK\r\n7210:PASS ICNS zero-length entry\r\n7211:PASS JXL zero-length box\r\n7212:PASS HEIF zero-length box\r\n7213:"]
+[53.589875, "o", "PASS node-forge signature round trip\r\n7214:PASS URI decoder\r\n7215:PASS Joi multiple emails\r\n7216:PASS legacy minimatch\r\n7217:PASS modern minimatch\r\n7218:PASS glob cancellation stops traversal\r\n"]
+[53.589896, "o", "7357:✔ successful upgrades come from the upgrade breakdown, not the raw event count (0.295584ms)\r\n7420:ℹ tests 196\r\n7423:ℹ fail 0\r\n"]
+[53.59059, "o", "pnpm test exit: 0\r\n"]
+[53.591821, "x", "0"]

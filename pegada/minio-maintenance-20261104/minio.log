@@ -1,0 +1,173 @@
++ git rev-parse HEAD
+48dfebfb1d8280726154d8286b99c0bfc287fba3
++ pnpm database minio:verify
+$ dotenv -e .env.dev -- pnpm -F @pegada/database minio:verify
+$ bash ./scripts/verify-minio-bucket.sh
+==> clean slate: tearing down any previous pegada-minio-verify
+==> docker compose up (minio + its init)
+WARN[0000] /Users/gabrieltaveira/.t3/worktrees/pegada/t3-57df2862/packages/database/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+ Image pegada-minio:7aac2a2-mc77f82e1 Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 647B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 795B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/alpine:3.23.4@sha256:5b10f432ef3da1b8d4c7eb6c487f2f5a8f096bc91145e68878dd4a5019afde11
+#3 DONE 0.0s
+
+#4 [internal] load metadata for docker.io/library/golang:1.26.8-alpine@sha256:8ac98ca534ac3f51e1f420a1dd2c15e74c75cfa0f23f3ad27eb5d7236c349a0c
+#4 DONE 0.0s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [stage-1 1/5] FROM docker.io/library/alpine:3.23.4@sha256:5b10f432ef3da1b8d4c7eb6c487f2f5a8f096bc91145e68878dd4a5019afde11
+#6 resolve docker.io/library/alpine:3.23.4@sha256:5b10f432ef3da1b8d4c7eb6c487f2f5a8f096bc91145e68878dd4a5019afde11 0.0s done
+#6 DONE 0.0s
+
+#7 [build 1/3] FROM docker.io/library/golang:1.26.8-alpine@sha256:8ac98ca534ac3f51e1f420a1dd2c15e74c75cfa0f23f3ad27eb5d7236c349a0c
+#7 resolve docker.io/library/golang:1.26.8-alpine@sha256:8ac98ca534ac3f51e1f420a1dd2c15e74c75cfa0f23f3ad27eb5d7236c349a0c 0.0s done
+#7 DONE 0.0s
+
+#8 [stage-1 4/5] COPY --from=build /go/pkg/mod/github.com/minio/minio@*/LICENSE /licenses/minio-LICENSE
+#8 CACHED
+
+#9 [stage-1 2/5] RUN apk add --no-cache ca-certificates curl
+#9 CACHED
+
+#10 [build 2/3] RUN go install github.com/minio/minio@7aac2a2c5b7c882e68c1ce017d8256be2feea27f
+#10 CACHED
+
+#11 [build 3/3] RUN go install github.com/minio/mc@77f82e18b5401a65958f1619df6ebb994634bd88
+#11 CACHED
+
+#12 [stage-1 3/5] COPY --from=build /go/bin/minio /go/bin/mc /usr/bin/
+#12 CACHED
+
+#13 [stage-1 5/5] COPY --from=build /go/pkg/mod/github.com/minio/mc@*/LICENSE /licenses/mc-LICENSE
+#13 CACHED
+
+#14 exporting to image
+#14 exporting layers done
+#14 exporting manifest sha256:7917cc8ec622b3e79e177cc4a45f42e49912f281e546cdf13ded57b34e489230 done
+#14 exporting config sha256:5af39e9142e59736070a8529739c6ed3d08ff6b81734671dd4e4295a04617921 done
+#14 exporting attestation manifest sha256:bc2b7b8f2b9bba4515ecb970dd6be8a03cd49d85657846eb66c3e2a38f29599c done
+#14 exporting manifest list sha256:b83070e71d9471141859a24308fa05826652df46e0c8cd12df34d6ca8e9a6c44 done
+#14 naming to docker.io/library/pegada-minio:7aac2a2-mc77f82e1 done
+#14 unpacking to docker.io/library/pegada-minio:7aac2a2-mc77f82e1 done
+#14 DONE 0.0s
+
+#15 resolving provenance for metadata file
+#15 DONE 0.0s
+ Image pegada-minio:7aac2a2-mc77f82e1 Built 
+ Network pegada-minio-verify_default Creating 
+ Network pegada-minio-verify_default Creating 
+ Network pegada-minio-verify_default Created 
+ Network pegada-minio-verify_default Created 
+ Container pegada-minio-verify-minio Creating 
+ Container pegada-minio-verify-minio Created 
+ Container pegada-minio-verify-minio Starting 
+ Container pegada-minio-verify-minio Started 
+ Container pegada-minio-verify-minio Waiting 
+ Container pegada-minio-verify-minio Healthy 
+WARN[0000] /Users/gabrieltaveira/.t3/worktrees/pegada/t3-57df2862/packages/database/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+WARN[0000] /Users/gabrieltaveira/.t3/worktrees/pegada/t3-57df2862/packages/database/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+    minio-init-1  | Added `pegada` successfully.
+    minio-init-1  | Bucket created successfully `pegada/pegada-dev`.
+    minio-init-1  | Access permission for `pegada/pegada-dev` is set to `download`
+    minio-init-1  | minio-init: bucket pegada-dev ready
+==> the bucket exists
+==> the app's upload path: signed PUT -> public GET
+    PUT  ok
+    GET  200
+PASS - 'pegada-dev' is provisioned by compose and accepts the app's uploads
++ pnpm database minio:verify:test
+$ dotenv -e .env.dev -- pnpm -F @pegada/database minio:verify:test
+$ COMPOSE_FILE=./docker-compose.test.yml PROJECT=pegada-minio-verify-test HOST_PORT=9104 bash ./scripts/verify-minio-bucket.sh
+==> clean slate: tearing down any previous pegada-minio-verify-test
+==> docker compose up (minio + its init)
+WARN[0000] /Users/gabrieltaveira/.t3/worktrees/pegada/t3-57df2862/packages/database/docker-compose.test.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+ Image pegada-minio:7aac2a2-mc77f82e1 Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 652B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 795B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/alpine:3.23.4@sha256:5b10f432ef3da1b8d4c7eb6c487f2f5a8f096bc91145e68878dd4a5019afde11
+#3 DONE 0.0s
+
+#4 [internal] load metadata for docker.io/library/golang:1.26.8-alpine@sha256:8ac98ca534ac3f51e1f420a1dd2c15e74c75cfa0f23f3ad27eb5d7236c349a0c
+#4 DONE 0.0s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [stage-1 1/5] FROM docker.io/library/alpine:3.23.4@sha256:5b10f432ef3da1b8d4c7eb6c487f2f5a8f096bc91145e68878dd4a5019afde11
+#6 resolve docker.io/library/alpine:3.23.4@sha256:5b10f432ef3da1b8d4c7eb6c487f2f5a8f096bc91145e68878dd4a5019afde11 0.0s done
+#6 DONE 0.0s
+
+#7 [build 1/3] FROM docker.io/library/golang:1.26.8-alpine@sha256:8ac98ca534ac3f51e1f420a1dd2c15e74c75cfa0f23f3ad27eb5d7236c349a0c
+#7 resolve docker.io/library/golang:1.26.8-alpine@sha256:8ac98ca534ac3f51e1f420a1dd2c15e74c75cfa0f23f3ad27eb5d7236c349a0c 0.0s done
+#7 DONE 0.0s
+
+#8 [stage-1 3/5] COPY --from=build /go/bin/minio /go/bin/mc /usr/bin/
+#8 CACHED
+
+#9 [stage-1 4/5] COPY --from=build /go/pkg/mod/github.com/minio/minio@*/LICENSE /licenses/minio-LICENSE
+#9 CACHED
+
+#10 [stage-1 2/5] RUN apk add --no-cache ca-certificates curl
+#10 CACHED
+
+#11 [build 2/3] RUN go install github.com/minio/minio@7aac2a2c5b7c882e68c1ce017d8256be2feea27f
+#11 CACHED
+
+#12 [build 3/3] RUN go install github.com/minio/mc@77f82e18b5401a65958f1619df6ebb994634bd88
+#12 CACHED
+
+#13 [stage-1 5/5] COPY --from=build /go/pkg/mod/github.com/minio/mc@*/LICENSE /licenses/mc-LICENSE
+#13 CACHED
+
+#14 exporting to image
+#14 exporting layers done
+#14 exporting manifest sha256:0cf42655b1e7159e59f90b2c67931b491ced74b888e3c6b3f047b5f9f8500293 done
+#14 exporting config sha256:ac3d8e3a1cb2e2589915596f37e1b43ac35d65cd177f51356313a00207b07d38 done
+#14 exporting attestation manifest sha256:cd1f3a0c9785fbc3f0eded4274d3a48b65353cf8c2bdcc72b9d02368b7a02257 done
+#14 exporting manifest list sha256:8d4e627a2bf94dc2b4d0c6f0e14c163e7973f3b322731757a3f5be610bc4728e done
+#14 naming to docker.io/library/pegada-minio:7aac2a2-mc77f82e1 done
+#14 unpacking to docker.io/library/pegada-minio:7aac2a2-mc77f82e1 done
+#14 DONE 0.1s
+
+#15 resolving provenance for metadata file
+#15 DONE 0.0s
+ Image pegada-minio:7aac2a2-mc77f82e1 Built 
+ Network pegada-minio-verify-test_default Creating 
+ Network pegada-minio-verify-test_default Creating 
+ Network pegada-minio-verify-test_default Created 
+ Network pegada-minio-verify-test_default Created 
+ Container pegada-minio-verify-test-minio Creating 
+ Container pegada-minio-verify-test-minio Created 
+ Container pegada-minio-verify-test-minio Starting 
+ Container pegada-minio-verify-test-minio Started 
+ Container pegada-minio-verify-test-minio Waiting 
+ Container pegada-minio-verify-test-minio Healthy 
+WARN[0000] /Users/gabrieltaveira/.t3/worktrees/pegada/t3-57df2862/packages/database/docker-compose.test.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+WARN[0000] /Users/gabrieltaveira/.t3/worktrees/pegada/t3-57df2862/packages/database/docker-compose.test.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+    minio-init-1  | Added `pegada` successfully.
+    minio-init-1  | Bucket created successfully `pegada/pegada-dev`.
+    minio-init-1  | Access permission for `pegada/pegada-dev` is set to `download`
+    minio-init-1  | minio-init: bucket pegada-dev ready
+==> the bucket exists
+==> the app's upload path: signed PUT -> public GET
+    PUT  ok
+    GET  200
+PASS - 'pegada-dev' is provisioned by compose and accepts the app's uploads
+0

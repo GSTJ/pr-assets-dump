@@ -1,0 +1,2 @@
+PASS cjs : upstream 4.3.1 reproduces prototype poisoning; installed patched build blocks it
+PASS umd : upstream 4.3.1 reproduces prototype poisoning; installed patched build blocks it
