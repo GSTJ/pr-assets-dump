@@ -1,0 +1,81 @@
+{
+  "source": "cae357d823a1ec8e5666b0ea976d2fe4eca3f462",
+  "results": [
+    {
+      "path": "/en-US",
+      "width": 375,
+      "scrollWidth": 375,
+      "title": "Gabriel Taveira · Fractional CTO and engineering leader",
+      "h1": "I build apps and help teams build theirs."
+    },
+    {
+      "path": "/en-US",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "Gabriel Taveira · Fractional CTO and engineering leader",
+      "h1": "I build apps and help teams build theirs."
+    },
+    {
+      "path": "/en-US",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "title": "Gabriel Taveira · Fractional CTO and engineering leader",
+      "h1": "I build apps and help teams build theirs."
+    },
+    {
+      "path": "/en-US",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "title": "Gabriel Taveira · Fractional CTO and engineering leader",
+      "h1": "I build apps and help teams build theirs."
+    },
+    {
+      "path": "/en-US",
+      "width": 2560,
+      "scrollWidth": 2560,
+      "title": "Gabriel Taveira · Fractional CTO and engineering leader",
+      "h1": "I build apps and help teams build theirs."
+    },
+    {
+      "path": "en-US",
+      "status": 304,
+      "title": "Gabriel Taveira · Fractional CTO and engineering leader"
+    },
+    {
+      "path": "en-US/links",
+      "status": 200,
+      "title": "Gabriel Taveira · Links"
+    },
+    {
+      "path": "en-US/resume",
+      "status": 200,
+      "title": "Gabriel Taveira, Resume"
+    },
+    {
+      "path": "en-US/security",
+      "status": 200,
+      "title": "Gabriel Taveira · Application Security"
+    },
+    {
+      "path": "pt-BR",
+      "status": 200,
+      "title": "Gabriel Taveira · Fractional CTO e líder de engenharia"
+    },
+    {
+      "path": "pt-BR/links",
+      "status": 200,
+      "title": "Gabriel Taveira · Links"
+    },
+    {
+      "path": "pt-BR/resume",
+      "status": 200,
+      "title": "Gabriel Taveira, Currículo"
+    },
+    {
+      "path": "pt-BR/security",
+      "status": 200,
+      "title": "Gabriel Taveira · Application Security"
+    }
+  ],
+  "errors": []
+}

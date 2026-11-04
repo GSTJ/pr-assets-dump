@@ -1,0 +1,19 @@
+{
+  "source": "cae357d823a1ec8e5666b0ea976d2fe4eca3f462",
+  "tree": "0e61bdac532bffc2fb868a9c6d262eb6fe7881b7",
+  "base": "eb8516a73fc9be0b5eea01d5ef2ee7ed5fa37a8e",
+  "baseTree": "ed4e406a811bf973004f13db95dc8f0d7e77db2b",
+  "sourceBlobMismatches": 0,
+  "commands": [
+    "pnpm install --frozen-lockfile",
+    "pnpm test",
+    "pnpm check:live",
+    "pnpm lint",
+    "pnpm format",
+    "pnpm build",
+    "pnpm typecheck"
+  ],
+  "result": "all pass on both archives",
+  "runtime": "local production build, installed Chrome; five widths, eight pages; no page errors",
+  "limitations": "Puppeteer download failed during release install; main install skipped download; no UI source changes; archive build uses build-time date fallback"
+}
