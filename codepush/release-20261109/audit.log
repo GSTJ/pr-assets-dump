@@ -1,0 +1,7 @@
+$ node tools/dependency-security-check.mjs && pnpm audit --audit-level high
+undici 7.30.1 rejected excessive content encodings without crashing.
+Dependency security checks passed for @xmldom/xmldom, js-yaml, nanoid and image-size.
+Expo config merge rejected prototype poisoning and preserved safe values.
+Security migrations passed: deepmerge prototype controls, callable/named minimatch, bounded patterns, glob cancellation, Zod size gates and Expo schemas, FTP parser.
+3 vulnerabilities found
+Severity: 1 low (1 ignored) | 2 high (2 ignored)

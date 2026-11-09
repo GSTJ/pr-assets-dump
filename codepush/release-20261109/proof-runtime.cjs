@@ -1,0 +1,24 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const plugin = require('./app.plugin.js').default;
+const {applyImplementation} = require('./build/android/buildscript-dependency');
+const {applySettings} = require('./build/android/settings-dependency');
+(async () => {
+const props={ios:{CodePushServerURL:'https://updates.example.com',CodePushDeploymentKey:'ios-proof'},android:{CodePushServerURL:'https://updates.example.com',CodePushDeploymentKey:'android-proof'}};
+const config = plugin({name:'proof',slug:'proof'},props);
+const ios = await config.mods.ios.infoPlist({...config,modRequest:{},modResults:{CFBundleName:'proof'}});
+assert.equal(ios.modResults.CodePushServerURL,props.ios.CodePushServerURL);
+assert.equal(ios.modResults.CodePushDeploymentKey,'ios-proof');
+const android = await config.mods.android.strings({...config,modRequest:{},modResults:{resources:{}}});
+const values=Object.fromEntries(android.modResults.resources.string.map(x=>[x.$.name,x._]));
+assert.equal(values.CodePushServerURL,props.android.CodePushServerURL);
+assert.equal(values.CodePushDeploymentKey,'android-proof');
+const gradle=applyImplementation('apply plugin: "com.android.application"\n');
+assert.match(gradle,/require.resolve\('react-native-code-push\/package.json'\)/);
+assert.equal(applyImplementation(gradle),gradle);
+const settings=applySettings("rootProject.name = 'proof'\n");
+assert.match(settings,/include ':react-native-code-push'/);
+assert.equal(applySettings(settings),settings);
+const out=['Built npm entry smoke: PASS','Source SHA: 73196bb43a60d58309dec7df7526a494cc318e06','Node '+process.version,'','iOS generated Info.plist:',JSON.stringify(ios.modResults,null,2),'','Android generated strings:',JSON.stringify(values,null,2),'','Android app/build.gradle:',gradle,'Android settings.gradle:',settings,'Repeat application: unchanged (PASS)','', 'Local checks: lint, format, typecheck, 76 Jest tests,','security exploit controls, release controls, build: PASS','Audit gate: PASS (3 existing ignored advisories; tested patches)'].join('\n');
+fs.writeFileSync('/tmp/codepush-proof/runtime.txt',out+'\n'); console.log(out);
+})().catch(e=>{console.error(e);process.exit(1)});

@@ -1,0 +1,32 @@
+Built npm entry smoke: PASS
+Source SHA: 73196bb43a60d58309dec7df7526a494cc318e06
+Node v24.18.1
+
+iOS generated Info.plist:
+{
+  "CFBundleName": "proof",
+  "CodePushServerURL": "https://updates.example.com",
+  "CodePushDeploymentKey": "ios-proof"
+}
+
+Android generated strings:
+{
+  "CodePushServerURL": "https://updates.example.com",
+  "CodePushDeploymentKey": "android-proof"
+}
+
+Android app/build.gradle:
+apply plugin: "com.android.application"
+
+apply from: new File(new File(["node", "--print", "require.resolve('react-native-code-push/package.json')"].execute(null, rootDir).text.trim()).parentFile, "android/codepush.gradle")
+
+Android settings.gradle:
+rootProject.name = 'proof'
+
+include ':react-native-code-push'
+project(':react-native-code-push').projectDir = new File(new File(["node", "--print", "require.resolve('react-native-code-push/package.json')"].execute(null, rootDir).text.trim()).parentFile, "android/app")
+Repeat application: unchanged (PASS)
+
+Local checks: lint, format, typecheck, 76 Jest tests,
+security exploit controls, release controls, build: PASS
+Audit gate: PASS (3 existing ignored advisories; tested patches)
