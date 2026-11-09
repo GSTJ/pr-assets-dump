@@ -1,0 +1,30 @@
+{
+  "sourceHead": "243deef12d6dd78220516db3cfa935f646872e7a",
+  "sourceTree": "7eb4658bbd7bc7117b77de20ba8ab94342c5e97c",
+  "baseMain": "209ea5b1862577a2b3d7e2d41dcab1ba7aa5abdf",
+  "nativeAcceptance": "NOT RUN: isolated app install failed; debug reports mismatched widget extension bundle ID. Corrected extension metadata prepared but not retried after device stop rule. No images or video exist.",
+  "nativeShellProvenance": "Copied existing simulator app. Its source SHA is unknown; this is not exact native build proof.",
+  "nativeBundleSHA256": "9a7ce19d9e402d585cdcf709db42e899324a5a578b38d8617bc21c7c95d61f22",
+  "testIdentity": "app.pegada.pr330",
+  "testDatabase": "pegada_pr330_native_20261109",
+  "api": "http://localhost:9999/api",
+  "otaDisabled": true,
+  "originalUserApp": "app.pegada left untouched; isolated app installation failed before launch",
+  "verification": {
+    "fullSuite": "PASS: 391 mobile, 380 API (includes 8 Zod), 81 web, 36 release, security patch and 196 metrics tests",
+    "typecheck": "PASS: all 5 packages, uncached",
+    "lint": "PASS",
+    "format": "PASS"
+  },
+  "release": "Not merged or released. Native acceptance remains required.",
+  "backlog": "21 open issues inspected. #195 requires a measurement readout; #235 says not to build until a baseline exists. #282 source paths for lenient headers, returning authentication and expired upload retry already exist on main; production disappearance of exceptions is not established. Remaining issues include product/ops decisions and needs: gabriel work.",
+  "rawAudit": {
+    "high": 2,
+    "low": 1,
+    "packages": [
+      "image-size",
+      "deepmerge"
+    ],
+    "note": "Raw advisory matches remain; see committed patch and exploit regression checks. No Zod audit advisory remains."
+  }
+}

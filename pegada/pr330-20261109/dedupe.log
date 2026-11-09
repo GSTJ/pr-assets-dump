@@ -1,0 +1,41 @@
+✓ Lockfile passes supply-chain policies (verified 2m ago)
+[WARN] Moving dotenv-cli that was installed by a different package manager to "node_modules/.ignored"
+[WARN] Moving magic-codemods that was installed by a different package manager to "node_modules/.ignored"
+[WARN] Moving magic-oxfmt-config that was installed by a different package manager to "node_modules/.ignored"
+[WARN] Moving magic-oxlint-config that was installed by a different package manager to "node_modules/.ignored"
+[WARN] Moving magic-oxlint-plugin that was installed by a different package manager to "node_modules/.ignored"
+[WARN] Moving magic-tsconfig that was installed by a different package manager to "node_modules/.ignored"
+[WARN] Moving oxfmt that was installed by a different package manager to "node_modules/.ignored"
+[WARN] Moving oxlint that was installed by a different package manager to "node_modules/.ignored"
+[WARN] Moving turbo that was installed by a different package manager to "node_modules/.ignored"
+[WARN] Moving typescript that was installed by a different package manager to "node_modules/.ignored"
+apps/nextjs                              | [WARN] Moving clsx that was installed by a different package manager to "node_modules/.ignored"
+Progress: resolved 1, reused 0, downloaded 0, added 0
+apps/mobile                              | [WARN] deprecated react-native-edge-to-edge@1.8.1
+apps/mobile                              | [WARN] deprecated react-native-magic-modal@10.2.0
+apps/nextjs                              | [WARN] deprecated critters@0.0.25
+Progress: resolved 89, reused 89, downloaded 0, added 0
+Progress: resolved 126, reused 126, downloaded 0, added 0
+Progress: resolved 142, reused 142, downloaded 0, added 0
+Progress: resolved 151, reused 150, downloaded 0, added 0
+Progress: resolved 156, reused 156, downloaded 0, added 0
+Progress: resolved 160, reused 160, downloaded 0, added 0
+Progress: resolved 162, reused 161, downloaded 0, added 0
+Progress: resolved 163, reused 162, downloaded 0, added 0
+Progress: resolved 347, reused 314, downloaded 0, added 0
+Progress: resolved 514, reused 459, downloaded 0, added 0
+Progress: resolved 544, reused 489, downloaded 0, added 0
+Progress: resolved 631, reused 575, downloaded 0, added 0
+Progress: resolved 931, reused 837, downloaded 0, added 0
+Progress: resolved 938, reused 844, downloaded 0, added 0
+Progress: resolved 939, reused 845, downloaded 0, added 0
+Progress: resolved 940, reused 846, downloaded 0, added 0
+Progress: resolved 1200, reused 1099, downloaded 0, added 0
+[WARN] deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+Progress: resolved 1415, reused 1314, downloaded 0, added 0
+Progress: resolved 1461, reused 1360, downloaded 0, added 0
+Progress: resolved 1467, reused 1363, downloaded 0, added 0
+Progress: resolved 1535, reused 1434, downloaded 0, added 0
+[WARN] 7 deprecated subdependencies found: @smithy/core@3.24.3, glob@7.2.3, inflight@1.0.6, node-domexception@1.0.0, path-dirname@1.0.2, rimraf@3.0.2, sudo-prompt@9.2.1
+[WARN] Issues with peer dependencies found. Run "pnpm peers check" to list them.
+

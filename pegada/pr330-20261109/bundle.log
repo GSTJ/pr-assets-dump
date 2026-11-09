@@ -1,0 +1,37 @@
+[bacons/apple-targets] Expo config is missing required ios.appleTeamId property. Find this in Xcode and add to the Expo Config to correct. iOS builds may fail until this is corrected.
+Using src/app as the root directory for Expo Router.
+React Compiler enabled
+Expo Autolinking module resolution enabled
+Starting Metro Bundler
+
+iOS apps/mobile/index.js ░░░░░░░░░░░░░░░░  0.0% (0/1)
+| (node:56119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:56119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:56119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:56119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:56119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:56119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:56119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:56119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:56119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:56119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:56119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+iOS apps/mobile/index.js ▓▓▓▓▓▓▓▓▓░░░░░░░ 62.4% (1241/1728)
+iOS Bundled 7041ms apps/mobile/index.js (3165 modules)
+Writing bundle output to: /tmp/pegada330-proof/Pegada.app/main.jsbundle
+Writing sourcemap output to: /tmp/pegada330-proof/main.map
+Copying 48 asset files
+iOS apps/mobile/index.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░ 99.9% (3165/3165)
+Done writing bundle output
+Done writing sourcemap output
