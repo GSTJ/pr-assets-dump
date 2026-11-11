@@ -1,0 +1,16 @@
+$ turbo run doctor
+
+   • turbo 2.11.7
+   • Packages in scope: @magic-modal/demo-video, @magic-modal/docs, @magic-modal/next-web, @magic/kitchen-sink, magic-modal, react-native-magic-modal
+   • Running doctor in 6 packages
+   • Remote caching disabled
+
+@magic/kitchen-sink:doctor: cache bypass, force executing 86475e70402f9997
+@magic/kitchen-sink:doctor: $ pnpm expo-doctor
+@magic/kitchen-sink:doctor: Running 19 checks on your project...
+@magic/kitchen-sink:doctor: 19/19 checks passed. No issues detected!
+
+ Tasks:    1 successful, 1 total
+Cached:    0 cached, 1 total
+  Time:    2.573s 
+

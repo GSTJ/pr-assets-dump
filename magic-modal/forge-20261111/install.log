@@ -1,0 +1,22 @@
+Scope: all 7 workspace projects
+? Verifying lockfile against supply-chain policies (1921 entries)...
+✓ Lockfile passes supply-chain policies (1921 entries in 5.4s)
+Lockfile is up to date, resolution step is skipped
+Packages are cloned from the content-addressable store to the virtual store.
+  Content-addressable store is at: /Users/gabrieltaveira/Library/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 1631, reused 1629, downloaded 0, added 348
+Progress: resolved 1631, reused 1629, downloaded 0, added 828
+Progress: resolved 1631, reused 1629, downloaded 0, added 1222
+Packages: +1757
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1631, reused 1629, downloaded 0, added 1757, done
+node_modules/@swc/core postinstall$ node postinstall.js
+node_modules/@swc/core postinstall: Done
+
+devDependencies:
++ magic-codemods 1.1.6
++ shadcn 4.23.0
++ turbo 2.11.7
+
+Done in 10.1s using pnpm v12.9.1
