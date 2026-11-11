@@ -1,0 +1,5 @@
+Built eslint-plugin-safe-jsx 2.0.0
+INPUT: const count = 0; const node = <section>{count && <span>Visible</span>}</section>;
+DIAGNOSTIC: safe-jsx/jsx-explicit-boolean (Please ensure a boolean conversion before using the && operator with JSX)
+AUTOFIX: const count = 0; const node = <section>{Boolean(count) && <span>Visible</span>}</section>;
+RE-LINT: 0 errors
