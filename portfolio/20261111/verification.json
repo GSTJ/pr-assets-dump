@@ -1,0 +1,10 @@
+{
+  "heads": {
+    "531": "ec28330d623820ebf70a623ebf61c6b3632a89a0",
+    "528": "bee9bb78f65b37b8b192754dd2d94ce26d84e482",
+    "527": "4b85e6c56e31cf03ce45b1391a7e69f6148b2d4a",
+    "525": "4dc710d531636aa9359356994d560ba95dff79ad",
+    "520": "dbcb8a402d08d5184dba90ec718a86963b3a6af3"
+  },
+  "checks": "Each of 531,528,527,525: frozen install, 16 release annotation tests, lint, format, typecheck and production build passed. Actual local production servers returned HTTP 200, browser screenshots attached. Puppeteer managed Chrome download failed; system Google Chrome used for runtime proof. No browser preview or production proof is implied by local screenshots."
+}
