@@ -1,0 +1,90 @@
+
+$ pnpm install --frozen-lockfile
+? Verifying lockfile against supply-chain policies (444 entries)...
+Packages are cloned from the content-addressable store to the virtual store.
+  Content-addressable store is at: /Users/gabrieltaveira/Library/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+✓ Lockfile passes supply-chain policies (444 entries in 1.7s)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 370, reused 368, downloaded 2, added 369
+Packages: +370
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 370, reused 368, downloaded 2, added 370, done
+.../node_modules/unrs-resolver postinstall$ node postinstall.js
+.../node_modules/unrs-resolver postinstall: Done
+
+devDependencies:
++ @types/estree 1.0.9
++ @types/jest 30.0.0
++ @types/node 26.6.5
++ @typescript-eslint/parser 8.72.1
++ conventional-changelog 8.1.3
++ conventional-changelog-conventionalcommits 10.4.1
++ conventional-recommended-bump 12.1.0
++ eslint 10.13.0
++ jest 30.5.2
++ magic-codemods 1.1.6
++ magic-oxfmt-config 1.2.5
++ magic-oxlint-config 3.0.0
++ magic-tsconfig 1.2.4
++ oxfmt 0.75.0
++ oxlint 1.89.0
++ rimraf 6.1.3
++ safe-publish-latest 2.0.0
++ ts-jest 29.4.15
++ typescript 6.0.3
+
+Done in 3.3s using pnpm v12.16.1
+
+$ pnpm run lint
+$ oxlint --report-unused-disable-directives
+
+$ pnpm run format
+$ oxfmt --check .
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 19ms on 32 files using 18 threads.
+
+$ pnpm run typecheck
+$ tsc --noEmit
+
+$ pnpm run test
+$ jest --coverage && node tools/release-check.mjs && node tools/security-check.mjs
+jest-haste-map: Watchman crawl failed. Retrying once with node crawler.
+  Usually this happens when watchman isn't running. Create an empty `.watchmanconfig` file in your project's root folder or initialize a git or hg repository in your project.
+  Error: Watchman error: watchman::CommandValidationError: failed to validate command: resolve_projpath:  None of the files listed in global config root_files are present in path `/private/tmp/safe-jsx-173-1111/src` or any of its parent directories.  root_files is defined by the `/etc/watchman.json` config file and includes `.watchmanconfig`, `.hg`, `.git`, and `.svn`.  One or more of these files must be present in order to allow a watch. Try pulling and checking out a newer version of the project?. Make sure watchman is running for this project. See https://facebook.github.io/watchman/docs/troubleshooting.
+
+Test Suites: 2 passed, 2 total
+Tests:       71 passed, 71 total
+Snapshots:   0 total
+Time:        1.298 s
+Ran all test suites.
+ok - missing changelog dependency never reaches npx
+ok - same-version releases cannot make npm force a tag
+ok - release tags are annotated and idempotent
+ok - an unpublished release tag can follow its squash commit
+ok - a published release tag is immutable
+ok - an unexpected local annotation is preserved
+ok - publish accepts the matching annotated tag on main
+ok - publish rejects a tag that does not match package.json
+ok - publish rejects a tag moved after the release event
+ok - publish rejects release notes that drift from the changelog
+ok - publish rejects a lightweight release tag
+ok - publish rejects a release tag outside main
+ok - publish accepts a main checkout past the release tag
+release tooling check passed (13 controls)
+security regressions passed: deepmerge CJS/UMD, patch coverage, minimatch amplification, glob cancellation and compatibility
+
+$ pnpm run build
+$ rimraf lib && tsc -p tsconfig.build.json
+
+$ pnpm run changelog:check
+$ node tools/changelog-check.mjs
+changelog preset check passed (12 synthetic commits, 3 breaking; bumps: feat!=major, feat=minor, fix=patch, changelog-only=null, hidden-only=null)
+negative control passed (hiding the visible types breaks 6 assertions: feat renders, fix renders, build renders, refactor renders, chore renders, docs renders)
+
+$ pnpm run audit
+$ node tools/security-audit.mjs
+security regressions passed: deepmerge CJS/UMD, patch coverage, minimatch amplification, glob cancellation and compatibility
+audit passed: 1 locally patched advisory reports; raw registry count is not zero

@@ -1,0 +1,58 @@
+
+$ pnpm install --frozen-lockfile
+✓ Lockfile passes supply-chain policies (verified 17s ago)
+Lockfile is up to date, resolution step is skipped
+Done in 18ms using pnpm v12.16.1
+
+$ pnpm run lint
+$ oxlint --report-unused-disable-directives
+
+$ pnpm run format
+$ oxfmt --check .
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 20ms on 32 files using 18 threads.
+
+$ pnpm run typecheck
+$ tsc --noEmit
+
+$ pnpm run test
+$ jest --coverage && node tools/release-check.mjs && node tools/security-check.mjs
+jest-haste-map: Watchman crawl failed. Retrying once with node crawler.
+  Usually this happens when watchman isn't running. Create an empty `.watchmanconfig` file in your project's root folder or initialize a git or hg repository in your project.
+  Error: Watchman error: watchman::CommandValidationError: failed to validate command: resolve_projpath:  None of the files listed in global config root_files are present in path `/private/tmp/safe-jsx-177-1111/src` or any of its parent directories.  root_files is defined by the `/etc/watchman.json` config file and includes `.watchmanconfig`, `.hg`, `.git`, and `.svn`.  One or more of these files must be present in order to allow a watch. Try pulling and checking out a newer version of the project?. Make sure watchman is running for this project. See https://facebook.github.io/watchman/docs/troubleshooting.
+
+Test Suites: 2 passed, 2 total
+Tests:       71 passed, 71 total
+Snapshots:   0 total
+Time:        1.208 s
+Ran all test suites.
+ok - missing changelog dependency never reaches npx
+ok - same-version releases cannot make npm force a tag
+ok - release tags are annotated and idempotent
+ok - an unpublished release tag can follow its squash commit
+ok - a published release tag is immutable
+ok - an unexpected local annotation is preserved
+ok - publish accepts the matching annotated tag on main
+ok - publish rejects a tag that does not match package.json
+ok - publish rejects a tag moved after the release event
+ok - publish rejects release notes that drift from the changelog
+ok - publish rejects a lightweight release tag
+ok - publish rejects a release tag outside main
+ok - publish accepts a main checkout past the release tag
+release tooling check passed (13 controls)
+security regressions passed: deepmerge CJS/UMD, patch coverage, minimatch amplification, glob cancellation and compatibility
+
+$ pnpm run build
+$ rimraf lib && tsc -p tsconfig.build.json
+
+$ pnpm run changelog:check
+$ node tools/changelog-check.mjs
+changelog preset check passed (12 synthetic commits, 3 breaking; bumps: feat!=major, feat=minor, fix=patch, changelog-only=null, hidden-only=null)
+negative control passed (hiding the visible types breaks 6 assertions: feat renders, fix renders, build renders, refactor renders, chore renders, docs renders)
+
+$ pnpm run audit
+$ node tools/security-audit.mjs
+security regressions passed: deepmerge CJS/UMD, patch coverage, minimatch amplification, glob cancellation and compatibility
+audit passed: 1 locally patched advisory reports; raw registry count is not zero
