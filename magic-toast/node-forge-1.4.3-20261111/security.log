@@ -1,0 +1,10 @@
+$ node tools/image-size-security-check.cjs && node tools/dependency-security-check.cjs --audit
+PASS ICNS zero-length entry
+PASS JXL zero-length box
+PASS HEIF zero-length box
+PASS deepmerge target/source/nested prototype poisoning and ordinary merges
+PASS node-forge forged signatures, valid signing, TLS crash inputs and bounded HTTP trimming
+PASS Zod collection bounds, async checks and real Expo plugin/MCP schemas
+PASS modern minimatch expansion limit; legacy v3 has no vulnerable optimization phase
+PASS glob async/sync and basic-ftp Client/listing compatibility
+PASS audit: only exact tested patch/nonaffected legacy findings remain

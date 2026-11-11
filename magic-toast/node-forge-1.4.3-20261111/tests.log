@@ -1,0 +1,20 @@
+$ jest && node tools/image-size-security-check.cjs && node tools/dependency-security-check.cjs
+jest-haste-map: Watchman crawl failed. Retrying once with node crawler.
+  Usually this happens when watchman isn't running. Create an empty `.watchmanconfig` file in your project's root folder or initialize a git or hg repository in your project.
+  Error: Watchman error: watchman::CommandValidationError: failed to validate command: resolve_projpath:  None of the files listed in global config root_files are present in path `/private/tmp/magic-toast-forge-fix/source` or any of its parent directories.  root_files is defined by the `/etc/watchman.json` config file and includes `.watchmanconfig`, `.hg`, `.git`, and `.svn`.  One or more of these files must be present in order to allow a watch. Try pulling and checking out a newer version of the project?. Make sure watchman is running for this project. See https://facebook.github.io/watchman/docs/troubleshooting.
+PASS src/index.test.tsx
+PASS src/public-api.test.tsx
+
+Test Suites: 2 passed, 2 total
+Tests:       8 passed, 8 total
+Snapshots:   2 passed, 2 total
+Time:        0.582 s, estimated 1 s
+Ran all test suites.
+PASS ICNS zero-length entry
+PASS JXL zero-length box
+PASS HEIF zero-length box
+PASS deepmerge target/source/nested prototype poisoning and ordinary merges
+PASS node-forge forged signatures, valid signing, TLS crash inputs and bounded HTTP trimming
+PASS Zod collection bounds, async checks and real Expo plugin/MCP schemas
+PASS modern minimatch expansion limit; legacy v3 has no vulnerable optimization phase
+PASS glob async/sync and basic-ftp Client/listing compatibility

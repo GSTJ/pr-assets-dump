@@ -1,0 +1,10 @@
+{
+  "base": "a12326ddd4d2f794e36f8136490f1bf217edb763",
+  "sha256": {
+    "pnpm-workspace.yaml": "32efa1599eeac705769507b93ca9369449e955acbca6b2a2f50aa64da4525bee",
+    "pnpm-lock.yaml": "9f345caf4a25eb010ebadb488de44f7f19b123d16929a480628b82905a0e6b5c",
+    "tools/dependency-security-check.cjs": "8d03b3779cbd54942bcb9415b59b44894f997dc8c068b7afc1b9245a851c969d",
+    "tools/SECURITY.md": "8f1b27b5192c3c848313909ba106e887f2ae50ec4f415234916f1346ac082f31"
+  },
+  "runtime": "Production Expo web export of example, temporary tsconfig path directed to lib/module/index.js. No library mocks. Chromium 430x932. Alert, success, custom, automatic dismissal and intentional early hide. No page errors. No iOS or Android runtime claim. Temporary example config restored before final project checks."
+}

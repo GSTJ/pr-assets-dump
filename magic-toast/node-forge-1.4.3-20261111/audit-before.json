@@ -1,0 +1,247 @@
+{
+  "advisories": {
+    "1243505": {
+      "findings": [
+        {
+          "version": "4.3.1",
+          "paths": [
+            ".>@testing-library/react-native>jest>@jest/core>jest-config>deepmerge",
+            ".>@testing-library/react-native>jest>jest-cli>@jest/core>jest-config>deepmerge",
+            ".>@testing-library/react-native>jest>jest-cli>create-jest>jest-config>deepmerge",
+            ".>@testing-library/react-native>jest>jest-cli>jest-config>deepmerge",
+            ".>babel-preset-expo>expo>@expo/cli>@expo/config>deepmerge",
+            ".>babel-preset-expo>expo>@expo/cli>@expo/metro-config>@expo/config>deepmerge",
+            ".>babel-preset-expo>expo>@expo/cli>@expo/prebuild-config>@expo/config>deepmerge",
+            ".>babel-preset-expo>expo>@expo/config>deepmerge",
+            ".>babel-preset-expo>expo>@expo/local-build-cache-provider>@expo/config>deepmerge",
+            ".>babel-preset-expo>expo>@expo/metro-config>@expo/config>deepmerge",
+            ".>expo>@expo/cli>@expo/config>deepmerge",
+            ".>expo>@expo/cli>@expo/metro-config>@expo/config>deepmerge",
+            ".>expo>@expo/cli>@expo/prebuild-config>@expo/config>deepmerge",
+            ".>expo>@expo/config>deepmerge",
+            ".>expo>@expo/local-build-cache-provider>@expo/config>deepmerge",
+            ".>expo>@expo/metro-config>@expo/config>deepmerge",
+            ".>jest>@jest/core>jest-config>deepmerge",
+            ".>jest>jest-cli>@jest/core>jest-config>deepmerge",
+            ".>jest>jest-cli>create-jest>jest-config>deepmerge",
+            ".>jest>jest-cli>jest-config>deepmerge",
+            ".>jest-expo>@expo/config>deepmerge",
+            ".>jest-expo>expo>@expo/cli>@expo/config>deepmerge",
+            ".>jest-expo>expo>@expo/cli>@expo/metro-config>@expo/config>deepmerge",
+            ".>jest-expo>expo>@expo/cli>@expo/prebuild-config>@expo/config>deepmerge",
+            ".>jest-expo>expo>@expo/config>deepmerge",
+            ".>jest-expo>expo>@expo/local-build-cache-provider>@expo/config>deepmerge",
+            ".>jest-expo>expo>@expo/metro-config>@expo/config>deepmerge",
+            ".>jest-expo>jest-watch-typeahead>jest>@jest/core>jest-config>deepmerge",
+            ".>jest-expo>jest-watch-typeahead>jest>jest-cli>@jest/core>jest-config>deepmerge",
+            ".>jest-expo>jest-watch-typeahead>jest>jest-cli>create-jest>jest-config>deepmerge",
+            ".>jest-expo>jest-watch-typeahead>jest>jest-cli>jest-config>deepmerge",
+            "example>@expo/metro-runtime>@expo/log-box>@expo/dom-webview>expo>@expo/cli>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>@expo/log-box>@expo/dom-webview>expo>@expo/cli>@expo/metro-config>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>@expo/log-box>@expo/dom-webview>expo>@expo/cli>@expo/prebuild-config>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>@expo/log-box>@expo/dom-webview>expo>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>@expo/log-box>@expo/dom-webview>expo>@expo/local-build-cache-provider>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>@expo/log-box>@expo/dom-webview>expo>@expo/metro-config>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>@expo/log-box>expo>@expo/cli>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>@expo/log-box>expo>@expo/cli>@expo/metro-config>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>@expo/log-box>expo>@expo/cli>@expo/prebuild-config>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>@expo/log-box>expo>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>@expo/log-box>expo>@expo/local-build-cache-provider>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>@expo/log-box>expo>@expo/metro-config>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>expo>@expo/cli>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>expo>@expo/cli>@expo/metro-config>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>expo>@expo/cli>@expo/prebuild-config>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>expo>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>expo>@expo/local-build-cache-provider>@expo/config>deepmerge",
+            "example>@expo/metro-runtime>expo>@expo/metro-config>@expo/config>deepmerge",
+            "example>expo>@expo/cli>@expo/config>deepmerge",
+            "example>expo>@expo/cli>@expo/metro-config>@expo/config>deepmerge",
+            "example>expo>@expo/cli>@expo/prebuild-config>@expo/config>deepmerge",
+            "example>expo>@expo/config>deepmerge",
+            "example>expo>@expo/local-build-cache-provider>@expo/config>deepmerge",
+            "example>expo>@expo/metro-config>@expo/config>deepmerge",
+            "example>babel-preset-expo>expo>@expo/cli>@expo/config>deepmerge",
+            "example>babel-preset-expo>expo>@expo/cli>@expo/metro-config>@expo/config>deepmerge",
+            "example>babel-preset-expo>expo>@expo/cli>@expo/prebuild-config>@expo/config>deepmerge",
+            "example>babel-preset-expo>expo>@expo/config>deepmerge",
+            "example>babel-preset-expo>expo>@expo/local-build-cache-provider>@expo/config>deepmerge",
+            "example>babel-preset-expo>expo>@expo/metro-config>@expo/config>deepmerge"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1243505,
+      "title": "deepmerge mergeObject() allows prototype poisoning of returned objects",
+      "module_name": "deepmerge",
+      "vulnerable_versions": ">=4.2.0 <=4.3.1",
+      "patched_versions": ">=4.3.2",
+      "severity": "low",
+      "cwe": "CWE-1321",
+      "github_advisory_id": "GHSA-gcqx-w48m-w2h4",
+      "url": "https://github.com/advisories/GHSA-gcqx-w48m-w2h4"
+    },
+    "1246031": {
+      "findings": [
+        {
+          "version": "1.4.1",
+          "paths": [
+            ".>babel-preset-expo>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            ".>babel-preset-expo>expo>@expo/cli>node-forge",
+            ".>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            ".>expo>@expo/cli>node-forge",
+            ".>jest-expo>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            ".>jest-expo>expo>@expo/cli>node-forge",
+            "example>@expo/metro-runtime>@expo/log-box>@expo/dom-webview>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>@expo/metro-runtime>@expo/log-box>@expo/dom-webview>expo>@expo/cli>node-forge",
+            "example>@expo/metro-runtime>@expo/log-box>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>@expo/metro-runtime>@expo/log-box>expo>@expo/cli>node-forge",
+            "example>@expo/metro-runtime>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>@expo/metro-runtime>expo>@expo/cli>node-forge",
+            "example>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>expo>@expo/cli>node-forge",
+            "example>babel-preset-expo>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>babel-preset-expo>expo>@expo/cli>node-forge"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1246031,
+      "title": "Forge: Ed25519 signature verification accepts small-order public keys",
+      "module_name": "node-forge",
+      "vulnerable_versions": "<=1.4.2",
+      "patched_versions": ">=1.4.3",
+      "severity": "low",
+      "cwe": "CWE-347",
+      "github_advisory_id": "GHSA-6889-vf6x-f3g5",
+      "url": "https://github.com/advisories/GHSA-6889-vf6x-f3g5"
+    },
+    "1246032": {
+      "findings": [
+        {
+          "version": "1.4.1",
+          "paths": [
+            ".>babel-preset-expo>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            ".>babel-preset-expo>expo>@expo/cli>node-forge",
+            ".>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            ".>expo>@expo/cli>node-forge",
+            ".>jest-expo>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            ".>jest-expo>expo>@expo/cli>node-forge",
+            "example>@expo/metro-runtime>@expo/log-box>@expo/dom-webview>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>@expo/metro-runtime>@expo/log-box>@expo/dom-webview>expo>@expo/cli>node-forge",
+            "example>@expo/metro-runtime>@expo/log-box>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>@expo/metro-runtime>@expo/log-box>expo>@expo/cli>node-forge",
+            "example>@expo/metro-runtime>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>@expo/metro-runtime>expo>@expo/cli>node-forge",
+            "example>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>expo>@expo/cli>node-forge",
+            "example>babel-preset-expo>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>babel-preset-expo>expo>@expo/cli>node-forge"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1246032,
+      "title": "Forge: TLS client crash on an unsupported ServerHello compression method",
+      "module_name": "node-forge",
+      "vulnerable_versions": "<=1.4.2",
+      "patched_versions": ">=1.4.3",
+      "severity": "moderate",
+      "cwe": "CWE-20, CWE-248",
+      "github_advisory_id": "GHSA-w4xr-hqv8-ch44",
+      "url": "https://github.com/advisories/GHSA-w4xr-hqv8-ch44"
+    },
+    "1246033": {
+      "findings": [
+        {
+          "version": "1.4.1",
+          "paths": [
+            ".>babel-preset-expo>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            ".>babel-preset-expo>expo>@expo/cli>node-forge",
+            ".>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            ".>expo>@expo/cli>node-forge",
+            ".>jest-expo>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            ".>jest-expo>expo>@expo/cli>node-forge",
+            "example>@expo/metro-runtime>@expo/log-box>@expo/dom-webview>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>@expo/metro-runtime>@expo/log-box>@expo/dom-webview>expo>@expo/cli>node-forge",
+            "example>@expo/metro-runtime>@expo/log-box>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>@expo/metro-runtime>@expo/log-box>expo>@expo/cli>node-forge",
+            "example>@expo/metro-runtime>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>@expo/metro-runtime>expo>@expo/cli>node-forge",
+            "example>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>expo>@expo/cli>node-forge",
+            "example>babel-preset-expo>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>babel-preset-expo>expo>@expo/cli>node-forge"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1246033,
+      "title": "Forge: ReDoS in forge.http response header and cookie trimming",
+      "module_name": "node-forge",
+      "vulnerable_versions": ">=0.1.2 <=1.4.2",
+      "patched_versions": ">=1.4.3",
+      "severity": "moderate",
+      "cwe": "CWE-1333",
+      "github_advisory_id": "GHSA-6cv4-p8m7-4r25",
+      "url": "https://github.com/advisories/GHSA-6cv4-p8m7-4r25"
+    },
+    "1246034": {
+      "findings": [
+        {
+          "version": "1.4.1",
+          "paths": [
+            ".>babel-preset-expo>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            ".>babel-preset-expo>expo>@expo/cli>node-forge",
+            ".>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            ".>expo>@expo/cli>node-forge",
+            ".>jest-expo>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            ".>jest-expo>expo>@expo/cli>node-forge",
+            "example>@expo/metro-runtime>@expo/log-box>@expo/dom-webview>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>@expo/metro-runtime>@expo/log-box>@expo/dom-webview>expo>@expo/cli>node-forge",
+            "example>@expo/metro-runtime>@expo/log-box>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>@expo/metro-runtime>@expo/log-box>expo>@expo/cli>node-forge",
+            "example>@expo/metro-runtime>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>@expo/metro-runtime>expo>@expo/cli>node-forge",
+            "example>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>expo>@expo/cli>node-forge",
+            "example>babel-preset-expo>expo>@expo/cli>@expo/code-signing-certificates>node-forge",
+            "example>babel-preset-expo>expo>@expo/cli>node-forge"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1246034,
+      "title": "Forge: TLS client crash on a handshake record received without a session",
+      "module_name": "node-forge",
+      "vulnerable_versions": "<=1.4.2",
+      "patched_versions": ">=1.4.3",
+      "severity": "moderate",
+      "cwe": "CWE-476",
+      "github_advisory_id": "GHSA-j8rw-jp99-435v",
+      "url": "https://github.com/advisories/GHSA-j8rw-jp99-435v"
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 2,
+      "moderate": 3,
+      "high": 2,
+      "critical": 0
+    },
+    "dependencies": 596,
+    "devDependencies": 483,
+    "optionalDependencies": 50,
+    "totalDependencies": 1091
+  }
+}

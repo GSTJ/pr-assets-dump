@@ -1,0 +1,10 @@
+$ bob build
+ℹ [module] Cleaning up previous build at lib/module
+ℹ [typescript] Cleaning up previous build at lib/typescript
+ℹ [commonjs] Cleaning up previous build at lib/commonjs
+ℹ [typescript] Generating type definitions with tsc
+ℹ [module] Compiling 14 files in src with babel
+ℹ [commonjs] Compiling 14 files in src with babel
+✔ [module] Wrote files to lib/module
+✔ [commonjs] Wrote files to lib/commonjs
+✔ [typescript] Wrote definition files to lib/typescript
