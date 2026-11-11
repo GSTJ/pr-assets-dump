@@ -1,0 +1,27 @@
+{
+  "ios": {
+    "CodePushServerURL": "https://updates.example.com",
+    "CodePushDeploymentKey": "ios-proof"
+  },
+  "android": {
+    "resources": {
+      "string": [
+        {
+          "$": {
+            "name": "CodePushServerURL",
+            "moduleConfig": true
+          },
+          "_": "https://updates.example.com"
+        },
+        {
+          "$": {
+            "name": "CodePushDeploymentKey",
+            "moduleConfig": true
+          },
+          "_": "android-proof"
+        }
+      ]
+    }
+  },
+  "forge": "1.4.3: generated, signed and verified RSA certificate"
+}
