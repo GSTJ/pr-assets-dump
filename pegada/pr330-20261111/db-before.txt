@@ -1,0 +1,5 @@
+      id      | name | weight |        birthDate        | preferredMaxDistance | preferredMinAge | preferredMaxAge 
+--------------+------+--------+-------------------------+----------------------+-----------------+-----------------
+ seed-dog-rex | Rex  |     30 | 2023-11-11 12:05:16.967 |                   50 |               1 |              15
+(1 row)
+

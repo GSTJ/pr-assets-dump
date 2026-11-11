@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-11",
+  "pr": "https://github.com/GSTJ/pegada/pull/330",
+  "head": "243deef12d6dd78220516db3cfa935f646872e7a",
+  "tree": "7eb4658bbd7bc7117b77de20ba8ab94342c5e97c",
+  "native": {
+    "result": "Build succeeded; install refused because another session owns the device. No native save/reopen, screenshot or video acceptance.",
+    "device": "local / 4B56D214-31BD-456E-B744-E064A670AA41 / iPhone 18 Pro / iOS 27.2",
+    "metadata": {
+      "Info.plist": "app.pegada.pr330acceptance",
+      "PlugIns/PegadaWidgets.appex/Info.plist": "app.pegada.pr330acceptance.widgets"
+    },
+    "limits": [
+      "Local fresh Release build, not a hosted artifact.",
+      "Isolated app and widget bundle IDs changed together in generated project.",
+      "Local Xcode 27.2 build override IPHONEOS_DEPLOYMENT_TARGET=16.2 and arm64.",
+      "Local RevenueCat 5.33.0 Pods compatibility adjustment moves the unchanged designated initializer into the struct to suppress conflicting synthesized initializer. Not committed.",
+      "OTA disabled in test app Expo.plist after build; app ad-hoc re-signed preserving entitlements.",
+      "Firebase, payments and analytics keys use test placeholders. API targets localhost:9999, isolated database pegada_pr330_native_20261111."
+    ],
+    "main_jsbundle_sha256": "16ea021326ed5e3cb54e03f5d38176a48aa6c1c0f106566ba2ee6f28c0ceaace"
+  },
+  "verification": {
+    "full_test": "PASS: mobile 391, API 380, web 81, release 36, metrics 196 and security regression scripts",
+    "typecheck": "All five packages passed uncached",
+    "lint": "PASS",
+    "format": "PASS",
+    "code_scanning_open": 0,
+    "secret_scanning_open": 0,
+    "dependabot_open": [
+      559,
+      552,
+      551,
+      546
+    ]
+  },
+  "new_audit_findings": {
+    "node-forge": "1.4.3 published 2026-11-04; within 14-day stability gate until 2026-11-18. Four low/moderate advisories. No exception added.",
+    "fast-xml-parser": "5.11.3 advertised by advisory is not published; 5.12.0 published 2026-11-03 and inside stability gate until 2026-11-17. No exception added.",
+    "existing_patched_matches": "Two image-size high findings and deepmerge low finding still appear in raw audit; committed backport regression scripts pass."
+  },
+  "issues": "All 21 bodies/comments read. #282 closed with source, live HTTP 200 and November 4-11 exception report evidence. Remaining gates preserved.",
+  "release": "No draft releases returned. Main production deployment 7546583993 reported success for 209ea5b1862577a2b3d7e2d41dcab1ba7aa5abdf. No new merge or publication performed."
+}
