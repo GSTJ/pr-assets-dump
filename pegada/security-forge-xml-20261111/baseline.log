@@ -1,0 +1,89 @@
+FAIL Ed25519 small-order key: node:assert:152
+  throw new AssertionError(obj);
+  ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+true !== false
+
+    at Ed25519 small-order key (/Users/gabrieltaveira/.t3/worktrees/pegada/t3-139338c8-cef1484a97956695/scripts/test-forge-xml-security.cjs:18:12)
+    at Object.<anonymous> (/Users/gabrieltaveira/.t3/worktrees/pegada/t3-139338c8-cef1484a97956695/scripts/test-forge-xml-security.cjs:72:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: true,
+  expected: false,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.18.1
+FAIL TLS record without session: node:assert:152
+  throw new AssertionError(obj);
+  ^
+
+AssertionError [ERR_ASSERTION]: Got unwanted exception: fresh
+Actual message: "Cannot read properties of null (reading 'md5')"
+    at TLS record without session (/Users/gabrieltaveira/.t3/worktrees/pegada/t3-139338c8-cef1484a97956695/scripts/test-forge-xml-security.cjs:30:14)
+    at Object.<anonymous> (/Users/gabrieltaveira/.t3/worktrees/pegada/t3-139338c8-cef1484a97956695/scripts/test-forge-xml-security.cjs:72:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: TypeError: Cannot read properties of null (reading 'md5')
+      at tls.handleHandshake (/Users/gabrieltaveira/.t3/worktrees/pegada/t3-139338c8-cef1484a97956695/node_modules/node-forge/lib/tls.js:2060:17)
+      at _update (/Users/gabrieltaveira/.t3/worktrees/pegada/t3-139338c8-cef1484a97956695/node_modules/node-forge/lib/tls.js:3814:24)
+      at _processRecord (/Users/gabrieltaveira/.t3/worktrees/pegada/t3-139338c8-cef1484a97956695/node_modules/node-forge/lib/tls.js:4063:9)
+      at c.process (/Users/gabrieltaveira/.t3/worktrees/pegada/t3-139338c8-cef1484a97956695/node_modules/node-forge/lib/tls.js:4105:14)
+      at /Users/gabrieltaveira/.t3/worktrees/pegada/t3-139338c8-cef1484a97956695/scripts/test-forge-xml-security.cjs:30:40
+      at getActual (node:assert:611:5)
+      at strict.doesNotThrow (node:assert:779:32)
+      at TLS record without session (/Users/gabrieltaveira/.t3/worktrees/pegada/t3-139338c8-cef1484a97956695/scripts/test-forge-xml-security.cjs:30:14)
+      at Object.<anonymous> (/Users/gabrieltaveira/.t3/worktrees/pegada/t3-139338c8-cef1484a97956695/scripts/test-forge-xml-security.cjs:72:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14),
+  expected: undefined,
+  operator: 'doesNotThrow',
+  diff: 'simple'
+}
+
+Node.js v24.18.1
+FAIL TLS unsupported compression: node:assert:152
+  throw new AssertionError(obj);
+  ^
+
+AssertionError [ERR_ASSERTION]: must reject the unoffered method immediately
+
+false !== true
+
+    at TLS unsupported compression (/Users/gabrieltaveira/.t3/worktrees/pegada/t3-139338c8-cef1484a97956695/scripts/test-forge-xml-security.cjs:41:12)
+    at Object.<anonymous> (/Users/gabrieltaveira/.t3/worktrees/pegada/t3-139338c8-cef1484a97956695/scripts/test-forge-xml-security.cjs:72:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.18.1
+FAIL HTTP whitespace header and cookie: ETIMEDOUT
+FAIL XML unterminated stop node: ETIMEDOUT
+PASS Expo manifest signing and AWS XML
