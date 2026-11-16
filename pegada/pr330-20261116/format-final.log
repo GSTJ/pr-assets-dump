@@ -1,8 +1,9 @@
-$ oxfmt --check .
+Head: 6c70e4185a326d60219e877ef11b3a43809e048c
+Clean tracked checkout before check.
+Command: pnpm run format
+Exit: 0
 Checking formatting...
 
-apps/nextjs/tsconfig.json (0ms)
-
-Format issues found in above 1 files. Run without `--check` to fix.
-Finished in 187ms on 799 files using 18 threads.
-[ELIFECYCLE] Command failed with exit code 1.
+All matched files use the correct format.
+Finished in 191ms on 799 files using 18 threads.
+$ oxfmt --check .

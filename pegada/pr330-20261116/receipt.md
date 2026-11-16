@@ -16,3 +16,7 @@ The prior T3 handoff thread is no longer available (thread_not_found). Its saved
 20 open issues were reviewed; #282 is already closed, making 21 including that prior item. No duplicate public comments, new issue closures, paid experiments, outreach, or product expansions. Issue dispositions are in issue-review.md.
 
 No merge, tag, release, OTA or deployment was initiated. GitHub records production deployment 7710037053 success for existing main e9a6057e; production echo.get returned HTTP 200. This does not prove the PR is deployed. Latest GitHub release remains v1.7.3. Workspace packages are private; npm publication is not applicable.
+
+## Proof correction
+
+The original format-final.log recorded a failed check after local native preparation. It did not support the formatting claim above. The clean exact PR head was checked again with pnpm run format and exited 0 across 799 files. format-final.log now contains that fresh successful output; format-prebuild-failure.log preserves the original failed output. No source was changed for this correction. Native acceptance remains unverified.
