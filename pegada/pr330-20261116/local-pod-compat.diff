@@ -1,0 +1,22 @@
+--- RevenueCat-original
++++ RevenueCat-local-only
+@@ -19,6 +19,10 @@
+ 
+ /// Represents a color to be used by `RevenueCatUI`
+ public struct PaywallColor {
++    private init(rawRepresentation: String, rawColor: (any Sendable)?) {
++        self.stringRepresentation = rawRepresentation
++        self._underlyingColor = rawColor
++    }
+ 
+     /// The possible color schemes, corresponding to the light and dark appearances.
+     @frozen
+@@ -80,7 +84,7 @@
+     #if canImport(SwiftUI)
+ 
+     init(stringRepresentation: String, color: Color) {
+-        self.init(stringRepresentation: stringRepresentation, underlyingColor: color)
++        self.init(rawRepresentation: stringRepresentation, rawColor: color)
+     }
+ 
+     static func parseColor(_ input: String) throws -> Color {

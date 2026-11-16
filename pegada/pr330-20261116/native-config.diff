@@ -1,0 +1,94 @@
+diff --git a/apps/mobile/app.config.ts b/apps/mobile/app.config.ts
+index 239ef3a2..40168935 100644
+--- a/apps/mobile/app.config.ts
++++ b/apps/mobile/app.config.ts
+@@ -71,6 +71,7 @@ const config: ExpoConfig = {
+   platforms: ["ios", "android"],
+   primaryColor: "#EE61A1",
+   updates: {
++    enabled: false,
+     url: "https://u.expo.dev/cadfd124-f01c-4d16-910e-1455f62a3b03",
+     fallbackToCacheTimeout: 10000,
+   },
+@@ -258,7 +259,7 @@ const config: ExpoConfig = {
+     backgroundColor: "#ffffff",
+   },
+   android: {
+-    playStoreUrl: "https://play.google.com/store/apps/details?id=app.pegada",
++    playStoreUrl: "https://play.google.com/store/apps/details?id=app.pegada.pr330acceptance",
+     permissions: ["com.google.android.gms.permission.AD_ID"],
+     // Android 12 replaced the full-screen splash with an icon window, and
+     // prebuild CONTAINs whatever it is given into a 200 dp square before
+@@ -290,7 +291,7 @@ const config: ExpoConfig = {
+       monochromeImage: "./src/assets/images/adaptive-icon-monochrome.png",
+       backgroundColor: "#FFFFFF",
+     },
+-    package: "app.pegada",
++    package: "app.pegada.pr330acceptance",
+     intentFilters: [
+       {
+         action: "VIEW",
+@@ -364,7 +365,7 @@ const config: ExpoConfig = {
+     config: {
+       usesNonExemptEncryption: false,
+     },
+-    bundleIdentifier: "app.pegada",
++    bundleIdentifier: "app.pegada.pr330acceptance",
+     associatedDomains: ["applinks:pegada.app", "applinks:www.pegada.app"],
+   },
+   extra: {
+diff --git a/apps/mobile/targets/pegada-widgets/expo-target.config.js b/apps/mobile/targets/pegada-widgets/expo-target.config.js
+index a0b10e2c..b5bbf1e4 100644
+--- a/apps/mobile/targets/pegada-widgets/expo-target.config.js
++++ b/apps/mobile/targets/pegada-widgets/expo-target.config.js
+@@ -28,6 +28,6 @@ module.exports = {
+   // App Groups shared with the main app; harmless for entries that don't
+   // read the shared container.
+   entitlements: {
+-    "com.apple.security.application-groups": ["group.app.pegada"],
++    "com.apple.security.application-groups": ["group.app.pegada.pr330acceptance"],
+   },
+ };
+diff --git a/apps/mobile/targets/pegada-widgets/generated.entitlements b/apps/mobile/targets/pegada-widgets/generated.entitlements
+index aac2a4c7..e02a04f0 100644
+--- a/apps/mobile/targets/pegada-widgets/generated.entitlements
++++ b/apps/mobile/targets/pegada-widgets/generated.entitlements
+@@ -4,7 +4,7 @@
+   <dict>
+     <key>com.apple.security.application-groups</key>
+     <array>
+-      <string>group.app.pegada</string>
++      <string>group.app.pegada.pr330acceptance</string>
+     </array>
+   </dict>
+ </plist>
+\ No newline at end of file
+diff --git a/apps/nextjs/tsconfig.json b/apps/nextjs/tsconfig.json
+index 229aeefe..50c2326f 100644
+--- a/apps/nextjs/tsconfig.json
++++ b/apps/nextjs/tsconfig.json
+@@ -4,16 +4,21 @@
+   "compilerOptions": {
+     "baseUrl": ".",
+     "paths": {
+-      "@/*": ["./src/*"]
++      "@/*": [
++        "./src/*"
++      ]
+     }
+   },
+   "include": [
+     "**/*.js",
+     "**/*.ts",
+     "**/*.tsx",
++    ".next-3020/types/**/*.ts",
+     ".next/types/**/*.ts",
+     "next-env.d.ts",
+-    ".next-3020/types/**/*.ts"
++    ".next-3010/types/**/*.ts"
+   ],
+-  "exclude": ["node_modules"]
++  "exclude": [
++    "node_modules"
++  ]
+ }

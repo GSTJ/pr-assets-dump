@@ -1,0 +1,4 @@
+Error (COMMAND_FAILED): app 'app.pegada.pr330acceptance' is not running
+Hint: Reads do not launch the app. Relaunch it with open; if a system prompt such as a deep-link confirmation holds its launch, answer it with alert accept.
+Diagnostic ID: mwj8362a-ac60c30b
+Diagnostics Log: /Users/gabrieltaveira/.agent-device/remote-diagnostics/t3-16edf70812e9104e715e957a/requests/f1de09439b8ada64.ndjson

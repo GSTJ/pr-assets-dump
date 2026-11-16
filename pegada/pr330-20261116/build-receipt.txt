@@ -1,0 +1,7 @@
+** BUILD SUCCEEDED **
+App ID: app.pegada.pr330acceptance
+Widget ID: app.pegada.pr330acceptance.widgets
+EXUpdatesEnabled: false
+IPHONEOS_DEPLOYMENT_TARGET: 16.2
+ARCHS: arm64
+Configuration: Release, simulator
