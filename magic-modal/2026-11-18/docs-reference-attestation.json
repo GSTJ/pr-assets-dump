@@ -1,0 +1,102 @@
+{
+  "head": "a1531c41096d27a0905503ecb903b2fa40a01c00",
+  "label": "docs-reference",
+  "assets": [
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/1c1ayx3fqtub5.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/1c1ayx3fqtub5.js",
+      "sha256": "3fdb17dbb5e23631b5aa20d2f1036e7d6c0840d8164fd6fcee069ea392321c7d"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/0lgy1c_t8i0o0.css",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/0lgy1c_t8i0o0.css",
+      "sha256": "5c0a2dca634b3a3a2ea2a3f17e445ceffd7c089ba7525f10ed838baf2ae14f72"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/21236v59vwjzs.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/21236v59vwjzs.js",
+      "sha256": "19d745332fcf797e42507defa943adbc7ae1b97c8b7601215c7a8cbcb26df644"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/turbopack-077hmtqrhcoji.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/turbopack-077hmtqrhcoji.js",
+      "sha256": "3f0ba0c36a0758d76b55b6717fd77e65f46ae1295bb22fa441476e1eb7854d51"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/1t5l3-k0begp_.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/1t5l3-k0begp_.js",
+      "sha256": "b01e70028f41db352945fb971a7a0b1ad594eabf50baeb45ce8346c214a0dd75"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/2i99de3j6b99w.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/2i99de3j6b99w.js",
+      "sha256": "7c5796ba732f128353369a5e4de541669750d6309ae0dfb06e9ef7806593cf23"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/1tnzhqkfwk7l8.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/1tnzhqkfwk7l8.js",
+      "sha256": "6930393e4ab022c49cc851854451ee5a8516367e2ffd0a26ee6113362d9f6eff"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/2p84h71v--nf1.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/2p84h71v--nf1.js",
+      "sha256": "7cce3e666e7233e7400ef88123f6d5a5c2c040da8d471e4fddebfb5b0f68fe82"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/2t5kmepwi1p_6.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/2t5kmepwi1p_6.js",
+      "sha256": "e083012c0a5dc34cee6feb343f3e785e1ab0cc0dd081fafd922e0d14bd19adb7"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/0xui91m_8gpkz.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/0xui91m_8gpkz.js",
+      "sha256": "51cbcd46a25cb44f06a4d5b2add3a92a98aada571a9e6454b92d3fb9607eec72"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/38od85z32iy29.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/38od85z32iy29.js",
+      "sha256": "a4def7fab27641d0c1a2f04928d78fbc7fab96b6256537942899b0a6e61c2186"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/1uvs3hd1d9l7p.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/1uvs3hd1d9l7p.js",
+      "sha256": "df26bace8780eb7a59eeeb6340ce85c50cbd57dd90c8ab91d4d40d6f4ca11424"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/2pvbyr3_uwbis.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/2pvbyr3_uwbis.js",
+      "sha256": "89c1660f5c1a905d2d56ecbc6d864767afa86046a5e8ed6f421c0ef7824a5ea2"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/16zbmqgbuxu1s.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/16zbmqgbuxu1s.js",
+      "sha256": "91b829010a178c590d8a342415e57d33286340b329920c373956ccd1b90bbed2"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/0-pvnqpjs1wqj.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/0-pvnqpjs1wqj.js",
+      "sha256": "3d61de60553236b8f839456dd17b14fd1c027d12c2a38a56964164ebef6c2878"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/0xxdztd_fanrd.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/0xxdztd_fanrd.js",
+      "sha256": "0eca3bdc69c156c6a0c99dab3c98c584bdc4adb7d7d03f70f6fa18fe996b7d2e"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/1p-kq0phglejo.css",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/1p-kq0phglejo.css",
+      "sha256": "a1c29d8637746e823d8ba88781c858c3e3166e57c9c14ed4dd4035cadfd8cec3"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/1ylp2lf39fart.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/1ylp2lf39fart.js",
+      "sha256": "1a7b9a71f7629be2a6163497cb72f0b01be14f9718bac3f51075279ed5822d0f"
+    },
+    {
+      "url": "http://127.0.0.1:43187/_next/static/chunks/33voqvu5tvn34.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/apps/docs/out/_next/static/chunks/33voqvu5tvn34.js",
+      "sha256": "ca7fb5b3e69e788852e2aeb5cccb32091807d1c7462d2f74c415041ac951aa86"
+    }
+  ],
+  "screenshotSha256": "7a716676c6982d9578156f77b9ac85a457c46d31cbf9ccead48e845b908b1365"
+}

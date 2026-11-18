@@ -1,0 +1,42 @@
+{
+  "head": "a1531c41096d27a0905503ecb903b2fa40a01c00",
+  "label": "next-modal",
+  "assets": [
+    {
+      "url": "http://127.0.0.1:61684/_next/static/chunks/0bujrtsvn19cg.css",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/examples/next-web/.next/static/chunks/0bujrtsvn19cg.css",
+      "sha256": "a3b56d3e077b77c07eb7cb27e70deb5cece367b9d410a3a9403014253cb35b38"
+    },
+    {
+      "url": "http://127.0.0.1:61684/_next/static/chunks/0j1we3cwg31qe.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/examples/next-web/.next/static/chunks/0j1we3cwg31qe.js",
+      "sha256": "901a7cdca938bcf0603a59521da73b5ac26e57beb82cb657d2ef15f9b2e16c0e"
+    },
+    {
+      "url": "http://127.0.0.1:61684/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/examples/next-web/.next/static/chunks/turbopack-2u1d16houkiyo.js",
+      "sha256": "439be7f075d69bbf510ceca09cbc0856956be6f1268f40948a2566148e13de07"
+    },
+    {
+      "url": "http://127.0.0.1:61684/_next/static/chunks/3qfy96eoyh-ek.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/examples/next-web/.next/static/chunks/3qfy96eoyh-ek.js",
+      "sha256": "0f13eecc75702fa059f047636cf8814acbb7acaf3702e75d5835ef85a49528b1"
+    },
+    {
+      "url": "http://127.0.0.1:61684/_next/static/chunks/2w5-74ww34u-7.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/examples/next-web/.next/static/chunks/2w5-74ww34u-7.js",
+      "sha256": "348f8c384d49a35170d2c6b47f5a71ce9730486c211e079e2fe3854670a27472"
+    },
+    {
+      "url": "http://127.0.0.1:61684/_next/static/chunks/0m3mby5pxg4oz.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/examples/next-web/.next/static/chunks/0m3mby5pxg4oz.js",
+      "sha256": "00470dca841eb06605ad6751e3d42d2739d6613bf9c56867cf348403e0794bfc"
+    },
+    {
+      "url": "http://127.0.0.1:61684/_next/static/chunks/23e6jep2anmtk.js",
+      "local": "/private/tmp/gstj-magic-modal-security-20261118/examples/next-web/.next/static/chunks/23e6jep2anmtk.js",
+      "sha256": "68d789fee4dacbed154409fc5566bfec50b7d74cd2bfb39e08870d2019e4bac5"
+    }
+  ],
+  "screenshotSha256": "918d33c1e30a96695a570e456e592c8c6f1973bcd9d10f0403e76a74b27aac8b"
+}
