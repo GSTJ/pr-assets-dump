@@ -1,0 +1,22 @@
+# Issue dispositions
+
+- #273 Seeded team dogs MVP: 10 disclosed Equipe Pegada dogs that like back and reply, one week: Hold for city, photos/consent, personas and production team-account decisions. Report rows and Report Submitted already exist in source; that prerequisite is stale.
+- #270 Deck supply: artificial volume assessment and refill plan: Assessment remains useful; existing refill logic is implemented. Hold synthetic profiles for explicit pilot decisions. Reporting prerequisite is stale.
+- #268 Pricing and revenue plan: Pricing changes need store/RevenueCat decisions and current conversion readout. Keep open.
+- #256 Stop paying for external services: Moderation code exists. Provider billing cancellation and enforce-mode decision need current account evidence. Keep open.
+- #243 Design QA backlog after v1.7.2: Mixed design decisions and polish. Verified hero alt is still empty; do not close the umbrella issue without rendered QA.
+- #235 Story card variant picker: let people choose between DM aberta and Rolê ticket: Variant picker explicitly gated on measured completion/demand. Keep gated.
+- #216 Design: invite a friend and both get 7 days premium, gated by the fake door: Referral premium rewards need demand gate and RevenueCat secret/entitlement decisions. Keep gated.
+- #211 Instagram: fix the dead link in bio, 14 day repost calendar and the first boost: Requires Instagram/Meta account actions and creator permissions. Keep open.
+- #210 ASO audit: keyworded titles, age rating and category fix, 6 screenshots (pt-BR): Requires store listing/category/rating and owned screenshot approvals. Keep open.
+- #209 Web SEO: share page, universal links and a gated breed pilot: SEO/breed expansion remains measurement gated. Existing share routes and link configuration are not proof of full acceptance.
+- #208 Meta Ads R$500 install test (staged, attribution first): Paid acquisition staged by attribution and CPI/signup readout. No spend initiated.
+- #206 Five reels under 15 seconds from the story card and Remotion variants, with ref attribution: Media production needs licensed/owned assets and approved distribution. No automated feature implementation.
+- #205 Acquisition channel plan: seven channels for Brazilian dog owners, smallest test and kill number each: Channel plan needs human outreach and experiment readouts. No messages sent.
+- #204 Release train v1.7.0: JavaScript first over the air, then one native build for share and universal links: Historical v1.7.0 plan predates v1.7.3. Build/submission jobs succeeded for Oct 27 v1.7.3 rerun, but current store production visibility is unverified; do not close as fully shipped.
+- #203 AI story: proactive free generation prompt and notification: AI generation prompt depends on demand gate, generation implementation and copy/reward decisions. Hold.
+- #202 AI story: Remotion render service design: Render spike requires AWS/music/license decisions and measured renders. Hold.
+- #201 AI story: evaluate Hugging Face Inference for cheaper image and short animation: Provider comparison requires funded keys and human ratings. Hold.
+- #200 AI story: Gemini 2.5 Flash Image generation behind a flag: Generation feature gated by fake-door metrics, budget and provider key. Hold.
+- #199 AI story: web landing experiment with email capture (pre-MVP validation): Waitlist experiment needs approved examples/copy and traffic/readout. Hold.
+- #195 Premium reminder when a free user receives a like: Measurement only. No upsell copy change until the threshold is shown.

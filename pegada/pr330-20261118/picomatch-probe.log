@@ -1,0 +1,4 @@
+{"module":"picomatch","version":"4.0.5","pattern":"+(*)b","status":null,"error":"ETIMEDOUT","output":""}
+{"module":"picomatch","version":"4.0.5","pattern":"+(*a)b","status":null,"error":"ETIMEDOUT","output":""}
+{"module":"micromatch/node_modules/picomatch","version":"2.3.2","pattern":"+(*)b","status":null,"error":"ETIMEDOUT","output":""}
+{"module":"micromatch/node_modules/picomatch","version":"2.3.2","pattern":"+(*a)b","status":null,"error":"ETIMEDOUT","output":""}

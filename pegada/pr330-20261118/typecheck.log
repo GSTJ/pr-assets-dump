@@ -1,0 +1,22 @@
+$ turbo typecheck --force
+• turbo 2.9.14
+
+   • Packages in scope: @pegada/api, @pegada/database, @pegada/mobile, @pegada/nextjs, @pegada/shared
+   • Running typecheck in 5 packages
+   • Remote caching disabled, using shared worktree cache
+
+@pegada/api:typecheck: cache bypass, force executing a4218c521efed2f1
+@pegada/mobile:typecheck: cache bypass, force executing bc6c70b01a501060
+@pegada/database:typecheck: cache bypass, force executing 8dd59aaada6e2d45
+@pegada/nextjs:typecheck: cache bypass, force executing e471c599158151e3
+@pegada/shared:typecheck: cache bypass, force executing e10429892263555e
+@pegada/nextjs:typecheck: $ tsc --noEmit --emitDeclarationOnly false
+@pegada/api:typecheck: $ tsc --noEmit --emitDeclarationOnly false
+@pegada/mobile:typecheck: $ tsc --noEmit --emitDeclarationOnly false
+@pegada/shared:typecheck: $ tsc --noEmit --emitDeclarationOnly false
+@pegada/database:typecheck: $ tsc --noEmit --emitDeclarationOnly false
+
+ Tasks:    5 successful, 5 total
+Cached:    0 cached, 5 total
+  Time:    4.577s 
+
