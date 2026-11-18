@@ -1,0 +1,40 @@
+$ pnpm run security:check && turbo run test
+$ node --test tools/deepmerge-security.test.cjs && pnpm audit
+✔ preserves the result prototype with a malicious target (0.396458ms)
+✔ preserves the result prototype with a malicious source (0.053417ms)
+✔ nested poison remains data without changing prototypes (0.054375ms)
+✔ retains arrays, symbols, custom merge, and merge.all (0.4035ms)
+✔ the installed dependency uses the hardened merge (0.419459ms)
+✔ legacy minimatch consumers use the patched matcher (5.934875ms)
+✔ legacy glob traverses patched minimatch segments in sync and callback APIs (10.42ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 51.677959
+┌─────────────────────┬───────────────────────────────────────────────────────────────────────┐
+│ high                │ picomatch vulnerable to ReDoS through single-branch repeated extglobs │
+├─────────────────────┼───────────────────────────────────────────────────────────────────────┤
+│ Package             │ picomatch                                                             │
+├─────────────────────┼───────────────────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ <=4.0.7                                                               │
+├─────────────────────┼───────────────────────────────────────────────────────────────────────┤
+│ Patched versions    │ None                                                                  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────────┤
+│ Paths               │ .>shadcn>@shadcn/registry>fast-glob>micromatch>picomatch              │
+│                     │                                                                       │
+│                     │ .>shadcn>fast-glob>micromatch>picomatch                               │
+│                     │                                                                       │
+│                     │ .>shadcn>ts-morph>@ts-morph/common>fast-glob>micromatch>picomatch     │
+│                     │                                                                       │
+│                     │ ... Found 202 paths, run `pnpm why picomatch` for more information    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-fc5q-39xc-vjpf                     │
+└─────────────────────┴───────────────────────────────────────────────────────────────────────┘
+1 vulnerabilities found
+Severity: 1 high
+[ELIFECYCLE] Command failed with exit code 1.
+[ELIFECYCLE] Test failed. See above for more details.
