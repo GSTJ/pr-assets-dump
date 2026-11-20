@@ -1,0 +1,29 @@
+$ node tools/dependency-security-check.mjs && node tools/security-audit.mjs
+picomatch 2.3.2: exact parser hash and benign compatibility probes passed
+picomatch 4.0.5: exact parser hash and benign compatibility probes passed
+undici 7.30.1 rejected excessive content encodings without crashing.
+Dependency security checks passed for @xmldom/xmldom, js-yaml, nanoid and image-size.
+Expo config merge rejected prototype poisoning and preserved safe values.
+Security migrations passed: deepmerge prototype controls, callable/named minimatch, bounded patterns, glob cancellation, Zod size gates and Expo schemas, FTP parser.
+picomatch 2.3.2: exact parser hash and benign compatibility probes passed
+picomatch 4.0.5: exact parser hash and benign compatibility probes passed
+Validated 0 candidate picomatch audit paths; security review remains blocked.
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Independent parser security review is blocked; do not merge or release this candidate.
+    at file:///private/tmp/gstj-codepush-picomatch/tools/security-audit.mjs:37:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: undefined,
+  expected: undefined,
+  operator: 'fail',
+  diff: 'simple'
+}
+
+Node.js v24.18.1
+[ELIFECYCLE] Command failed with exit code 1.

@@ -1,0 +1,7 @@
+{"version":2,"width":80,"height":24,"timestamp":1795214148,"command":"/tmp/codepush-benign-proof.sh","env":{"SHELL":"/opt/homebrew/bin/fish"}}
+[0.017886, "o", "CodePush candidate parser, benign validation only\r\nBase: 9ab8a913d1d394a3708a1cfdf6b65ba466cbfcbb\r\n\r\n"]
+[0.112869, "o", "picomatch 2.3.2: exact parser hash and benign compatibility probes passed\r\n"]
+[0.152169, "o", "picomatch 4.0.5: exact parser hash and benign compatibility probes passed\r\n"]
+[0.604633, "o", "$ tsc --project tsconfig.build.json\r\n"]
+[2.326859, "o", "\r[ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL] Command was killed with SIGSEGV (Segmentation fault): jest --runInBand '--watchman=false'\r\n\u001b[K\u001b[0J"]
+[2.402419, "x", "1"]

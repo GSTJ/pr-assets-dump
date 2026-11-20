@@ -1,0 +1,35 @@
+$ node tools/dependency-security-check.mjs && node tools/release-check.mjs && jest
+picomatch 2.3.2: exact parser hash and benign compatibility probes passed
+picomatch 4.0.5: exact parser hash and benign compatibility probes passed
+undici 7.30.1 rejected excessive content encodings without crashing.
+Dependency security checks passed for @xmldom/xmldom, js-yaml, nanoid and image-size.
+Expo config merge rejected prototype poisoning and preserved safe values.
+Security migrations passed: deepmerge prototype controls, callable/named minimatch, bounded patterns, glob cancellation, Zod size gates and Expo schemas, FTP parser.
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-e2lYps"
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-e2lYps"
+Release plan passed: chore: maintain tooling -> skip
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-60qX5v"
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-60qX5v"
+Release plan passed: build(deps): patch tooling -> 2.0.2
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-5Jjft9"
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-5Jjft9"
+Release plan passed: fix: correct plugin -> 2.0.2
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-tGn4TF"
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-tGn4TF"
+Release plan passed: feat: add option -> 2.1.0
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-x4rQsk"
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-x4rQsk"
+Release plan passed: ci!: change contract -> 3.0.0
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-QGk9Hv"
+│  No config files with names ["lefthook" ".lefthook" ".config/lefthook"] have been found in "/private/var/folders/_k/bw14_lm517v7c65ggwq0b7gr0000gn/T/code-push-release-check-QGk9Hv"
+WARNING The recommended bump is "undefined", but is overridden with "patch".
+Release plan passed: chore: maintain tooling -> 2.0.2
+jest-haste-map: Watchman crawl failed. Retrying once with node crawler.
+  Usually this happens when watchman isn't running. Create an empty `.watchmanconfig` file in your project's root folder or initialize a git or hg repository in your project.
+  Error: Watchman error: watchman::CommandValidationError: failed to validate command: resolve_projpath:  None of the files listed in global config root_files are present in path `/private/tmp/gstj-codepush-picomatch` or any of its parent directories.  root_files is defined by the `/etc/watchman.json` config file and includes `.watchmanconfig`, `.hg`, `.git`, and `.svn`.  One or more of these files must be present in order to allow a watch. Try pulling and checking out a newer version of the project?. Make sure watchman is running for this project. See https://facebook.github.io/watchman/docs/troubleshooting.
+
+Test Suites: 9 passed, 9 total
+Tests:       80 passed, 80 total
+Snapshots:   0 total
+Time:        0.539 s
+Ran all test suites.
