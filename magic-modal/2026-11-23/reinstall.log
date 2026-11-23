@@ -1,0 +1,17 @@
+Scope: all 7 workspace projects
+✓ Lockfile passes supply-chain policies (verified 17s ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1631, reused 1629, downloaded 0, added 411
+Progress: resolved 1631, reused 1629, downloaded 0, added 607
+Progress: resolved 1631, reused 1629, downloaded 0, added 844
+Progress: resolved 1631, reused 1629, downloaded 0, added 1120
+Progress: resolved 1631, reused 1629, downloaded 0, added 1439
+Progress: resolved 1631, reused 1629, downloaded 0, added 1675
+Progress: resolved 1631, reused 1629, downloaded 0, added 1719
+Progress: resolved 1631, reused 1629, downloaded 0, added 1733
+Packages: +1757 -309
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------
+Progress: resolved 1631, reused 1629, downloaded 0, added 1757, done
+node_modules/@swc/core postinstall$ node postinstall.js
+node_modules/@swc/core postinstall: Done
+Done in 9s using pnpm v12.9.1

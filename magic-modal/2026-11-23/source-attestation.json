@@ -1,0 +1,15 @@
+{
+  "head": "8f564d77725b98629066a6333befb16bf8bb684d",
+  "tree": "9f4139ab57de27747e9ba722124e254c842dcfd0",
+  "checkedBlobs": 259,
+  "mismatches": [],
+  "screenshotSha256": "e2831c3d0e69b029ff94f35dc269e3ffa20e8d31c38218e3d7c43d9f4c3601c9",
+  "checks": [
+    "reinstall.log",
+    "test-after.log",
+    "checks-after.log",
+    "smoke-after.log",
+    "capture.log",
+    "parser-after.log"
+  ]
+}
