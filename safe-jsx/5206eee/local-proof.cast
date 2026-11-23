@@ -1,0 +1,9 @@
+{"version":2,"width":80,"height":24,"timestamp":1795435454,"command":"zsh -c \"git rev-parse HEAD && pnpm exec jest --runInBand --watchman=false && node tools/security-check.mjs && pnpm run build\"","env":{"SHELL":"/opt/homebrew/bin/fish"}}
+[0.019972, "o", "5206eee1664466de16ff31d04cf699f2909385c1\r\n"]
+[1.444672, "o", "\u001b[999D\u001b[K"]
+[1.44475, "o", "\r\n"]
+[1.445079, "o", "Test Suites: 2 passed, 2 total\r\nTests:       71 passed, 71 total\r\nSnapshots:   0 total\r\nTime:        1.266 s, estimated 4 s\r\nRan all test suites.\r\n"]
+[1.754605, "o", "security regressions passed: deepmerge CJS/UMD, patch coverage, minimatch amplification, glob cancellation and compatibility\r\n"]
+[1.830806, "o", "picomatch single-branch extglob regressions passed on both patched versions\r\n"]
+[1.868265, "o", "$ rimraf lib && tsc -p tsconfig.build.json\r\n"]
+[2.266427, "x", "0"]
